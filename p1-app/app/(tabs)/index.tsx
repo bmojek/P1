@@ -1,19 +1,29 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Button, FlatList } from "react-native";
 
-import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
+import { useApi } from "@/contexts/apiContext";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TabOneScreen() {
+  const { getUserList, users } = useApi();
+  const handleGetUserList = () => {
+    getUserList();
+  };
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Siema elo</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
+    <SafeAreaView>
+      <Button title="Get User List" onPress={handleGetUserList} />
+      <FlatList
+        data={users}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <View>
+            <Text>
+              {item.id} {item.username} {item.password}
+            </Text>
+          </View>
+        )}
       />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
+    </SafeAreaView>
   );
 }
 
