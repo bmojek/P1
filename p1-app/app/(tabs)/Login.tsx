@@ -10,7 +10,7 @@ import { Text, View } from "@/components/Themed";
 import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-
+//zrobic pusha do logowania ze jest dodane logo
 SplashScreen.preventAutoHideAsync();
 
 export default function TabThreeScreen() {
@@ -43,7 +43,10 @@ export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#352F44" barStyle="light-content" />
-      <View style={styles.logo}/>
+      <Image
+        source={require("../../assets/images/logo4.png")}
+        style={styles.logo}
+      />
       <Text style={styles.title}>Welcome</Text>
       <Text style={styles.subtitle}>To</Text>
       <Text style={styles.subtitle2}>GastroSpace</Text>
@@ -90,11 +93,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   logo: {
-    width: 75,
+    width: 85,
     height: 75,
-    borderRadius: 50,
-    backgroundColor: "#FAF0E6",
-    marginBottom: 20,
+    marginBottom: 0,
   },
   title: {
     fontSize: 68,
