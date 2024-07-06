@@ -3,8 +3,6 @@ import {
   TextInput,
   TouchableOpacity,
   StatusBar,
-  Button,
-  Image,
 } from "react-native";
 import { Text, View } from "@/components/Themed";
 import { useState, useEffect } from "react";
@@ -15,6 +13,10 @@ SplashScreen.preventAutoHideAsync();
 
 export default function TabThreeScreen() {
   const [fontLoaded, setFontLoaded] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [usernameError, setUsernameError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
 
   const fetchFonts = () => {
     return Font.loadAsync({
@@ -22,7 +24,7 @@ export default function TabThreeScreen() {
       "AmaticSC-Bold": require("../../assets/fonts/AmaticSC-Bold.ttf"),
       "SpaceMono-Regular": require("../../assets/fonts/SpaceMono-Regular.ttf"),
     });
-  }
+  };
 
   useEffect(() => {
     fetchFonts()
@@ -36,6 +38,36 @@ export default function TabThreeScreen() {
     }
   }, [fontLoaded]);
 
+  const validateUsername = () => {
+    if (!username) {
+      setUsernameError("Username is required");
+      return false;
+    }
+    setUsernameError("");
+    return true;
+  };
+
+  const validatePassword = () => {
+    if (!password) {
+      setPasswordError("Password is required");
+      return false;
+    }
+    setPasswordError("");
+    return true;
+  };
+
+  const handleLogin = () => {
+    const isUsernameValid = validateUsername();
+    const isPasswordValid = validatePassword();
+
+    if (isUsernameValid && isPasswordValid) {
+      //sprawdzenie w bazie danych poprzez api
+      setUsername("");
+      setPassword("");
+      alert("Login successful");
+    }
+  };
+
   if (!fontLoaded) {
     return null;
   }
@@ -43,7 +75,7 @@ export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#352F44" barStyle="light-content" />
-      <View style={styles.logo}/>
+      <View style={styles.logo} />
       <Text style={styles.title}>Welcome</Text>
       <Text style={styles.subtitle}>To</Text>
       <Text style={styles.subtitle2}>GastroSpace</Text>
@@ -52,7 +84,13 @@ export default function TabThreeScreen() {
           style={styles.input}
           placeholder="Username"
           placeholderTextColor="#0C0C0C"
+          value={username}
+          onChangeText={setUsername}
+          onBlur={validateUsername}
         />
+        {usernameError ? (
+          <Text style={styles.errorText}>{usernameError}</Text>
+        ) : null}
       </View>
       <View style={styles.inputContainer}>
         <TextInput
@@ -60,21 +98,27 @@ export default function TabThreeScreen() {
           placeholder="Password"
           placeholderTextColor="#0C0C0C"
           secureTextEntry={true}
+          value={password}
+          onChangeText={setPassword}
+          onBlur={validatePassword}
         />
+        {passwordError ? (
+          <Text style={styles.errorText}>{passwordError}</Text>
+        ) : null}
       </View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
       <View style={styles.forgotPasswordContainer}>
         <Text style={styles.label}>Forgot Password?</Text>
         <TouchableOpacity>
-        <Text style={styles.labelBold}>Recover</Text>
+          <Text style={styles.labelBold}>Recover</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.newAccountContainer}>
         <Text style={styles.newAccountText}>New to GastroSpace?</Text>
         <TouchableOpacity>
-        <Text style={styles.newAccountLink}>Create new account here</Text>
+          <Text style={styles.newAccountLink}>Create new account here</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -110,7 +154,6 @@ const styles = StyleSheet.create({
     color: "#FAF0E6",
     lineHeight: 85.75,
     textAlign: "center",
-    
   },
   subtitle2: {
     fontSize: 68,
@@ -139,6 +182,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: "SpaceMono-Regular",
     backgroundColor: "#FAF0E6",
+  },
+  errorText: {
+    color: "red",
+    fontSize: 12,
+    position: "absolute",
+    bottom: -15,
+    left: 10,
   },
   forgotPasswordContainer: {
     margin: 8,
@@ -184,5 +234,4 @@ const styles = StyleSheet.create({
     color: "#4C3BCF",
     fontFamily: "Poppins-Bold",
   },
-})
-
+});
