@@ -1,5 +1,4 @@
 import { StyleSheet, Button, FlatList } from "react-native";
-
 import { Text, View } from "@/components/Themed";
 import { useApi } from "@/contexts/apiContext";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -18,7 +17,7 @@ export default function TabOneScreen() {
         renderItem={({ item }) => (
           <View>
             <Text>
-              {item.id} {item.username} {item.password}
+              {item.id} {item.username} {item.password} {item.email}
             </Text>
           </View>
         )}

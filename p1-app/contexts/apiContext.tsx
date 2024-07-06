@@ -4,11 +4,22 @@ interface User {
   id: string;
   username: string;
   password: string;
+  email: string;
+}
+
+interface RegisterResponse {
+  status: number;
+  user?: User;
+  message?: string;
 }
 
 interface ApiContextType {
   users: User[];
-  register: (login: string, password: string) => Promise<void>;
+  register: (
+    login: string,
+    password: string,
+    email: string
+  ) => Promise<RegisterResponse>;
   login: (login: string, password: string) => Promise<User | null>;
   getUserList: () => Promise<void>;
 }
@@ -20,28 +31,43 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [users, setUsers] = useState<User[]>([]);
 
-  const register = async (login: string, password: string) => {
+  const register = async (
+    login: string,
+    password: string,
+    email: string
+  ): Promise<RegisterResponse> => {
     try {
       const response = await fetch("http://localhost:3000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ login, password }),
+        body: JSON.stringify({ login, password, email }),
       });
 
       if (response.ok) {
         const data = await response.json();
         setUsers([...users, data.user]);
+        return { status: response.status, user: data.user };
+      } else if (response.status === 409) {
+        return {
+          status: response.status,
+          message: "Username is already taken",
+        };
       } else {
         console.error("Error registering user", response.statusText);
+        return { status: response.status, message: response.statusText };
       }
     } catch (error) {
       console.error("Error registering user", error);
+      return { status: 500, message: "Internal server error" };
     }
   };
 
-  const login = async (login: string, password: string) => {
+  const login = async (
+    login: string,
+    password: string
+  ): Promise<User | null> => {
     try {
       const response = await fetch("http://localhost:3000/login", {
         method: "POST",
