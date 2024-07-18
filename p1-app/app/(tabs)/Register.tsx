@@ -3,6 +3,7 @@ import {
   TextInput,
   TouchableOpacity,
   StatusBar,
+  Image
 } from "react-native";
 import Checkbox from "expo-checkbox";
 import { Text, View } from "@/components/Themed";
@@ -126,15 +127,10 @@ export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#352F44" barStyle="light-content" />
-      <TouchableOpacity style={styles.backButton} onPress={() => {}}>
-        <Icon
-          name="arrow-back"
-          size={24}
-          color="#FAF0E6"
-          style={styles.backIcon}
-        />
-      </TouchableOpacity>
-      <View style={styles.circle} />
+      <Image
+        source={require("../../assets/images/Logo4.png")}
+        style={styles.logo}
+      />
       <Text style={styles.title}>Create a new</Text>
       <Text style={styles.subtittle}>Account</Text>
       <View style={styles.inputContainer}>
@@ -189,17 +185,23 @@ export default function TabTwoScreen() {
       <TouchableOpacity style={styles.button} onPress={handleCreateAccount}>
         <Text style={styles.buttonText}>Create</Text>
       </TouchableOpacity>
+      <View style={styles.signotherline}>
+
+
+      </View>
+      <Text style={styles.otherlogin}>
+          <Text> Or Sign up with </Text>
+        </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  circle: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    backgroundColor: "#FAF0E6",
-    marginBottom: 20,
+  logo: {
+    width: 85,
+    height: 75,
+    marginBottom: 0,
+    marginTop:-60,
   },
   container: {
     flex: 1,
@@ -285,17 +287,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: "SpaceMono-Regular",
   },
-  backButton: {
-    position: "absolute",
-    top: 40,
-    left: 20,
-    width: 31.24,
-    height: 21.61,
-    opacity: 0.7,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  backIcon: {
+  otherlogin: {
+    margin: 8,
     color: "#FAF0E6",
+    fontSize: 10,
+    lineHeight: 10,
+    fontFamily: "Poppins-Bold",
+    fontWeight: "700",
+
   },
+  signline: {
+   
+  },
+  signotherline: {
+    
+
+  }
 });
