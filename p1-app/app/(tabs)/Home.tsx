@@ -29,7 +29,7 @@ type Category = {
 };
 type FoodItem = {
   name: string;
-  image: any;
+  image: string;
   rating: number;
   reviewCount: number;
   type: string;
@@ -85,11 +85,12 @@ export default function TabTwoScreen() {
         setFoodItems(data);
       })
       .catch((error) => {
-        console.log("API call failed, using static data:", error);
+        console.log("API call failed TURN ON API, using static data:", error);
         setFoodItems([
           {
             name: "Ichiraku Ramen",
-            image: require("../../assets/images/pizza.png"),
+            image:
+              "https://res.cloudinary.com/dld13appb/image/upload/v1729857749/csm_1101-recipe-page-Authentic-Japanese-soy-sauce-ramen_desktop_7e407b8b49_ouhrbb.webp",
             rating: 4.8,
             reviewCount: 4200,
             type: "Sushi",
@@ -97,7 +98,8 @@ export default function TabTwoScreen() {
           },
           {
             name: "PizzaNewYork",
-            image: require("../../assets/images/pizza.png"),
+            image:
+              "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
             rating: 4.6,
             reviewCount: 4600,
             type: "Pizza",

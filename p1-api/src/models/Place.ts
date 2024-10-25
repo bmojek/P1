@@ -1,7 +1,7 @@
 export interface Place {
   id: string;
   name: string;
-  img: string;
+  image: string;
   location: string;
   reviewCount: number;
   rating: number;

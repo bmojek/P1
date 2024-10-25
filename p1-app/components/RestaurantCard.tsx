@@ -6,7 +6,7 @@ const screenWidth = Dimensions.get("window").width;
 
 type RestaurantCardProps = {
   name: string;
-  image: any;
+  image: string;
   rating: number;
   reviewCount: number;
   type: string;
@@ -23,7 +23,8 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
 }) => {
   return (
     <View style={styles.card}>
-      <Image source={image} style={styles.image} />
+      <Image source={{ uri: image }} style={styles.image} />
+
       <View style={styles.infoContainer}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.rating}>
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     overflow: "hidden",
     backgroundColor: "#fff",
+    marginVertical: 10,
   },
   image: {
     width: "100%",
