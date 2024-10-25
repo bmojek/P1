@@ -1,29 +1,33 @@
 import express from "express";
 import cors from "cors";
+import { User } from "./src/models/User";
+import { Place } from "./src/models/Place";
 
-interface User {
-  id: string;
-  username: string;
-  password: string;
-  email: string;
-}
+const db = {
+  users: [] as User[],
+  places: [] as Place[],
+};
 
-const db: User[] = [];
 const app = express();
 const port = 3000;
 
-db.push({
+db.users.push({
   id: "1",
   username: "admin",
   password: "admin",
   email: "admin@admin.com",
 });
-db.push({
-  id: "2",
-  username: "wonnski",
-  password: "wonnski",
-  email: "wonnski@wonnski.com",
+db.places.push({
+  id: "1",
+  name: "PizzaNewYork",
+  img: "../../assets/images/pizza.png",
+  location: "456 pizza Ave",
+  rating: 4.6,
+  reviewCount: 4600,
+  type: "pizza",
+  tags: ["pizza", "italian", "american"],
 });
+
 app.use(cors());
 app.use(express.json());
 
@@ -31,7 +35,7 @@ app.get("/", (req, res) => {
   res.send(
     "Hello World " +
       "<ul>" +
-      db
+      db.users
         .map(
           (user) =>
             "<li>" +
@@ -46,14 +50,37 @@ app.get("/", (req, res) => {
       "</ul>"
   );
 });
-
+app.get("/places", (req, res) => {
+  try {
+    if (db.places.length > 0) {
+      res.status(200).json(db.places);
+    } else {
+      const fallbackPlaces = [
+        {
+          id: "1",
+          name: "Fallback Pizza Place",
+          img: "../../assets/images/fallback-pizza.png",
+          location: "Unknown Ave",
+          rating: 4.0,
+          reviewCount: 1000,
+          type: "pizza",
+          tags: ["pizza", "fallback"],
+        },
+      ];
+      res.status(200).json(fallbackPlaces);
+    }
+  } catch (error) {
+    console.error("Error fetching places:", error);
+    res.status(500).send({ message: "Failed to retrieve places" });
+  }
+});
 app.post("/register", (req, res) => {
   const login: string = req.body.login;
   const password: string = req.body.password;
   const email: string = req.body.email;
   const userId: string = new Date().toISOString();
 
-  const existingUser = db.find((user) => user.username === login);
+  const existingUser = db.users.find((user) => user.username === login);
   if (existingUser) {
     return res.status(409).send({ message: "Username is already taken" });
   }
@@ -63,15 +90,16 @@ app.post("/register", (req, res) => {
     password: password,
     email: email,
   };
-  db.push(newUser);
+  db.users.push(newUser);
 
   res.status(200).send({ user: newUser });
 });
+
 app.post("/login", (req, res) => {
   const login: string = req.body.login;
   const password: string = req.body.password;
 
-  const user: User | undefined = db.find(
+  const user: User | undefined = db.users.find(
     (u) => u.username === login && u.password === password
   );
 
@@ -83,7 +111,7 @@ app.post("/login", (req, res) => {
 });
 
 app.post("/userlist", (req, res) => {
-  res.status(200).send(db);
+  res.status(200).send(db.users);
 });
 
 app.listen(port, () => {

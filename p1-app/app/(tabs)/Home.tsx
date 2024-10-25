@@ -14,11 +14,11 @@ import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { Ionicons } from "@expo/vector-icons";
-import { Entypo } from '@expo/vector-icons';
+import { Entypo } from "@expo/vector-icons";
 //import FoodCard from '@/components/FoodComp'
-import RestaurantCard from '@/components/RestaurantCard';
-import * as Location from 'expo-location';
-import MapView, { Marker } from 'react-native-maps';
+import RestaurantCard from "@/components/RestaurantCard";
+import * as Location from "expo-location";
+import MapView, { Marker } from "react-native-maps";
 //import { FlatList } from "react-native-reanimated/lib/typescript/Animated";
 
 SplashScreen.preventAutoHideAsync();
@@ -27,11 +27,20 @@ type Category = {
   id: string;
   name: string;
 };
+type FoodItem = {
+  name: string;
+  image: any;
+  rating: number;
+  reviewCount: number;
+  type: string;
+  location: string;
+};
 
 export default function TabTwoScreen() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [location, setLocation] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
+  const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
   const [mapRegion, setMapRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -39,9 +48,8 @@ export default function TabTwoScreen() {
     longitudeDelta: 0.0421,
   });
 
-// export default function TabTwoScreen() {
-//   const [fontLoaded, setFontLoaded] = useState(false);
-
+  // export default function TabTwoScreen() {
+  //   const [fontLoaded, setFontLoaded] = useState(false);
 
   const fetchFonts = () => {
     return Font.loadAsync({
@@ -55,23 +63,49 @@ export default function TabTwoScreen() {
     fetchFonts()
       .then(() => setFontLoaded(true))
       .catch((err) => console.log(err));
-      (async () => {
-        let { status } = await Location.requestForegroundPermissionsAsync();
-        if (status !== 'granted') {
-          Alert.alert('Permission to access location was denied');
-          return;
-        }
-  
-        let location = await Location.getCurrentPositionAsync({});
-        setMapRegion({
-          latitude: location.coords.latitude,
-          longitude: location.coords.longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-        });
-        setLocation('Cracow'); // Replace with reverse geocoding if needed
-      })();
-    }, []);
+    (async () => {
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        Alert.alert("Permission to access location was denied");
+        return;
+      }
+
+      let location = await Location.getCurrentPositionAsync({});
+      setMapRegion({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421,
+      });
+      setLocation("Cracow");
+    })();
+    fetch("http://localhost:3000/places")
+      .then((response) => response.json())
+      .then((data) => {
+        setFoodItems(data);
+      })
+      .catch((error) => {
+        console.log("API call failed, using static data:", error);
+        setFoodItems([
+          {
+            name: "Ichiraku Ramen",
+            image: require("../../assets/images/pizza.png"),
+            rating: 4.8,
+            reviewCount: 4200,
+            type: "Sushi",
+            location: "123 Sushi St",
+          },
+          {
+            name: "PizzaNewYork",
+            image: require("../../assets/images/pizza.png"),
+            rating: 4.6,
+            reviewCount: 4600,
+            type: "Pizza",
+            location: "456 pizza Ave",
+          },
+        ]);
+      });
+  }, []);
 
   useEffect(() => {
     if (fontLoaded) {
@@ -87,10 +121,10 @@ export default function TabTwoScreen() {
   };
 
   const categories: Category[] = [
-    { id: '1', name: 'Italian' },
-    { id: '2', name: 'Chinese' },
-    { id: '3', name: 'Mexican' },
-    { id: '4', name: 'Indian' },
+    { id: "1", name: "Italian" },
+    { id: "2", name: "Chinese" },
+    { id: "3", name: "Mexican" },
+    { id: "4", name: "Indian" },
   ];
 
   // const renderCategory = ({ item }: {item: Category}) => (
@@ -98,34 +132,6 @@ export default function TabTwoScreen() {
   //     <Text style={styles.categoryText}>{item.name}</Text>
   //   </TouchableOpacity>
   // );
-
-  const foodItems = [
-    {
-      name: 'Ichiraku Ramen',
-      image: require('../../assets/images/pizza.png'),
-      rating: 4.8,
-      reviewCount: 4200,
-      type: 'Sushi',
-      location: '123 Sushi St'
-    },
-    {
-      name: 'PizzaNewYork',
-      image: require('../../assets/images/pizza.png'),
-      rating: 4.6,
-      reviewCount: 4600,
-      type: 'Pizza',
-      location: '456 pizza Ave'
-    },
-    {
-      name: 'Pizza',
-      image: require('../../assets/images/pizza.png'),
-    },
-    {
-      name: 'Pizza',
-      image: require('../../assets/images/pizza.png'),
-    },
-  ];
-
 
   return (
     // <View style={styles.container}>
@@ -138,28 +144,30 @@ export default function TabTwoScreen() {
     //     placeholderTextColor="#0C0C0C"
     //   />
     <View style={styles.container}>
-    <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
-    <View style={styles.topContainer}>
-      <TouchableOpacity>
-        <Entypo name="menu" size={30} color="#000000" />
-      </TouchableOpacity>
-      <View style={styles.searchContainer}>
-        <TouchableOpacity onPress={handleLocationPress} style={styles.locationButton}>
-          <Ionicons name="location-outline" size={20} color="#000000" />
-          <Text style={styles.locationText}>{location}</Text>
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
+      <View style={styles.topContainer}>
+        <TouchableOpacity>
+          <Entypo name="menu" size={30} color="#000000" />
         </TouchableOpacity>
-      </View>
-      <TouchableOpacity>
-      <Ionicons
+        <View style={styles.searchContainer}>
+          <TouchableOpacity
+            onPress={handleLocationPress}
+            style={styles.locationButton}
+          >
+            <Ionicons name="location-outline" size={20} color="#000000" />
+            <Text style={styles.locationText}>{location}</Text>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity>
+          <Ionicons
             name="person-circle-outline"
             size={50}
             color="#0C0C0C"
             style={styles.icon}
           />
-          </TouchableOpacity> 
-    </View>
-    <View style={styles.locationContainer}>
+        </TouchableOpacity>
       </View>
+      <View style={styles.locationContainer}></View>
       <Text style={styles.heading}>Popular Food</Text>
       <View style={styles.categoryContainer}>
         <FlatList
@@ -178,12 +186,12 @@ export default function TabTwoScreen() {
         {foodItems.map((item, index) => (
           <RestaurantCard
             key={index}
-            name={item.name || 'Unknown'}
+            name={item.name || "Unknown"}
             image={item.image}
             rating={item.rating !== undefined ? item.rating : 0}
             reviewCount={item.reviewCount !== undefined ? item.reviewCount : 0}
-            type={item.type || 'Unknown'}
-            location={item.location || 'Unknown'}
+            type={item.type || "Unknown"}
+            location={item.location || "Unknown"}
           />
         ))}
       </ScrollView>
@@ -192,7 +200,10 @@ export default function TabTwoScreen() {
           <MapView style={styles.map} region={mapRegion}>
             <Marker coordinate={mapRegion} />
           </MapView>
-          <TouchableOpacity style={styles.closeMapButton} onPress={() => setShowMap(false)}>
+          <TouchableOpacity
+            style={styles.closeMapButton}
+            onPress={() => setShowMap(false)}
+          >
             <Text style={styles.closeMapButtonText}>Close Map</Text>
           </TouchableOpacity>
         </View>
@@ -238,11 +249,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   categoryContainer: {
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 10,
     flexDirection: "row",
-    alignItems: 'center',
-    paddingVertical: 20.
+    alignItems: "center",
+    paddingVertical: 20,
   },
   categoryButton: {
     backgroundColor: "#FAF0E6",
@@ -262,14 +273,14 @@ const styles = StyleSheet.create({
     fontFamily: "SpaceMono-Regular",
   },
   foodContainer: {
-    flexDirection: 'row',
-    width: '100%',
+    flexDirection: "row",
+    width: "100%",
     paddingHorizontal: 40,
     borderRadius: 10,
   },
   locationContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingHorizontal: 10,
     marginBottom: 10,
   },
@@ -283,46 +294,45 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: "white",
     fontFamily: "SpaceMono-Regular",
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     paddingHorizontal: 10,
     marginBottom: 10,
   },
   scrollView: {
-    alignItems: 'center',
+    alignItems: "center",
     padding: 10,
   },
   searchContainer: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f0f0f0",
     borderRadius: 16,
     paddingHorizontal: 10,
     height: 40,
     marginLeft: 10,
   },
   locationButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingLeft: 10,
   },
   mapContainer: {
     ...StyleSheet.absoluteFillObject,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
   map: {
     ...StyleSheet.absoluteFillObject,
   },
   closeMapButton: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     padding: 10,
     borderRadius: 5,
     marginBottom: 40,
   },
   closeMapButtonText: {
     fontSize: 16,
-    color: '#000',
+    color: "#000",
   },
-  
 });
