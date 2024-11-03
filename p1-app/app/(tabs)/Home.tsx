@@ -47,6 +47,7 @@ export default function TabTwoScreen() {
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421,
   });
+  const [selectedType, setSelectedType] = useState("");
 
   // export default function TabTwoScreen() {
   //   const [fontLoaded, setFontLoaded] = useState(false);
@@ -93,7 +94,7 @@ export default function TabTwoScreen() {
               "https://res.cloudinary.com/dld13appb/image/upload/v1729857749/csm_1101-recipe-page-Authentic-Japanese-soy-sauce-ramen_desktop_7e407b8b49_ouhrbb.webp",
             rating: 4.8,
             reviewCount: 4200,
-            type: "Sushi",
+            type: "Chinese",
             location: "123 Sushi St",
           },
           {
@@ -102,7 +103,7 @@ export default function TabTwoScreen() {
               "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
             rating: 4.6,
             reviewCount: 4600,
-            type: "Pizza",
+            type: "Italian",
             location: "456 pizza Ave",
           },
         ]);
@@ -121,7 +122,9 @@ export default function TabTwoScreen() {
   const handleLocationPress = () => {
     setShowMap(true);
   };
-
+  const handleSelectType = (type: string) => {
+    type == selectedType ? setSelectedType("") : setSelectedType(type);
+  };
   const categories: Category[] = [
     { id: "1", name: "Italian" },
     { id: "2", name: "Chinese" },
@@ -129,22 +132,7 @@ export default function TabTwoScreen() {
     { id: "4", name: "Indian" },
   ];
 
-  // const renderCategory = ({ item }: {item: Category}) => (
-  //   <TouchableOpacity style={styles.categoryButton}>
-  //     <Text style={styles.categoryText}>{item.name}</Text>
-  //   </TouchableOpacity>
-  // );
-
   return (
-    // <View style={styles.container}>
-    // <StatusBar backgroundColor="#352F44" barStyle="light-content" />
-    // <View style={styles.topContainer}>
-    //     <Entypo name="menu" size={30} color="#0C0C0C" />
-    //   <TextInput
-    //     style={styles.input}
-    //     placeholder="Type a restaurant"
-    //     placeholderTextColor="#0C0C0C"
-    //   />
     <View style={styles.container}>
       <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
       <View style={styles.topContainer}>
@@ -175,7 +163,11 @@ export default function TabTwoScreen() {
         <FlatList
           data={categories}
           renderItem={({ item }) => (
-            <TouchableOpacity key={item.id} style={styles.categoryButton}>
+            <TouchableOpacity
+              key={item.id}
+              style={styles.categoryButton}
+              onPress={() => handleSelectType(item.name)}
+            >
               <Text style={styles.categoryText}>{item.name}</Text>
             </TouchableOpacity>
           )}
@@ -185,18 +177,23 @@ export default function TabTwoScreen() {
         />
       </View>
       <ScrollView contentContainerStyle={styles.scrollView}>
-        {foodItems.map((item, index) => (
-          <RestaurantCard
-            key={index}
-            name={item.name || "Unknown"}
-            image={item.image}
-            rating={item.rating !== undefined ? item.rating : 0}
-            reviewCount={item.reviewCount !== undefined ? item.reviewCount : 0}
-            type={item.type || "Unknown"}
-            location={item.location || "Unknown"}
-          />
-        ))}
+        {foodItems
+          .filter((item) => !selectedType || item.type === selectedType)
+          .map((item, index) => (
+            <RestaurantCard
+              key={index}
+              name={item.name}
+              image={item.image}
+              rating={item.rating !== undefined ? item.rating : 0}
+              reviewCount={
+                item.reviewCount !== undefined ? item.reviewCount : 0
+              }
+              type={item.type}
+              location={item.location}
+            />
+          ))}
       </ScrollView>
+
       {showMap && (
         <View style={styles.mapContainer}>
           <MapView style={styles.map} region={mapRegion}>

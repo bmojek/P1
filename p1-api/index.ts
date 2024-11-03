@@ -26,7 +26,7 @@ db.places.push(
     location: "21 china Ave",
     rating: 4.9,
     reviewCount: 2200,
-    type: "Ramen",
+    type: "Chinese",
     tags: ["ramen", "chinese", "spicy"],
   },
   {
@@ -37,7 +37,7 @@ db.places.push(
     location: "456 pizza Ave",
     rating: 4.6,
     reviewCount: 4600,
-    type: "pizza",
+    type: "Italian",
     tags: ["pizza", "italian", "american"],
   },
   {
@@ -48,7 +48,7 @@ db.places.push(
     location: "12 New York Ave",
     rating: 4.8,
     reviewCount: 1200,
-    type: "pizza",
+    type: "Italian",
     tags: ["pizza", "italian"],
   }
 );
