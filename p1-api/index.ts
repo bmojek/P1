@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { User } from "./src/models/User";
 import { Place } from "./src/models/Place";
+import { data } from "./feedData";
 
 const db = {
   users: [] as User[],
@@ -17,41 +18,19 @@ db.users.push({
   password: "admin",
   email: "admin@admin.com",
 });
-db.places.push(
-  {
-    id: "0",
-    name: "Ichiraku Ramen",
-    image:
-      "https://res.cloudinary.com/dld13appb/image/upload/v1729857749/csm_1101-recipe-page-Authentic-Japanese-soy-sauce-ramen_desktop_7e407b8b49_ouhrbb.webp",
-    location: "21 china Ave",
-    rating: 4.9,
-    reviewCount: 2200,
-    type: "Chinese",
-    tags: ["ramen", "chinese", "spicy"],
-  },
-  {
-    id: "1",
-    name: "PizzaNewYork",
-    image:
-      "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
-    location: "456 pizza Ave",
-    rating: 4.6,
-    reviewCount: 4600,
-    type: "Italian",
-    tags: ["pizza", "italian", "american"],
-  },
-  {
-    id: "2",
-    name: "Pizza Neopolitan",
-    image:
-      "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
-    location: "12 New York Ave",
-    rating: 4.8,
-    reviewCount: 1200,
-    type: "Italian",
-    tags: ["pizza", "italian"],
-  }
-);
+
+data.map((data) => {
+  db.places.push({
+    id: data.place_id,
+    name: data.name,
+    image: data.featured_image,
+    location: data.address,
+    rating: data.rating,
+    reviewCount: data.reviews,
+    type: data.main_category,
+    tags: data.categories,
+  });
+});
 
 app.use(cors());
 app.use(express.json());

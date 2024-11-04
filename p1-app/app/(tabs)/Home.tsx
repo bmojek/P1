@@ -5,7 +5,6 @@ import {
   StatusBar,
   Text,
   View,
-  ScrollView,
   FlatList,
   Alert,
   Modal,
@@ -15,11 +14,9 @@ import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { Ionicons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
-//import FoodCard from '@/components/FoodComp'
 import RestaurantCard from "@/components/RestaurantCard";
 import * as Location from "expo-location";
 import MapView, { Marker } from "react-native-maps";
-//import { FlatList } from "react-native-reanimated/lib/typescript/Animated";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -41,6 +38,7 @@ export default function TabTwoScreen() {
   const [location, setLocation] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
   const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
+  const [visibleItems, setVisibleItems] = useState(5);
   const [mapRegion, setMapRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -48,9 +46,6 @@ export default function TabTwoScreen() {
     longitudeDelta: 0.0421,
   });
   const [selectedType, setSelectedType] = useState("");
-
-  // export default function TabTwoScreen() {
-  //   const [fontLoaded, setFontLoaded] = useState(false);
 
   const fetchFonts = () => {
     return Font.loadAsync({
@@ -70,7 +65,6 @@ export default function TabTwoScreen() {
         Alert.alert("Permission to access location was denied");
         return;
       }
-
       let location = await Location.getCurrentPositionAsync({});
       setMapRegion({
         latitude: location.coords.latitude,
@@ -86,7 +80,6 @@ export default function TabTwoScreen() {
         setFoodItems(data);
       })
       .catch((error) => {
-        console.log("API call failed TURN ON API, using static data:", error);
         setFoodItems([
           {
             name: "Ichiraku Ramen",
@@ -119,17 +112,27 @@ export default function TabTwoScreen() {
   if (!fontLoaded) {
     return null;
   }
+
   const handleLocationPress = () => {
     setShowMap(true);
   };
+
   const handleSelectType = (type: string) => {
-    type == selectedType ? setSelectedType("") : setSelectedType(type);
+    type === selectedType ? setSelectedType("") : setSelectedType(type);
   };
+
+  const loadMoreItems = () => {
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
+  };
+
   const categories: Category[] = [
+    { id: "0", name: "Polish" },
     { id: "1", name: "Italian" },
     { id: "2", name: "Chinese" },
     { id: "3", name: "Mexican" },
     { id: "4", name: "Indian" },
+    { id: "5", name: "American" },
+    { id: "6", name: "European" },
   ];
 
   return (
@@ -176,24 +179,25 @@ export default function TabTwoScreen() {
           keyExtractor={(item) => item.id}
         />
       </View>
-      <ScrollView contentContainerStyle={styles.scrollView}>
-        {foodItems
+      <FlatList
+        data={foodItems
           .filter((item) => !selectedType || item.type === selectedType)
-          .map((item, index) => (
-            <RestaurantCard
-              key={index}
-              name={item.name}
-              image={item.image}
-              rating={item.rating !== undefined ? item.rating : 0}
-              reviewCount={
-                item.reviewCount !== undefined ? item.reviewCount : 0
-              }
-              type={item.type}
-              location={item.location}
-            />
-          ))}
-      </ScrollView>
-
+          .slice(0, visibleItems)}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <RestaurantCard
+            name={item.name}
+            image={item.image}
+            rating={item.rating !== undefined ? item.rating : 0}
+            reviewCount={item.reviewCount !== undefined ? item.reviewCount : 0}
+            type={item.type}
+            location={item.location}
+          />
+        )}
+        onEndReached={loadMoreItems}
+        onEndReachedThreshold={0.5}
+        contentContainerStyle={styles.scrollView}
+      />
       {showMap && (
         <View style={styles.mapContainer}>
           <MapView style={styles.map} region={mapRegion}>

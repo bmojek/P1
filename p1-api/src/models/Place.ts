@@ -18,8 +18,9 @@ export interface Place {
   name: string;
   image: string;
   location: string;
+  locationCords?: { lat: number; lon: number };
   reviewCount: number;
-  rating: number;
+  rating: string | number;
   type: string;
   tags: string[];
   details?: details;
