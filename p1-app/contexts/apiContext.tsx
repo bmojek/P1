@@ -12,9 +12,18 @@ interface RegisterResponse {
   user?: User;
   message?: string;
 }
+interface FoodItem {
+  name: string;
+  image: string;
+  rating: number;
+  reviewCount: number;
+  type: string;
+  location: string;
+}
 
 interface ApiContextType {
   users: User[];
+  foodItems: FoodItem[];
   register: (
     login: string,
     password: string,
@@ -22,14 +31,15 @@ interface ApiContextType {
   ) => Promise<RegisterResponse>;
   login: (login: string, password: string) => Promise<User | null>;
   getUserList: () => Promise<void>;
+  fetchPlaces: () => Promise<void>;
 }
-
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
 
 export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [users, setUsers] = useState<User[]>([]);
+  const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
 
   const register = async (
     login: string,
@@ -107,8 +117,44 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  const fetchPlaces = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/places");
+      if (response.ok) {
+        const data = await response.json();
+        setFoodItems(data);
+      } else {
+        console.error("Error fetching places:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error fetching places:", error);
+      setFoodItems([
+        {
+          name: "Ichiraku Ramen",
+          image:
+            "https://res.cloudinary.com/dld13appb/image/upload/v1729857749/csm_1101-recipe-page-Authentic-Japanese-soy-sauce-ramen_desktop_7e407b8b49_ouhrbb.webp",
+          rating: 4.8,
+          reviewCount: 4200,
+          type: "Chinese",
+          location: "123 Sushi St",
+        },
+        {
+          name: "PizzaNewYork",
+          image:
+            "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
+          rating: 4.6,
+          reviewCount: 4600,
+          type: "Italian",
+          location: "456 pizza Ave",
+        },
+      ]);
+    }
+  };
+
   return (
-    <ApiContext.Provider value={{ users, register, login, getUserList }}>
+    <ApiContext.Provider
+      value={{ users, foodItems, register, login, getUserList, fetchPlaces }}
+    >
       {children}
     </ApiContext.Provider>
   );
