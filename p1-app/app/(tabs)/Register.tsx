@@ -3,14 +3,13 @@ import {
   TextInput,
   TouchableOpacity,
   StatusBar,
-  Image
+  Image,
 } from "react-native";
 import Checkbox from "expo-checkbox";
 import { Text, View } from "@/components/Themed";
 import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import Icon from "react-native-vector-icons/Ionicons";
 import { useApi } from "@/contexts/apiContext";
 
 SplashScreen.preventAutoHideAsync();
@@ -185,13 +184,10 @@ export default function TabTwoScreen() {
       <TouchableOpacity style={styles.button} onPress={handleCreateAccount}>
         <Text style={styles.buttonText}>Create</Text>
       </TouchableOpacity>
-      <View style={styles.signotherline}>
-
-
-      </View>
+      <View style={styles.signotherline}></View>
       <Text style={styles.otherlogin}>
-          <Text> Or Sign up with </Text>
-        </Text>
+        <Text> Or Sign up with </Text>
+      </Text>
     </View>
   );
 }
@@ -201,7 +197,7 @@ const styles = StyleSheet.create({
     width: 85,
     height: 75,
     marginBottom: 0,
-    marginTop:-60,
+    marginTop: -60,
   },
   container: {
     flex: 1,
@@ -294,13 +290,7 @@ const styles = StyleSheet.create({
     lineHeight: 10,
     fontFamily: "Poppins-Bold",
     fontWeight: "700",
-
   },
-  signline: {
-   
-  },
-  signotherline: {
-    
-
-  }
+  signline: {},
+  signotherline: {},
 });
