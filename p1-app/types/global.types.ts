@@ -41,7 +41,7 @@ export interface Place {
   location: string;
   locationCords?: { lat: number; lon: number };
   reviewCount: number;
-  rating: string | number;
+  rating: string;
   type: string;
   tags: string[];
   desc: string | null;

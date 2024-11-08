@@ -5,16 +5,16 @@ import {
   StyleSheet,
   Image,
   ScrollView,
-  Button,
   TouchableOpacity,
   ImageBackground,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useLocalSearchParams } from "expo-router";
 import { Place } from "@/types/global.types";
+import { SafeAreaView } from "react-native-safe-area-context";
 const Details = () => {
   const { place } = useLocalSearchParams();
-
+  const [expandText, setExpandText] = useState(false);
   let placeJ;
   if (typeof place === "string") {
     placeJ = JSON.parse(place) as Place;
@@ -23,11 +23,21 @@ const Details = () => {
   }
   const getStarts = (rating: number) => {
     let stars = "";
-
     for (let i = 0; i < 5; i++) {
       i < rating ? (stars += "★") : (stars += "☆");
     }
     return stars;
+  };
+
+  const showMore = () => {
+    if (!placeJ.desc) return "";
+    const words = placeJ.desc.split(" ");
+
+    if (expandText || words.length <= 20) {
+      return placeJ.desc;
+    } else {
+      return words.slice(0, 20).join(" ") + "...";
+    }
   };
   return (
     <ImageBackground
@@ -39,23 +49,36 @@ const Details = () => {
         colors={["#FAF0E6", "transparent"]}
         style={styles.gradient}
       >
-        <View style={styles.container}>
-          <View style={styles.logoContainer}>
-            <Image
-              source={require("../assets/images/Logo4.png")}
-              style={styles.logo}
-            />
-          </View>
-          <TouchableOpacity style={styles.profileContainer}>
-            <Image
-              source={require("../assets/images/avatar.png")}
-              style={styles.profile}
-            />
-          </TouchableOpacity>
-          <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <SafeAreaView style={styles.container}>
+          <ScrollView
+            contentContainerStyle={styles.scrollContainer}
+            showsVerticalScrollIndicator={false}
+          >
+            <View style={styles.logoContainer}>
+              <Image
+                source={require("../assets/images/Logo4.png")}
+                style={styles.logo}
+              />
+            </View>
+            <TouchableOpacity
+              style={styles.profileContainer}
+            ></TouchableOpacity>
+
             <Text style={styles.restaurantName}>{placeJ.name}</Text>
+            <Text style={styles.reviewStars}>
+              {getStarts(parseInt(placeJ.rating))}
+            </Text>
             <View style={styles.descriptionContainer}>
-              <Text style={styles.descriptionText}>{placeJ.desc}</Text>
+              <Text style={styles.descriptionText}>
+                {showMore()}
+                {placeJ.desc && placeJ.desc.split(" ").length > 20 && (
+                  <TouchableOpacity onPress={() => setExpandText(!expandText)}>
+                    <Text style={styles.showMoreText}>
+                      {expandText ? " Show Less" : " Show More"}
+                    </Text>
+                  </TouchableOpacity>
+                )}
+              </Text>
             </View>
             <ScrollView
               horizontal={true}
@@ -94,8 +117,7 @@ const Details = () => {
                         />
                       ))}
                     </View>
-
-                    <Text>{review.published_at_date}</Text>
+                    <Text>{review.published_at_date.replace("T", " ")}</Text>
                   </View>
                 ))}
               </ScrollView>
@@ -104,7 +126,7 @@ const Details = () => {
               <Text style={styles.buttonText}>Add Review</Text>
             </TouchableOpacity>
           </ScrollView>
-        </View>
+        </SafeAreaView>
       </LinearGradient>
     </ImageBackground>
   );
@@ -135,7 +157,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontFamily: "AmaticSC-Regular",
     color: "white",
-    marginTop: 140,
     textAlign: "center",
   },
   descriptionContainer: {
@@ -148,12 +169,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "Amaticsc-bold",
   },
-  logoContainer: {
-    position: "absolute",
-    top: 70,
-    left: 50,
-    zIndex: 1,
+  showMoreText: {
+    fontSize: 25,
+    color: "lightblue",
+    textAlign: "center",
+    fontFamily: "Amaticsc-bold",
   },
+  logoContainer: { alignItems: "center", paddingVertical: 20 },
   logo: {
     width: 50,
     height: 50,
@@ -184,7 +206,7 @@ const styles = StyleSheet.create({
   latestContainer: {
     width: "100%",
     height: 530,
-    paddingTop: 30,
+    paddingVertical: 30,
     marginTop: 20,
     backgroundColor: "#FAF0E6",
     borderRadius: 10,
@@ -199,7 +221,6 @@ const styles = StyleSheet.create({
   },
   reviewContainer: {
     width: 300,
-    padding: 10,
   },
   reviewItem: {
     marginBottom: 20,

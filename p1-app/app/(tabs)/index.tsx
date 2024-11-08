@@ -131,7 +131,7 @@ export default function Home() {
             <Text style={styles.locationText}>{location}</Text>
             <TextInput
               style={styles.searchText}
-              placeholder={"Kuchnia Polska"}
+              placeholder={"Kuchnia u Doroty"}
               value={search}
               onChangeText={setSearch}
               maxLength={20}
@@ -180,6 +180,7 @@ export default function Home() {
         onEndReached={loadMoreItems}
         onEndReachedThreshold={0.5}
         contentContainerStyle={styles.scrollView}
+        showsVerticalScrollIndicator={false}
       />
       {showMap && (
         <View style={styles.mapContainer}>
