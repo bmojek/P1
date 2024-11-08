@@ -17,20 +17,13 @@ import RestaurantCard from "@/components/RestaurantCard";
 import * as Location from "expo-location";
 import MapView, { Marker } from "react-native-maps";
 import { useApi } from "@/contexts/apiContext";
+import { Link } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
 type Category = {
   id: string;
   name: string;
-};
-type FoodItem = {
-  name: string;
-  image: string;
-  rating: number;
-  reviewCount: number;
-  type: string;
-  location: string;
 };
 
 export default function Home() {
@@ -39,8 +32,9 @@ export default function Home() {
   const [showMap, setShowMap] = useState(false);
   const [visibleItems, setVisibleItems] = useState(5);
   const [selectedType, setSelectedType] = useState("");
-  const { foodItems, fetchPlaces } = useApi();
+  const { place, fetchPlaces } = useApi();
   const [search, setSearch] = useState("");
+
   const [mapRegion, setMapRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -110,7 +104,7 @@ export default function Home() {
     { id: "5", name: "Chinese" },
     { id: "6", name: "Mexican" },
   ];
-  const filteredItems = foodItems
+  const filteredItems = place
     .filter((item) => (selectedType ? item.type === selectedType : true))
     .filter((item) =>
       search
@@ -137,7 +131,7 @@ export default function Home() {
             <Text style={styles.locationText}>{location}</Text>
             <TextInput
               style={styles.searchText}
-              placeholder={"Kuchnia Polska"}
+              placeholder={"Kuchnia u Doroty"}
               value={search}
               onChangeText={setSearch}
               maxLength={20}
@@ -145,14 +139,14 @@ export default function Home() {
             />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity>
+        <Link href={"/profile"}>
           <Ionicons
             name="person-circle-outline"
             size={50}
             color="#0C0C0C"
             style={styles.icon}
           />
-        </TouchableOpacity>
+        </Link>
       </View>
       <View style={styles.locationContainer}></View>
       <Text style={styles.heading}>Popular Food</Text>
@@ -182,19 +176,11 @@ export default function Home() {
           .filter((item) => !selectedType || item.type === selectedType)
           .slice(0, visibleItems)}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <RestaurantCard
-            name={item.name}
-            image={item.image}
-            rating={item.rating !== undefined ? item.rating : 0}
-            reviewCount={item.reviewCount !== undefined ? item.reviewCount : 0}
-            type={item.type}
-            location={item.location}
-          />
-        )}
+        renderItem={({ item }) => <RestaurantCard place={item} />}
         onEndReached={loadMoreItems}
         onEndReachedThreshold={0.5}
         contentContainerStyle={styles.scrollView}
+        showsVerticalScrollIndicator={false}
       />
       {showMap && (
         <View style={styles.mapContainer}>
