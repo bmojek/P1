@@ -1,42 +1,41 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { Link } from "expo-router";
+import { Place } from "@/types/global.types";
 
 const screenWidth = Dimensions.get("window").width;
 
 type RestaurantCardProps = {
-  name: string;
-  image: string;
-  rating: number;
-  reviewCount: number;
-  type: string;
-  location: string;
+  place: Place;
 };
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({
-  name,
-  image,
-  rating,
-  reviewCount,
-  type,
-  location,
-}) => {
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ place }) => {
   return (
-    <View style={styles.card}>
-      <Image source={{ uri: image }} style={styles.image} />
+    <Link
+      href={{
+        pathname: "/Details",
+        params: {
+          place: JSON.stringify(place),
+        },
+      }}
+    >
+      <View style={styles.card}>
+        <Image source={{ uri: place.image }} style={styles.image} />
 
-      <View style={styles.infoContainer}>
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.rating}>
-          <Ionicons name="star" size={16} color="#FFD700" /> {rating} (
-          {reviewCount} reviews) · {type}
-        </Text>
-        <Text style={styles.location}>
-          <Ionicons name="location-outline" size={16} color="#a0a0a0" />{" "}
-          {location}
-        </Text>
+        <View style={styles.infoContainer}>
+          <Text style={styles.name}>{place.name}</Text>
+          <Text style={styles.rating}>
+            <Ionicons name="star" size={16} color="#FFD700" /> {place.rating} (
+            {place.reviewCount} reviews) · {place.type}
+          </Text>
+          <Text style={styles.location}>
+            <Ionicons name="location-outline" size={16} color="#a0a0a0" />{" "}
+            {place.location}
+          </Text>
+        </View>
       </View>
-    </View>
+    </Link>
   );
 };
 

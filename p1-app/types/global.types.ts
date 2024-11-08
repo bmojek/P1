@@ -1,4 +1,16 @@
-interface reviews {
+export interface User {
+  id: string;
+  username: string;
+  password: string;
+  email: string;
+}
+
+export interface RegisterResponse {
+  status: number;
+  user?: User;
+  message?: string;
+}
+export interface reviews {
   review_id: string;
   rating: number;
   name: string;
@@ -35,4 +47,17 @@ export interface Place {
   desc: string | null;
   reviews?: reviews[];
   images?: images[];
+}
+
+export interface ApiContextType {
+  users: User[];
+  place: Place[];
+  register: (
+    login: string,
+    password: string,
+    email: string
+  ) => Promise<RegisterResponse>;
+  login: (login: string, password: string) => Promise<User | null>;
+  getUserList: () => Promise<void>;
+  fetchPlaces: () => Promise<void>;
 }

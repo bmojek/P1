@@ -1,28 +1,11 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
-interface User {
-  id: string;
-  username: string;
-  password: string;
-  email: string;
-}
-
-interface RegisterResponse {
-  status: number;
-  user?: User;
-  message?: string;
-}
-
-interface ApiContextType {
-  users: User[];
-  register: (
-    login: string,
-    password: string,
-    email: string
-  ) => Promise<RegisterResponse>;
-  login: (login: string, password: string) => Promise<User | null>;
-  getUserList: () => Promise<void>;
-}
+import {
+  Place,
+  User,
+  ApiContextType,
+  RegisterResponse,
+} from "@/types/global.types";
 
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
 
@@ -30,6 +13,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [users, setUsers] = useState<User[]>([]);
+  const [place, setPlace] = useState<Place[]>([]);
 
   const register = async (
     login: string,
@@ -81,7 +65,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         const data = await response.json();
         return data.user as User;
       } else {
-        console.error("Invalid credentials", response.statusText);
         return null;
       }
     } catch (error) {
@@ -107,8 +90,25 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  const fetchPlaces = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/places");
+      if (response.ok) {
+        const data = await response.json();
+        setPlace(data);
+      } else {
+        console.error("Error fetching places:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error fetching places:", error);
+      alert("turn on api");
+    }
+  };
+
   return (
-    <ApiContext.Provider value={{ users, register, login, getUserList }}>
+    <ApiContext.Provider
+      value={{ users, place, register, login, getUserList, fetchPlaces }}
+    >
       {children}
     </ApiContext.Provider>
   );

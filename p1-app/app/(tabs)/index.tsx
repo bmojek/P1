@@ -6,6 +6,7 @@ import {
   View,
   FlatList,
   Alert,
+  TextInput,
 } from "react-native";
 import { useState, useEffect } from "react";
 import * as Font from "expo-font";
@@ -15,6 +16,8 @@ import { Entypo } from "@expo/vector-icons";
 import RestaurantCard from "@/components/RestaurantCard";
 import * as Location from "expo-location";
 import MapView, { Marker } from "react-native-maps";
+import { useApi } from "@/contexts/apiContext";
+import { Link } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -22,28 +25,22 @@ type Category = {
   id: string;
   name: string;
 };
-type FoodItem = {
-  name: string;
-  image: string;
-  rating: number;
-  reviewCount: number;
-  type: string;
-  location: string;
-};
 
-export default function TabTwoScreen() {
+export default function Home() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [location, setLocation] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
-  const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
   const [visibleItems, setVisibleItems] = useState(5);
+  const [selectedType, setSelectedType] = useState("");
+  const { place, fetchPlaces } = useApi();
+  const [search, setSearch] = useState("");
+
   const [mapRegion, setMapRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421,
   });
-  const [selectedType, setSelectedType] = useState("");
 
   const fetchFonts = () => {
     return Font.loadAsync({
@@ -72,33 +69,8 @@ export default function TabTwoScreen() {
       });
       setLocation("Cracow");
     })();
-    fetch("http://localhost:3000/places")
-      .then((response) => response.json())
-      .then((data) => {
-        setFoodItems(data);
-      })
-      .catch((error) => {
-        setFoodItems([
-          {
-            name: "Ichiraku Ramen",
-            image:
-              "https://res.cloudinary.com/dld13appb/image/upload/v1729857749/csm_1101-recipe-page-Authentic-Japanese-soy-sauce-ramen_desktop_7e407b8b49_ouhrbb.webp",
-            rating: 4.8,
-            reviewCount: 4200,
-            type: "Chinese",
-            location: "123 Sushi St",
-          },
-          {
-            name: "PizzaNewYork",
-            image:
-              "https://res.cloudinary.com/dld13appb/image/upload/v1729857409/pizza_fqvhnd.jpg",
-            rating: 4.6,
-            reviewCount: 4600,
-            type: "Italian",
-            location: "456 pizza Ave",
-          },
-        ]);
-      });
+
+    fetchPlaces();
   }, []);
 
   useEffect(() => {
@@ -132,6 +104,16 @@ export default function TabTwoScreen() {
     { id: "5", name: "Chinese" },
     { id: "6", name: "Mexican" },
   ];
+  const filteredItems = place
+    .filter((item) => (selectedType ? item.type === selectedType : true))
+    .filter((item) =>
+      search
+        ? item.name.toLowerCase().includes(search.toLowerCase()) ||
+          item.type.toLowerCase().includes(search.toLowerCase()) ||
+          item.location.toLowerCase().includes(search.toLowerCase())
+        : true
+    )
+    .slice(0, visibleItems);
 
   return (
     <View style={styles.container}>
@@ -147,16 +129,24 @@ export default function TabTwoScreen() {
           >
             <Ionicons name="location-outline" size={20} color="#000000" />
             <Text style={styles.locationText}>{location}</Text>
+            <TextInput
+              style={styles.searchText}
+              placeholder={"Kuchnia Polska"}
+              value={search}
+              onChangeText={setSearch}
+              maxLength={20}
+              placeholderTextColor={"#444"}
+            />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity>
+        <Link href={"/profile"}>
           <Ionicons
             name="person-circle-outline"
             size={50}
             color="#0C0C0C"
             style={styles.icon}
           />
-        </TouchableOpacity>
+        </Link>
       </View>
       <View style={styles.locationContainer}></View>
       <Text style={styles.heading}>Popular Food</Text>
@@ -182,20 +172,11 @@ export default function TabTwoScreen() {
         />
       </View>
       <FlatList
-        data={foodItems
+        data={filteredItems
           .filter((item) => !selectedType || item.type === selectedType)
           .slice(0, visibleItems)}
         keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <RestaurantCard
-            name={item.name}
-            image={item.image}
-            rating={item.rating !== undefined ? item.rating : 0}
-            reviewCount={item.reviewCount !== undefined ? item.reviewCount : 0}
-            type={item.type}
-            location={item.location}
-          />
-        )}
+        renderItem={({ item }) => <RestaurantCard place={item} />}
         onEndReached={loadMoreItems}
         onEndReachedThreshold={0.5}
         contentContainerStyle={styles.scrollView}
@@ -346,5 +327,11 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     alignItems: "center",
     backgroundColor: "#F4C430",
+  },
+  searchText: {
+    marginLeft: 10,
+    marginTop: 2,
+    fontFamily: "SpaceMono-Regular",
+    fontSize: 12.5,
   },
 });

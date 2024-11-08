@@ -29,6 +29,9 @@ data.map((data) => {
     reviewCount: data.reviews,
     type: data.main_category,
     tags: data.categories,
+    desc: data.description,
+    reviews: data.featured_reviews,
+    images: data.images,
   });
 });
 
