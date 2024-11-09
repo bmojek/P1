@@ -60,6 +60,15 @@ function RootLayoutNav() {
               title: "",
             }}
           />
+          <Stack.Screen
+            name="ReviewAdd"
+            options={{
+              presentation: "card",
+              headerBackTitleVisible: false,
+              headerTransparent: true,
+              title: "",
+            }}
+          />
         </Stack>
       </ThemeProvider>
     </ApiProvider>

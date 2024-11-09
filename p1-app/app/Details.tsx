@@ -9,7 +9,7 @@ import {
   ImageBackground,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { useLocalSearchParams } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 import { Place } from "@/types/global.types";
 import { SafeAreaView } from "react-native-safe-area-context";
 const Details = () => {
@@ -123,7 +123,11 @@ const Details = () => {
               </ScrollView>
             </View>
             <TouchableOpacity style={styles.buttonContainer}>
-              <Text style={styles.buttonText}>Add Review</Text>
+              <Link
+                href={{ pathname: "ReviewAdd", params: { name: placeJ.name } }}
+              >
+                <Text style={styles.buttonText}>Add Review</Text>
+              </Link>
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
