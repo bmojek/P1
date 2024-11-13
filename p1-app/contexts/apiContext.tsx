@@ -1,12 +1,14 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
-
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import {
   Place,
   User,
   ApiContextType,
   RegisterResponse,
 } from "@/types/global.types";
+import { app } from "@/firebaseConfig";
 
+const dbFirebase = getFirestore(app);
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
 
 export const ApiProvider: React.FC<{ children: ReactNode }> = ({
@@ -90,18 +92,34 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  // const fetchPlaces = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/places");
+  //     if (response.ok) {
+  //       const data = await response.json();
+  //       setPlace(data);
+  //     } else {
+  //       console.error("Error fetching places:", response.statusText);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching places:", error);
+  //     alert("turn on api");
+  //   }
+  // };
   const fetchPlaces = async () => {
     try {
-      const response = await fetch("http://localhost:3000/places");
-      if (response.ok) {
-        const data = await response.json();
-        setPlace(data);
+      const placesCollection = collection(dbFirebase, "places");
+      const placesSnapshot = await getDocs(placesCollection);
+      const placesData = placesSnapshot.docs.map((doc) => doc.data() as Place);
+
+      if (placesData.length > 0) {
+        setPlace(placesData);
       } else {
-        console.error("Error fetching places:", response.statusText);
+        console.warn("No places data found in Firestore.");
       }
     } catch (error) {
-      console.error("Error fetching places:", error);
-      alert("turn on api");
+      console.error("Error fetching places from Firestore:", error);
+      alert("Make sure Firebase is connected and places collection exists.");
     }
   };
 

@@ -1,0 +1,67 @@
+# General Ignore Rules for All Subdirectories
+
+# macOS and system files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Node.js Specific Ignore Rules (for p1-api)
+
+p1-api/node_modules/
+p1-api/dist/
+p1-api/build/
+
+# React Native + Expo Specific Ignore Rules (for p1-app)
+
+# Dependencies
+p1-app/node_modules/
+
+# Expo-related directories
+p1-app/.expo/
+p1-app/dist/
+p1-app/web-build/
+
+# Native app files (React Native)
+p1-app/android/app/build/
+p1-app/android/.gradle/
+p1-app/android/.cxx/
+p1-app/ios/Pods/
+p1-app/ios/build/
+p1-app/ios/*.xcworkspace
+p1-app/ios/*.xcuserstate
+p1-app/ios/*.xcodeproj/project.xcworkspace/
+p1-app/ios/DerivedData/
+p1-app/ios/xcuserdata/
+
+# Metro
+p1-app/.metro-health-check*
+
+# Sensitive keys and certificates
+p1-app/*.jks
+p1-app/*.p8
+p1-app/*.p12
+p1-app/*.key
+p1-app/*.mobileprovision
+p1-app/*.pem
+
+# TypeScript build info
+p1-app/*.tsbuildinfo
+
+# Expo generated files
+p1-app/expo-env.d.ts
