@@ -153,7 +153,7 @@ export default function Home() {
             />
           </View>
         </View>
-        <Link href={"/modal"}>
+        <Link href={"/Profile"}>
           <Ionicons
             name="person-circle-outline"
             size={50}
@@ -188,6 +188,7 @@ export default function Home() {
       {filteredItems.length > 0 ? (
         <FlatList
           data={filteredItems
+            .reverse()
             .filter((item) => !selectedType || item.type === selectedType)
             .slice(0, visibleItems)}
           keyExtractor={(item, index) => index.toString()}

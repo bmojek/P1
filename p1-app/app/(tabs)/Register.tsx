@@ -13,18 +13,6 @@ import * as SplashScreen from "expo-splash-screen";
 import { useApi } from "@/contexts/apiContext";
 
 SplashScreen.preventAutoHideAsync();
-interface RegisterResponse {
-  status: number;
-  user?: User;
-  message?: string;
-}
-
-interface User {
-  id: string;
-  username: string;
-  password: string;
-  email: string;
-}
 
 export default function TabTwoScreen() {
   const [isChecked, setChecked] = useState(false);
@@ -95,23 +83,11 @@ export default function TabTwoScreen() {
     const isEmailValid = validateEmail();
 
     if (isUsernameValid && isPasswordValid && isEmailValid && isChecked) {
-      register(username, password, email)
-        .then((response) => {
-          if (response.status === 409) {
-            alert("Username is already taken");
-          } else if (response.status === 200) {
-            setUsername("");
-            setEmail("");
-            setPassword("");
-            setChecked(false);
-            alert("Successful Register");
-          } else {
-            alert("Unable to Register");
-          }
-        })
-        .catch((err) => {
-          alert("Unable to Register");
-        });
+      register(username, password, email);
+      setEmail("");
+      setPassword("");
+      setChecked(false);
+      setUsername("");
     } else {
       if (!isChecked) {
         alert("You must agree to the terms and conditions");
@@ -148,6 +124,17 @@ export default function TabTwoScreen() {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
+          placeholder="Email"
+          placeholderTextColor="#0C0C0C"
+          value={email}
+          onChangeText={setEmail}
+          onBlur={validateEmail}
+        />
+        {emailError ? <Text style={styles.errorText}>{emailError}</Text> : null}
+      </View>
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.input}
           placeholder="Password"
           placeholderTextColor="#0C0C0C"
           secureTextEntry={true}
@@ -159,17 +146,7 @@ export default function TabTwoScreen() {
           <Text style={styles.errorText}>{passwordError}</Text>
         ) : null}
       </View>
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Email"
-          placeholderTextColor="#0C0C0C"
-          value={email}
-          onChangeText={setEmail}
-          onBlur={validateEmail}
-        />
-        {emailError ? <Text style={styles.errorText}>{emailError}</Text> : null}
-      </View>
+
       <View style={styles.checkboxContainer}>
         <Checkbox
           style={styles.checkbox}

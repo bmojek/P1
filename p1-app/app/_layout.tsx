@@ -78,6 +78,16 @@ function RootLayoutNav() {
               title: "",
             }}
           />
+
+          <Stack.Screen
+            name="Profile"
+            options={{
+              presentation: "card",
+              headerBackTitleVisible: false,
+              headerTransparent: true,
+              title: "",
+            }}
+          />
         </Stack>
       </ThemeProvider>
     </ApiProvider>

@@ -50,14 +50,15 @@ export interface Place {
 }
 
 export interface ApiContextType {
-  users: User[];
   place: Place[];
-  register: (
-    login: string,
-    password: string,
-    email: string
-  ) => Promise<RegisterResponse>;
-  login: (login: string, password: string) => Promise<User | null>;
-  getUserList: () => Promise<void>;
+  register: (login: string, password: string, email: string) => Promise<void>;
+  addComment: (
+    id: string,
+    rating: string,
+    name: string,
+    review_text: string,
+    review_photos: string[]
+  ) => Promise<void>;
+  login: (email: string, password: string) => Promise<void>;
   fetchPlaces: () => Promise<void>;
 }

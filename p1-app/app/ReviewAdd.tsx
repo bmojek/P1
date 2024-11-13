@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -9,30 +9,38 @@ import {
   ScrollView,
   TextInput,
   Alert,
+  SafeAreaView,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as ImagePicker from "expo-image-picker";
 import { useLocalSearchParams, router } from "expo-router";
-
-// ocenianie jedzenia??
-// tma gdzie john doe Ocen wybrane jedzenie
-// gdzie Jane Smith zdjecia z jedzeniem i slider
+import { useApi } from "@/contexts/apiContext";
+import { getAuth } from "firebase/auth";
 
 const Reviewadd = () => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
-  const { name } = useLocalSearchParams();
-
+  const { name, id } = useLocalSearchParams();
+  const { addComment } = useApi();
   const handleRating = (newRating: number) => {
     setRating(newRating);
   };
 
+  const user = getAuth().currentUser;
+
   const handleComment = () => {
-    if (!comment || rating === 0) {
+    if (!comment || rating === 0 || user == null) {
       Alert.alert("Please enter a comment and select a rating.");
       return;
     } else {
+      addComment(
+        id.toString(),
+        rating.toString(),
+        user.displayName ?? "Anonymus",
+        comment,
+        selectedImages
+      );
       setComment("");
       setSelectedImages([]);
       setRating(0);
@@ -77,7 +85,7 @@ const Reviewadd = () => {
         colors={["#FAF0E6", "transparent"]}
         style={styles.gradient}
       >
-        <View style={styles.overlay}>
+        <SafeAreaView style={styles.overlay}>
           <Text style={styles.ratings}>Ratings & Reviews</Text>
           <Text style={styles.name}>{name}</Text>
           <View style={styles.starsContainer}>
@@ -123,7 +131,7 @@ const Reviewadd = () => {
               </TouchableOpacity>
             </View>
           </View>
-        </View>
+        </SafeAreaView>
       </LinearGradient>
     </ImageBackground>
   );
@@ -185,7 +193,7 @@ const styles = StyleSheet.create({
   starsContainer: {
     flexDirection: "row",
     justifyContent: "center",
-    marginVertical: 20,
+    marginVertical: 5,
     top: 50,
   },
   star: {

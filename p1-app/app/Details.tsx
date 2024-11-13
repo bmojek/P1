@@ -13,9 +13,12 @@ import { Link, useLocalSearchParams } from "expo-router";
 import { Place } from "@/types/global.types";
 import { SafeAreaView } from "react-native-safe-area-context";
 import MapView, { Marker } from "react-native-maps";
+import { getAuth } from "firebase/auth";
 const Details = () => {
   const { place } = useLocalSearchParams();
   const [expandText, setExpandText] = useState(false);
+  const auth = getAuth();
+  const user = auth.currentUser;
   let placeJ;
   if (typeof place === "string") {
     placeJ = JSON.parse(place) as Place;
@@ -100,7 +103,7 @@ const Details = () => {
                 contentContainerStyle={styles.reviewContainer}
                 showsVerticalScrollIndicator={false}
               >
-                {placeJ.reviews?.map((review, index) => (
+                {placeJ.reviews?.reverse().map((review, index) => (
                   <View key={index} style={styles.reviewItem}>
                     <View style={styles.reviewHeader}>
                       <Text style={styles.reviewName}>{review.name}</Text>
@@ -125,7 +128,10 @@ const Details = () => {
             </View>
             <TouchableOpacity style={styles.buttonContainer}>
               <Link
-                href={{ pathname: "/ReviewAdd", params: { name: placeJ.name } }}
+                href={{
+                  pathname: user ? "/ReviewAdd" : "/Profile",
+                  params: { name: placeJ.name, id: placeJ.id },
+                }}
               >
                 <Text style={styles.buttonText}>Add Review</Text>
               </Link>

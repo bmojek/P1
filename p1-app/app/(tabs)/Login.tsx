@@ -11,16 +11,17 @@ import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import React from "react";
-
+import { useApi } from "@/contexts/apiContext";
+import { Link } from "expo-router";
 SplashScreen.preventAutoHideAsync();
 
 export default function TabThreeScreen() {
   const [fontLoaded, setFontLoaded] = useState(false);
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [usernameError, setUsernameError] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-
+  const { login } = useApi();
   const fetchFonts = () => {
     return Font.loadAsync({
       "AmaticSC-Regular": require("../../assets/fonts/AmaticSC-Regular.ttf"),
@@ -41,12 +42,17 @@ export default function TabThreeScreen() {
     }
   }, [fontLoaded]);
 
-  const validateUsername = () => {
-    if (!username) {
-      setUsernameError("Username is required");
+  const validateEmail = () => {
+    const emailRegex = /\S+@\S+\.\S+/;
+    if (!email) {
+      setEmailError("Email is required");
       return false;
     }
-    setUsernameError("");
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return false;
+    }
+    setEmailError("");
     return true;
   };
 
@@ -60,32 +66,16 @@ export default function TabThreeScreen() {
   };
 
   const handleLogin = async () => {
-    const isUsernameValid = validateUsername();
+    const isEmailValid = validateEmail();
     const isPasswordValid = validatePassword();
 
-    if (isUsernameValid && isPasswordValid) {
+    if (isEmailValid && isPasswordValid) {
       try {
-        const response = await fetch("http://localhost:3000/login", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            login: username,
-            password: password,
-          }),
-        });
-
-        if (response.status === 200) {
-          const data = await response.json();
-          alert("Login successful Welcome " + data.user.username);
-          setUsername("");
-          setPassword("");
-        } else {
-          alert(`Invalid credentials`);
-        }
+        login(email, password);
+        setEmail("");
+        setPassword("");
       } catch (error) {
-        alert("Error logging");
+        alert("Error logging in");
       }
     }
   };
@@ -107,15 +97,13 @@ export default function TabThreeScreen() {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Username"
+          placeholder="Email"
           placeholderTextColor="#0C0C0C"
-          value={username}
-          onChangeText={setUsername}
-          onBlur={validateUsername}
+          value={email}
+          onChangeText={setEmail}
+          onBlur={validateEmail}
         />
-        {usernameError ? (
-          <Text style={styles.errorText}>{usernameError}</Text>
-        ) : null}
+        {emailError ? <Text style={styles.errorText}>{emailError}</Text> : null}
       </View>
       <View style={styles.inputContainer}>
         <TextInput
@@ -136,9 +124,9 @@ export default function TabThreeScreen() {
       </TouchableOpacity>
       <View style={styles.forgotPasswordContainer}>
         <Text style={styles.label}>Forgot Password?</Text>
-        <TouchableOpacity>
+        <Link href={"/Register"}>
           <Text style={styles.labelBold}>Recover</Text>
-        </TouchableOpacity>
+        </Link>
       </View>
       <View style={styles.newAccountContainer}>
         <Text style={styles.newAccountText}>New to GastroSpace?</Text>
