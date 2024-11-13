@@ -32,6 +32,7 @@ data.map((data) => {
     desc: data.description,
     reviews: data.featured_reviews,
     images: data.images,
+    locationCords: data.coordinates,
   });
 });
 

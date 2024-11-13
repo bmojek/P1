@@ -39,7 +39,7 @@ export interface Place {
   name: string;
   image: string;
   location: string;
-  locationCords?: { lat: number; lon: number };
+  locationCords: { latitude: number; longitude: number };
   reviewCount: number;
   rating: string;
   type: string;

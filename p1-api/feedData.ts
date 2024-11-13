@@ -18,7 +18,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,6",
-    address: "Szpitalna 40, 31-024 Krakow",
+    address: "Szpitalna 40, 31-024 Kraków",
     link: "https://www.google.com/maps/place/Szalone+Widelce/data=!4m7!3m6!1s0x47165b10471aac5d:0xef2c122a238eecc7!8m2!3d50.0643181!4d19.942157!16s%2Fg%2F1q62bwg9p!19sChIJXawaRxBbFkcRx-yOIyoSLO8?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 177,
@@ -105,7 +105,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/101453963871954029890?hl=pl",
         review_text:
-          "Bardzo dobre jedzenie. Porcje spore. Ceny bardzo przystepne. Jedlismy juz tu wielokrotnie obiady. Pierwszy raz skorzystalismy z oferty sniadaniowej. Mozna wybrac ciekawe zestawy sniadaniowej w atrakcyjnych cenach, jak na Krakow. Zestawy spore i bardzo dobre. Obsluga mila, sprawna i szybka. Swojski chleb, pierwsza klasa. Juz dawno nie jadlem tak dobrego pieczywa. Nie ma do czego sie przyczepic. Polecam kazdemu odwiedzenie tej restauracji. Menu jest bogate, stolikow sporo, wiec raczej nie bedzie trzeba czekac na stolik. Bliska okolica Rynku, wiec warto sie przejsc tutaj, niz korzystac z zatloczonych knajp na rynku.",
+          "Bardzo dobre jedzenie. Porcje spore. Ceny bardzo przystepne. Jedlismy juz tu wielokrotnie obiady. Pierwszy raz skorzystalismy z oferty sniadaniowej. Mozna wybrac ciekawe zestawy sniadaniowej w atrakcyjnych cenach, jak na Kraków. Zestawy spore i bardzo dobre. Obsluga mila, sprawna i szybka. Swojski chleb, pierwsza klasa. Juz dawno nie jadlem tak dobrego pieczywa. Nie ma do czego sie przyczepic. Polecam kazdemu odwiedzenie tej restauracji. Menu jest bogate, stolikow sporo, wiec raczej nie bedzie trzeba czekac na stolik. Bliska okolica Rynku, wiec warto sie przejsc tutaj, niz korzystac z zatloczonych knajp na rynku.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-29T09:37:31",
         response_from_owner_text: null,
@@ -149,7 +149,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/100382308651356726502?hl=pl",
         review_text:
-          "O Szalonych Widelcach przeczytalam w necie i od razu chcialam do niej przyjechac, by uczcic sukces zawodowy. Swietne miejsce, choc nie wyglada, chyba, ze ktos lubi przasne wystroje. Jest za to czysciutko i klimatycznie. Ale jedzeniu niczego nie da sie zarzucic. No, chyba, ze sie ma pecha, jak ja tego dnia:) Zlakomilam sie na danie lunchowe: zupe cebulowa z grzankami oraz kotlet schabowy z kapusta zasmazana (cale danie z kompotem 49,90) . Gorszego nie jadlam; Kucharz wrzucil mieso na zimny tluszcz i panierka zlazla z calego kotleta ukazujac sinego nagusa, brrr. Nie zjadlam i poprosilam Kelnerke (przemila), aby podala moje dane kucharzowi, by przyjechal nauczyc sie smazyc kotlety na goracym smalcu, ale do tej pory nie dojechal.\nZa to na rachunku nie policzono nam 2 herbat (po 25,90 kazda), a wiec jak najbardziej uklon w strone goscia, a ja chyle czolo wobec gestu.\nPozostali trafili w 10. Byl wiec wielki pstrag w masle z surowkami i frytkami (56zl), swiezy, miekki, bez osci, doskonale przyprawiony; olbrzymie zeberka w miodzie (71,40zl), ktore pokonalo Mame, ale dostala na wynos:) - kostek niewiele, miesa mnostwo, samo odchodzilo od kosci i do tego frytki i kiszone ogorki - sporo; kolejne zebro wielgasne na slodko-ostro (71,40)- rownie wyborne, miekkie, z duza iloscia ogorkow kiszonych i ziemniakow. Potem jedlismy jeszcze w dwoch innych restauracjach pstragi i zebra - nigdzie tak smaczne! Polecamy. Na pewno wrocimy. Dla nas najlepsza miejscowka w Krakowie!",
+          "O Szalonych Widelcach przeczytalam w necie i od razu chcialam do niej przyjechac, by uczcic sukces zawodowy. Swietne miejsce, choc nie wyglada, chyba, ze ktos lubi przasne wystroje. Jest za to czysciutko i klimatycznie. Ale jedzeniu niczego nie da sie zarzucic. No, chyba, ze sie ma pecha, jak ja tego dnia:) Zlakomilam sie na danie lunchowe: zupe cebulowa z grzankami oraz kotlet schabowy z kapusta zasmazana (cale danie z kompotem 49,90) . Gorszego nie jadlam; Kucharz wrzucil mieso na zimny tluszcz i panierka zlazla z calego kotleta ukazujac sinego nagusa, brrr. Nie zjadlam i poprosilam Kelnerke (przemila), aby podala moje dane kucharzowi, by przyjechal nauczyc sie smazyc kotlety na goracym smalcu, ale do tej pory nie dojechal.\nZa to na rachunku nie policzono nam 2 herbat (po 25,90 kazda), a wiec jak najbardziej uklon w strone goscia, a ja chyle czolo wobec gestu.\nPozostali trafili w 10. Byl wiec wielki pstrag w masle z surowkami i frytkami (56zl), swiezy, miekki, bez osci, doskonale przyprawiony; olbrzymie zeberka w miodzie (71,40zl), ktore pokonalo Mame, ale dostala na wynos:) - kostek niewiele, miesa mnostwo, samo odchodzilo od kosci i do tego frytki i kiszone ogorki - sporo; kolejne zebro wielgasne na slodko-ostro (71,40)- rownie wyborne, miekkie, z duza iloscia ogorkow kiszonych i ziemniakow. Potem jedlismy jeszcze w dwoch innych restauracjach pstragi i zebra - nigdzie tak smaczne! Polecamy. Na pewno wrocimy. Dla nas najlepsza miejscowka w Krakówie!",
         published_at: "tydzien temu",
         published_at_date: "2024-10-24T21:34:15",
         response_from_owner_text: null,
@@ -176,7 +176,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103264674308781079514?hl=pl",
         review_text:
-          "Duzy wybor dan w rozsadnych cenach jak na Krakow. Bardzo dobra i szybka obsluga, fajnie urzadzone wnetrze. Co do jedzenia to zurek bardzo dobry, pierogi rowniez super, taka jest opinia mojej rodzinki. Ja wybralem schabowego z koscia, byl akurat festiwal schabowego, powiem, ze byl dosyc smaczny ale mam dwa zastrzezenia, pierwsze to byl zbyt rozbity przez co cienki i dosyc wysuszony (to nie winerschnicel) a z koscia powinien byc soczysty, drugie to byl dosyc slabo przyprawiony, za malo slony, pieprzu w ogole nie czulem ale to juz kwestia indywidualnych smakow. Porcje bardzo duze! Polecam jednak restauracje, zreszta widac ze cieszy sie duza popularnoscia bo kolejka do wejscia spora, nam sie udalo wejsc praktycznie od razu z ulicy ale chyba trafilismy na dobry moment mimo 15 w sobote.",
+          "Duzy wybor dan w rozsadnych cenach jak na Kraków. Bardzo dobra i szybka obsluga, fajnie urzadzone wnetrze. Co do jedzenia to zurek bardzo dobry, pierogi rowniez super, taka jest opinia mojej rodzinki. Ja wybralem schabowego z koscia, byl akurat festiwal schabowego, powiem, ze byl dosyc smaczny ale mam dwa zastrzezenia, pierwsze to byl zbyt rozbity przez co cienki i dosyc wysuszony (to nie winerschnicel) a z koscia powinien byc soczysty, drugie to byl dosyc slabo przyprawiony, za malo slony, pieprzu w ogole nie czulem ale to juz kwestia indywidualnych smakow. Porcje bardzo duze! Polecam jednak restauracje, zreszta widac ze cieszy sie duza popularnoscia bo kolejka do wejscia spora, nam sie udalo wejsc praktycznie od razu z ulicy ale chyba trafilismy na dobry moment mimo 15 w sobote.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-28T18:07:16",
         response_from_owner_text: null,
@@ -275,7 +275,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102026477972533011874?hl=pl",
         review_text:
-          "Polecam odwiedzic to miejsce, niestety nie mam porownania z innymi restauracjami na starym rynku w Krakowie, ale jedzenie uwazam za dobre (spore porcje), ceny troche wysokie, ale jest to centrum miasta. Na poczekanie dostaje sie chleb ze smalcem.",
+          "Polecam odwiedzic to miejsce, niestety nie mam porownania z innymi restauracjami na starym rynku w Krakówie, ale jedzenie uwazam za dobre (spore porcje), ceny troche wysokie, ale jest to centrum miasta. Na poczekanie dostaje sie chleb ze smalcem.",
         published_at: "tydzien temu",
         published_at_date: "2024-10-22T14:56:45",
         response_from_owner_text: null,
@@ -328,7 +328,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja", "Restauracja obiadowa", "Kuchnia polska"],
     rating: "4,5",
-    address: "Sienna 12, 31-041 Krakow",
+    address: "Sienna 12, 31-041 Kraków",
     link: "https://www.google.com/maps/place/Restauracja+Kogel+Mogel/data=!4m7!3m6!1s0x47165b122c2089a3:0x662c908600c09ae!8m2!3d50.0606555!4d19.940787!16s%2Fg%2F119vl0_ms!19sChIJo4kgLBJbFkcRrgkMYAjJYgY?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 76,
@@ -441,7 +441,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/114105537317824517643?hl=pl",
         review_text:
-          "Mocna przereklamowana restauracja w centrum Krakowa, ale chyba nie tylko ja tak uwazam, poniewaz pusto, pojedynczy goscie. Wszystkie stoliki w porze obiadowej w sobote wolne. Jedzenie slabiutkie. Rekomendowana zalewajka, bez smaku i jak zwykle w nowej modzie (tak sie nazywa ta oszczednosc pracy) ziemniaki nieobierane. Twarde, podobno z kwasnosci zupy, nie wiem czy to prawda. Pierogi z cielecina i sosem kurkowym, dobre i tylko dobre. Placki ziemniaczane, tez rekomendowane, male i powinny sie nazywac ziemniako-podobne. Wiecej w nich maki niz ziemniakow. Ciezkie i niesmaczne. Wszystko nieslone. Najlepszy byl Hugo Spritz - super, tylko ma jedna wade zauwazalna przy placeniu, 86 zl. Ja rozumiem, ze napoj alkoholowy jest drogi, ale az tak. Obsluga na wysokim poziomie ale nie najwyzszym. Ubikacja czysta, ale mala, ciasna. Generalnie restauracji nie polecam ze wzgledu na niesmaczne jedzenie oraz bardzo wysokie ceny. W Krakowie jest mnostwo lepszych lokali z nizszymi cenami.",
+          "Mocna przereklamowana restauracja w centrum Krakowa, ale chyba nie tylko ja tak uwazam, poniewaz pusto, pojedynczy goscie. Wszystkie stoliki w porze obiadowej w sobote wolne. Jedzenie slabiutkie. Rekomendowana zalewajka, bez smaku i jak zwykle w nowej modzie (tak sie nazywa ta oszczednosc pracy) ziemniaki nieobierane. Twarde, podobno z kwasnosci zupy, nie wiem czy to prawda. Pierogi z cielecina i sosem kurkowym, dobre i tylko dobre. Placki ziemniaczane, tez rekomendowane, male i powinny sie nazywac ziemniako-podobne. Wiecej w nich maki niz ziemniakow. Ciezkie i niesmaczne. Wszystko nieslone. Najlepszy byl Hugo Spritz - super, tylko ma jedna wade zauwazalna przy placeniu, 86 zl. Ja rozumiem, ze napoj alkoholowy jest drogi, ale az tak. Obsluga na wysokim poziomie ale nie najwyzszym. Ubikacja czysta, ale mala, ciasna. Generalnie restauracji nie polecam ze wzgledu na niesmaczne jedzenie oraz bardzo wysokie ceny. W Krakówie jest mnostwo lepszych lokali z nizszymi cenami.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-03T18:31:50",
         response_from_owner_text: null,
@@ -639,7 +639,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,6",
-    address: "Augustianska 4, 31-064 Krakow",
+    address: "Augustianska 4, 31-064 Kraków",
     link: "https://www.google.com/maps/place/Kuchnia+u+Doroty/data=!4m7!3m6!1s0x47165b6bda002961:0x67a75e3c47675fc5!8m2!3d50.0506239!4d19.9412377!16s%2Fg%2F113dk116g!19sChIJYSkA2mtbFkcRxV9nRzxep2c?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 168,
@@ -802,7 +802,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102072604124859675844?hl=pl",
         review_text:
-          "Super miejsce w Krakowie na obiad. Jedzenie wyjatkowe. Klimat lokalu super. Warto sobie zarezerwowac stolik wczesniej bo jak nie to trzeba bedzie chwile poczekac. Golabki w sosie pomidorowym palce lizac. Flaczki super a placki ziemniaczane przepyszne. Naprawde goraco polecam to miejsce.",
+          "Super miejsce w Krakówie na obiad. Jedzenie wyjatkowe. Klimat lokalu super. Warto sobie zarezerwowac stolik wczesniej bo jak nie to trzeba bedzie chwile poczekac. Golabki w sosie pomidorowym palce lizac. Flaczki super a placki ziemniaczane przepyszne. Naprawde goraco polecam to miejsce.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-29T10:24:07",
         response_from_owner_text: null,
@@ -906,7 +906,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/114998291614156586660?hl=pl",
         review_text:
-          "Miejsce z dobrym, domowym jedzeniem. Botwinka najlepsza jaka jadlam! Pstrag z frytkami swietny, niestety nie dalo sie zjesc calosci. Lepiej ogarnac jedno danie, bo dwa to za duzo  Tutaj na pewno wyjdzie sie najedzonym. Stosunek jakosci do ceny super. To bedzie moje obowiazkowe jedzonko w Krakowie.",
+          "Miejsce z dobrym, domowym jedzeniem. Botwinka najlepsza jaka jadlam! Pstrag z frytkami swietny, niestety nie dalo sie zjesc calosci. Lepiej ogarnac jedno danie, bo dwa to za duzo  Tutaj na pewno wyjdzie sie najedzonym. Stosunek jakosci do ceny super. To bedzie moje obowiazkowe jedzonko w Krakówie.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-03T07:58:40",
         response_from_owner_text: null,
@@ -945,7 +945,7 @@ export const data = [
       "Kuchnia polska",
     ],
     rating: "4,6",
-    address: "Floriana Straszewskiego 28, 31-113 Krakow",
+    address: "Floriana Straszewskiego 28, 31-113 Kraków",
     link: "https://www.google.com/maps/place/Restauracja+Smako%C5%82yki/data=!4m7!3m6!1s0x47165b0c144e1eff:0xe7cea63f24f58df8!8m2!3d50.0614836!4d19.931728!16s%2Fg%2F1wbrwj2_!19sChIJ_x5OFAxbFkcR-I31JD-mzuc?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 168,
@@ -1050,7 +1050,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/111187558306968356500?hl=pl",
         review_text:
-          "Bardzo ale to bardzo pyszne jedzenie, ktore z czystym sumieniem polecam w 100 jak nie 200%. Ja tu jadlem Maczanke po Krakowsku, mieso sie rozplywalo w ustach i gdyby nie pieczywo ktore bylo delikatnie podopieczne przez co mialo twarda skorke nie musialbym uzywac noza. Sos do tego dania byl pyszny. Moja dziewczyna jadla placka ziemniaczanego z gulaszem, tutaj rowniez mieso rozpadalo sie po nacisnieciu widelcem, nie bylo trzeba go gryzc bo sie rozpadalo w buzi po nacisnieciu jezykiem, placek tez bardzo dobry. Ja pilem dla tego piwo Litovel Premium a druga polowka Whisky sour, bardzo dobrze zrobione. Na koniec wzielismy sobie Brownie z lodami i bita smietana. Dawno nie jadlem tak dobrego ciasta, bylo polane pyszna czekolada, smietanka bylo cudowna i delikatna. Lody tez pyszne. A no warto dodac, ze byla tam muzyka na zywo w postaci Pana ktory gral na fortepianie. Polecam.",
+          "Bardzo ale to bardzo pyszne jedzenie, ktore z czystym sumieniem polecam w 100 jak nie 200%. Ja tu jadlem Maczanke po Krakówsku, mieso sie rozplywalo w ustach i gdyby nie pieczywo ktore bylo delikatnie podopieczne przez co mialo twarda skorke nie musialbym uzywac noza. Sos do tego dania byl pyszny. Moja dziewczyna jadla placka ziemniaczanego z gulaszem, tutaj rowniez mieso rozpadalo sie po nacisnieciu widelcem, nie bylo trzeba go gryzc bo sie rozpadalo w buzi po nacisnieciu jezykiem, placek tez bardzo dobry. Ja pilem dla tego piwo Litovel Premium a druga polowka Whisky sour, bardzo dobrze zrobione. Na koniec wzielismy sobie Brownie z lodami i bita smietana. Dawno nie jadlem tak dobrego ciasta, bylo polane pyszna czekolada, smietanka bylo cudowna i delikatna. Lody tez pyszne. A no warto dodac, ze byla tam muzyka na zywo w postaci Pana ktory gral na fortepianie. Polecam.",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-17T12:13:38",
         response_from_owner_text: null,
@@ -1183,7 +1183,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/107445325561503837189?hl=pl",
         review_text:
-          "Lokal znaleziony przypadkiem po dluzszej wedrowce po Krakowie. Same opinie i ich ilosc przyciagaja. Ale sprawdzilo sie wszystko co bylo napisane wczesniej. Lokal bardzo dobrze polozony, czysty, swietne okno z widokiem na ulice. Co do dan, wszystko bylo bardzo dobre i chetnie bysmy wrocili przy nastepnej wizycie w Krakowie.",
+          "Lokal znaleziony przypadkiem po dluzszej wedrowce po Krakówie. Same opinie i ich ilosc przyciagaja. Ale sprawdzilo sie wszystko co bylo napisane wczesniej. Lokal bardzo dobrze polozony, czysty, swietne okno z widokiem na ulice. Co do dan, wszystko bylo bardzo dobre i chetnie bysmy wrocili przy nastepnej wizycie w Krakówie.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-24T19:32:15",
         response_from_owner_text: null,
@@ -1210,7 +1210,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/114630545808202485539?hl=pl",
         review_text:
-          "Przepyszne sniadania, bardzo wyszukane zestawy pyszne i mega sycace. Wszystko bardzo estetycznie podane. Przemila i szybka obsluga. Bardzo polecam, nastepnym razem przy kolejnej wizycie w Krakowie napewno tu wrocimy ",
+          "Przepyszne sniadania, bardzo wyszukane zestawy pyszne i mega sycace. Wszystko bardzo estetycznie podane. Przemila i szybka obsluga. Bardzo polecam, nastepnym razem przy kolejnej wizycie w Krakówie napewno tu wrocimy ",
         published_at: "miesiac temu",
         published_at_date: "2024-09-15T07:42:47",
         response_from_owner_text: null,
@@ -1233,7 +1233,7 @@ export const data = [
   },
   {
     place_id: "ChIJuaKgPWpbFkcR1BEMavHF11Y",
-    name: "Restauracja Starka Krakow",
+    name: "Restauracja Starka Kraków",
     description:
       'W poblizu tetniacego zyciem Placu Nowego, ukryty maly "skarb" Kazimierza - Restauracja Starka. Jak wodka STARKA - polska, tradycyjna, z pieknymi kolorami i smakiem.',
     reviews: 6549,
@@ -1242,7 +1242,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska", "Restauracja"],
     rating: "4,7",
-    address: "Jozefa 14, 31-056 Krakow",
+    address: "Jozefa 14, 31-056 Kraków",
     link: "https://www.google.com/maps/place/Restauracja+Starka+Krak%C3%B3w/data=!4m7!3m6!1s0x47165b6a3da0a2b9:0x56d7c5f16a0c11d4!8m2!3d50.0506783!4d19.9443417!16s%2Fg%2F1tfmm3js!19sChIJuaKgPWpbFkcR1BEMavHF11Y?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 71,
@@ -1552,14 +1552,14 @@ export const data = [
     place_id: "ChIJ_xQeIgFbFkcRlNPp-OxrtQI",
     name: "Zielone Tarasy",
     description:
-      "Zadbalismy takze o otoczenie - oddajemy do dyspozycji naszych Gosci klimatyczna oranzerie oraz wyjatkowe tarasy, ktore sa pelne kwiatow i roslin. Mozna z nich podziwiac nie tylko panorame Krakowa, ale takze Beskidow, a niekiedy i Tatr. Dla tych, ktorzy Krakow biora pod uwage przy okazji organizacji roznych przyjec okolicznosciowych jak:\nurodziny, wesela, rocznice, chrzciny, itp.\nZapraszamy do skorzystania z naszej oferty w tym zakresie.\nRestauracja swiadczy rowniez uslugi cateringowe dla firm oraz osob prywatnych. W restauracji zamowic mozna dania charakterystyczne dla kazdej pory dnia - od sniadan, lunchow po obiad, deser i kolacje. Proponujemy kuchnie ekologiczna oraz bezglutenowa.W Krakowie nasza restauracje wyroznia zdrowe jedzenie.",
+      "Zadbalismy takze o otoczenie - oddajemy do dyspozycji naszych Gosci klimatyczna oranzerie oraz wyjatkowe tarasy, ktore sa pelne kwiatow i roslin. Mozna z nich podziwiac nie tylko panorame Krakowa, ale takze Beskidow, a niekiedy i Tatr. Dla tych, ktorzy Kraków biora pod uwage przy okazji organizacji roznych przyjec okolicznosciowych jak:\nurodziny, wesela, rocznice, chrzciny, itp.\nZapraszamy do skorzystania z naszej oferty w tym zakresie.\nRestauracja swiadczy rowniez uslugi cateringowe dla firm oraz osob prywatnych. W restauracji zamowic mozna dania charakterystyczne dla kazdej pory dnia - od sniadan, lunchow po obiad, deser i kolacje. Proponujemy kuchnie ekologiczna oraz bezglutenowa.W Krakówie nasza restauracje wyroznia zdrowe jedzenie.",
     reviews: 1325,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipPpl4RUMUURf6PBn0VYd54_MNs7Y083hLuUS8cL=s1024",
     main_category: "Breakfast",
     categories: ["Restauracja", "Restauracja obiadowa"],
     rating: "4,5",
-    address: "Aleja Juliusza Slowackiego 64, 31-000 Krakow",
+    address: "Aleja Juliusza Slowackiego 64, 31-000 Kraków",
     link: "https://www.google.com/maps/place/Zielone+Tarasy/data=!4m7!3m6!1s0x47165b01221e14ff:0x2b56becf8e9d394!8m2!3d50.0738666!4d19.935181!16s%2Fg%2F1td2456m!19sChIJ_xQeIgFbFkcRlNPp-OxrtQI?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 41,
@@ -1715,7 +1715,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/107360698291657804871?hl=pl",
         review_text:
-          "Mila przyjazna atmosfera, sprawna obsluga i dobre jedzenie idealne na lunch albo obiad, gdy jest cieplej mozna usiasc na tarasie i podziwiac piekny widok na Krakow:)",
+          "Mila przyjazna atmosfera, sprawna obsluga i dobre jedzenie idealne na lunch albo obiad, gdy jest cieplej mozna usiasc na tarasie i podziwiac piekny widok na Kraków:)",
         published_at: "tydzien temu",
         published_at_date: "2024-10-23T14:44:42",
         response_from_owner_text: null,
@@ -1738,7 +1738,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/117744976767009655748?hl=pl",
         review_text:
-          "Mielismy z przyjaciolmi rezerwacje z Finebite i bedziemy ja mile wspominac. Glownie ze wzgledu na bardzo mila i sympatyczna obsluge. Pani kelnerka starala sie aby nasza wizyta przebiegla jak najlepiej. Brawo za pamiec, cale zamowienie dla kilku osob bez zapisywania i to bez pomylek. Jedzenie smaczne i poprawne. Do kilku elementow mozna sie jednak przyczepic, m.in. nieco przesmazony stek z rostbefu i wolowina w burgerze. Jesli chodzi o plusy to: spore porcje, mozna sie najesc, duzy wybor koktajli i napojow, pyszne desery (zdecydowanie polecamy foundanta czekoladowego i lody rzemieslnicze). Wnetrze przytulne, a piekny taras mysle, ze idealny na letnie spotkania ze znajomymi czy smaczny posilek z pieknym widokiem na Krakow. Generalnie polecamy to miejsce!",
+          "Mielismy z przyjaciolmi rezerwacje z Finebite i bedziemy ja mile wspominac. Glownie ze wzgledu na bardzo mila i sympatyczna obsluge. Pani kelnerka starala sie aby nasza wizyta przebiegla jak najlepiej. Brawo za pamiec, cale zamowienie dla kilku osob bez zapisywania i to bez pomylek. Jedzenie smaczne i poprawne. Do kilku elementow mozna sie jednak przyczepic, m.in. nieco przesmazony stek z rostbefu i wolowina w burgerze. Jesli chodzi o plusy to: spore porcje, mozna sie najesc, duzy wybor koktajli i napojow, pyszne desery (zdecydowanie polecamy foundanta czekoladowego i lody rzemieslnicze). Wnetrze przytulne, a piekny taras mysle, ze idealny na letnie spotkania ze znajomymi czy smaczny posilek z pieknym widokiem na Kraków. Generalnie polecamy to miejsce!",
         published_at: "9 miesiecy temu",
         published_at_date: "2024-02-02T20:42:48",
         response_from_owner_text:
@@ -1873,7 +1873,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,2",
-    address: "Grodzka 9, 31-006 Krakow",
+    address: "Grodzka 9, 31-006 Kraków",
     link: "https://www.google.com/maps/place/Ch%C5%82opskie+Jad%C5%82o/data=!4m7!3m6!1s0x47165b127035fb93:0x92ffd514f5d0c31c!8m2!3d50.0598076!4d19.9376468!16s%2Fg%2F1tlbmwyl!19sChIJk_s1cBJbFkcRHMPQ9RTV_5I?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 246,
@@ -2053,7 +2053,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/107521465223130131574?hl=pl",
         review_text:
-          "Mega smacznie i duze porcje.\nPrzed podaniem dania maly poczestunek w postaci swiezego chleba,smalcu i ogorka kiszonego\nPOLECAM!!!\n\nWrocilismy tu po 2 latach.\nWiedzielismy juz gdzie w Krakowie mozna smacznie i milo zjesc obiad.\nNic sie nie zmienilo...no moze ceny.\nPolecam,polecam bardzo",
+          "Mega smacznie i duze porcje.\nPrzed podaniem dania maly poczestunek w postaci swiezego chleba,smalcu i ogorka kiszonego\nPOLECAM!!!\n\nWrocilismy tu po 2 latach.\nWiedzielismy juz gdzie w Krakówie mozna smacznie i milo zjesc obiad.\nNic sie nie zmienilo...no moze ceny.\nPolecam,polecam bardzo",
         published_at: "miesiac temu",
         published_at_date: "2022-10-29T14:36:56",
         response_from_owner_text: null,
@@ -2129,7 +2129,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/104169135321998056859?hl=pl",
         review_text:
-          'Bardzo fajne i klimatyczne miejsce na posilek. Mozna usiasc w ogrodku jak i w "piwnicy". Duze porcje, podane w krotkim czasie (ok. 15 min.), napoje schlodzone, mila obsluga. Przed posilkiem podaja tradycyjny chleb ze smalcem i kiszonym ogorkiem. Ceny normalne jak na Krakow. Polecam ',
+          'Bardzo fajne i klimatyczne miejsce na posilek. Mozna usiasc w ogrodku jak i w "piwnicy". Duze porcje, podane w krotkim czasie (ok. 15 min.), napoje schlodzone, mila obsluga. Przed posilkiem podaja tradycyjny chleb ze smalcem i kiszonym ogorkiem. Ceny normalne jak na Kraków. Polecam ',
         published_at: "rok temu",
         published_at_date: "2023-09-17T16:19:40",
         response_from_owner_text: null,
@@ -2157,7 +2157,7 @@ export const data = [
     place_id: "ChIJ8f4YlmxbFkcRW1mJQ24Dmjk",
     name: "Pod Wawelem Kompania Kuflowa",
     description:
-      "Kompania Kuflowa Pod Wawelem miesci sie u podnozy Zamku Krolewskiego w Krakowie.\nMieszkancy Krakowa i Turysci cenia ja za tradycyjna galicyjska goscinnosc i kuchnie oraz magiczne parkowe otoczenie Plant.\nTutejsza kuchnia specjalizuje sie w sycacych tradycyjnych daniach polskich, wywodzacych sie z roznych tradycji wielokulturowej Galicji.\nRestauracja slynie z golonek i innych doskonalych mies, regionalnych produktow oraz swiezego piwa. Na Gosci czekaja historyczne sale restauracji, a na najmlodszych rowniez az czteropoziomowy plac zabaw nagrodzony wieloma odznaczeniami za swoj rodzinny charakter.\nCaloroczny ogrodek Pod Wawelem jest natomiast najdluzszym przy krakowskich Plantach i z pewnoscia z najpiekniejszym widokiem",
+      "Kompania Kuflowa Pod Wawelem miesci sie u podnozy Zamku Krolewskiego w Krakówie.\nMieszkancy Krakowa i Turysci cenia ja za tradycyjna galicyjska goscinnosc i kuchnie oraz magiczne parkowe otoczenie Plant.\nTutejsza kuchnia specjalizuje sie w sycacych tradycyjnych daniach polskich, wywodzacych sie z roznych tradycji wielokulturowej Galicji.\nRestauracja slynie z golonek i innych doskonalych mies, regionalnych produktow oraz swiezego piwa. Na Gosci czekaja historyczne sale restauracji, a na najmlodszych rowniez az czteropoziomowy plac zabaw nagrodzony wieloma odznaczeniami za swoj rodzinny charakter.\nCaloroczny ogrodek Pod Wawelem jest natomiast najdluzszym przy krakowskich Plantach i z pewnoscia z najpiekniejszym widokiem",
     reviews: 24650,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipNgSvjMFFYk8S2IFHjR1iWyJoFMAIHYBRVmTkhL=s1024",
@@ -2173,7 +2173,7 @@ export const data = [
       "Owoce morza",
     ],
     rating: "4,4",
-    address: "Swietej Gertrudy 26/29, 31-048 Krakow",
+    address: "Swietej Gertrudy 26/29, 31-048 Kraków",
     link: "https://www.google.com/maps/place/Pod+Wawelem+Kompania+Kuflowa/data=!4m7!3m6!1s0x47165b6c9618fef1:0x399a036e4389595b!8m2!3d50.054876!4d19.939403!16s%2Fg%2F1tghnb7d!19sChIJ8f4YlmxbFkcRW1mJQ24Dmjk?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 1191,
@@ -2331,7 +2331,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/111531825230534048407?hl=pl",
         review_text:
-          "Bardzo przyjemne miejsce, jedzenie pyszne,mimo duzej ilosci gosci, nie trzeba dlugo czekac, obsluga radzi sobie super, wszystko idzie szybko i sprawnie, jak tylko bede w Krakowie odwiedze ta restauracje ponownie. Polecam",
+          "Bardzo przyjemne miejsce, jedzenie pyszne,mimo duzej ilosci gosci, nie trzeba dlugo czekac, obsluga radzi sobie super, wszystko idzie szybko i sprawnie, jak tylko bede w Krakówie odwiedze ta restauracje ponownie. Polecam",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-09T15:00:29",
         response_from_owner_text: null,
@@ -2468,7 +2468,7 @@ export const data = [
     main_category: "American",
     categories: ["Restauracja", "Kuchnia amerykanska", "Steki"],
     rating: "4,6",
-    address: "Rynek Glowny 22, 31-008 Krakow",
+    address: "Rynek Glowny 22, 31-008 Kraków",
     link: "https://www.google.com/maps/place/Sioux/data=!4m7!3m6!1s0x47165b0de8d605a1:0x9c0caa9ac0a8f2a0!8m2!3d50.0610008!4d19.9361075!16s%2Fg%2F1tkd_pyn!19sChIJoQXW6A1bFkcRoPKowJqqDJw?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 160,
@@ -2565,7 +2565,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103203951108041362378?hl=pl",
         review_text:
-          "Bardzo przyjemna restauracja. Byl to nasz pierwszy wybor po przyjezdzie do Krakowa i nie zawiedlismy sie. Obsluga przywitala nas z usmiechem, nasza kelnerka blondynka przemila i bardzo profesjonalna. Jedzenie bylo przepyszne, pierwszy kes byl jak magia. Znalazlam w koncu perfekcyjna czekolade pitna, taka jak lubie - gesta.  Na koniec szarlotka- co to bylo za cudo. Polecam serdecznie. Na pewno zawitamy tam ponownie podczas nastepnej wizyty w Krakowie.",
+          "Bardzo przyjemna restauracja. Byl to nasz pierwszy wybor po przyjezdzie do Krakowa i nie zawiedlismy sie. Obsluga przywitala nas z usmiechem, nasza kelnerka blondynka przemila i bardzo profesjonalna. Jedzenie bylo przepyszne, pierwszy kes byl jak magia. Znalazlam w koncu perfekcyjna czekolade pitna, taka jak lubie - gesta.  Na koniec szarlotka- co to bylo za cudo. Polecam serdecznie. Na pewno zawitamy tam ponownie podczas nastepnej wizyty w Krakówie.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-30T15:03:41",
         response_from_owner_text: null,
@@ -2616,7 +2616,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/105123137336959718242?hl=pl",
         review_text:
-          "Podczas pobytu w Krakowie zawitalismy do kilku restauracji,ale to w Sioux obsluga, a dokladniej kelner Pan Kuba, jest na najwyzszym poziomie. Otrzymalismy profesjonalne doradzenie mies, przekasek, napoji. Spedzilismy fantastyczny czas, delektujac sie wysmienitym jedzeniem. A Pan Kuba dbal o to ,zeby niczego nam nie zabraklo. Zeberka byly najlepsze jakie kiedykolwiek jadlam w zyciu! Kucharz na medal! Z pewnoscia powrocimy !",
+          "Podczas pobytu w Krakówie zawitalismy do kilku restauracji,ale to w Sioux obsluga, a dokladniej kelner Pan Kuba, jest na najwyzszym poziomie. Otrzymalismy profesjonalne doradzenie mies, przekasek, napoji. Spedzilismy fantastyczny czas, delektujac sie wysmienitym jedzeniem. A Pan Kuba dbal o to ,zeby niczego nam nie zabraklo. Zeberka byly najlepsze jakie kiedykolwiek jadlam w zyciu! Kucharz na medal! Z pewnoscia powrocimy !",
         published_at: "miesiac temu",
         published_at_date: "2024-09-11T22:05:41",
         response_from_owner_text: null,
@@ -2715,7 +2715,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103108216193467087207?hl=pl",
         review_text:
-          "Bardzo fajnie miejsce w samym centrum rynku Krakowskiego. Duzo propozycji miesnych dla kazdego fana dobrego mieska, steka czy innych potraw.\nMila obsluga ceny ok jak na lokalizacje i to co najwazniejsze dobre jedzonko.",
+          "Bardzo fajnie miejsce w samym centrum rynku Krakówskiego. Duzo propozycji miesnych dla kazdego fana dobrego mieska, steka czy innych potraw.\nMila obsluga ceny ok jak na lokalizacje i to co najwazniejsze dobre jedzonko.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-02T14:47:00",
         response_from_owner_text: null,
@@ -2746,7 +2746,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja obiadowa", "Kuchnia polska", "Restauracja"],
     rating: "4,5",
-    address: "Beera Meiselsa 22, 31-063 Krakow",
+    address: "Beera Meiselsa 22, 31-063 Kraków",
     link: "https://www.google.com/maps/place/Restauracja+Polska/data=!4m7!3m6!1s0x47165b6a46ba9cc7:0x3de1ec6dbba06a19!8m2!3d50.0514755!4d19.9441795!16s%2Fg%2F11cnc3n5h8!19sChIJx5y6RmpbFkcRGWqgu23s4T0?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 111,
@@ -6009,7 +6009,7 @@ export const data = [
   },
   {
     place_id: "ChIJk-fcYKqEPUcRBS4jKwlmrYQ",
-    name: "Pol na Pol Tarnow - wloska restauracja",
+    name: "Pol na Pol Tarnów - wloska restauracja",
     description:
       'Wloskie smaki zaraz przy tarnowskim rynku.\nSzukasz miejsca, w ktorym mozna sprobowac rzadko podawanych w Tarnowie owocow morza, ryb i warzyw, zachwycic sie oszalamiajacymi koktajlami czy przyjsc z dzieckiem do restauracji nie obawiajac sie tego, czy w karcie znajdzie sie cos dla najmlodszych? Wszystkie te rzeczy znajdziesz w ""Pol na Pol"".',
     reviews: 894,
@@ -6018,7 +6018,7 @@ export const data = [
     main_category: "Italian",
     categories: ["Restauracja"],
     rating: "4,6",
-    address: "Plac Kazimierza Wielkiego 2, w Pasazu Tertila, 33-100 Tarnow",
+    address: "Plac Kazimierza Wielkiego 2, w Pasazu Tertila, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/P%C3%B3%C5%82+na+P%C3%B3%C5%82+Tarn%C3%B3w+-+w%C5%82oska+restauracja/data=!4m7!3m6!1s0x473d84aa60dce793:0x84ad66092b232e05!8m2!3d50.0122165!4d20.9874098!16s%2Fg%2F11gfk09c_4!19sChIJk-fcYKqEPUcRBS4jKwlmrYQ?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 37,
@@ -6093,7 +6093,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/115197515847362546142?hl=pl",
         review_text:
-          "Lokal znajduje sie blisko rynku, bardzo klimatyczny. Zaplacilismy 250 zl za obiad dla 4 osob, ceny jak najbardziej ok. Dzieci jadly zupe pomidorowa, podobno lepsza niz ta w domu, frytki i pinse margarita. My frytki z batatow, bruchette, poledwiczki wieprzowe z risotto i boczniaki. Do tego woda i herbaty zimowe. Wszystko pyszne, obsluga przemila. Menu dzieciece z kolorowanka na odwrocie. Zajely super dzieciaki. Jedzenie podane szybko. Toaleta czysta, platnosc karta i gotowka, parkingu brak, mozna zaparkowac na ul. Krakowskiej i przejsc kilkanascie metrow. Na niedziele lepiej zrobic rezerwacje.\nLokal godny polecenia. Odwiedzimy go ponownie.",
+          "Lokal znajduje sie blisko rynku, bardzo klimatyczny. Zaplacilismy 250 zl za obiad dla 4 osob, ceny jak najbardziej ok. Dzieci jadly zupe pomidorowa, podobno lepsza niz ta w domu, frytki i pinse margarita. My frytki z batatow, bruchette, poledwiczki wieprzowe z risotto i boczniaki. Do tego woda i herbaty zimowe. Wszystko pyszne, obsluga przemila. Menu dzieciece z kolorowanka na odwrocie. Zajely super dzieciaki. Jedzenie podane szybko. Toaleta czysta, platnosc karta i gotowka, parkingu brak, mozna zaparkowac na ul. Krakówskiej i przejsc kilkanascie metrow. Na niedziele lepiej zrobic rezerwacje.\nLokal godny polecenia. Odwiedzimy go ponownie.",
         published_at: "3 tygodnie temu",
         published_at_date: "2024-10-13T18:18:41",
         response_from_owner_text: null,
@@ -6308,7 +6308,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Krakowska 3, 33-100 Tarnow",
+    address: "Krakówska 3, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Restauracja+Obsesja+Smaku/data=!4m7!3m6!1s0x473d84aa30e4c229:0x3afdd379060cd529!8m2!3d50.0117386!4d20.9842271!16s%2Fg%2F1td3q7y2!19sChIJKcLkMKqEPUcRKdUMBnnT_To?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 45,
@@ -6379,7 +6379,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112446164766428611635?hl=pl",
         review_text:
-          "Bywam tutaj, jak tylko odwiedzam Tarnow. Smialo moge polecic, bo jedzenie jest pyszne! Zwlaszcza roladki drobiowe ze szpinakiem w sosie smietanowym, czy placki ziemniaczane z gulaszem. Dodatkowy plus za mila obsluge, dobry klimat i wystroj, czystosc oraz lokalizacje.",
+          "Bywam tutaj, jak tylko odwiedzam Tarnów. Smialo moge polecic, bo jedzenie jest pyszne! Zwlaszcza roladki drobiowe ze szpinakiem w sosie smietanowym, czy placki ziemniaczane z gulaszem. Dodatkowy plus za mila obsluge, dobry klimat i wystroj, czystosc oraz lokalizacje.",
         published_at: "3 tygodnie temu",
         published_at_date: "2024-10-11T14:25:35",
         response_from_owner_text: null,
@@ -6524,7 +6524,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/100832270720824043680?hl=pl",
         review_text:
-          "Swietnie miejsce, dopracowane swieze dania, szybka obsluga, godny polecenia przystanek na obiad w centrum Tarnowa",
+          "Swietnie miejsce, dopracowane swieze dania, szybka obsluga, godny polecenia przystanek na obiad w centrum Tarnówa",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-23T10:36:14",
         response_from_owner_text: null,
@@ -6575,7 +6575,7 @@ export const data = [
     main_category: "Italian",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Pulaskiego 42, 33-100 Tarnow",
+    address: "Pulaskiego 42, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/NapOli+Trattoria/data=!4m7!3m6!1s0x473d856e35b1c85d:0x5bc4bfbac32e8660!8m2!3d50.013428!4d20.973218!16s%2Fg%2F11v3qnjp82!19sChIJXcixNW6FPUcRYIYuw7q_xFs?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 16,
@@ -6836,7 +6836,7 @@ export const data = [
     main_category: "Ukrainan",
     categories: ["Restauracja"],
     rating: "4,8",
-    address: "Sloneczna 28, 33-100 Tarnow",
+    address: "Sloneczna 28, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Ukrai%C5%84ska+Kolorowa+Kuchnia/data=!4m7!3m6!1s0x473d9de9448c5d85:0x558567fbb7e05f02!8m2!3d50.0179608!4d21.0009791!16s%2Fg%2F11sdqnx3tf!19sChIJhV2MROmdPUcRAl_gt_tnhVU?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 4,
@@ -7101,7 +7101,7 @@ export const data = [
       "Kuchnia europejska",
     ],
     rating: "4,3",
-    address: "Rynek 14, 33-100 Tarnow",
+    address: "Rynek 14, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/u+Jana/data=!4m7!3m6!1s0x473d84aa9bb4ae53:0x9f152f4f905835dc!8m2!3d50.012547!4d20.9890899!16s%2Fg%2F11c72mktq_!19sChIJU660m6qEPUcR3DVYkE8vFZ8?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 54,
@@ -7340,7 +7340,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112640845671246908974?hl=pl",
         review_text:
-          "Goraco polecam to miejsce. Jedzenie wysmienite, jest spoty wybor i mysle, ze kazdy znajdzie tu cos dla siebie. Wystroj robi tu ogromne wrazenie, pelno jest ciekawych obrazow. Obsluga swietna, pani kelnerka potrafila nam doradzic. Szybko dostalismy dania na stol. W trakcie naszego obiadu dzialy sie dwie imprezy okolicznosciowe i to nie wplynelo na szybkosc podania naszych dan, bylam w szoku.\nPolecam. Z pewnoscia jesli odwiedze Tarnow to wroce wlasnie tutaj",
+          "Goraco polecam to miejsce. Jedzenie wysmienite, jest spoty wybor i mysle, ze kazdy znajdzie tu cos dla siebie. Wystroj robi tu ogromne wrazenie, pelno jest ciekawych obrazow. Obsluga swietna, pani kelnerka potrafila nam doradzic. Szybko dostalismy dania na stol. W trakcie naszego obiadu dzialy sie dwie imprezy okolicznosciowe i to nie wplynelo na szybkosc podania naszych dan, bylam w szoku.\nPolecam. Z pewnoscia jesli odwiedze Tarnów to wroce wlasnie tutaj",
         published_at: "rok temu",
         published_at_date: "2023-05-19T19:19:26",
         response_from_owner_text: null,
@@ -7373,7 +7373,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Krakowska 1, 33-100 Tarnow",
+    address: "Krakówska 1, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Restauracja+Tatrza%C5%84ska/data=!4m7!3m6!1s0x473d84aa39ffa20b:0x7443bc15382dcd6!8m2!3d50.0119521!4d20.9847473!16s%2Fg%2F1tkjjzmn!19sChIJC6L_OaqEPUcR1tyCU8E7RAc?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 47,
@@ -7480,7 +7480,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/118069628945569375902?hl=pl",
         review_text:
-          "Restauracja w centrum Tarnowa, ktora warto poznac! Na scianie wisi wiele zdjec, ktore pokazuja, ze wielu znanych ludzi odwiedza te restauracje.\n\nCiekawa karta (na stronie internetowej mozna sie zapoznac), duzo sezonowych produktow, sporo dan wege.\n\nMy wybralismy tagliatelle w sosie kurkowym, pierogi z kaczka i placek ziemniaczany po husarsku. Wszystko bylo pyszne i sycace.\n\nNa plus darmowy dzbanek z woda z kawalkami pomaranczy, limonki i cytryny.\n\nMila pomocna obsluga mowiaca tez po angielsku.",
+          "Restauracja w centrum Tarnówa, ktora warto poznac! Na scianie wisi wiele zdjec, ktore pokazuja, ze wielu znanych ludzi odwiedza te restauracje.\n\nCiekawa karta (na stronie internetowej mozna sie zapoznac), duzo sezonowych produktow, sporo dan wege.\n\nMy wybralismy tagliatelle w sosie kurkowym, pierogi z kaczka i placek ziemniaczany po husarsku. Wszystko bylo pyszne i sycace.\n\nNa plus darmowy dzbanek z woda z kawalkami pomaranczy, limonki i cytryny.\n\nMila pomocna obsluga mowiaca tez po angielsku.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-01T06:19:04",
         response_from_owner_text: null,
@@ -7635,7 +7635,7 @@ export const data = [
     main_category: "Italian",
     categories: ["Kuchnia wloska", "Pizzeria", "Restauracja"],
     rating: "4,6",
-    address: "Moscickiego 6, 33-100 Tarnow",
+    address: "Moscickiego 6, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Restauracja+Soprano/data=!4m7!3m6!1s0x473d84a97a7a8841:0xff2d398e136ae53e!8m2!3d50.0113127!4d20.9820755!16s%2Fg%2F1tfv3xh7!19sChIJQYh6eqmEPUcRPuVqE445Lf8?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 59,
@@ -7844,7 +7844,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/109256696506287755211?hl=pl",
         review_text:
-          "Przyjechalismy specjalnie do tej restauracji z Rzeszowa. Przezylismy kulinarny szok. Warto zjechac z A4 dla samej restauracji jak rowniez dla samego miasta. Nie wiem czemu nie zwiedzilismy jeszcze Tarnowa. To perelka po Krakowie.",
+          "Przyjechalismy specjalnie do tej restauracji z Rzeszowa. Przezylismy kulinarny szok. Warto zjechac z A4 dla samej restauracji jak rowniez dla samego miasta. Nie wiem czemu nie zwiedzilismy jeszcze Tarnówa. To perelka po Krakówie.",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-07T22:03:57",
         response_from_owner_text: null,
@@ -7914,14 +7914,14 @@ export const data = [
     place_id: "ChIJ7RVR6BiDPUcRbuBA63auZBA",
     name: "Rodeo Restauracja",
     description:
-      "Nasza kuchnia bazuje na wyjatkowych przepisach i skladnikach najwyzszej jakosci. Od soczystych burgerow, przez chrupiace pizze, az po rozplywajace sie w ustach steki - kazde danie to gwarancja nie zapomnianych smakow.\nWnetrze naszej restauracji przeniesie Cie w swiat salonow i kowbojskich szlakow w nowoczesnym i pelnym klasy wydaniu.\nCzujesz to? To dzwiek gitary w tle i zapach przerzucanej na grillu wolowiny. Lokalizacja: Polozeni w samym sercu Tarnowa, jestesmy idealnym miejscem na rodzinny obiad, spotkanie z przyjaciolmi czy romantyczna kolacje we dwoje.",
+      "Nasza kuchnia bazuje na wyjatkowych przepisach i skladnikach najwyzszej jakosci. Od soczystych burgerow, przez chrupiace pizze, az po rozplywajace sie w ustach steki - kazde danie to gwarancja nie zapomnianych smakow.\nWnetrze naszej restauracji przeniesie Cie w swiat salonow i kowbojskich szlakow w nowoczesnym i pelnym klasy wydaniu.\nCzujesz to? To dzwiek gitary w tle i zapach przerzucanej na grillu wolowiny. Lokalizacja: Polozeni w samym sercu Tarnówa, jestesmy idealnym miejscem na rodzinny obiad, spotkanie z przyjaciolmi czy romantyczna kolacje we dwoje.",
     reviews: 267,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipO1pU-PPuZrvl0EjUg7AevLkJH-0OCQMAUSoW2E=s1024",
     main_category: "American",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Kasprowicza 2, 33-100 Tarnow",
+    address: "Kasprowicza 2, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Rodeo+Restauracja/data=!4m7!3m6!1s0x473d8318e85115ed:0x1064ae76eb40e06e!8m2!3d50.018772!4d20.9764253!16s%2Fg%2F11y1r2cg5j!19sChIJ7RVR6BiDPUcRbuBA63auZBA?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 9,
@@ -8052,7 +8052,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/106247264942187373490?hl=pl",
         review_text:
-          "Trafilismy do restauracji skuszeni nowym miejscem na mapie Tarnowa. Wystroj lokalu klimatyczny i ciekawy - nawiazujacy do nazwy. Na poczatek zamowione zostaly drinki, ktore niestety byly slabej jakosci. Prn Martini nie przypominalo go w wygladzie ani w smaku, drink truskawkowy rowniez slabej jakosci. Po dluzszej chwili oczekiwania na stol wlecialy burgery allday, vege makaron i pizza parma. Zaczynajac od makaronu byl on swietnie skomponowany, a porcja byla duza. Burgery niestety byly zbyt wysuszone, spalone, ser smakowal jakby byl slabej jakosci, bekon w burgerze byl ugotowany - brakowalo chrupkosci. Burger dopelniala salata rzymska, ktora niestety slabo komponuje sie w tego typu burgerach oraz mocno majonezowy sos. Frytki dobre. Niestety pizza nie byla lepsza w smaku. Ceny nie nalezaly do najnizszych i powinny przekladac sie na lepsza jakosc jedzenia. Piszemy to z wielkim smutkiem, poniewaz zapowiadalo sie naprawde dobrze.",
+          "Trafilismy do restauracji skuszeni nowym miejscem na mapie Tarnówa. Wystroj lokalu klimatyczny i ciekawy - nawiazujacy do nazwy. Na poczatek zamowione zostaly drinki, ktore niestety byly slabej jakosci. Prn Martini nie przypominalo go w wygladzie ani w smaku, drink truskawkowy rowniez slabej jakosci. Po dluzszej chwili oczekiwania na stol wlecialy burgery allday, vege makaron i pizza parma. Zaczynajac od makaronu byl on swietnie skomponowany, a porcja byla duza. Burgery niestety byly zbyt wysuszone, spalone, ser smakowal jakby byl slabej jakosci, bekon w burgerze byl ugotowany - brakowalo chrupkosci. Burger dopelniala salata rzymska, ktora niestety slabo komponuje sie w tego typu burgerach oraz mocno majonezowy sos. Frytki dobre. Niestety pizza nie byla lepsza w smaku. Ceny nie nalezaly do najnizszych i powinny przekladac sie na lepsza jakosc jedzenia. Piszemy to z wielkim smutkiem, poniewaz zapowiadalo sie naprawde dobrze.",
         published_at: "6 miesiecy temu",
         published_at_date: "2024-04-14T18:12:53",
         response_from_owner_text: null,
@@ -8176,7 +8176,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja z daniami na wynos"],
     rating: "4,7",
-    address: "Plac Dworcowy 2, 33-100 Tarnow",
+    address: "Plac Dworcowy 2, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Restauracja+Dworcowa/data=!4m7!3m6!1s0x473d84ae2de28021:0xaab663f0ad48ff1f!8m2!3d50.0057597!4d20.9749556!16s%2Fg%2F11gbl2vppc!19sChIJIYDiLa6EPUcRH_9IrfBjtqo?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 6,
@@ -8441,7 +8441,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska", "Restauracja"],
     rating: "4,4",
-    address: "Wekslarska 6, 33-100 Tarnow",
+    address: "Wekslarska 6, 33-100 Tarnów",
     link: "https://www.google.com/maps/place/Pyza/data=!4m7!3m6!1s0x473d84aaa2212cdf:0xcead695bcae4db71!8m2!3d50.0126286!4d20.9899751!16s%2Fg%2F11cmj4cnnp!19sChIJ3ywhoqqEPUcRcdvkyltprc4?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 53,
@@ -8729,7 +8729,7 @@ export const data = [
     main_category: "American",
     categories: ["Restauracja", "Kuchnia amerykanska", "Kuchnia polska"],
     rating: "4,4",
-    address: "Rynek 3/4, 35-064 Rzeszow",
+    address: "Rynek 3/4, 35-064 Rzeszów",
     link: "https://www.google.com/maps/place/Lord+Jack/data=!4m7!3m6!1s0x473cfb020eb0d375:0x196b3d9f9bd8bc45!8m2!3d50.0370062!4d22.0042219!16s%2Fg%2F11c6cpwh57!19sChIJddOwDgL7PEcRRbzYm589axk?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 228,
@@ -9000,7 +9000,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102603259720751366444?hl=pl",
         review_text:
-          "Jedno z lepszych miejsc na jedzie w Rzeszowie. Pyszne zeberka super zamarynowane mieso rozplywa sie w ustach. Obsluga bardzo mila zyczliwa pomocna. Jedno mnie zdziwilo ze mozna palic cygara na ogrodku i jest to oznaczone a nie ktorym gosciom to przeszkadza. Ogolnie super jak ja sobotni ruch max pol godziny czekania na jedzenie.",
+          "Jedno z lepszych miejsc na jedzie w Rzeszówie. Pyszne zeberka super zamarynowane mieso rozplywa sie w ustach. Obsluga bardzo mila zyczliwa pomocna. Jedno mnie zdziwilo ze mozna palic cygara na ogrodku i jest to oznaczone a nie ktorym gosciom to przeszkadza. Ogolnie super jak ja sobotni ruch max pol godziny czekania na jedzenie.",
         published_at: "5 miesiecy temu",
         published_at_date: "2024-05-26T17:32:16",
         response_from_owner_text: null,
@@ -9025,14 +9025,14 @@ export const data = [
     place_id: "ChIJcXe9pRP7PEcRhi6tDQjKOgs",
     name: 'Restauracja ,,Matryoshka"',
     description:
-      "Restauracja Matryoshka to restauracja rodzinna, ktora juz od 12 lat tetni zyciem i wyjatkowym smakiem  Nasza Restauracja laczy w sobie tradycje kuchni polskiej, kresowej oraz pierogarni. Matryoshka jednak, to nie tylko Restauracja i spedzenie smacznego czasu na miejscu lub zabranie ze soba wspanialych smakow na wynos do domu, ale rowniez doskonaly catering na kazda Wasza uroczystosc, imprezy okolicznosciowe oraz cukiernia!\nMiescimy sie w Rzeszowie na al. Okulickiego 9 A.\nZapraszamy ",
+      "Restauracja Matryoshka to restauracja rodzinna, ktora juz od 12 lat tetni zyciem i wyjatkowym smakiem  Nasza Restauracja laczy w sobie tradycje kuchni polskiej, kresowej oraz pierogarni. Matryoshka jednak, to nie tylko Restauracja i spedzenie smacznego czasu na miejscu lub zabranie ze soba wspanialych smakow na wynos do domu, ale rowniez doskonaly catering na kazda Wasza uroczystosc, imprezy okolicznosciowe oraz cukiernia!\nMiescimy sie w Rzeszówie na al. Okulickiego 9 A.\nZapraszamy ",
     reviews: 2340,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipMvgZDDvO5yJfohLomv_O7xEah7T8FR3eIF0p8T=s1024",
     main_category: "Polish",
     categories: ["Restauracja", "Pierogarnia"],
     rating: "4,5",
-    address: "Aleja Generala Leopolda Okulickiego 9A, 35-222 Rzeszow",
+    address: "Aleja Generala Leopolda Okulickiego 9A, 35-222 Rzeszów",
     link: "https://www.google.com/maps/place/Restauracja+%E2%80%9EMatryoshka%E2%80%9D/data=!4m7!3m6!1s0x473cfb13a5bd7771:0xb3aca080dad2e86!8m2!3d50.0494051!4d21.9872779!16s%2Fg%2F1tfz_vrc!19sChIJcXe9pRP7PEcRhi6tDQjKOgs?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 102,
@@ -9162,7 +9162,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/104584667621654007904?hl=pl",
         review_text:
-          "Matryoshka jest pyszna ! Od lat za kazdym razem czlowiek wychodzi zadowolony i z planem powrotu  w nowej odslonie super wnetrze,mila obsuga i fajny klimat . Czesto ciezko o wolny stolik co swiadczy o smaku  co tu duzo mowic ..pierogi w Matrioszce najlepsze w Rzeszowie ",
+          "Matryoshka jest pyszna ! Od lat za kazdym razem czlowiek wychodzi zadowolony i z planem powrotu  w nowej odslonie super wnetrze,mila obsuga i fajny klimat . Czesto ciezko o wolny stolik co swiadczy o smaku  co tu duzo mowic ..pierogi w Matrioszce najlepsze w Rzeszówie ",
         published_at: "miesiac temu",
         published_at_date: "2024-09-21T16:22:06",
         response_from_owner_text:
@@ -9216,7 +9216,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102093783405042157858?hl=pl",
         review_text:
-          "Boze blogoslaw Rzeszow za to miejsce ! Zaczne od obslugi , mila , kompetentna i elastyczna ( co  jest rzadkoscia ) co do zamowien ( kilka dan po pol porcji). Solianka - rzadkosc w polskim menu bardzo smaczna, pyzy z gesina po prostu rewelacja podobnie jak czeburek z bryndza , plus na co rzadko sie zwraca uwage surowka z marchewki wytrawna -z czosnkiem , oliwa i pietruszka - w smaku zahacza o koreanskie smaki i na koniec pierogi z jagodami - co dziwne jagod wiecej niz ciasta ! Nie mozna nie byc zachwyconym . Uwaga wg mnie duze porcje ! Polecamy ( czerwiec 2024) obiad plus piwo i kompot 111 PLN !!! Takich cen juz nie ma za ta jakosc .",
+          "Boze blogoslaw Rzeszów za to miejsce ! Zaczne od obslugi , mila , kompetentna i elastyczna ( co  jest rzadkoscia ) co do zamowien ( kilka dan po pol porcji). Solianka - rzadkosc w polskim menu bardzo smaczna, pyzy z gesina po prostu rewelacja podobnie jak czeburek z bryndza , plus na co rzadko sie zwraca uwage surowka z marchewki wytrawna -z czosnkiem , oliwa i pietruszka - w smaku zahacza o koreanskie smaki i na koniec pierogi z jagodami - co dziwne jagod wiecej niz ciasta ! Nie mozna nie byc zachwyconym . Uwaga wg mnie duze porcje ! Polecamy ( czerwiec 2024) obiad plus piwo i kompot 111 PLN !!! Takich cen juz nie ma za ta jakosc .",
         published_at: "4 miesiace temu",
         published_at_date: "2024-06-15T13:42:27",
         response_from_owner_text:
@@ -9358,7 +9358,7 @@ export const data = [
     main_category: "American",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Hetmanska 73, 35-078 Rzeszow",
+    address: "Hetmanska 73, 35-078 Rzeszów",
     link: "https://www.google.com/maps/place/NOBO+restauracja/data=!4m7!3m6!1s0x473cfb1ace12af19:0xa3af19c28af279a!8m2!3d50.0193692!4d21.995579!16s%2Fg%2F11fq932td_!19sChIJGa8Szhr7PEcRmievKJzxOgo?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 113,
@@ -9437,7 +9437,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/114085278119042019986?hl=pl",
         review_text:
-          "Jedna z ulubionych restauracji w Rzeszowie. Bardzo dobra pizza, makaron z krewetkami przepyszny, jak i salatki. Kelnerzy zawsze usmiechnieci i bardzo uprzejmi. Drinki tez polecam do sprobowania chociaz jeden raz trafilem na bardzo dobre, a innym razem robil ktos inny i juz tak nie smakowaly ale mysle ze to barman mial zly dzien. Polecam sprobowac firmowy zestaw drinkow, mysle ze kazdy znajdzie dla siebie swoj smak. Dziekujemy za starannosc. Jedyny drobiazg ktory prosil bym poprawic to zmienic dozowniki na mydlo w lazienkach. Od kilku lat te same polamane dozowniki, i nikt nie zwrocil na to uwage. Nie realnie wycisnac mydlo. Reszta wszystko jest super.",
+          "Jedna z ulubionych restauracji w Rzeszówie. Bardzo dobra pizza, makaron z krewetkami przepyszny, jak i salatki. Kelnerzy zawsze usmiechnieci i bardzo uprzejmi. Drinki tez polecam do sprobowania chociaz jeden raz trafilem na bardzo dobre, a innym razem robil ktos inny i juz tak nie smakowaly ale mysle ze to barman mial zly dzien. Polecam sprobowac firmowy zestaw drinkow, mysle ze kazdy znajdzie dla siebie swoj smak. Dziekujemy za starannosc. Jedyny drobiazg ktory prosil bym poprawic to zmienic dozowniki na mydlo w lazienkach. Od kilku lat te same polamane dozowniki, i nikt nie zwrocil na to uwage. Nie realnie wycisnac mydlo. Reszta wszystko jest super.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-11T20:15:32",
         response_from_owner_text: null,
@@ -9542,7 +9542,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/104206754527056706275?hl=pl",
         review_text:
-          "Restauracja Nobo w Rzeszowie to prawdziwa perelka! Od momentu wejscia do lokalu czuc wyjatkowa atmosfere, a obsluga jest na najwyzszym poziomie - profesjonalna, uprzejma i bardzo pomocna. Zamowilam filet z kurczaka i musze przyznac, ze dawno nie jadlam tak perfekcyjnie przygotowanego dania. Soczysty, delikatny filet, idealnie doprawiony, podany z pysznymi dodatkami. Smaki zaskakuja swoja glebia i starannoscia wykonania. Na pewno tu wroce i polecam kazdemu, kto szuka wyjatkowych doznan kulinarnych w Rzeszowie!",
+          "Restauracja Nobo w Rzeszówie to prawdziwa perelka! Od momentu wejscia do lokalu czuc wyjatkowa atmosfere, a obsluga jest na najwyzszym poziomie - profesjonalna, uprzejma i bardzo pomocna. Zamowilam filet z kurczaka i musze przyznac, ze dawno nie jadlam tak perfekcyjnie przygotowanego dania. Soczysty, delikatny filet, idealnie doprawiony, podany z pysznymi dodatkami. Smaki zaskakuja swoja glebia i starannoscia wykonania. Na pewno tu wroce i polecam kazdemu, kto szuka wyjatkowych doznan kulinarnych w Rzeszówie!",
         published_at: "miesiac temu",
         published_at_date: "2024-09-25T10:31:49",
         response_from_owner_text: null,
@@ -9639,9 +9639,9 @@ export const data = [
   },
   {
     place_id: "ChIJLX8u4oj7PEcRl7jztDqv_7I",
-    name: "Restauracja Indyjska Rani Rzeszow",
+    name: "Restauracja Indyjska Rani Rzeszów",
     description:
-      "Masz ochote na roznorodna, tradycyjna, indyjska kuchnie i nie znalazles odpowiedniej restauracji, w ktorej mozesz spedzic wieczor? Witamy w restauracji Restauracja Indyjska Rani Rzeszow. Cieszymy sie, ze mozemy zaoferowac Ci nasze apetyczne dania i niezapomniane doznania kulinarne. Przy dobrej pogodzie nasz przytulny ogrodek oferuje czysty relaks. Posiadamy klimatyzacje, abys czul sie komfortowo rowniez w upaly.*- Doskonala restauracja z kacikiem dla dzieci -*Nasza indyjska kuchnia fascynuje szczegolnie autentycznymi i tradycyjnymi potrawami. Sprobuj alkoholowego napoju i zimnego piwa jako uzupelnienie do naszych wyjatkowo pysznych owocow morza albo ryb. Gdy tylko masz ochote, mozesz delektowac sie naszymi wysmienitymi deserem i orzez...",
+      "Masz ochote na roznorodna, tradycyjna, indyjska kuchnie i nie znalazles odpowiedniej restauracji, w ktorej mozesz spedzic wieczor? Witamy w restauracji Restauracja Indyjska Rani Rzeszów. Cieszymy sie, ze mozemy zaoferowac Ci nasze apetyczne dania i niezapomniane doznania kulinarne. Przy dobrej pogodzie nasz przytulny ogrodek oferuje czysty relaks. Posiadamy klimatyzacje, abys czul sie komfortowo rowniez w upaly.*- Doskonala restauracja z kacikiem dla dzieci -*Nasza indyjska kuchnia fascynuje szczegolnie autentycznymi i tradycyjnymi potrawami. Sprobuj alkoholowego napoju i zimnego piwa jako uzupelnienie do naszych wyjatkowo pysznych owocow morza albo ryb. Gdy tylko masz ochote, mozesz delektowac sie naszymi wysmienitymi deserem i orzez...",
     reviews: 1435,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipMClmK1uWuNClA51hCtVnM7gMj1bbtkWWq-VZIw=s1024",
@@ -9655,7 +9655,7 @@ export const data = [
       "Kuchnia wegetarianska",
     ],
     rating: "4,7",
-    address: "Plac Jana Kilinskiego 2, 35-005 Rzeszow",
+    address: "Plac Jana Kilinskiego 2, 35-005 Rzeszów",
     link: "https://www.google.com/maps/place/Restauracja+Indyjska+Rani+Rzesz%C3%B3w/data=!4m7!3m6!1s0x473cfb88e22e7f2d:0xb2ffaf3ab4f3b897!8m2!3d50.0418846!4d22.0084722!16s%2Fg%2F11gnpvhkh0!19sChIJLX8u4oj7PEcRl7jztDqv_7I?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 55,
@@ -9770,7 +9770,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/114957400652055090834?hl=pl",
         review_text:
-          "Odwiedzajac Restauracje Indyjska Rani w Rzeszowie, moglismy poczuc sie jak w kulinarnym sercu Indii.  Znajdujaca sie przy Placu Kilinskiego, restauracja oferuje bogate menu pelne tradycyjnych indyjskich smakow, ktore zadowola nawet najbardziej wymagajacych milosnikow orientalnej kuchni. Chwalilismy sobie szczegolnie przyjazna atmosfere i profesjonalna obsluge, ktora sprawila, ze nasza wizyta byla niezapomnianym doswiadczeniem. Restauracja prowadzona jest przez rodowitego Hindusa, co gwarantuje oryginalnosc i jakosc serwowanych potraw. Menu Rani jest pelne roznorodnych, aromatycznych potraw, ktore zadowola zarowno milosnikow miesnych specjalow, jak i wegetarian. W tym, szeroki wybor dan - dania ostre, lagodne, z pieca Tandoor oraz zawierajace gluten. Kazde nasze danie bylo przygotowywane z najwyzsza starannoscia, wykorzystujac swieze skladniki i bogaty wachlarz przypraw, co gwarantowalo niezapomniane doznania smakowe. Szczegolnie polecamy chicken tikka masala oraz chicken korma, ktore swoim glebokim smakiem i idealnie dobranymi przyprawami zachwycily nasze podniebienia. Do tego wnetrze lokalu laczy klasyczna elegancje z orientalnym stylem, a tlo muzyczne dodalo atmosfery. Rani to zdecydowanie idealne miejsce na rozne okazje - od spotkan z przyjaciolmi, kolacje, romantyczne wieczory we dwoje, po rodzinne obiady. Dla najmlodszych przygotowano specjalne menu.  Restauracja zapewnia rowniez dostawe jedzenia prosto do domu, co jest wygodna opcja dla klientow. Jest to miejsce, ktore zdecydowanie warto odwiedzic, aby doswiadczyc bogactwa smakow kuchni indyjskiej w sercu Rzeszowa. Polecam!",
+          "Odwiedzajac Restauracje Indyjska Rani w Rzeszówie, moglismy poczuc sie jak w kulinarnym sercu Indii.  Znajdujaca sie przy Placu Kilinskiego, restauracja oferuje bogate menu pelne tradycyjnych indyjskich smakow, ktore zadowola nawet najbardziej wymagajacych milosnikow orientalnej kuchni. Chwalilismy sobie szczegolnie przyjazna atmosfere i profesjonalna obsluge, ktora sprawila, ze nasza wizyta byla niezapomnianym doswiadczeniem. Restauracja prowadzona jest przez rodowitego Hindusa, co gwarantuje oryginalnosc i jakosc serwowanych potraw. Menu Rani jest pelne roznorodnych, aromatycznych potraw, ktore zadowola zarowno milosnikow miesnych specjalow, jak i wegetarian. W tym, szeroki wybor dan - dania ostre, lagodne, z pieca Tandoor oraz zawierajace gluten. Kazde nasze danie bylo przygotowywane z najwyzsza starannoscia, wykorzystujac swieze skladniki i bogaty wachlarz przypraw, co gwarantowalo niezapomniane doznania smakowe. Szczegolnie polecamy chicken tikka masala oraz chicken korma, ktore swoim glebokim smakiem i idealnie dobranymi przyprawami zachwycily nasze podniebienia. Do tego wnetrze lokalu laczy klasyczna elegancje z orientalnym stylem, a tlo muzyczne dodalo atmosfery. Rani to zdecydowanie idealne miejsce na rozne okazje - od spotkan z przyjaciolmi, kolacje, romantyczne wieczory we dwoje, po rodzinne obiady. Dla najmlodszych przygotowano specjalne menu.  Restauracja zapewnia rowniez dostawe jedzenia prosto do domu, co jest wygodna opcja dla klientow. Jest to miejsce, ktore zdecydowanie warto odwiedzic, aby doswiadczyc bogactwa smakow kuchni indyjskiej w sercu Rzeszowa. Polecam!",
         published_at: "4 miesiace temu",
         published_at_date: "2024-06-10T07:07:32",
         response_from_owner_text:
@@ -9799,7 +9799,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/115155593105747823789?hl=pl",
         review_text:
-          "Uwielbiam kuchnie indyjska a Rani jest zdecydowanie top kuchnia w Rzeszowie. Pyszne dania, ogromny wybor pozycji zarowno z miesem, owocami morza czy wegetarianskich. Na miejscu bardzo mila obsluga. Na zdjeciu hariali chicken tikka, prawns malai curry, paneer makhanwala i oczywiscie garlic naan, wszystko smakowalo wysmienicie. Polecam!",
+          "Uwielbiam kuchnie indyjska a Rani jest zdecydowanie top kuchnia w Rzeszówie. Pyszne dania, ogromny wybor pozycji zarowno z miesem, owocami morza czy wegetarianskich. Na miejscu bardzo mila obsluga. Na zdjeciu hariali chicken tikka, prawns malai curry, paneer makhanwala i oczywiscie garlic naan, wszystko smakowalo wysmienicie. Polecam!",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-29T09:06:47",
         response_from_owner_text:
@@ -9953,7 +9953,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Restauracja", "Restauracja dla rodzin", "Kuchnia polska"],
     rating: "4,5",
-    address: "Juliusza Slowackiego 8, 35-060 Rzeszow",
+    address: "Juliusza Slowackiego 8, 35-060 Rzeszów",
     link: "https://www.google.com/maps/place/Restauracja+Konfitura/data=!4m7!3m6!1s0x473cfb0221ec4f05:0x2ebbbc1065dcb7a4!8m2!3d50.0370626!4d22.003472!16s%2Fg%2F11b74m3svf!19sChIJBU_sIQL7PEcRpLfcZRC8uy4?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 61,
@@ -10032,7 +10032,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/113313472758602579068?hl=pl",
         review_text:
-          "Wracajac z Lublina przystanek Rzeszow padlo na wasza restauracje... jedzenie pyszne wszystko cieplutkie zaczne od Tatara byl przepyszny wszystko do siebie pasowalo grzanki byly cieplutkie i chrupiace :)  maz mial burgera rowniez pochwalil smak i jak podanie ja z koleji mialam kotleta z devolaja z ziemniaczkami i surowka z buraczkow... wnetrze restauracji bardzo przyjemne dla oka, piekny obraz kolorystyka i ozdoba z kwiatow na suficie Pani kelnerka (blondynka) bardzo przemila.\nPolecam ",
+          "Wracajac z Lublina przystanek Rzeszów padlo na wasza restauracje... jedzenie pyszne wszystko cieplutkie zaczne od Tatara byl przepyszny wszystko do siebie pasowalo grzanki byly cieplutkie i chrupiace :)  maz mial burgera rowniez pochwalil smak i jak podanie ja z koleji mialam kotleta z devolaja z ziemniaczkami i surowka z buraczkow... wnetrze restauracji bardzo przyjemne dla oka, piekny obraz kolorystyka i ozdoba z kwiatow na suficie Pani kelnerka (blondynka) bardzo przemila.\nPolecam ",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-18T15:52:19",
         response_from_owner_text: "Pieknie dziekujemy za super opinie",
@@ -10246,7 +10246,7 @@ export const data = [
   },
   {
     place_id: "ChIJX3VStD37PEcREEk8IPfwCfU",
-    name: "Restauracja Panorama Lunch Modo Office Rzeszow",
+    name: "Restauracja Panorama Lunch Modo Office Rzeszów",
     description:
       "Witajcie w Restauracji Panorama\nCo oferujemy?\nCodziennie nowe znakomite zestawy obiadowe, ktore tworza idealne polaczenie smakow. Nie posiadamy stalego menu, zatem Nasi kucharze codziennie beda tworzyc nowe dania oparte na sezonowosci produktow, by trafic w gusta i zadowolic podniebienie kazdego goscia.\nPrawdziwa wloska pizza z szamotu, tradycyjny kotlet czy dania wegetarianskie? Nie zamykamy sie na jeden rodzaj kuchni, uwielbiamy podrozowac, poznawac i dzielic sie z naszymi goscmi roznorodnymi smakami kuchni calego swiata. Wszystko w relaksujacej atmosferze naszej kameralnej Restauracji bez zbednego przepychu w przystepnej dla kazdego cenie.",
     reviews: 166,
@@ -10255,7 +10255,7 @@ export const data = [
     main_category: "European",
     categories: ["Restauracja"],
     rating: "4,9",
-    address: "ul. Generala St, Generala Stanislawa Maczka 6, 35-234 Rzeszow",
+    address: "ul. Generala St, Generala Stanislawa Maczka 6, 35-234 Rzeszów",
     link: "https://www.google.com/maps/place/Restauracja+Panorama+Lunch+Modo+Office+Rzesz%C3%B3w/data=!4m7!3m6!1s0x473cfb3db452755f:0xf509f0f7203c4910!8m2!3d50.0493467!4d22.0090355!16s%2Fg%2F11p11j73dj!19sChIJX3VStD37PEcREEk8IPfwCfU?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 1,
@@ -10391,7 +10391,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/115910169309863671555?hl=pl",
         review_text:
-          "Restauracja na 4 pietrze biurowca przy ulicy Generala Maczka z pieknym widokiem na Rzeszow. Jedzenie poprostu bardzo dobre. Kazda potrawa pieknie podana, dobrze przyprawiona, aromatyczna, swieza. Porcje bardzo duze za rozsadna cene. W tym dniu zupa pieczarkowa oraz pinsa z frytkami za 37zl. Kazdego dnia inne propozycje na obiad. Obsluga bardzo mila. Restauracja czysta i schludna. Jezeli szukasz miejsca w Rzeszowie na dobry obiad to polecam goraco!!",
+          "Restauracja na 4 pietrze biurowca przy ulicy Generala Maczka z pieknym widokiem na Rzeszów. Jedzenie poprostu bardzo dobre. Kazda potrawa pieknie podana, dobrze przyprawiona, aromatyczna, swieza. Porcje bardzo duze za rozsadna cene. W tym dniu zupa pieczarkowa oraz pinsa z frytkami za 37zl. Kazdego dnia inne propozycje na obiad. Obsluga bardzo mila. Restauracja czysta i schludna. Jezeli szukasz miejsca w Rzeszówie na dobry obiad to polecam goraco!!",
         published_at: "rok temu",
         published_at_date: "2023-08-08T19:27:18",
         response_from_owner_text:
@@ -10513,14 +10513,14 @@ export const data = [
     place_id: "ChIJzWOCOBv6PEcRdDPAkA1nPoE",
     name: "Karczma Biala",
     description:
-      'Karczma Biala" to tradycyjna restauracja z glownym naciskiem na kuchnie polska. Specjalizujemy sie w pierogach, schabowym, plackach z gulaszem oraz burgerach. Dla milosnikow zdrowego jedzenia oferujemy rowniez dania wegetarianskie. Nasze wnetrze tworzy rodzinna atmosfera, z kacikiem dla dzieci i placem zabaw. Otwarte od poniedzialku do piatku 11:00-19:00, w weekendy 11:00-20:00. Oferujemy catering, organizacje imprez oraz dowozy. Ceny sa umiarkowane. Przy lokalu duzy parking, darmowe WiFi i taras na sezon. Zapraszamy!\n1855\nhttps://lh3.ggpht.com/p/AF1QipMXpsD2B9VPe5-arTmdgBKo6Ik7mAmJbW9F5WD-=s1024\nRestauracja\n["Restauracja","Sklep z piwem","Cukiernia","Bar koktajlowy","Lodziarnia","Restauracja - amerykanskie nalesniki","Makarony","Kuchnia polska","Winiarnia"]\n4,6\nAleja Generala Wladyslawa Sikorskiego 182, 35-304 Rzeszow\nhttps://www.google.com/maps/place/Karczma+Bia%C5%82a/data=!4m7!3m6!1s0x473cfa1b388263cd:0x813e670d90c03374!8m2!3d49.9922527!4d22.0178183!16s%2Fg%2F11dfkps5df!19sChIJzWOCOBv6PEcRdDPAkA1nPoE?authuser=0&hl=pl&rclk=1\n{"1":92,"2":36,"3":62,"4":183,"5":1482}\n{"latitude":49.992252699999995,"longitude":22.0178183}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipMXpsD2B9VPe5-arTmdgBKo6Ik7mAmJbW9F5WD-=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipPKmnHJaGENeWgR1UMaD9aHOXaJPB7nU7lq3VmL=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipP5jywGsHL9ktmKw2osmeKpIdPksPoSOtobC7-t=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipOeyMCXtzCxPxHgZ8dMUkZzMnyZ31HWwK46k8_w=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipNWGkCD20eJlv2WQ4TPROQU5no4yycIN_ZhOHWC=s1024"},{"about":"Zupa","link":"https://lh3.ggpht.com/p/AF1QipOXF4xrVt5AgrfrXEi8DH5o9kIjlGxISvSSRoSv=s1024"},{"about":"Apple pie","link":"https://lh3.ggpht.com/p/AF1QipMHvgRMAlO1VLzoi8IeAB0Ivrsr3KjbfsFhp_56=s1024"},{"about":"Rosol z kury","link":"https://lh3.ggpht.com/p/AF1QipMEZTEhlS09WEjnsk697wdFeQg5LX-qNBm0VM_E=s1024"},{"about":"Sznycel","link":"https://lh3.ggpht.com/p/AF1QipOk9FPvnHEQ5PFAmLs2tdEbAwet0r3KMYz4NC1p=s1024"},{"about":"Pierogi","link":"https://lh3.ggpht.com/p/AF1QipP2I5XFgvlvmNtAlXG3dPlLk67urhmAA0bOpWEq=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipNVbCGfTYbOcaKby0upqk80evyrogogGGKp5kGU=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lTBFpHY14sI9JGvHZYDEsg&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=279.27026&pitch=0&thumbfov=100"}]\n[{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURYaWZUNkJnEAE","rating":3,"name":"Maria M","reviewer_profile":"https://www.google.com/maps/contrib/109698113802434416894?hl=pl","review_text":"Zamowilismy kotlet schabowy z puree i placki ziemniaczane, jako przystawke mielismy smalec z ogorkiem kiszonym.\\n\\nSmalec byl taki sredni, nie taki jak sie spodziewalam, boczek robi cala robote. Jesli chodzi o schab to byl ok (nienajlepszy ktory jadlam w swoim zyciu), natomiast puree nie bylo swieze a raczej podgrzewane.  Placki ziemniaczane byly za tluste i brakowalo soli (ale to moja opinia).\\n\\nOgolnie klimat jest okay, szczegolnie jak zlapalismy golden hour. Obsluga tez tez byla mila i dania otrzymalismy dosyc szybko. Jak na takie jedzenie i w takim miescie uwazam ze ceny troche za wysokie.\\n\\nZeby cos zjesc to miejsce jest ok, ale zeby posmakowac to nie","published_at":"6 dni temu","published_at_date":"2024-10-28T16:46:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPRaxKzcruOiIIGTgI5YEfalgFwqzn43R3MWnTQ=s1024","https://lh3.ggpht.com/p/AF1QipNqfpcaqok4gmJiIcmad4PeLXwBqPsB-guzpaaa=s1024","https://lh3.ggpht.com/p/AF1QipPKmnHJaGENeWgR1UMaD9aHOXaJPB7nU7lq3VmL=s1024","https://lh3.ggpht.com/p/AF1QipPbRStakNBX1EFfkHL4WVE4SnpyTKumfAarVx9-=s1024","https://lh3.ggpht.com/p/AF1QipMmdRkYj9xSmELoomNU887nnr8MPD-96CFmO9hU=s1024","https://lh3.ggpht.com/p/AF1QipNqg3dWd3Vx6g5t8aR-Y7p3XUC3BSraEDB5DdxV=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYaU9EaUt3EAE","rating":5,"name":"Rymut Kamil","reviewer_profile":"https://www.google.com/maps/contrib/115824917924444615501?hl=pl","review_text":"Obiady sa domowe i bardzo smaczne. Miejsc jest duzo, nie trzeba dlugo czekac na danie. Parking z boku i z tylu lokalu jest duzy i darmowy.","published_at":"3 tygodnie temu","published_at_date":"2024-10-12T15:29:31","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipO_Fcs9PVMVF6cEkORJwKRoeFIP1fbslygdFBrr=s1024","https://lh3.ggpht.com/p/AF1QipMplOnDR279oKUoc9Tp_h5PhE0f3AE1M7vEHoyh=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUM3ajg3Z253RRAB","rating":5,"name":"Kinga Waczek","reviewer_profile":"https://www.google.com/maps/contrib/100328123146289976725?hl=pl","review_text":"Piekne miejsce, jedzenie pyszne placki ziemniaczane chrupiace, gulasz swiezy i bardzo dobry, szarlotka genialna jedyny minus to burger bo mieso bylo jak podeszwa chyba komus sie o nim zapomnialo, kompot swojski, pyszny, duzo ludzi a czas oczekiwania na drugie danie to prawie poltorej godziny (moze warto pomyslec o dodatkowej zalodze na kuchni?) Panie kelnerki bardzo mile az ich bylo szkoda gdy kolejni goscie wyklocali sie o jedzenie i o czas oczekiwania, za to zdecydowanie nalezy im sie premia!","published_at":"2 miesiace temu","published_at_date":"2024-08-19T06:37:18","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPGyOragjVcgaG_SZanpCroTMTYxGtxjYhN4opj=s1024","https://lh3.ggpht.com/p/AF1QipMcLTCc7q2Lj3_rekrfu1yvXZC-bmq8MgLPFJtJ=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNMNjZMQlBBEAE","rating":5,"name":"Marzena Krol-Matejek","reviewer_profile":"https://www.google.com/maps/contrib/107745893136509647720?hl=pl","review_text":"Bardzo piekne wnetrze karczmy, kacik zabaw dla najmlodszych i oczywiscie pyszne jedzenie. Zamowilismy dzbanek kompotu, tradycyjny rosol, krem z pieczonych pomidorow, nuggetsy z kurczaka, bitki wieprzowe, golonke oraz nalesniki z bita smietana i zelkami.","published_at":"4 miesiace temu","published_at_date":"2024-06-23T07:33:00","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":2,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipON49_pqloxZziBoIgbuftNyLZ2Y1IalopN5uFf=s1024","https://lh3.ggpht.com/p/AF1QipNyvntATJe1cY4zyCkme8OP4qRdQOIzuFfLpniU=s1024","https://lh3.ggpht.com/p/AF1QipM9uasx3WayH6cpus3MLzZYYGdolDVUN5c7d3dB=s1024","https://lh3.ggpht.com/p/AF1QipN8Nr54votSwvQsLXybDsXuJmW1wEoEAekMC--U=s1024","https://lh3.ggpht.com/p/AF1QipP690w8LBkwkgH_atLYh5Hw3UY7YtQmWzjLstSp=s1024","https://lh3.ggpht.com/p/AF1QipPlqgjO__EEGXI7cOrJHA0fhvD3c6eEuJkTjiAr=s1024","https://lh3.ggpht.com/p/AF1QipM5HHUAa8P60Nyo1KRl9OboC5ByURwW09RguRRH=s1024","https://lh3.ggpht.com/p/AF1QipP6K8lidg-yHhFAG3CXLCHCjLSeZ9MHehne_6Y0=s1024","https://lh3.ggpht.com/p/AF1QipN9fMJJaIG-LwG_LvJ10IANpQrVrD_RQitE7ejy=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURqNWFYZDZnRRAB","rating":4,"name":"Klient W","reviewer_profile":"https://www.google.com/maps/contrib/104754194683565435156?hl=pl","review_text":"Smaczne jedzenie w rozsadnych cenach, menu przejrzyste, dobrze przemyslane. Lokal schludny. Niestety przy pelnym oblozeniu, czas oczekiwania na zamowienie to 1h... Obsluga mila ale niestety malo profesjonalna, warto informowac gosci o brakach w menu przed zlozeniem zamowienia, stolik obok skladal trzy razy zamowienie, bo nagle sie okazywalo, ze tego nie ma, a tego tez nie ma.","published_at":"5 miesiecy temu","published_at_date":"2024-05-05T16:02:21","response_from_owner_text":"Dziekujemy za podzielenie sie swoja opinia i za docenienie smacznego jedzenia oraz rozsadnych cen. Cieszymy sie, ze nasze menu przypadlo Panstwu do gustu i ze lokal wydal sie schludny. Przepraszamy za niedogodnosci zwiazane z czasem oczekiwania oraz brakami w menu. Dokladamy wszelkich staran, aby obsluga byla jak najbardziej profesjonalna i aby takie sytuacje sie nie powtarzaly.\\n\\nZdajemy sobie sprawe, jak wazne jest szybkie i rzetelne informowanie gosci o dostepnosci potraw. Pana uwagi sa dla nas cenna wskazowka do dalszej poprawy. Przepraszamy za wszelkie niedogodnosci i zapewniamy, ze podejmiemy odpowiednie kroki, aby usprawnic nasza obsluge.\\n\\nDziekujemy za zwrocenie uwagi na te kwestie i mamy nadzieje, ze mimo tych niedogodnosci, odwiedzi nas Pan ponownie, aby doswiadczyc poprawionej jakosci obslugi.","response_from_owner_ago":"5 miesiecy temu","response_from_owner_date":"2024-06-02T10:58:06","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOdMzswR3me-e0WGMhcofgt5317xW0rCGeXuOHn=s1024","https://lh3.ggpht.com/p/AF1QipPxpszGVFM7T7jLLCl9rStQDdWdXTQqAHvfW2pI=s1024","https://lh3.ggpht.com/p/AF1QipMl7RQpj47_YplhbnSjpX3hFRSf2yjPstsf0DjJ=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURyNzV5U0R3EAE","rating":5,"name":"MGIKOO","reviewer_profile":"https://www.google.com/maps/contrib/117497673608267401467?hl=pl","review_text":"Zaczynajac od obslugi, absolutnie przemila i przepiekna kelnerka. Kultura na najwyzszym poziomie. Obsluzeni zostalismy blyskawicznie, dania podane rowniez bardzo szybko mimo niedzieli i dosc sporego ruchu w lokalu. Co do jedzenia, przepyszne naprawde. Na zdjeciu filet z kurczaka w panko, fryty i surowka z marchewki i ananasa. Przed daniem glownym rosolek. Wszystko naprawde bardzo dobre i bez zastrzezen. Moj kompan zjadl zurek oraz kotleta schabowego z mizeria i ziemniakami. Takze wszystko mu bardzo smakowalo. Ceny adekwatne do jakosci wiec nie ma zgrzytu. Napoje w odpowiednich cenach. Naprawde, bede w okolicy to wpadam drugi raz. Absolutnie polecam!","published_at":"3 miesiace temu","published_at_date":"2024-07-21T13:39:22","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNMN1TSgVqB3rf0IWcTOPbRq1ZfnH9_sccH9MM3=s1024","https://lh3.ggpht.com/p/AF1QipM6vRt0xi6ayDnnCbInGYdtGpGvkc-XxIpRQvqf=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURieE4yNmlBRRAB","rating":5,"name":"KZ","reviewer_profile":"https://www.google.com/maps/contrib/110729660862517156278?hl=pl","review_text":"Super miejsce! Polecam kazdemu. Wszystko bylo smaczne !","published_at":"3 miesiace temu","published_at_date":"2024-08-02T04:49:37","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipN1gHXV4h9N5m06CQJ1PsoW7uGb95IeQSElkbGy=s1024","https://lh3.ggpht.com/p/AF1QipNnv15qaB710kBWm7iAawUS0szBVjGcqq-B4R9H=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURIM3JXVjV3RRAB","rating":5,"name":"Anna Pilat","reviewer_profile":"https://www.google.com/maps/contrib/116761452752515995756?hl=pl","review_text":"Organizacja kolacji z okazji wieczoru panienskiego w tym miejscu to trafiony wybor.\\nProfesjonalne podejscie do klienta, klimatyczna altana i pyszne jedzonko ","published_at":"miesiac temu","published_at_date":"2024-09-16T11:40:49","response_from_owner_text":"Bardzo dziekujemy za tak mile slowa!  Cieszymy sie, ze organizacja wieczoru panienskiego spelnila Wasze oczekiwania. To dla nas ogromna przyjemnosc moc uczestniczyc w takich wyjatkowych chwilach. Zapraszamy ponownie i zyczymy wszystkiego najlepszego! ","response_from_owner_ago":"miesiac temu","response_from_owner_date":"2024-09-20T20:10:33","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPB9rUWTY7l2nDVs6uRsXrazGY0rSKwnB7VDMD9=s1024"]}]\nrzeszow restauracja\nChIJVXH0FQL7PEcRvECbgGNLzCI\nRestauracja Radosc\nnull\n1576\nhttps://lh3.ggpht.com/p/AF1QipPv2mSUpWwMSma3U_HP7wJ2JRa2xF5E3QNiV82a=s1024\nRestauracja europejska (kuchnia nowoczesna)\n["Restauracja europejska (kuchnia nowoczesna)"]\n4,5\nRynek 24, 35-064 Rzeszow\nhttps://www.google.com/maps/place/Restauracja+Rado%C5%9B%C4%87/data=!4m7!3m6!1s0x473cfb0215f47155:0x22cc4b63809b40bc!8m2!3d50.0378278!4d22.0043849!16s%2Fg%2F11c3x9_h5d!19sChIJVXH0FQL7PEcRvECbgGNLzCI?authuser=0&hl=pl&rclk=1\n{"1":57,"2":65,"3":68,"4":202,"5":1184}\n{"latitude":50.037827799999995,"longitude":22.004384899999998}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipPv2mSUpWwMSma3U_HP7wJ2JRa2xF5E3QNiV82a=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipPi7HxOFDF8diWP_SI-11riqPFhfqdrt8k16-3s=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipMWZjerFeHZKoCxHsf1VZlrWo_RcvQJvlTjpX6k=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipNQa2eM4PAanNnS4FBo3TFfUo2hkSGFd0akI_nx=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipP7uhndu0aZw0CRzXfCWU64qr7_3gbezF_LtbJu=s1024"},{"about":"Zupa dyniowa","link":"https://lh3.ggpht.com/p/AF1QipPZ2n1CK_uahg7L5-0QlYbvPy11F8r0W8Ms1GH1=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipOV6dhsofFUkHLUouvAiSs332v8gNfX0SbuPwkj=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=49Nywd4_qTJqbDJzK_bebA&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=37.803104&pitch=0&thumbfov=100"}]\n[{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURYcUlXbnF3RRAB","rating":3,"name":"Agni Gorgonzola","reviewer_profile":"https://www.google.com/maps/contrib/110376832265968315665?hl=pl","review_text":"Nie bede milo wspominac wizyty w tej restauracji. Pierwszy problem napotkalismy zaraz po wejsciu do restauracji- miejsce zarezerwowane z kilkudniowym wyprzedzeniem bylo przy samym oknie w pelnym sloncu. Zapytalismy obslugi czy bylaby mozliwosc zmiany miejsca, ale niestety nie bylo to mozliwe. Postanowilismy sprobowac jakos sobie poradzic z tym sloncem, ale zaslony mialy pourywane zabki i byly polprzeswitujace, wiec nie dawaly duzej ulgi.\\nKolejnym problemem restauracji jest czas wydawania dan. Bylo nas czworo i jedna osoba dostala jedzenie 25 minut po reszcie (z zegarkiem w reku bo sprawdzilismy godzine akurat). Nie musze mowic, ze takie rzeczy nie powinny byc norma w restauracji- jak widac tutaj sa patrzac tez na inne opinie.\\nCo najgorsze, na to ostatnie danie to w sumie nie warto bylo czekac. Byl to kotlet schabowy, ktory byl bardzo twardy i zylasty- no naprawde kazdy jest w stanie lepszego zrobic w domu bez wiekszych umiejetnosci. Zwrocilismy uwage kelnerce na ten problem i dostalismy informacje, ze przekaze kucharzowi \\"ze musi sie poprawic\\". No i to by bylo na tyle. Nie zaproponowano nam wymiany dania ani niczego innego.\\nBurger byl w porzadku. Fish and chips bardzo dobre. I to sa jedyne plusy z tej wizyty, ale przez reszte odradzam, nie warto.","published_at":"tydzien temu","published_at_date":"2024-10-23T14:48:45","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPa_Js3suu8NISQnAWzbYghdhknS4ifn5zl-xP6=s1024","https://lh3.ggpht.com/p/AF1QipN6I2wKmdRtT9zMiJIeJQOxyRnVw6FyHCyQZtNH=s1024","https://lh3.ggpht.com/p/AF1QipOawoAh9WucfjQvLtW_U12E9pvNiBhH-4HnKQC8=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURua2RqZGVREAE","rating":4,"name":"Kamila W","reviewer_profile":"https://www.google.com/maps/contrib/106662115032592746907?hl=pl","review_text":"Pyszne wina, fajny wystroj, jedzenie bardzo ladnie zaserwowane, ale... Zupa tajska za malo wyrazista, jakby zabraklo przypraw. Tatar pyszny, super podany, chlebek do tatara obled, ale 49 zl za 180g to mocna przeginka.\\nFish and chips spoko, ale bez rewelacji.\\nNajpierw dostajemy dania, potem sztucce, kelnerka nie wie co jest w zupie, na jakim wywarze, wiec lata na kuchnie i dopytuje, no troche slabe. Smakowo spoko i pewnie dam jeszcze szanse, ale nie zrobilo to na mnie wrazenia.","published_at":"4 tygodnie temu","published_at_date":"2024-10-06T19:46:28","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOowB7uW79kd780qGekzfJ10-Pc3SS0r5HG-bXn=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURELTZiU2V3EAE","rating":5,"name":"Bartosz Kruszelnicki","reviewer_profile":"https://www.google.com/maps/contrib/117100912321785410642?hl=pl","review_text":"Niezwykle przyjemne miejsce na rynku w Rzeszowie. Przemila i usmiechnieta obsluga, desery - przepyszne i pieknie podane, kawa rowniez bardzo dobra. Wszystko w ciekawej, dosc kameralnej mimo jednak wielkosci calego lokalu atmosferze. Nie udalo Nam sie skorzsystac z pozostalych pozycji w menu, ale zakladamy, ze tak samo pyszne jak desery. Jest okazja, aby wrocic. Pozdrawiamy i do zobaczenia.","published_at":"6 miesiecy temu","published_at_date":"2024-04-14T20:35:38","response_from_owner_text":"Serdecznie dziekujemy za opinie  Zapraszamy przy najblizszej okazji ","response_from_owner_ago":"6 miesiecy temu","response_from_owner_date":"2024-04-27T20:12:41","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipO3lb3BLOrLadTU6mtgKpyAZMeWJy2yllp7Nf7v=s1024","https://lh3.ggpht.com/p/AF1QipOmGKE5TtjdP06jcaa9BWxO0H4X6rYyUvTK2WIN=s1024","https://lh3.ggpht.com/p/AF1QipPAHD3B2rAgzfE3ZfmHYZOXYqI2Qk7pm-jKkqCG=s1024","https://lh3.ggpht.com/p/AF1QipMiO4Q9rOnsL_JaFwVDJsT64tgDC3GCADUDsHxe=s1024","https://lh3.ggpht.com/p/AF1QipPYf-8u-LGzUq_vfVMqPNvYfMtFtYb9WP7fHcds=s1024","https://lh3.ggpht.com/p/AF1QipMQAqCt19NGj00qbzWdV33qPRe3jZiv17OwlRPy=s1024","https://lh3.ggpht.com/p/AF1QipN9imSDHQLzoyXiqbhpN_M_yjRCcd6LGYflJGvO=s1024","https://lh3.ggpht.com/p/AF1QipPQUIuGnecl0av1wLrCDvbyh9USnmv3kJ4rB3Oc=s1024","https://lh3.ggpht.com/p/AF1QipPiPugrPgzHhkiFgCFNnMqyEFJJxVeQ0wXyfCG4=s1024","https://lh3.ggpht.com/p/AF1QipP3DkN2al5zySicSEefKYhTw6ERWv6k_9-mlKRn=s1024","https://lh3.ggpht.com/p/AF1QipM4vOt5hdFc7iA0BOa43LM5XIb9jKtX59Agh7Rw=s1024","https://lh3.ggpht.com/p/AF1QipMZs5tf8I-l_pnt5aoGfHRsOmX3ifrLQejt1h3u=s1024","https://lh3.ggpht.com/p/AF1QipP75U-K_Z_GT6dwIq65hIFCjvJybrZ96VogsgZ2=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUM5bGNMTDZnRRAB","rating":5,"name":"Krzysiek Prucnal","reviewer_profile":"https://www.google.com/maps/contrib/109173067169579846487?hl=pl","review_text":"Pyszna zupa grzybowa, bardzo ciekawie podana o niestandardowym smaku. Fish&Chips inne niz wiekszosc, ciekawy smak ryby rzecznej (okon). Lemoniada cytrynowa to poezja. Pani Kelnerka profesjonalna i nad wyraz mila. Udane wyjscie.Do wejscia prowadza schodki.","published_at":"7 miesiecy temu","published_at_date":"2024-03-07T19:39:53","response_from_owner_text":"Panie Krzysztofie, bardzo dziekujemy za opinie ","response_from_owner_ago":"7 miesiecy temu","response_from_owner_date":"2024-03-11T15:29:07","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipP4Ehm9t09pUi-A8dfqQ3ky-KH4wCEmyRCC00wG=s1024","https://lh3.ggpht.com/p/AF1QipPy5hq-jLuZ8TGULQrQEKBD8NNkUP1LL8MCKaPn=s1024","https://lh3.ggpht.com/p/AF1QipN9iDq0dxRvoFmkev_BrTvbsNHqInNztuDKlTKx=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNub09hcTlBRRAB","rating":4,"name":"Monika P","reviewer_profile":"https://www.google.com/maps/contrib/117733439923708933688?hl=pl","review_text":"Pyszny chlebek z krewetkami, burgery ok, smaczne drinki i suflet czekoladowy, ladny wystroj, obsluga mila. Jednak wybierajac miejsce w srodku chce sie tam czuc komfortowo a tymczasem zmarzlam wieczorem bo drzwii otwarte na osciez zeby obsludze bylo wygodniej wychodzic na ogrodek a przy temp. 10 stopni na zewnatrz musialam siedziec w kurtce i niestety zepsulo to caly nastroj a mozna bylo jeszcze posiedziec...","published_at":"miesiac temu","published_at_date":"2024-09-21T16:46:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":[]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNIOEt5OHN3RRAB","rating":5,"name":"Patrycja Rusin","reviewer_profile":"https://www.google.com/maps/contrib/116000041079561618909?hl=pl","review_text":"Mialam przyjemnosc zarezerwowac tu stolik na urodziny - gdzie otrzymalam osobna sale tzw. \\"Patio\\", ktore ma swoj urok. Niestety czytajac opinie obawialam sie finalnego efektu, ale nie spotkalo mnie rozczarowanie. Wnetrze restauracji ma cudowny klimat i wystroj. Jedzenie bylo przepyszne, pieknie podane a porcje bardzo konkretne. Obsluga rowniez na plus, bardzo mila, usmiechnieta i uprzejma, a zwlaszcza otwarta na potrzeby klienta. Jedyny minus to panujaca tam temperatura, byc moze inna pora bylo by lepiej. W tym dniu niestety panowal straszny upal. W przypadku organizowania kolejnego spotkania w tak duzym gronie na pewno ponownie wybralabym oraz polecila innym to miejsce ","published_at":"2 miesiace temu","published_at_date":"2024-08-31T08:46:41","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":[]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNydnR5a3RBRRAB","rating":2,"name":"B.","reviewer_profile":"https://www.google.com/maps/contrib/114703937603958528611?hl=pl","review_text":"Sugerujac sie opinia sprzed tygodnia, zamowilam lososia teryaki... niestety mialam rozgotowany ryz.... danie odbiegalo jakoscia od tego ,ktore tu widzialam.","published_at":"3 miesiace temu","published_at_date":"2024-07-07T16:17:50","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOgqCAIV9NaavRQWcZrx3v3uPWfxIsxFRR4Td9f=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURuNC1PTEpnEAE","rating":5,"name":"Piotr Dudzik","reviewer_profile":"https://www.google.com/maps/contrib/112549964372129568127?hl=pl","review_text":"Fantastyczna obsluga, bardzo pomocna. Jedzenie klasa, pieknie podane","published_at":"3 tygodnie temu","published_at_date":"2024-10-09T14:01:20","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipMODpYlloKg1kcOVEApUPYAOwrdY98ZhCkUbRIv=s1024"]}]\nrzeszow restauracja\nChIJ-8NXCbv7PEcRb0Ktg_gJ2rE\nRestauracja Gosciniec\nnull\n1349\nhttps://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024\nRestauracja\n["Restauracja"]\n4,3\nPrzemyslowa 3, 35-210 Rzeszow\nhttps://www.google.com/maps/place/Restauracja+Go%C5%9Bciniec/data=!4m7!3m6!1s0x473cfbbb0957c3fb:0xb1da09f883ad426f!8m2!3d50.024294!4d21.9728752!16s%2Fg%2F1tf_g5fc!19sChIJ-8NXCbv7PEcRb0Ktg_gJ2rE?authuser=0&hl=pl&rclk=1\n{"1":65,"2":61,"3":100,"4":285,"5":838}\n{"latitude":50.024294,"longitude":21.9728752}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipOdVy-7hXekDasb33__E-J5znui286vZ5xIzYYz=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipNW40OkMC_Dr7mXCQFvkeXW1dm-WHI4pKFvXDKq=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipPo8vZ67hXBNT_z8NHhNSam8M3RcdgnK-Btm1Ht=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipNPKXlNvyA1uY9Fv2w4KfUKFEXmA8iv9brA1L5s=s1024"},{"about":"Pizza","link":"https://lh3.ggpht.com/p/AF1QipMTLa_itL3-8lE3KTHUn_vx8mxup4RkDF_uN_F1=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipM4MhPQyQCJbpGT20AhMNgP_ImYu82icEYPhApC=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lkTT8_EiDr1WUKMAPWOASA&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=32.2869&pitch=0&thumbfov=100"}]\n[{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNyMW9YYTN3RRAB","rating":5,"name":"Elvira Muniak","reviewer_profile":"https://www.google.com/maps/contrib/101145597134202266494?hl=pl","review_text":"Bardzo dobre miejsce! Super smaczne jedzenie, 5 gwiazdek mogloby byc za same buleczki do zurku bo o matko jak zasluguja! Pieczywo super, zurek bigos swietnie doprawione, rybki tez smaczne ale tutaj trzeba przygotowac sie na niemala cene ;) pizza do mnie nie przemowila, ciasto przypomina bardziej podplomyk ale mimo to bardzo smaczna. Goraco polecam, super restauracja","published_at":"3 miesiace temu","published_at_date":"2024-07-06T21:34:56","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNQ7l7Q-5dqXb068aOqCp62gPof4R6zaYY1hlZI=s1024","https://lh3.ggpht.com/p/AF1QipPwozk_HQDdW4g5nZ2ZeC8SThFXe49uKaTeleKp=s1024","https://lh3.ggpht.com/p/AF1QipPHW4_NZJg-5zoUWVe2-PUPYiv-iuT16uRTnTEr=s1024","https://lh3.ggpht.com/p/AF1QipPGoSFPN07ZOyc7ehPsVvHj5BX68LgIZcRBePjE=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYeTdDUE9BEAE","rating":5,"name":"Przemyslaw Kutowski","reviewer_profile":"https://www.google.com/maps/contrib/106502237563232933716?hl=pl","review_text":"Goscilem tutaj wraz z rodzina w niedziele. Mimo sporego oblozenia zamowienie bylo zrealizowane dosyc szybko, to duzy plus.  Panie kelnerki mile i usmiechniete. Dania odpowiedniej wielkosci i smaczne.\\nJedyny minus, mimo iz w menu jest napisane w dodatkach ziemniaczki zapiekane, ktore zona i dzieciaki uwielbiaja dostalismy ziemniaki smazone we fryturze ktore nic sie maja do zamowionej formy ziemniaka. Przekazalismy to pani kelnerce, jako informacja zwrotna przekazane zostalo ze w takiej formie tutaj sa ziemniaki przygotowane.  Mimo ze nie zostaly one zjedzone nie zostalo nam zaproponowane odjecie ich od rachunku. Jedynie co to jeszcze na rachunek czekalismy dluzej niz na jedzenie.","published_at":"2 tygodnie temu","published_at_date":"2024-10-20T13:51:54","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOZHYQSWygSQL1C8Pw5xPmYLUmj4OjJ2AFXR_p_=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUQ5LXFYa19RRRAB","rating":4,"name":"Dagmara Jankowska","reviewer_profile":"https://www.google.com/maps/contrib/101318999956045565543?hl=pl","review_text":"Calkiem fajna restauracja, bardziej na rodzinny obiad niz wyjscie we dwoje czy z przyjaciolmi.\\nBardzo smaczne jedzenie, dobre ceny. Wielkim plusem jest oferta dan z grilla, umieszczonego w centrum glownej sali, na oczach gosci.\\nJesli chodzi o obsluge - niestety do poprawy, brakuje ogarniecia i dokladnego zapamietania zamowienia.","published_at":"7 miesiecy temu","published_at_date":"2024-03-15T22:49:01","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipMgdyWtiKlLlzOilMiqYzIXmMZ-Hu02T7AqJ6v-=s1024","https://lh3.ggpht.com/p/AF1QipNhKDpc-W6t5KE5QG4C51D4z6JVoGXusLVcmm4P=s1024","https://lh3.ggpht.com/p/AF1QipMV6IHT8U0qQN-tcfCks1K9iqLzfNe0qYEyv9EW=s1024","https://lh3.ggpht.com/p/AF1QipOy9A8cszuxNN0hzkJWgc0BtDtNl8jsqAhdGZlR=s1024","https://lh3.ggpht.com/p/AF1QipMpnlIbmn4X1ZeGq7WBam2_3UNfpK4hir5XfPOT=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUQ5cy1IaUl3EAE","rating":2,"name":"Malwina Mroczek","reviewer_profile":"https://www.google.com/maps/contrib/114119239905416826949?hl=pl","review_text":"Jest to nasza druga wizyta w tym miejscu.\\nPierwszy raz bylismy w lecie, kiedy byl otwarty ogrodek i nie zauwazylismy nic zlego.\\n\\nJednak dzis bylismy w srodku, zamowilismy dwie salatki z grillowanym kurczakiem. Czkalismy ponad 30 min a co dostalismy!!?!\\n\\nDostalismy salatke z ZIMNYM KURCZAKIEM I NA DODATEK TEGO GOTOWYM Z OPAKOWANIA. Zglosilam to kelnerce, zaczela tlumaczyc ze u nich w restauracji podaje sie z zimnym kurczakiem. Jednak nikt nas nie poinformowal o tym. Bo na logike ,,kurczak grillowany\\" to cieply kurczak, robiony na biezaco. A nie pokrojony i wyciagniety prosto z lodowki.\\nKelnerka nas przeprosila i zaproponowala wybor czegos innego.\\n\\nJednak w obsludze panowal straszny haos. Podchodzily do nas caly czas inne kelnerki i pytaly o to samo.\\n\\nA tutaj zdjecie ,,smakowitej\\" salatki :(\\n\\nPrzykro nam, bo bylysmy nastawione na pozytywna kolacje jednak wyszlo bardzo nieprzyjemnie i malo smacznie.","published_at":"7 miesiecy temu","published_at_date":"2024-03-20T20:05:42","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPfE4Exl6p-EZhAdgYh3dvVBOULrW7n2EwLG6hv=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYbE5US0V3EAE","rating":1,"name":"Wonsz Arturek","reviewer_profile":"https://www.google.com/maps/contrib/112558095772300331651?hl=pl","review_text":"Obsluga opryskliwa, jedzenie jak za ta kwote to jakis absurd. Zdecydowanie odradzam","published_at":"3 tygodnie temu","published_at_date":"2024-10-13T14:13:40","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNzLr_Sae9rcVyjl73BTto6Qi5N4WFFmmXnb8B_=s1024","https://lh3.ggpht.com/p/AF1QipPas_NGr1woLxeimD8w5QLTOK_g54vOsJjodocx=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNwc0tuTDNBRRAB","rating":5,"name":"Darek 777","reviewer_profile":"https://www.google.com/maps/contrib/114351856002734548612?hl=pl","review_text":"Swietne miejsce gdzie mozna po prostu dobrze zjesc. Jestesmy klientem od wielu lat bo jest na prawde dobrze. GOSCINIEC to blizniacza restauracja zajazdu POD SEMAFOREM w Bachorzu. Jedzenie jest zawsze pyszne i swieze. Od wielu juz lat trzymaja dobry poziom. Klimatyczne wnetrze i przyjazna obsluga. Przyjemne, nieprzesadzone ceny, dogodny parking i doskonala lokalizacja. Czego chciec wiecej? POLECAM!","published_at":"rok temu","published_at_date":"2023-07-27T07:41:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNjoJmed1_a5BZ4lIFMZ4xyeQPVLP9GTBJ9R8-v=s1024","https://lh3.ggpht.com/p/AF1QipMDTBMJsIEvPyNNkiaEcB1k5vmtxW0Zlf__JraS=s1024","https://lh3.ggpht.com/p/AF1QipOITmKl4i6ZXWyI71GVNuZ4GH9LjnL0Q7TLbbKO=s1024","https://lh3.ggpht.com/p/AF1QipM2yEnugCoyrRITxlRNMG8koxEX7sI6VyKjI28n=s1024","https://lh3.ggpht.com/p/AF1QipP2bepgsoTpu_Q0yrKHDNpQ1ZlFfmrKzO9p68qD=s1024","https://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024","https://lh3.ggpht.com/p/AF1QipOsB9u7eMVvQPlk8bGVt8rNNCBI5wt4mYdnuW4R=s1024","https://lh3.ggpht.com/p/AF1QipOMvnYCZnVRydAHub2bWZh8LAxITqLJB_j1UjvC=s1024","https://lh3.ggpht.com/p/AF1QipPll1Ok2fiPTvYu5FdCgTjJdL52derPWpvFRGqv=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURiaHNuTHRnRRAB","rating":5,"name":"Kasia Sas","reviewer_profile":"https://www.google.com/maps/contrib/100938168181745461977?hl=pl","review_text":"Bardzo dobre jedzenie. Polecamy placki ziemniaczane z gulaszem.\\nObsluga mila, ogarnieta.\\nJedyny minus to brak klimatyzacji, ale byly duze wiatraki.","published_at":"2 miesiace temu","published_at_date":"2024-08-04T19:06:19","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOkrcL-4kAeTrWSHUziPy_rZserGUyZTHor3PmF=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUR4ODd2UkdREAE","rating":5,"name":"Tomasz Orzech","reviewer_profile":"https://www.google.com/maps/contrib/100772285161768656330?hl=pl","review_text":"Restauracja Gosciniec Rzeszow to wyjatkowe miejsce, ktore oferuje doskonale jedzenie i niezapomniana atmosfere. My jedlismy Szaszlyk po polsku duzy - 400g /bardzo dobrze wypieczony, mieso wilgotne i miekkie/ i Szaszlyk kaukaski z grilla - 200 g z buraczkami i sosem bialym, niby takie same dania a tu mile zdziwienie :-) Obsluga jest przyjazna i profesjonalna. Menu jest bogate, z szerokim wyborem dan kuchni regionalnej i miedzynarodowej. Restauracja jest gustownie urzadzona, tworzac przytulne i eleganckie wnetrze. Dodatkowo, Gosciniec organizuje rowniez imprezy okolicznosciowe, ktore sa zawsze dopasowane do potrzeb klienta. Jest to idealne miejsce na romantyczna kolacje, spotkanie biznesowe czy rodzinny obiad. Goraco polecam Gosciniec Rzeszow jako doskonale miejsce gastronomiczne.","published_at":"rok temu","published_at_date":"2023-06-14T19:12:11","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":2,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNzYaJcGQ_4RO2PygAxM4IMGCb9NW8ck0cPj31S=s1024","https://lh3.ggpht.com/p/AF1QipO553SzD6W-FycbrCkGYt7AXiqtb_a8iITKLk-6=s1024","https://lh3.ggpht.com/p/AF1QipN11tNEdPTMU-HmcNNwXGMMaxhN7986xJcQWzua=s1024","https://lh3.ggpht.com/p/AF1QipN2Dlk_djvsPPnomopU9TwSzInKRt3Rc2cZvgIU=s1024","https://lh3.ggpht.com/p/AF1QipPxmI0dWXCPmkWW4_fSaag_Srnq8DYTjmpqOQs4=s1024","https://lh3.ggpht.com/p/AF1QipOOzIuD18Sh-K1TDetCy_zdRt3IUql5Kcy1D1HY=s1024","https://lh3.ggpht.com/p/AF1QipOqlITkxO557PbEHQi-nlh2591rykzzccB9GSql=s1024","https://lh3.ggpht.com/p/AF1QipPxRAJHAZjASpWAzBqvoEq6KgsN3OT7Eb24q7Dz=s1024","https://lh3.ggpht.com/p/AF1QipOYVYMhkGkMC-UycBj-WSC80Iq13SXrGDwMFyso=s1024","https://lh3.ggpht.com/p/AF1QipM9fI8_mF5_UT6NwGWnxrseu_bcm3GUcsmWrOss=s1024","https://lh3.ggpht.com/p/AF1QipPISEqI3aRdT6CTzCbTaAIFs9ej_NVKfbIdL6IW=s1024","https://lh3.ggpht.com/p/AF1QipNKlmYEidL6vImWBAQmmQ_py64MAaHZazpiL_z3=s1024","https://lh3.ggpht.com/p/AF1QipO0EYji0r3uUISnucazF6xj3YAMHUaQplj4HUBQ=s1024"]}]\nrzeszow restauracja\nChIJzxDs4ar7PEcRQISCBVEY6q4\nProza\n"Podkarpackie specjaly w oryginalnej odslonie!\nZapomniane regionalne pysznosci powracaja fuzja smakow w mistrzowskiej oprawie. Zapraszamy!',
+      'Karczma Biala" to tradycyjna restauracja z glownym naciskiem na kuchnie polska. Specjalizujemy sie w pierogach, schabowym, plackach z gulaszem oraz burgerach. Dla milosnikow zdrowego jedzenia oferujemy rowniez dania wegetarianskie. Nasze wnetrze tworzy rodzinna atmosfera, z kacikiem dla dzieci i placem zabaw. Otwarte od poniedzialku do piatku 11:00-19:00, w weekendy 11:00-20:00. Oferujemy catering, organizacje imprez oraz dowozy. Ceny sa umiarkowane. Przy lokalu duzy parking, darmowe WiFi i taras na sezon. Zapraszamy!\n1855\nhttps://lh3.ggpht.com/p/AF1QipMXpsD2B9VPe5-arTmdgBKo6Ik7mAmJbW9F5WD-=s1024\nRestauracja\n["Restauracja","Sklep z piwem","Cukiernia","Bar koktajlowy","Lodziarnia","Restauracja - amerykanskie nalesniki","Makarony","Kuchnia polska","Winiarnia"]\n4,6\nAleja Generala Wladyslawa Sikorskiego 182, 35-304 Rzeszów\nhttps://www.google.com/maps/place/Karczma+Bia%C5%82a/data=!4m7!3m6!1s0x473cfa1b388263cd:0x813e670d90c03374!8m2!3d49.9922527!4d22.0178183!16s%2Fg%2F11dfkps5df!19sChIJzWOCOBv6PEcRdDPAkA1nPoE?authuser=0&hl=pl&rclk=1\n{"1":92,"2":36,"3":62,"4":183,"5":1482}\n{"latitude":49.992252699999995,"longitude":22.0178183}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipMXpsD2B9VPe5-arTmdgBKo6Ik7mAmJbW9F5WD-=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipPKmnHJaGENeWgR1UMaD9aHOXaJPB7nU7lq3VmL=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipP5jywGsHL9ktmKw2osmeKpIdPksPoSOtobC7-t=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipOeyMCXtzCxPxHgZ8dMUkZzMnyZ31HWwK46k8_w=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipNWGkCD20eJlv2WQ4TPROQU5no4yycIN_ZhOHWC=s1024"},{"about":"Zupa","link":"https://lh3.ggpht.com/p/AF1QipOXF4xrVt5AgrfrXEi8DH5o9kIjlGxISvSSRoSv=s1024"},{"about":"Apple pie","link":"https://lh3.ggpht.com/p/AF1QipMHvgRMAlO1VLzoi8IeAB0Ivrsr3KjbfsFhp_56=s1024"},{"about":"Rosol z kury","link":"https://lh3.ggpht.com/p/AF1QipMEZTEhlS09WEjnsk697wdFeQg5LX-qNBm0VM_E=s1024"},{"about":"Sznycel","link":"https://lh3.ggpht.com/p/AF1QipOk9FPvnHEQ5PFAmLs2tdEbAwet0r3KMYz4NC1p=s1024"},{"about":"Pierogi","link":"https://lh3.ggpht.com/p/AF1QipP2I5XFgvlvmNtAlXG3dPlLk67urhmAA0bOpWEq=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipNVbCGfTYbOcaKby0upqk80evyrogogGGKp5kGU=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lTBFpHY14sI9JGvHZYDEsg&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=279.27026&pitch=0&thumbfov=100"}]\n[{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURYaWZUNkJnEAE","rating":3,"name":"Maria M","reviewer_profile":"https://www.google.com/maps/contrib/109698113802434416894?hl=pl","review_text":"Zamowilismy kotlet schabowy z puree i placki ziemniaczane, jako przystawke mielismy smalec z ogorkiem kiszonym.\\n\\nSmalec byl taki sredni, nie taki jak sie spodziewalam, boczek robi cala robote. Jesli chodzi o schab to byl ok (nienajlepszy ktory jadlam w swoim zyciu), natomiast puree nie bylo swieze a raczej podgrzewane.  Placki ziemniaczane byly za tluste i brakowalo soli (ale to moja opinia).\\n\\nOgolnie klimat jest okay, szczegolnie jak zlapalismy golden hour. Obsluga tez tez byla mila i dania otrzymalismy dosyc szybko. Jak na takie jedzenie i w takim miescie uwazam ze ceny troche za wysokie.\\n\\nZeby cos zjesc to miejsce jest ok, ale zeby posmakowac to nie","published_at":"6 dni temu","published_at_date":"2024-10-28T16:46:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPRaxKzcruOiIIGTgI5YEfalgFwqzn43R3MWnTQ=s1024","https://lh3.ggpht.com/p/AF1QipNqfpcaqok4gmJiIcmad4PeLXwBqPsB-guzpaaa=s1024","https://lh3.ggpht.com/p/AF1QipPKmnHJaGENeWgR1UMaD9aHOXaJPB7nU7lq3VmL=s1024","https://lh3.ggpht.com/p/AF1QipPbRStakNBX1EFfkHL4WVE4SnpyTKumfAarVx9-=s1024","https://lh3.ggpht.com/p/AF1QipMmdRkYj9xSmELoomNU887nnr8MPD-96CFmO9hU=s1024","https://lh3.ggpht.com/p/AF1QipNqg3dWd3Vx6g5t8aR-Y7p3XUC3BSraEDB5DdxV=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYaU9EaUt3EAE","rating":5,"name":"Rymut Kamil","reviewer_profile":"https://www.google.com/maps/contrib/115824917924444615501?hl=pl","review_text":"Obiady sa domowe i bardzo smaczne. Miejsc jest duzo, nie trzeba dlugo czekac na danie. Parking z boku i z tylu lokalu jest duzy i darmowy.","published_at":"3 tygodnie temu","published_at_date":"2024-10-12T15:29:31","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipO_Fcs9PVMVF6cEkORJwKRoeFIP1fbslygdFBrr=s1024","https://lh3.ggpht.com/p/AF1QipMplOnDR279oKUoc9Tp_h5PhE0f3AE1M7vEHoyh=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUM3ajg3Z253RRAB","rating":5,"name":"Kinga Waczek","reviewer_profile":"https://www.google.com/maps/contrib/100328123146289976725?hl=pl","review_text":"Piekne miejsce, jedzenie pyszne placki ziemniaczane chrupiace, gulasz swiezy i bardzo dobry, szarlotka genialna jedyny minus to burger bo mieso bylo jak podeszwa chyba komus sie o nim zapomnialo, kompot swojski, pyszny, duzo ludzi a czas oczekiwania na drugie danie to prawie poltorej godziny (moze warto pomyslec o dodatkowej zalodze na kuchni?) Panie kelnerki bardzo mile az ich bylo szkoda gdy kolejni goscie wyklocali sie o jedzenie i o czas oczekiwania, za to zdecydowanie nalezy im sie premia!","published_at":"2 miesiace temu","published_at_date":"2024-08-19T06:37:18","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPGyOragjVcgaG_SZanpCroTMTYxGtxjYhN4opj=s1024","https://lh3.ggpht.com/p/AF1QipMcLTCc7q2Lj3_rekrfu1yvXZC-bmq8MgLPFJtJ=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNMNjZMQlBBEAE","rating":5,"name":"Marzena Krol-Matejek","reviewer_profile":"https://www.google.com/maps/contrib/107745893136509647720?hl=pl","review_text":"Bardzo piekne wnetrze karczmy, kacik zabaw dla najmlodszych i oczywiscie pyszne jedzenie. Zamowilismy dzbanek kompotu, tradycyjny rosol, krem z pieczonych pomidorow, nuggetsy z kurczaka, bitki wieprzowe, golonke oraz nalesniki z bita smietana i zelkami.","published_at":"4 miesiace temu","published_at_date":"2024-06-23T07:33:00","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":2,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipON49_pqloxZziBoIgbuftNyLZ2Y1IalopN5uFf=s1024","https://lh3.ggpht.com/p/AF1QipNyvntATJe1cY4zyCkme8OP4qRdQOIzuFfLpniU=s1024","https://lh3.ggpht.com/p/AF1QipM9uasx3WayH6cpus3MLzZYYGdolDVUN5c7d3dB=s1024","https://lh3.ggpht.com/p/AF1QipN8Nr54votSwvQsLXybDsXuJmW1wEoEAekMC--U=s1024","https://lh3.ggpht.com/p/AF1QipP690w8LBkwkgH_atLYh5Hw3UY7YtQmWzjLstSp=s1024","https://lh3.ggpht.com/p/AF1QipPlqgjO__EEGXI7cOrJHA0fhvD3c6eEuJkTjiAr=s1024","https://lh3.ggpht.com/p/AF1QipM5HHUAa8P60Nyo1KRl9OboC5ByURwW09RguRRH=s1024","https://lh3.ggpht.com/p/AF1QipP6K8lidg-yHhFAG3CXLCHCjLSeZ9MHehne_6Y0=s1024","https://lh3.ggpht.com/p/AF1QipN9fMJJaIG-LwG_LvJ10IANpQrVrD_RQitE7ejy=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURqNWFYZDZnRRAB","rating":4,"name":"Klient W","reviewer_profile":"https://www.google.com/maps/contrib/104754194683565435156?hl=pl","review_text":"Smaczne jedzenie w rozsadnych cenach, menu przejrzyste, dobrze przemyslane. Lokal schludny. Niestety przy pelnym oblozeniu, czas oczekiwania na zamowienie to 1h... Obsluga mila ale niestety malo profesjonalna, warto informowac gosci o brakach w menu przed zlozeniem zamowienia, stolik obok skladal trzy razy zamowienie, bo nagle sie okazywalo, ze tego nie ma, a tego tez nie ma.","published_at":"5 miesiecy temu","published_at_date":"2024-05-05T16:02:21","response_from_owner_text":"Dziekujemy za podzielenie sie swoja opinia i za docenienie smacznego jedzenia oraz rozsadnych cen. Cieszymy sie, ze nasze menu przypadlo Panstwu do gustu i ze lokal wydal sie schludny. Przepraszamy za niedogodnosci zwiazane z czasem oczekiwania oraz brakami w menu. Dokladamy wszelkich staran, aby obsluga byla jak najbardziej profesjonalna i aby takie sytuacje sie nie powtarzaly.\\n\\nZdajemy sobie sprawe, jak wazne jest szybkie i rzetelne informowanie gosci o dostepnosci potraw. Pana uwagi sa dla nas cenna wskazowka do dalszej poprawy. Przepraszamy za wszelkie niedogodnosci i zapewniamy, ze podejmiemy odpowiednie kroki, aby usprawnic nasza obsluge.\\n\\nDziekujemy za zwrocenie uwagi na te kwestie i mamy nadzieje, ze mimo tych niedogodnosci, odwiedzi nas Pan ponownie, aby doswiadczyc poprawionej jakosci obslugi.","response_from_owner_ago":"5 miesiecy temu","response_from_owner_date":"2024-06-02T10:58:06","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOdMzswR3me-e0WGMhcofgt5317xW0rCGeXuOHn=s1024","https://lh3.ggpht.com/p/AF1QipPxpszGVFM7T7jLLCl9rStQDdWdXTQqAHvfW2pI=s1024","https://lh3.ggpht.com/p/AF1QipMl7RQpj47_YplhbnSjpX3hFRSf2yjPstsf0DjJ=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURyNzV5U0R3EAE","rating":5,"name":"MGIKOO","reviewer_profile":"https://www.google.com/maps/contrib/117497673608267401467?hl=pl","review_text":"Zaczynajac od obslugi, absolutnie przemila i przepiekna kelnerka. Kultura na najwyzszym poziomie. Obsluzeni zostalismy blyskawicznie, dania podane rowniez bardzo szybko mimo niedzieli i dosc sporego ruchu w lokalu. Co do jedzenia, przepyszne naprawde. Na zdjeciu filet z kurczaka w panko, fryty i surowka z marchewki i ananasa. Przed daniem glownym rosolek. Wszystko naprawde bardzo dobre i bez zastrzezen. Moj kompan zjadl zurek oraz kotleta schabowego z mizeria i ziemniakami. Takze wszystko mu bardzo smakowalo. Ceny adekwatne do jakosci wiec nie ma zgrzytu. Napoje w odpowiednich cenach. Naprawde, bede w okolicy to wpadam drugi raz. Absolutnie polecam!","published_at":"3 miesiace temu","published_at_date":"2024-07-21T13:39:22","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNMN1TSgVqB3rf0IWcTOPbRq1ZfnH9_sccH9MM3=s1024","https://lh3.ggpht.com/p/AF1QipM6vRt0xi6ayDnnCbInGYdtGpGvkc-XxIpRQvqf=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURieE4yNmlBRRAB","rating":5,"name":"KZ","reviewer_profile":"https://www.google.com/maps/contrib/110729660862517156278?hl=pl","review_text":"Super miejsce! Polecam kazdemu. Wszystko bylo smaczne !","published_at":"3 miesiace temu","published_at_date":"2024-08-02T04:49:37","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipN1gHXV4h9N5m06CQJ1PsoW7uGb95IeQSElkbGy=s1024","https://lh3.ggpht.com/p/AF1QipNnv15qaB710kBWm7iAawUS0szBVjGcqq-B4R9H=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURIM3JXVjV3RRAB","rating":5,"name":"Anna Pilat","reviewer_profile":"https://www.google.com/maps/contrib/116761452752515995756?hl=pl","review_text":"Organizacja kolacji z okazji wieczoru panienskiego w tym miejscu to trafiony wybor.\\nProfesjonalne podejscie do klienta, klimatyczna altana i pyszne jedzonko ","published_at":"miesiac temu","published_at_date":"2024-09-16T11:40:49","response_from_owner_text":"Bardzo dziekujemy za tak mile slowa!  Cieszymy sie, ze organizacja wieczoru panienskiego spelnila Wasze oczekiwania. To dla nas ogromna przyjemnosc moc uczestniczyc w takich wyjatkowych chwilach. Zapraszamy ponownie i zyczymy wszystkiego najlepszego! ","response_from_owner_ago":"miesiac temu","response_from_owner_date":"2024-09-20T20:10:33","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPB9rUWTY7l2nDVs6uRsXrazGY0rSKwnB7VDMD9=s1024"]}]\nrzeszow restauracja\nChIJVXH0FQL7PEcRvECbgGNLzCI\nRestauracja Radosc\nnull\n1576\nhttps://lh3.ggpht.com/p/AF1QipPv2mSUpWwMSma3U_HP7wJ2JRa2xF5E3QNiV82a=s1024\nRestauracja europejska (kuchnia nowoczesna)\n["Restauracja europejska (kuchnia nowoczesna)"]\n4,5\nRynek 24, 35-064 Rzeszów\nhttps://www.google.com/maps/place/Restauracja+Rado%C5%9B%C4%87/data=!4m7!3m6!1s0x473cfb0215f47155:0x22cc4b63809b40bc!8m2!3d50.0378278!4d22.0043849!16s%2Fg%2F11c3x9_h5d!19sChIJVXH0FQL7PEcRvECbgGNLzCI?authuser=0&hl=pl&rclk=1\n{"1":57,"2":65,"3":68,"4":202,"5":1184}\n{"latitude":50.037827799999995,"longitude":22.004384899999998}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipPv2mSUpWwMSma3U_HP7wJ2JRa2xF5E3QNiV82a=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipPi7HxOFDF8diWP_SI-11riqPFhfqdrt8k16-3s=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipMWZjerFeHZKoCxHsf1VZlrWo_RcvQJvlTjpX6k=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipNQa2eM4PAanNnS4FBo3TFfUo2hkSGFd0akI_nx=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipP7uhndu0aZw0CRzXfCWU64qr7_3gbezF_LtbJu=s1024"},{"about":"Zupa dyniowa","link":"https://lh3.ggpht.com/p/AF1QipPZ2n1CK_uahg7L5-0QlYbvPy11F8r0W8Ms1GH1=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipOV6dhsofFUkHLUouvAiSs332v8gNfX0SbuPwkj=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=49Nywd4_qTJqbDJzK_bebA&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=37.803104&pitch=0&thumbfov=100"}]\n[{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURYcUlXbnF3RRAB","rating":3,"name":"Agni Gorgonzola","reviewer_profile":"https://www.google.com/maps/contrib/110376832265968315665?hl=pl","review_text":"Nie bede milo wspominac wizyty w tej restauracji. Pierwszy problem napotkalismy zaraz po wejsciu do restauracji- miejsce zarezerwowane z kilkudniowym wyprzedzeniem bylo przy samym oknie w pelnym sloncu. Zapytalismy obslugi czy bylaby mozliwosc zmiany miejsca, ale niestety nie bylo to mozliwe. Postanowilismy sprobowac jakos sobie poradzic z tym sloncem, ale zaslony mialy pourywane zabki i byly polprzeswitujace, wiec nie dawaly duzej ulgi.\\nKolejnym problemem restauracji jest czas wydawania dan. Bylo nas czworo i jedna osoba dostala jedzenie 25 minut po reszcie (z zegarkiem w reku bo sprawdzilismy godzine akurat). Nie musze mowic, ze takie rzeczy nie powinny byc norma w restauracji- jak widac tutaj sa patrzac tez na inne opinie.\\nCo najgorsze, na to ostatnie danie to w sumie nie warto bylo czekac. Byl to kotlet schabowy, ktory byl bardzo twardy i zylasty- no naprawde kazdy jest w stanie lepszego zrobic w domu bez wiekszych umiejetnosci. Zwrocilismy uwage kelnerce na ten problem i dostalismy informacje, ze przekaze kucharzowi \\"ze musi sie poprawic\\". No i to by bylo na tyle. Nie zaproponowano nam wymiany dania ani niczego innego.\\nBurger byl w porzadku. Fish and chips bardzo dobre. I to sa jedyne plusy z tej wizyty, ale przez reszte odradzam, nie warto.","published_at":"tydzien temu","published_at_date":"2024-10-23T14:48:45","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPa_Js3suu8NISQnAWzbYghdhknS4ifn5zl-xP6=s1024","https://lh3.ggpht.com/p/AF1QipN6I2wKmdRtT9zMiJIeJQOxyRnVw6FyHCyQZtNH=s1024","https://lh3.ggpht.com/p/AF1QipOawoAh9WucfjQvLtW_U12E9pvNiBhH-4HnKQC8=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURua2RqZGVREAE","rating":4,"name":"Kamila W","reviewer_profile":"https://www.google.com/maps/contrib/106662115032592746907?hl=pl","review_text":"Pyszne wina, fajny wystroj, jedzenie bardzo ladnie zaserwowane, ale... Zupa tajska za malo wyrazista, jakby zabraklo przypraw. Tatar pyszny, super podany, chlebek do tatara obled, ale 49 zl za 180g to mocna przeginka.\\nFish and chips spoko, ale bez rewelacji.\\nNajpierw dostajemy dania, potem sztucce, kelnerka nie wie co jest w zupie, na jakim wywarze, wiec lata na kuchnie i dopytuje, no troche slabe. Smakowo spoko i pewnie dam jeszcze szanse, ale nie zrobilo to na mnie wrazenia.","published_at":"4 tygodnie temu","published_at_date":"2024-10-06T19:46:28","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOowB7uW79kd780qGekzfJ10-Pc3SS0r5HG-bXn=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURELTZiU2V3EAE","rating":5,"name":"Bartosz Kruszelnicki","reviewer_profile":"https://www.google.com/maps/contrib/117100912321785410642?hl=pl","review_text":"Niezwykle przyjemne miejsce na rynku w Rzeszówie. Przemila i usmiechnieta obsluga, desery - przepyszne i pieknie podane, kawa rowniez bardzo dobra. Wszystko w ciekawej, dosc kameralnej mimo jednak wielkosci calego lokalu atmosferze. Nie udalo Nam sie skorzsystac z pozostalych pozycji w menu, ale zakladamy, ze tak samo pyszne jak desery. Jest okazja, aby wrocic. Pozdrawiamy i do zobaczenia.","published_at":"6 miesiecy temu","published_at_date":"2024-04-14T20:35:38","response_from_owner_text":"Serdecznie dziekujemy za opinie  Zapraszamy przy najblizszej okazji ","response_from_owner_ago":"6 miesiecy temu","response_from_owner_date":"2024-04-27T20:12:41","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipO3lb3BLOrLadTU6mtgKpyAZMeWJy2yllp7Nf7v=s1024","https://lh3.ggpht.com/p/AF1QipOmGKE5TtjdP06jcaa9BWxO0H4X6rYyUvTK2WIN=s1024","https://lh3.ggpht.com/p/AF1QipPAHD3B2rAgzfE3ZfmHYZOXYqI2Qk7pm-jKkqCG=s1024","https://lh3.ggpht.com/p/AF1QipMiO4Q9rOnsL_JaFwVDJsT64tgDC3GCADUDsHxe=s1024","https://lh3.ggpht.com/p/AF1QipPYf-8u-LGzUq_vfVMqPNvYfMtFtYb9WP7fHcds=s1024","https://lh3.ggpht.com/p/AF1QipMQAqCt19NGj00qbzWdV33qPRe3jZiv17OwlRPy=s1024","https://lh3.ggpht.com/p/AF1QipN9imSDHQLzoyXiqbhpN_M_yjRCcd6LGYflJGvO=s1024","https://lh3.ggpht.com/p/AF1QipPQUIuGnecl0av1wLrCDvbyh9USnmv3kJ4rB3Oc=s1024","https://lh3.ggpht.com/p/AF1QipPiPugrPgzHhkiFgCFNnMqyEFJJxVeQ0wXyfCG4=s1024","https://lh3.ggpht.com/p/AF1QipP3DkN2al5zySicSEefKYhTw6ERWv6k_9-mlKRn=s1024","https://lh3.ggpht.com/p/AF1QipM4vOt5hdFc7iA0BOa43LM5XIb9jKtX59Agh7Rw=s1024","https://lh3.ggpht.com/p/AF1QipMZs5tf8I-l_pnt5aoGfHRsOmX3ifrLQejt1h3u=s1024","https://lh3.ggpht.com/p/AF1QipP75U-K_Z_GT6dwIq65hIFCjvJybrZ96VogsgZ2=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUM5bGNMTDZnRRAB","rating":5,"name":"Krzysiek Prucnal","reviewer_profile":"https://www.google.com/maps/contrib/109173067169579846487?hl=pl","review_text":"Pyszna zupa grzybowa, bardzo ciekawie podana o niestandardowym smaku. Fish&Chips inne niz wiekszosc, ciekawy smak ryby rzecznej (okon). Lemoniada cytrynowa to poezja. Pani Kelnerka profesjonalna i nad wyraz mila. Udane wyjscie.Do wejscia prowadza schodki.","published_at":"7 miesiecy temu","published_at_date":"2024-03-07T19:39:53","response_from_owner_text":"Panie Krzysztofie, bardzo dziekujemy za opinie ","response_from_owner_ago":"7 miesiecy temu","response_from_owner_date":"2024-03-11T15:29:07","review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipP4Ehm9t09pUi-A8dfqQ3ky-KH4wCEmyRCC00wG=s1024","https://lh3.ggpht.com/p/AF1QipPy5hq-jLuZ8TGULQrQEKBD8NNkUP1LL8MCKaPn=s1024","https://lh3.ggpht.com/p/AF1QipN9iDq0dxRvoFmkev_BrTvbsNHqInNztuDKlTKx=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNub09hcTlBRRAB","rating":4,"name":"Monika P","reviewer_profile":"https://www.google.com/maps/contrib/117733439923708933688?hl=pl","review_text":"Pyszny chlebek z krewetkami, burgery ok, smaczne drinki i suflet czekoladowy, ladny wystroj, obsluga mila. Jednak wybierajac miejsce w srodku chce sie tam czuc komfortowo a tymczasem zmarzlam wieczorem bo drzwii otwarte na osciez zeby obsludze bylo wygodniej wychodzic na ogrodek a przy temp. 10 stopni na zewnatrz musialam siedziec w kurtce i niestety zepsulo to caly nastroj a mozna bylo jeszcze posiedziec...","published_at":"miesiac temu","published_at_date":"2024-09-21T16:46:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":[]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNIOEt5OHN3RRAB","rating":5,"name":"Patrycja Rusin","reviewer_profile":"https://www.google.com/maps/contrib/116000041079561618909?hl=pl","review_text":"Mialam przyjemnosc zarezerwowac tu stolik na urodziny - gdzie otrzymalam osobna sale tzw. \\"Patio\\", ktore ma swoj urok. Niestety czytajac opinie obawialam sie finalnego efektu, ale nie spotkalo mnie rozczarowanie. Wnetrze restauracji ma cudowny klimat i wystroj. Jedzenie bylo przepyszne, pieknie podane a porcje bardzo konkretne. Obsluga rowniez na plus, bardzo mila, usmiechnieta i uprzejma, a zwlaszcza otwarta na potrzeby klienta. Jedyny minus to panujaca tam temperatura, byc moze inna pora bylo by lepiej. W tym dniu niestety panowal straszny upal. W przypadku organizowania kolejnego spotkania w tak duzym gronie na pewno ponownie wybralabym oraz polecila innym to miejsce ","published_at":"2 miesiace temu","published_at_date":"2024-08-31T08:46:41","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":[]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNydnR5a3RBRRAB","rating":2,"name":"B.","reviewer_profile":"https://www.google.com/maps/contrib/114703937603958528611?hl=pl","review_text":"Sugerujac sie opinia sprzed tygodnia, zamowilam lososia teryaki... niestety mialam rozgotowany ryz.... danie odbiegalo jakoscia od tego ,ktore tu widzialam.","published_at":"3 miesiace temu","published_at_date":"2024-07-07T16:17:50","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOgqCAIV9NaavRQWcZrx3v3uPWfxIsxFRR4Td9f=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSURuNC1PTEpnEAE","rating":5,"name":"Piotr Dudzik","reviewer_profile":"https://www.google.com/maps/contrib/112549964372129568127?hl=pl","review_text":"Fantastyczna obsluga, bardzo pomocna. Jedzenie klasa, pieknie podane","published_at":"3 tygodnie temu","published_at_date":"2024-10-09T14:01:20","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipMODpYlloKg1kcOVEApUPYAOwrdY98ZhCkUbRIv=s1024"]}]\nrzeszow restauracja\nChIJ-8NXCbv7PEcRb0Ktg_gJ2rE\nRestauracja Gosciniec\nnull\n1349\nhttps://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024\nRestauracja\n["Restauracja"]\n4,3\nPrzemyslowa 3, 35-210 Rzeszów\nhttps://www.google.com/maps/place/Restauracja+Go%C5%9Bciniec/data=!4m7!3m6!1s0x473cfbbb0957c3fb:0xb1da09f883ad426f!8m2!3d50.024294!4d21.9728752!16s%2Fg%2F1tf_g5fc!19sChIJ-8NXCbv7PEcRb0Ktg_gJ2rE?authuser=0&hl=pl&rclk=1\n{"1":65,"2":61,"3":100,"4":285,"5":838}\n{"latitude":50.024294,"longitude":21.9728752}\n[{"about":"Wszystko","link":"https://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024"},{"about":"Najnowsze","link":"https://lh3.ggpht.com/p/AF1QipOdVy-7hXekDasb33__E-J5znui286vZ5xIzYYz=s1024"},{"about":"Menu","link":"https://lh3.ggpht.com/p/AF1QipNW40OkMC_Dr7mXCQFvkeXW1dm-WHI4pKFvXDKq=s1024"},{"about":"Jedzenie i picie","link":"https://lh3.ggpht.com/p/AF1QipPo8vZ67hXBNT_z8NHhNSam8M3RcdgnK-Btm1Ht=s1024"},{"about":"Klimat","link":"https://lh3.ggpht.com/p/AF1QipNPKXlNvyA1uY9Fv2w4KfUKFEXmA8iv9brA1L5s=s1024"},{"about":"Pizza","link":"https://lh3.ggpht.com/p/AF1QipMTLa_itL3-8lE3KTHUn_vx8mxup4RkDF_uN_F1=s1024"},{"about":"Od wlasciciela","link":"https://lh3.ggpht.com/p/AF1QipM4MhPQyQCJbpGT20AhMNgP_ImYu82icEYPhApC=s1024"},{"about":"Street View i zdjecia sferyczne","link":"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lkTT8_EiDr1WUKMAPWOASA&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=32.2869&pitch=0&thumbfov=100"}]\n[{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNyMW9YYTN3RRAB","rating":5,"name":"Elvira Muniak","reviewer_profile":"https://www.google.com/maps/contrib/101145597134202266494?hl=pl","review_text":"Bardzo dobre miejsce! Super smaczne jedzenie, 5 gwiazdek mogloby byc za same buleczki do zurku bo o matko jak zasluguja! Pieczywo super, zurek bigos swietnie doprawione, rybki tez smaczne ale tutaj trzeba przygotowac sie na niemala cene ;) pizza do mnie nie przemowila, ciasto przypomina bardziej podplomyk ale mimo to bardzo smaczna. Goraco polecam, super restauracja","published_at":"3 miesiace temu","published_at_date":"2024-07-06T21:34:56","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNQ7l7Q-5dqXb068aOqCp62gPof4R6zaYY1hlZI=s1024","https://lh3.ggpht.com/p/AF1QipPwozk_HQDdW4g5nZ2ZeC8SThFXe49uKaTeleKp=s1024","https://lh3.ggpht.com/p/AF1QipPHW4_NZJg-5zoUWVe2-PUPYiv-iuT16uRTnTEr=s1024","https://lh3.ggpht.com/p/AF1QipPGoSFPN07ZOyc7ehPsVvHj5BX68LgIZcRBePjE=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYeTdDUE9BEAE","rating":5,"name":"Przemyslaw Kutowski","reviewer_profile":"https://www.google.com/maps/contrib/106502237563232933716?hl=pl","review_text":"Goscilem tutaj wraz z rodzina w niedziele. Mimo sporego oblozenia zamowienie bylo zrealizowane dosyc szybko, to duzy plus.  Panie kelnerki mile i usmiechniete. Dania odpowiedniej wielkosci i smaczne.\\nJedyny minus, mimo iz w menu jest napisane w dodatkach ziemniaczki zapiekane, ktore zona i dzieciaki uwielbiaja dostalismy ziemniaki smazone we fryturze ktore nic sie maja do zamowionej formy ziemniaka. Przekazalismy to pani kelnerce, jako informacja zwrotna przekazane zostalo ze w takiej formie tutaj sa ziemniaki przygotowane.  Mimo ze nie zostaly one zjedzone nie zostalo nam zaproponowane odjecie ich od rachunku. Jedynie co to jeszcze na rachunek czekalismy dluzej niz na jedzenie.","published_at":"2 tygodnie temu","published_at_date":"2024-10-20T13:51:54","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOZHYQSWygSQL1C8Pw5xPmYLUmj4OjJ2AFXR_p_=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUQ5LXFYa19RRRAB","rating":4,"name":"Dagmara Jankowska","reviewer_profile":"https://www.google.com/maps/contrib/101318999956045565543?hl=pl","review_text":"Calkiem fajna restauracja, bardziej na rodzinny obiad niz wyjscie we dwoje czy z przyjaciolmi.\\nBardzo smaczne jedzenie, dobre ceny. Wielkim plusem jest oferta dan z grilla, umieszczonego w centrum glownej sali, na oczach gosci.\\nJesli chodzi o obsluge - niestety do poprawy, brakuje ogarniecia i dokladnego zapamietania zamowienia.","published_at":"7 miesiecy temu","published_at_date":"2024-03-15T22:49:01","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipMgdyWtiKlLlzOilMiqYzIXmMZ-Hu02T7AqJ6v-=s1024","https://lh3.ggpht.com/p/AF1QipNhKDpc-W6t5KE5QG4C51D4z6JVoGXusLVcmm4P=s1024","https://lh3.ggpht.com/p/AF1QipMV6IHT8U0qQN-tcfCks1K9iqLzfNe0qYEyv9EW=s1024","https://lh3.ggpht.com/p/AF1QipOy9A8cszuxNN0hzkJWgc0BtDtNl8jsqAhdGZlR=s1024","https://lh3.ggpht.com/p/AF1QipMpnlIbmn4X1ZeGq7WBam2_3UNfpK4hir5XfPOT=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUQ5cy1IaUl3EAE","rating":2,"name":"Malwina Mroczek","reviewer_profile":"https://www.google.com/maps/contrib/114119239905416826949?hl=pl","review_text":"Jest to nasza druga wizyta w tym miejscu.\\nPierwszy raz bylismy w lecie, kiedy byl otwarty ogrodek i nie zauwazylismy nic zlego.\\n\\nJednak dzis bylismy w srodku, zamowilismy dwie salatki z grillowanym kurczakiem. Czkalismy ponad 30 min a co dostalismy!!?!\\n\\nDostalismy salatke z ZIMNYM KURCZAKIEM I NA DODATEK TEGO GOTOWYM Z OPAKOWANIA. Zglosilam to kelnerce, zaczela tlumaczyc ze u nich w restauracji podaje sie z zimnym kurczakiem. Jednak nikt nas nie poinformowal o tym. Bo na logike ,,kurczak grillowany\\" to cieply kurczak, robiony na biezaco. A nie pokrojony i wyciagniety prosto z lodowki.\\nKelnerka nas przeprosila i zaproponowala wybor czegos innego.\\n\\nJednak w obsludze panowal straszny haos. Podchodzily do nas caly czas inne kelnerki i pytaly o to samo.\\n\\nA tutaj zdjecie ,,smakowitej\\" salatki :(\\n\\nPrzykro nam, bo bylysmy nastawione na pozytywna kolacje jednak wyszlo bardzo nieprzyjemnie i malo smacznie.","published_at":"7 miesiecy temu","published_at_date":"2024-03-20T20:05:42","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":1,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipPfE4Exl6p-EZhAdgYh3dvVBOULrW7n2EwLG6hv=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUNYbE5US0V3EAE","rating":1,"name":"Wonsz Arturek","reviewer_profile":"https://www.google.com/maps/contrib/112558095772300331651?hl=pl","review_text":"Obsluga opryskliwa, jedzenie jak za ta kwote to jakis absurd. Zdecydowanie odradzam","published_at":"3 tygodnie temu","published_at_date":"2024-10-13T14:13:40","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNzLr_Sae9rcVyjl73BTto6Qi5N4WFFmmXnb8B_=s1024","https://lh3.ggpht.com/p/AF1QipPas_NGr1woLxeimD8w5QLTOK_g54vOsJjodocx=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSUNwc0tuTDNBRRAB","rating":5,"name":"Darek 777","reviewer_profile":"https://www.google.com/maps/contrib/114351856002734548612?hl=pl","review_text":"Swietne miejsce gdzie mozna po prostu dobrze zjesc. Jestesmy klientem od wielu lat bo jest na prawde dobrze. GOSCINIEC to blizniacza restauracja zajazdu POD SEMAFOREM w Bachorzu. Jedzenie jest zawsze pyszne i swieze. Od wielu juz lat trzymaja dobry poziom. Klimatyczne wnetrze i przyjazna obsluga. Przyjemne, nieprzesadzone ceny, dogodny parking i doskonala lokalizacja. Czego chciec wiecej? POLECAM!","published_at":"rok temu","published_at_date":"2023-07-27T07:41:53","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNjoJmed1_a5BZ4lIFMZ4xyeQPVLP9GTBJ9R8-v=s1024","https://lh3.ggpht.com/p/AF1QipMDTBMJsIEvPyNNkiaEcB1k5vmtxW0Zlf__JraS=s1024","https://lh3.ggpht.com/p/AF1QipOITmKl4i6ZXWyI71GVNuZ4GH9LjnL0Q7TLbbKO=s1024","https://lh3.ggpht.com/p/AF1QipM2yEnugCoyrRITxlRNMG8koxEX7sI6VyKjI28n=s1024","https://lh3.ggpht.com/p/AF1QipP2bepgsoTpu_Q0yrKHDNpQ1ZlFfmrKzO9p68qD=s1024","https://lh3.ggpht.com/p/AF1QipNrAJouG_LLV90wPAHDDCECleccc0Vn6RjFV89Q=s1024","https://lh3.ggpht.com/p/AF1QipOsB9u7eMVvQPlk8bGVt8rNNCBI5wt4mYdnuW4R=s1024","https://lh3.ggpht.com/p/AF1QipOMvnYCZnVRydAHub2bWZh8LAxITqLJB_j1UjvC=s1024","https://lh3.ggpht.com/p/AF1QipPll1Ok2fiPTvYu5FdCgTjJdL52derPWpvFRGqv=s1024"]},{"review_id":"ChdDSUhNMG9nS0VJQ0FnSURiaHNuTHRnRRAB","rating":5,"name":"Kasia Sas","reviewer_profile":"https://www.google.com/maps/contrib/100938168181745461977?hl=pl","review_text":"Bardzo dobre jedzenie. Polecamy placki ziemniaczane z gulaszem.\\nObsluga mila, ogarnieta.\\nJedyny minus to brak klimatyzacji, ale byly duze wiatraki.","published_at":"2 miesiace temu","published_at_date":"2024-08-04T19:06:19","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":0,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipOkrcL-4kAeTrWSHUziPy_rZserGUyZTHor3PmF=s1024"]},{"review_id":"ChZDSUhNMG9nS0VJQ0FnSUR4ODd2UkdREAE","rating":5,"name":"Tomasz Orzech","reviewer_profile":"https://www.google.com/maps/contrib/100772285161768656330?hl=pl","review_text":"Restauracja Gosciniec Rzeszów to wyjatkowe miejsce, ktore oferuje doskonale jedzenie i niezapomniana atmosfere. My jedlismy Szaszlyk po polsku duzy - 400g /bardzo dobrze wypieczony, mieso wilgotne i miekkie/ i Szaszlyk kaukaski z grilla - 200 g z buraczkami i sosem bialym, niby takie same dania a tu mile zdziwienie :-) Obsluga jest przyjazna i profesjonalna. Menu jest bogate, z szerokim wyborem dan kuchni regionalnej i miedzynarodowej. Restauracja jest gustownie urzadzona, tworzac przytulne i eleganckie wnetrze. Dodatkowo, Gosciniec organizuje rowniez imprezy okolicznosciowe, ktore sa zawsze dopasowane do potrzeb klienta. Jest to idealne miejsce na romantyczna kolacje, spotkanie biznesowe czy rodzinny obiad. Goraco polecam Gosciniec Rzeszów jako doskonale miejsce gastronomiczne.","published_at":"rok temu","published_at_date":"2023-06-14T19:12:11","response_from_owner_text":null,"response_from_owner_ago":null,"response_from_owner_date":null,"review_likes_count":2,"total_number_of_reviews_by_reviewer":null,"total_number_of_photos_by_reviewer":null,"is_local_guide":false,"review_translated_text":null,"response_from_owner_translated_text":null,"review_photos":["https://lh3.ggpht.com/p/AF1QipNzYaJcGQ_4RO2PygAxM4IMGCb9NW8ck0cPj31S=s1024","https://lh3.ggpht.com/p/AF1QipO553SzD6W-FycbrCkGYt7AXiqtb_a8iITKLk-6=s1024","https://lh3.ggpht.com/p/AF1QipN11tNEdPTMU-HmcNNwXGMMaxhN7986xJcQWzua=s1024","https://lh3.ggpht.com/p/AF1QipN2Dlk_djvsPPnomopU9TwSzInKRt3Rc2cZvgIU=s1024","https://lh3.ggpht.com/p/AF1QipPxmI0dWXCPmkWW4_fSaag_Srnq8DYTjmpqOQs4=s1024","https://lh3.ggpht.com/p/AF1QipOOzIuD18Sh-K1TDetCy_zdRt3IUql5Kcy1D1HY=s1024","https://lh3.ggpht.com/p/AF1QipOqlITkxO557PbEHQi-nlh2591rykzzccB9GSql=s1024","https://lh3.ggpht.com/p/AF1QipPxRAJHAZjASpWAzBqvoEq6KgsN3OT7Eb24q7Dz=s1024","https://lh3.ggpht.com/p/AF1QipOYVYMhkGkMC-UycBj-WSC80Iq13SXrGDwMFyso=s1024","https://lh3.ggpht.com/p/AF1QipM9fI8_mF5_UT6NwGWnxrseu_bcm3GUcsmWrOss=s1024","https://lh3.ggpht.com/p/AF1QipPISEqI3aRdT6CTzCbTaAIFs9ej_NVKfbIdL6IW=s1024","https://lh3.ggpht.com/p/AF1QipNKlmYEidL6vImWBAQmmQ_py64MAaHZazpiL_z3=s1024","https://lh3.ggpht.com/p/AF1QipO0EYji0r3uUISnucazF6xj3YAMHUaQplj4HUBQ=s1024"]}]\nrzeszow restauracja\nChIJzxDs4ar7PEcRQISCBVEY6q4\nProza\n"Podkarpackie specjaly w oryginalnej odslonie!\nZapomniane regionalne pysznosci powracaja fuzja smakow w mistrzowskiej oprawie. Zapraszamy!',
     reviews: 947,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipPo_pWUe-jZEdu55aKWJseW-v4OOhI096Cb9Wgc=s1024",
     main_category: "Polish",
     categories: ["Restauracja", "Kuchnia polska"],
     rating: "4,8",
-    address: "Jana Karola Chodkiewicza 7, 35-020 Rzeszow",
+    address: "Jana Karola Chodkiewicza 7, 35-020 Rzeszów",
     link: "https://www.google.com/maps/place/Proza/data=!4m7!3m6!1s0x473cfbaae1ec10cf:0xaeea185105828440!8m2!3d50.030673!4d21.9990968!16s%2Fg%2F11g98wv4fm!19sChIJzxDs4ar7PEcRQISCBVEY6q4?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 9,
@@ -10606,7 +10606,7 @@ export const data = [
         published_at: "rok temu",
         published_at_date: "2023-09-19T17:27:19",
         response_from_owner_text:
-          "Bardzo dziekujemy za super opinie  To miod na nasze serca! Cieszymy sie, ze lokalna kuchnia przypadla Panu do smaku. Rzeszow PROZIAKIEM stoi i niech tak pozostanie! Pozdrawiamy i zapraszamy po wiecej! ",
+          "Bardzo dziekujemy za super opinie  To miod na nasze serca! Cieszymy sie, ze lokalna kuchnia przypadla Panu do smaku. Rzeszów PROZIAKIEM stoi i niech tak pozostanie! Pozdrawiamy i zapraszamy po wiecej! ",
         response_from_owner_ago: "7 miesiecy temu",
         response_from_owner_date: "2024-03-18T18:14:38",
         review_likes_count: 1,
@@ -10707,7 +10707,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/116244404602972169136?hl=pl",
         review_text:
-          "Regionalne dania w nowoczesnym wydaniu. Bardzo smaczne jedzenie przygotowywane ze swiezych, sezonowych, dobrej jakosci skladnikow. Cena przystepna. Warto tu zajrzec zwlaszcza, jesli jest sie turysta i poszukuje sie czegos innego, smacznego i w dobrej cenie. Wybor smakow jest szeroki, wiec kazdy powinien znalezc cos dla siebie. Jadlam tylko proziaka, ale w menu sa takze zupy. Wewnatrz lokalu jest przytulnie, wnetrze nawiazuje do regionalnych, ludowych motywow. Mozna zjesc w spokojnej, przyjemnej atmosferze. Z checia tu zajrze jesli bede jeszcze kiedys w Rzeszowie, bo chcialbym sprobowac takze innych wersji proziakow.",
+          "Regionalne dania w nowoczesnym wydaniu. Bardzo smaczne jedzenie przygotowywane ze swiezych, sezonowych, dobrej jakosci skladnikow. Cena przystepna. Warto tu zajrzec zwlaszcza, jesli jest sie turysta i poszukuje sie czegos innego, smacznego i w dobrej cenie. Wybor smakow jest szeroki, wiec kazdy powinien znalezc cos dla siebie. Jadlam tylko proziaka, ale w menu sa takze zupy. Wewnatrz lokalu jest przytulnie, wnetrze nawiazuje do regionalnych, ludowych motywow. Mozna zjesc w spokojnej, przyjemnej atmosferze. Z checia tu zajrze jesli bede jeszcze kiedys w Rzeszówie, bo chcialbym sprobowac takze innych wersji proziakow.",
         published_at: "rok temu",
         published_at_date: "2023-08-06T14:03:22",
         response_from_owner_text: null,
@@ -10781,7 +10781,7 @@ export const data = [
     place_id: "ChIJw-e8Tt7pD0cRKjVvvTYgQDo",
     name: "Restauracja przystan&marina",
     description:
-      "Zapraszamy do naszej restauracji we Wroclawiu, gdzie ponadczasna kuchnia fine diningowa spotyka sie z niezapomnianym widokiem na miasto. Nasze dania to harmonijne polaczenie klasykow z nowinkami sztuki kulinarnej. Stawiamy na wylacznie swieze skladniki, pozyskiwane bezposrednio od lokalnych dostawcow i ekologicznych farm. Przez ponad 15 lat dobrze karmimy i cieszymy sie duza grupa stalych, jak i nowych gosci. Przystan & Marina jest usytuowana miedzy dwoma historycznymi mostami nad brzegiem Odry, co sprawia, ze jest to idealne miejsce na romantyczne kolacje i spotkania okolicznosciowe, zachwycajac swoim urokiem i atmosfera. Nasza restauracja zostala nagrodzona przez prestizowe przewodniki: Forbes Top 10 Restauracji w Polsce i 8x Gault&Millau",
+      "Zapraszamy do naszej restauracji we Wrocławiu, gdzie ponadczasna kuchnia fine diningowa spotyka sie z niezapomnianym widokiem na miasto. Nasze dania to harmonijne polaczenie klasykow z nowinkami sztuki kulinarnej. Stawiamy na wylacznie swieze skladniki, pozyskiwane bezposrednio od lokalnych dostawcow i ekologicznych farm. Przez ponad 15 lat dobrze karmimy i cieszymy sie duza grupa stalych, jak i nowych gosci. Przystan & Marina jest usytuowana miedzy dwoma historycznymi mostami nad brzegiem Odry, co sprawia, ze jest to idealne miejsce na romantyczne kolacje i spotkania okolicznosciowe, zachwycajac swoim urokiem i atmosfera. Nasza restauracja zostala nagrodzona przez prestizowe przewodniki: Forbes Top 10 Restauracji w Polsce i 8x Gault&Millau",
     reviews: 3621,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipPdyJ3EwKbpWyQ9hgjQvyfxvmXjy-jSQ87XMr6x=s1024",
@@ -10798,7 +10798,7 @@ export const data = [
       "Winiarnia",
     ],
     rating: "4,6",
-    address: "Ksiecia Witolda 2, 50-202 Wroclaw",
+    address: "Ksiecia Witolda 2, 50-202 Wrocław",
     link: "https://www.google.com/maps/place/Restauracja+przysta%C5%84%26marina/data=!4m7!3m6!1s0x470fe9de4ebce7c3:0x3a402036bd6f352a!8m2!3d51.1148322!4d17.0329298!16s%2Fg%2F11hbc1v3qk!19sChIJw-e8Tt7pD0cRKjVvvTYgQDo?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 93,
@@ -11034,7 +11034,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/104777766424075357467?hl=pl",
         review_text:
-          "Przystan& Marina to piekne miejsce we Wroclawiu ze stylowym wnetrzem i fantastyczna obsluga!\nBardzo milo, bardzo cieplo, smacznie i przyjemnie!\nFajne menu, kazdy znajdzie cos dla siebie. Na pewno wrocimy!",
+          "Przystan& Marina to piekne miejsce we Wrocławiu ze stylowym wnetrzem i fantastyczna obsluga!\nBardzo milo, bardzo cieplo, smacznie i przyjemnie!\nFajne menu, kazdy znajdzie cos dla siebie. Na pewno wrocimy!",
         published_at: "2 tygodnie temu",
         published_at_date: "2024-10-17T18:24:29",
         response_from_owner_text: null,
@@ -11083,7 +11083,7 @@ export const data = [
     place_id: "ChIJB1wphS7oD0cRIOvoDDbbn4E",
     name: "Restauracja Bella Storia",
     description:
-      "Wloska restauracja z nowoczesnym twistem. Smacznie i w przystepnej cenie a do tego w super atmosferze :) To jest mozliwe :) Budynek STARTER II, ul. Plac Grunwaldzki 53\nfacebook/BellaStoria.Wroclaw\ninstagram @BellaStoria.wroclaw\nDalej dzialamy rowniez na dowoz oraz wynos\n.......\nInformacje:\n-w restauracji obowiazuje zakaz wprowadzania zwierzat (bez wzgledu na ich rase, wielkosc, poziom czystosci)",
+      "Wloska restauracja z nowoczesnym twistem. Smacznie i w przystepnej cenie a do tego w super atmosferze :) To jest mozliwe :) Budynek STARTER II, ul. Plac Grunwaldzki 53\nfacebook/BellaStoria.Wrocław\ninstagram @BellaStoria.wroclaw\nDalej dzialamy rowniez na dowoz oraz wynos\n.......\nInformacje:\n-w restauracji obowiazuje zakaz wprowadzania zwierzat (bez wzgledu na ich rase, wielkosc, poziom czystosci)",
     reviews: 4636,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipPrv9PaMOui5Q2W5YTCyIT3QIDrTaO3ZWbKTWa1=s1024",
@@ -11097,7 +11097,7 @@ export const data = [
       "Restauracja wloska (kuchnia Wloch Poludniowych)",
     ],
     rating: "4,5",
-    address: "plac Grunwaldzki 53, 50-366 Wroclaw",
+    address: "plac Grunwaldzki 53, 50-366 Wrocław",
     link: "https://www.google.com/maps/place/Restauracja+Bella+Storia/data=!4m7!3m6!1s0x470fe82e85295c07:0x819fdb360ce8eb20!8m2!3d51.1139651!4d17.069944!16s%2Fg%2F11gdlz9xdc!19sChIJB1wphS7oD0cRIOvoDDbbn4E?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 147,
@@ -11203,7 +11203,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/101647425188332326181?hl=pl",
         review_text:
-          "Lokal odwiedzony kilkukrotnie, czas na opinie.\n\nLOKALIZACJA: w bliskiej okolicy placu Grunwaldzkiego, z przystankiem autobusowym i tramwajowym tuz obok.\nCENY: zdecydowanie jeden z najbardziej konkurencyjnych lokali we Wroclawiu jezeli chodzi o ceny - sa one nie wysokie, srednio 50 zl za osobe (w tym jedzenie i picie).\nOBSLUGA: mlodzi ludzie, za kazdym razem usmiechnieci, czasami lekko zamieszani i o czyms zapomna, gdy jest tlum, ale jak sie tylko przypomni klient to od razu biegna z przeprosinami i wszystko zostaje zalatwione od reki\nJEDZENIE: zdecydowanie czym chata wloska bogata, czyli roznego rodzaju przystawki, makarony, pizze i inne. Kazdy znajdzie cos dla siebie. Kazdy z kim przyszlam do BS byl zadowolony z jedzenia i chetnie by tam wrocil, a to mowi samo za siebie. Jedyne co to czesc dan moze byc bardziej polsko-wloska niz wloska, ale to mi osobiscie nie przeszkadzalo nigdy.\n\nPolecam na wyscie ze znajomymi oraz z rodzina.",
+          "Lokal odwiedzony kilkukrotnie, czas na opinie.\n\nLOKALIZACJA: w bliskiej okolicy placu Grunwaldzkiego, z przystankiem autobusowym i tramwajowym tuz obok.\nCENY: zdecydowanie jeden z najbardziej konkurencyjnych lokali we Wrocławiu jezeli chodzi o ceny - sa one nie wysokie, srednio 50 zl za osobe (w tym jedzenie i picie).\nOBSLUGA: mlodzi ludzie, za kazdym razem usmiechnieci, czasami lekko zamieszani i o czyms zapomna, gdy jest tlum, ale jak sie tylko przypomni klient to od razu biegna z przeprosinami i wszystko zostaje zalatwione od reki\nJEDZENIE: zdecydowanie czym chata wloska bogata, czyli roznego rodzaju przystawki, makarony, pizze i inne. Kazdy znajdzie cos dla siebie. Kazdy z kim przyszlam do BS byl zadowolony z jedzenia i chetnie by tam wrocil, a to mowi samo za siebie. Jedyne co to czesc dan moze byc bardziej polsko-wloska niz wloska, ale to mi osobiscie nie przeszkadzalo nigdy.\n\nPolecam na wyscie ze znajomymi oraz z rodzina.",
         published_at: "miesiac temu",
         published_at_date: "2024-10-02T06:59:59",
         response_from_owner_text: null,
@@ -11236,7 +11236,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103974163070120028970?hl=pl",
         review_text:
-          "Restauracja Bella Storia na Placu Wolnosci we Wroclawiu to miejsce, ktore z calego serca polecam wszystkim milosnikom wloskiej kuchni. Juz od pierwszych chwil po wejsciu mozna poczuc przyjazna i ciepla atmosfere, ktora tworza zarowno wystroj, jak i uprzejma obsluga. Menu jest bogate i pelne autentycznych dan inspirowanych kuchnia wloska - od doskonalych pizz wypiekanych w piecu, po wysmienite makarony i risotta.\n\nJedzenie jest zawsze swieze, smaczne i pieknie podane, a porcje sa idealnie wywazone. Szczegolnie warte polecenia sa desery - tiramisu to prawdziwe dzielo sztuki kulinarnej! Obsluga w Bella Storia jest profesjonalna i zawsze pomocna, a atmosfera w restauracji sprawia, ze jest to idealne miejsce na romantyczna kolacje, spotkanie z przyjaciolmi czy rodzinny obiad.\n\nPodsumowujac, Bella Storia to restauracja, ktora zachwyca smakiem, goscinnoscia i wloskim klimatem. Na pewno wroce tu jeszcze nie raz!",
+          "Restauracja Bella Storia na Placu Wolnosci we Wrocławiu to miejsce, ktore z calego serca polecam wszystkim milosnikom wloskiej kuchni. Juz od pierwszych chwil po wejsciu mozna poczuc przyjazna i ciepla atmosfere, ktora tworza zarowno wystroj, jak i uprzejma obsluga. Menu jest bogate i pelne autentycznych dan inspirowanych kuchnia wloska - od doskonalych pizz wypiekanych w piecu, po wysmienite makarony i risotta.\n\nJedzenie jest zawsze swieze, smaczne i pieknie podane, a porcje sa idealnie wywazone. Szczegolnie warte polecenia sa desery - tiramisu to prawdziwe dzielo sztuki kulinarnej! Obsluga w Bella Storia jest profesjonalna i zawsze pomocna, a atmosfera w restauracji sprawia, ze jest to idealne miejsce na romantyczna kolacje, spotkanie z przyjaciolmi czy rodzinny obiad.\n\nPodsumowujac, Bella Storia to restauracja, ktora zachwyca smakiem, goscinnoscia i wloskim klimatem. Na pewno wroce tu jeszcze nie raz!",
         published_at: "miesiac temu",
         published_at_date: "2024-09-11T20:20:43",
         response_from_owner_text:
@@ -11264,7 +11264,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/115271906649787773774?hl=pl",
         review_text:
-          "Info o tej restauracji znalazlem w internecie, a ze bylem pierwszy raz we Wroclawiu i wydalem sporo pieniedzy na wejscia do muzeow to szukalem tanszej restauracji. Sobotnie popoludnie ostatniego weekendu pazdziernika byl dosc cieply, co zachecilo wielu gosci do odwiedzenia tego miejsca, nie tylko mnie. Przybylismy, lokal pelny. Obsluga poprosila o poczekanie na stolik wewnatrz lub skorzystanie z tych przed lokalem. Chcielismy wewnatrz. Co kilka chwil obsluga podchodzila do nas z informacja, ze jeszcze musimy poczekac. Wiadomo, kazdy chce zjesc i nie mozna go poganiac. Sam fakt, ze nie bylismy pozostawienie sami sobie sprawial, ze czulismy sie zaopiekowani. Gdy zasiedlismy przy stoliku obsluga sprawnie i z usmiechem przyjela zamowienie. Trafilismy na zupe dnia-dyniowa, bardzo pyszna, potem klasyka czyli pizza i lasagne, na deser tiramisu. Poezja smaku. Wszystko pachnace. Mila usmiechnieta zaloga pomimo sporego ruchu. Polecam kazdemu, kto szuka we Wroclawiu smacznego jedzenia za rozsadna kwote. Zycze wielu zadowolonych gosci :)",
+          "Info o tej restauracji znalazlem w internecie, a ze bylem pierwszy raz we Wrocławiu i wydalem sporo pieniedzy na wejscia do muzeow to szukalem tanszej restauracji. Sobotnie popoludnie ostatniego weekendu pazdziernika byl dosc cieply, co zachecilo wielu gosci do odwiedzenia tego miejsca, nie tylko mnie. Przybylismy, lokal pelny. Obsluga poprosila o poczekanie na stolik wewnatrz lub skorzystanie z tych przed lokalem. Chcielismy wewnatrz. Co kilka chwil obsluga podchodzila do nas z informacja, ze jeszcze musimy poczekac. Wiadomo, kazdy chce zjesc i nie mozna go poganiac. Sam fakt, ze nie bylismy pozostawienie sami sobie sprawial, ze czulismy sie zaopiekowani. Gdy zasiedlismy przy stoliku obsluga sprawnie i z usmiechem przyjela zamowienie. Trafilismy na zupe dnia-dyniowa, bardzo pyszna, potem klasyka czyli pizza i lasagne, na deser tiramisu. Poezja smaku. Wszystko pachnace. Mila usmiechnieta zaloga pomimo sporego ruchu. Polecam kazdemu, kto szuka we Wrocławiu smacznego jedzenia za rozsadna kwote. Zycze wielu zadowolonych gosci :)",
         published_at: "6 dni temu",
         published_at_date: "2024-10-28T12:47:16",
         response_from_owner_text: null,
@@ -11311,7 +11311,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/104633956667498709604?hl=pl",
         review_text:
-          "Fajna miejscowka na mapie Wroclawia i to w dodatku poza centrum  zamowilismy salatke z watrobka, ktora okazal sie game changer'em  zdecywanie jest to salatka godna polecenia!  zamowilismy jeszcze makaron ze szparagami, ktory byl bardzo delikatny i dobry  Ogrodek bardzo srednie miejsce na jedzenie ze wzgledu na halas od drogi, a w srodku wtedy nie bylo klimy... ogolnie polecamy ",
+          "Fajna miejscowka na mapie Wrocławia i to w dodatku poza centrum  zamowilismy salatke z watrobka, ktora okazal sie game changer'em  zdecywanie jest to salatka godna polecenia!  zamowilismy jeszcze makaron ze szparagami, ktory byl bardzo delikatny i dobry  Ogrodek bardzo srednie miejsce na jedzenie ze wzgledu na halas od drogi, a w srodku wtedy nie bylo klimy... ogolnie polecamy ",
         published_at: "tydzien temu",
         published_at_date: "2024-10-22T08:45:33",
         response_from_owner_text: null,
@@ -11384,7 +11384,7 @@ export const data = [
     place_id: "ChIJN2PHQXXCD0cR8vOEaKJu7cM",
     name: "Mango Mama",
     description:
-      "Witajcie w Mango Mama, kulinarnej oazie we Wroclawiu, gdzie kuchnia indyjska spotyka sie z najlepszymi smakami Azji. Specjalizujemy sie w przynoszeniu na talerze naszych gosci esencji indyjskich specjalow, tworzac niepowtarzalne doswiadczenie kuchni azjatyckiej. Jestesmy dumni, ze mozemy byc uznawani za jedna z najlepszych restauracji indyjskich we Wroclawiu, oferujac zarowno tradycyjne dania, jak i nowoczesne interpretacje klasycznych smakow.\nMango Mama to miejsce, ktore zostalo stworzone z mysla o milosnikach azjatyckich aromatow, poszukujacych miejsc w Wroclawiu, gdzie moga doswiadczyc autentycznego street foodu z roznych zakatkow Azji. W naszym menu znajdziecie dania azjatyckie przyrzadzone z pasja ktore zawojuja Wasze podniebienia.",
+      "Witajcie w Mango Mama, kulinarnej oazie we Wrocławiu, gdzie kuchnia indyjska spotyka sie z najlepszymi smakami Azji. Specjalizujemy sie w przynoszeniu na talerze naszych gosci esencji indyjskich specjalow, tworzac niepowtarzalne doswiadczenie kuchni azjatyckiej. Jestesmy dumni, ze mozemy byc uznawani za jedna z najlepszych restauracji indyjskich we Wrocławiu, oferujac zarowno tradycyjne dania, jak i nowoczesne interpretacje klasycznych smakow.\nMango Mama to miejsce, ktore zostalo stworzone z mysla o milosnikach azjatyckich aromatow, poszukujacych miejsc w Wrocławiu, gdzie moga doswiadczyc autentycznego street foodu z roznych zakatkow Azji. W naszym menu znajdziecie dania azjatyckie przyrzadzone z pasja ktore zawojuja Wasze podniebienia.",
     reviews: 4857,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipNQH5fYByJ5Srqc_CPLhM9tuUUORh9At-LCVv5I=s1024",
@@ -11395,7 +11395,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,5",
-    address: "Swietego Mikolaja 18, 50-128 Wroclaw",
+    address: "Swietego Mikolaja 18, 50-128 Wrocław",
     link: "https://www.google.com/maps/place/Mango+Mama/data=!4m7!3m6!1s0x470fc27541c76337:0xc3ed6ea26884f3f2!8m2!3d51.1117734!4d17.0266432!16s%2Fg%2F11g65fszqd!19sChIJN2PHQXXCD0cR8vOEaKJu7cM?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 166,
@@ -11478,7 +11478,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/106416403826975645458?hl=pl",
         review_text:
-          "Bardzo fajne miejsce na smaczny obiadek. Bedac we Wroclawiu wpadlismy tu dwa razy probowac specjalow kuchni indyjskiej. Obsluga bardzo fajna i mila. W srodku duzo miejsca jest tez ogrodek szklarnia na zewnatrz. Dania dostalismy po okolo 10 minutach. Jak najbardziej polecam ta knajpe.",
+          "Bardzo fajne miejsce na smaczny obiadek. Bedac we Wrocławiu wpadlismy tu dwa razy probowac specjalow kuchni indyjskiej. Obsluga bardzo fajna i mila. W srodku duzo miejsca jest tez ogrodek szklarnia na zewnatrz. Dania dostalismy po okolo 10 minutach. Jak najbardziej polecam ta knajpe.",
         published_at: "3 miesiace temu",
         published_at_date: "2024-08-02T13:54:59",
         response_from_owner_text: "Dziekujemy!",
@@ -11555,7 +11555,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112264160069287138668?hl=pl",
         review_text:
-          "Restauracja Mango Mama w centrum Wroclawia to prawdziwy raj dla milosnikow dobrej kuchni. Jedzenie jest swieze, doskonale doprawione i pelne egzotycznych smakow. Miejsce urzeka swoim kolorowym i przyjemnym wystrojem, ktory idealnie nadaje sie na spotkania z przyjaciolmi. Wystroj wnetrza, z jego jasnymi rozowymi kanapami i cieplym oswietleniem, tworzy wyjatkowa atmosfere, ktora sprzyja relaksowi i rozmowom. Na pewno wroce tu jeszcze nie raz, aby sprobowac kolejnych pysznych dan!",
+          "Restauracja Mango Mama w centrum Wrocławia to prawdziwy raj dla milosnikow dobrej kuchni. Jedzenie jest swieze, doskonale doprawione i pelne egzotycznych smakow. Miejsce urzeka swoim kolorowym i przyjemnym wystrojem, ktory idealnie nadaje sie na spotkania z przyjaciolmi. Wystroj wnetrza, z jego jasnymi rozowymi kanapami i cieplym oswietleniem, tworzy wyjatkowa atmosfere, ktora sprzyja relaksowi i rozmowom. Na pewno wroce tu jeszcze nie raz, aby sprobowac kolejnych pysznych dan!",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-08T10:58:35",
         response_from_owner_text: "Dziekujemy!",
@@ -11578,7 +11578,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/109869792086005059202?hl=pl",
         review_text:
-          "uwielbiam, wpadam za kazdym razem jak jestem we Wroclawiu, duze porcje, idealne smaki",
+          "uwielbiam, wpadam za kazdym razem jak jestem we Wrocławiu, duze porcje, idealne smaki",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-19T23:00:49",
         response_from_owner_text: "Dziekujemy!",
@@ -11679,7 +11679,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska"],
     rating: "4,6",
-    address: "Plac Solny 11, 50-061 Wroclaw",
+    address: "Plac Solny 11, 50-061 Wrocław",
     link: "https://www.google.com/maps/place/Konspira/data=!4m7!3m6!1s0x470fc274dcd23439:0x5ad7fdb4cef000b5!8m2!3d51.1092228!4d17.0282396!16s%2Fg%2F11c528kz4x!19sChIJOTTS3HTCD0cRtQDwzrT911o?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 255,
@@ -11762,7 +11762,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102946898366620142537?hl=pl",
         review_text:
-          "Jesli chcesz poczuc klimat z czasow pomaranczowej alternatywy i powspominac jak to bylo w PRL. Polecam Jedzenie naprawde bardzo dobre, ceny przystepne a porcje ogromne.  Jedlismy Zagryche, Zestaw Studencki i Rarytas Strajkowy., okazalo sie naprawde duzym wyzwaniem zeby zjesc calosc, choc z zalem patrzylam, ze oddaje talerz ale nie bylam juz w stanie zmiescic. Naprawde super jedzenie z polska kuchnia. Oczywiscie nie powstrzymalo nas to na zamowienie kawy w szklance i sterniczka czyli zestaw firmowy  Naprawde super miejsce we Wroclawiu",
+          "Jesli chcesz poczuc klimat z czasow pomaranczowej alternatywy i powspominac jak to bylo w PRL. Polecam Jedzenie naprawde bardzo dobre, ceny przystepne a porcje ogromne.  Jedlismy Zagryche, Zestaw Studencki i Rarytas Strajkowy., okazalo sie naprawde duzym wyzwaniem zeby zjesc calosc, choc z zalem patrzylam, ze oddaje talerz ale nie bylam juz w stanie zmiescic. Naprawde super jedzenie z polska kuchnia. Oczywiscie nie powstrzymalo nas to na zamowienie kawy w szklance i sterniczka czyli zestaw firmowy  Naprawde super miejsce we Wrocławiu",
         published_at: "miesiac temu",
         published_at_date: "2024-09-28T17:49:17",
         response_from_owner_text: null,
@@ -11946,7 +11946,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102821193967861053393?hl=pl",
         review_text:
-          "Niesamowite miejsce, obsluga mila i rzetelna. Potrafia obsluzyc nawet po angielsku. Jedzenie pyszne, ceny przystepne i ten klimat! Wow mozna sie przeniesc w czasie. Polecam kazdemu, must visit in Wroclaw.",
+          "Niesamowite miejsce, obsluga mila i rzetelna. Potrafia obsluzyc nawet po angielsku. Jedzenie pyszne, ceny przystepne i ten klimat! Wow mozna sie przeniesc w czasie. Polecam kazdemu, must visit in Wrocław.",
         published_at: "tydzien temu",
         published_at_date: "2024-10-24T21:34:11",
         response_from_owner_text: null,
@@ -11996,14 +11996,14 @@ export const data = [
     place_id: "ChIJXaiQxnXCD0cRTYuDkLkw5Rg",
     name: "Bernard",
     description:
-      "Piwiarnia - Restauracja Bernard to jedyne tak klimatyczne miejsce w samym sercu Wroclawia. Miesci sie ona na trzech kondygnacjach malowniczej, przedwojennej kamienicy, na wschodniej pietrze Rynku, tuz naprzeciw glownej elewacji Ratusza. Pomysl i nazwa restauracji zostala zainspirowana doskonalym i niemajacym w swiecie sobie rownych czeskim piwem. Przewodnia idea bylo stworzenie miejsca, ktorego wystroj, kuchnia i atmosfera wprowadzi kazdego Goscia w znakomity nastroj. Wnetrze lokalu utrzymane jest w stonowanej kolorystyce, w klasycznym stylu przelamanym wspolczesnymi detalami. Widok z restauracji rozpsciera sie na unikalna panorame - wprost na barwny i dynamiczny wroclawski Rynek.",
+      "Piwiarnia - Restauracja Bernard to jedyne tak klimatyczne miejsce w samym sercu Wrocławia. Miesci sie ona na trzech kondygnacjach malowniczej, przedwojennej kamienicy, na wschodniej pietrze Rynku, tuz naprzeciw glownej elewacji Ratusza. Pomysl i nazwa restauracji zostala zainspirowana doskonalym i niemajacym w swiecie sobie rownych czeskim piwem. Przewodnia idea bylo stworzenie miejsca, ktorego wystroj, kuchnia i atmosfera wprowadzi kazdego Goscia w znakomity nastroj. Wnetrze lokalu utrzymane jest w stonowanej kolorystyce, w klasycznym stylu przelamanym wspolczesnymi detalami. Widok z restauracji rozpsciera sie na unikalna panorame - wprost na barwny i dynamiczny wroclawski Rynek.",
     reviews: 7181,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipMPkRnDz3Mk8HGU793_bV0PZ_42uc6Legk0ADJT=s1024",
     main_category: "European",
     categories: ["Restauracja", "Kuchnia czeska"],
     rating: "4,6",
-    address: "Rynek 35, 50-102 Wroclaw",
+    address: "Rynek 35, 50-102 Wrocław",
     link: "https://www.google.com/maps/place/Bernard/data=!4m7!3m6!1s0x470fc275c690a85d:0x18e530b990838b4d!8m2!3d51.1100028!4d17.0334137!16s%2Fg%2F1v8kzb9c!19sChIJXaiQxnXCD0cRTYuDkLkw5Rg?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 133,
@@ -12216,7 +12216,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/108626558574276724977?hl=pl",
         review_text:
-          "Jedzenie tylko dobre, porcje male, na pewno nieadekwatne do wygorowanej ceny. Nie jest bardzo drogo, ale restauracja nie rozni sie niczym od innych zwyklych. Lokal dosc ladny, jak wiele we Wroclawiu. Rzucily mi sie w oczy bardzo wysokie ceny wina, okolo 30 zl za lampke. Mamy sierpien 2024, w innych lokalach jest to zasadniczo polowa tej ceny.",
+          "Jedzenie tylko dobre, porcje male, na pewno nieadekwatne do wygorowanej ceny. Nie jest bardzo drogo, ale restauracja nie rozni sie niczym od innych zwyklych. Lokal dosc ladny, jak wiele we Wrocławiu. Rzucily mi sie w oczy bardzo wysokie ceny wina, okolo 30 zl za lampke. Mamy sierpien 2024, w innych lokalach jest to zasadniczo polowa tej ceny.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-25T17:20:26",
         response_from_owner_text: null,
@@ -12265,7 +12265,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/106509516016542805090?hl=pl",
         review_text:
-          "Jestesmy pierwszy raz we Wroclawiu i glodni trafilismy do tej restauracji.\nJedzenie pyszne jak i piwne koktajle i ciemne piwo - totalnie sie nie spodziewalismy, ze tak pozytywnie sie zaskoczymy. Polecamy! ",
+          "Jestesmy pierwszy raz we Wrocławiu i glodni trafilismy do tej restauracji.\nJedzenie pyszne jak i piwne koktajle i ciemne piwo - totalnie sie nie spodziewalismy, ze tak pozytywnie sie zaskoczymy. Polecamy! ",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-17T17:45:16",
         response_from_owner_text: null,
@@ -12297,7 +12297,7 @@ export const data = [
     main_category: "Seafood",
     categories: ["Ekskluzywna restauracja", "Restauracja"],
     rating: "4,5",
-    address: "Pomorska 1, 50-215 Wroclaw",
+    address: "Pomorska 1, 50-215 Wrocław",
     link: "https://www.google.com/maps/place/La+Maddalena/data=!4m7!3m6!1s0x470fc20b5b3a7d65:0x14dcd77bcc6132bc!8m2!3d51.1143103!4d17.0314381!16s%2Fg%2F1hdzf2ht3!19sChIJZX06WwvCD0cRvDJhzHvX3BQ?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 87,
@@ -12579,7 +12579,7 @@ export const data = [
     main_category: "European",
     categories: ["Restauracja"],
     rating: "4,8",
-    address: "Igielna 14/15, 50-117 Wroclaw",
+    address: "Igielna 14/15, 50-117 Wrocław",
     link: "https://www.google.com/maps/place/The+Cork/data=!4m7!3m6!1s0x470fc3e9056bd0d3:0x10abc7a7a51bdd4f!8m2!3d51.1113755!4d17.0319983!16s%2Fg%2F11j8nx6_5g!19sChIJ09BrBenDD0cRT90bpafHqxA?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 22,
@@ -12650,7 +12650,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/109096265750835802263?hl=pl",
         review_text:
-          "Cudowne miejsce na kulinarnej mapie Wroclawia. The Cork jest klimatyczna restauracja z niebanalnymi polaczeniami smakowymi oraz z niesamowitym podejsciem do gosci. Obsluga na zloty medal, od momentu wejscia do lokalu zostalismy milo powitani.  Pan, ktory nas obslugiwal, z ogromnym zaangazowaniem opowiedzial o daniach, ktore szczegolnie poleca sprobowac podczas pierwszej wizyty w lokalu. Pan kelner rowniez swietnie doradzil nam w wyborze wina, ktore bylo aromatyczne i idealnie pasowalo do wybranych przez nas dan.\n\nWszystkie dania oraz desery, ktore zamowilismy, byly przepyszne!\n\nZ mila checia ponownie odwiedzimy The Cork.",
+          "Cudowne miejsce na kulinarnej mapie Wrocławia. The Cork jest klimatyczna restauracja z niebanalnymi polaczeniami smakowymi oraz z niesamowitym podejsciem do gosci. Obsluga na zloty medal, od momentu wejscia do lokalu zostalismy milo powitani.  Pan, ktory nas obslugiwal, z ogromnym zaangazowaniem opowiedzial o daniach, ktore szczegolnie poleca sprobowac podczas pierwszej wizyty w lokalu. Pan kelner rowniez swietnie doradzil nam w wyborze wina, ktore bylo aromatyczne i idealnie pasowalo do wybranych przez nas dan.\n\nWszystkie dania oraz desery, ktore zamowilismy, byly przepyszne!\n\nZ mila checia ponownie odwiedzimy The Cork.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-06T20:14:04",
         response_from_owner_text: null,
@@ -12676,7 +12676,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/106461625293019098434?hl=pl",
         review_text:
-          "Niebanalne miejsce na kulinarnej mapie Wroclawia. Przepyszne, wysublimowane polaczenia smakow, skladniki potraw wysokiej jakosci. Deser fondant pistacjowy- bardzo oryginalny, idealnie przygotowany i podany. Obsluga na bardzo wysokim poziomie, nienachalna, z poczuciem humoru I duza wiedza o przygotowywanych potrawach. Polecone  trafnie, pyszne polskie wino Solaris. Drobna uwaga do Wlasciciela dotyczaca czystosci: nie powinno byc kurzu czy pajeczyn na scianie przy stoliku.",
+          "Niebanalne miejsce na kulinarnej mapie Wrocławia. Przepyszne, wysublimowane polaczenia smakow, skladniki potraw wysokiej jakosci. Deser fondant pistacjowy- bardzo oryginalny, idealnie przygotowany i podany. Obsluga na bardzo wysokim poziomie, nienachalna, z poczuciem humoru I duza wiedza o przygotowywanych potrawach. Polecone  trafnie, pyszne polskie wino Solaris. Drobna uwaga do Wlasciciela dotyczaca czystosci: nie powinno byc kurzu czy pajeczyn na scianie przy stoliku.",
         published_at: "miesiac temu",
         published_at_date: "2024-09-01T06:51:27",
         response_from_owner_text: null,
@@ -12724,7 +12724,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110391293331175782013?hl=pl",
         review_text:
-          '5 to za malo. Szczerze, to miejsce zaskakuje w kazdym najmniejszym szczegole. Od samego wejscia mile powitanie (mimo braku rezerwacji udalo sie, choc na chwile dostac propozycje stolika) Pani ktora nas obslugiwala dobrze wiedziala co polecic, z ogromnym zaangazowaniem opowiedziala o  Menu, znajac kazda pozycje z karty,  uwazajac na ewentualne alergie. Czasu starczylo jedynie i az na dwie wybitne przystawki.  Tatar pokonal wszystkie dotychczas sprobowane we Wroclawiu, a chorizo z kaszanka spowodowalo eksplozje smaku umami. Mozemy jedynie miec do siebie pretensje, ze nie zrobilismy wczesniej rezerwacji aby moc celebrowc te smaki przez dluzszy czas, bez pospiechu. Kolejnym razem, rezerwacje robimy miesiac wczesniej.  Pozdrawiamy serdecznie i dziekujemy za "zrobienie " nam wieczoru. Restauratorzy z Zielonej Gory\nSapori Pazzi',
+          '5 to za malo. Szczerze, to miejsce zaskakuje w kazdym najmniejszym szczegole. Od samego wejscia mile powitanie (mimo braku rezerwacji udalo sie, choc na chwile dostac propozycje stolika) Pani ktora nas obslugiwala dobrze wiedziala co polecic, z ogromnym zaangazowaniem opowiedziala o  Menu, znajac kazda pozycje z karty,  uwazajac na ewentualne alergie. Czasu starczylo jedynie i az na dwie wybitne przystawki.  Tatar pokonal wszystkie dotychczas sprobowane we Wrocławiu, a chorizo z kaszanka spowodowalo eksplozje smaku umami. Mozemy jedynie miec do siebie pretensje, ze nie zrobilismy wczesniej rezerwacji aby moc celebrowc te smaki przez dluzszy czas, bez pospiechu. Kolejnym razem, rezerwacje robimy miesiac wczesniej.  Pozdrawiamy serdecznie i dziekujemy za "zrobienie " nam wieczoru. Restauratorzy z Zielonej Gory\nSapori Pazzi',
         published_at: "6 miesiecy temu",
         published_at_date: "2024-04-09T17:22:13",
         response_from_owner_text: null,
@@ -12847,7 +12847,7 @@ export const data = [
     place_id: "ChIJMXPVkN_pD0cR8vx5ejFyQL0",
     name: "Restauracja Kurna Chata",
     description:
-      "Wroclaw slynie nie tylko z pieknego Rynku czy wielu wspanialych zabytkow. Znalezc tu mozna takze wiele miejsc, w ktorych mozna smacznie zjesc. Jesli masz ochote na typowa polska kuchnie, koniecznie powinienes odwiedzic Kurna Chate, znajdujaca sie w samym sercu stolicy Dolnego Slaska.\nTo miejsce, ktorego niezwykly klimat poczujesz juz od chwili przekroczenia progu. Po przejsciu przez drzwi przeniesiesz sie do staropolskiej, wiejskiej chaty. Jesli masz ochote skosztowac tradycyjnej polskiej kuchni - trafiles we wlasciwe miejsce. Kurna Chate warto odwiedzic, jesli masz ochote zjesc smacznie i niedrogo.",
+      "Wrocław slynie nie tylko z pieknego Rynku czy wielu wspanialych zabytkow. Znalezc tu mozna takze wiele miejsc, w ktorych mozna smacznie zjesc. Jesli masz ochote na typowa polska kuchnie, koniecznie powinienes odwiedzic Kurna Chate, znajdujaca sie w samym sercu stolicy Dolnego Slaska.\nTo miejsce, ktorego niezwykly klimat poczujesz juz od chwili przekroczenia progu. Po przejsciu przez drzwi przeniesiesz sie do staropolskiej, wiejskiej chaty. Jesli masz ochote skosztowac tradycyjnej polskiej kuchni - trafiles we wlasciwe miejsce. Kurna Chate warto odwiedzic, jesli masz ochote zjesc smacznie i niedrogo.",
     reviews: 6739,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipNBEF845GzEi5iO4ntN28UjSk3xkTZ6scyPj43m=s1024",
@@ -12859,7 +12859,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,1",
-    address: "Odrzanska 24/29, 50-114 Wroclaw",
+    address: "Odrzanska 24/29, 50-114 Wrocław",
     link: "https://www.google.com/maps/place/Restauracja+Kurna+Chata/data=!4m7!3m6!1s0x470fe9df90d57331:0xbd4072317a79fcf2!8m2!3d51.1126492!4d17.0312942!16s%2Fg%2F1tmkjpt_!19sChIJMXPVkN_pD0cR8vx5ejFyQL0?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 668,
@@ -12934,7 +12934,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112888266071571177325?hl=pl",
         review_text:
-          "Ocena na Google 4,00 ale dalabym wiecej.\nNajlepsza restauracja jaka bylam podczas Mojego 3 dniowego pobytu.\nW szczegolnosci polecam klopsy mielone, mega doprawione oraz golabki\nZurek spoko, tylko niestety jajko gotowane na pewno wczesniej przez co zimne i jak na 30 zl moglaby byc wieksza porcja. Zupa pomidorowa petarda. Herbata w duzej szklance tez fajnie.\nOgolnie polecam i na pewno jak przyjade jeszcze do Wroclawia to zjem tam.",
+          "Ocena na Google 4,00 ale dalabym wiecej.\nNajlepsza restauracja jaka bylam podczas Mojego 3 dniowego pobytu.\nW szczegolnosci polecam klopsy mielone, mega doprawione oraz golabki\nZurek spoko, tylko niestety jajko gotowane na pewno wczesniej przez co zimne i jak na 30 zl moglaby byc wieksza porcja. Zupa pomidorowa petarda. Herbata w duzej szklance tez fajnie.\nOgolnie polecam i na pewno jak przyjade jeszcze do Wrocławia to zjem tam.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-11T21:40:13",
         response_from_owner_text: null,
@@ -12961,7 +12961,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/108461159538650869172?hl=pl",
         review_text:
-          "Lokal przyjemny chociaz siedzac przy stolikach na gorze mozna sie spocic. Jezeli chodzi o jedzenie. Zurek za 30zl klasycznie poprawny w smaku  jednak popelniono najwiekszy blad  tj podano go chlodnym . Jajka sporo wczesniej gotowane i zimne na dodatek. Po zwroceniu uwagi wrzucono zupke do mikrofali bo talerz byl goracy ale Zurek nadal ledwo cieply. Uwielbiam Zurek i zawsze sie na niego skusze ale tego juz nie\nSchabik wielki faktycznie i tyle bo w zasadzie slabo doprawiony wiec w mocno przecierny. Wiem ze we Wroclawiu turystow duzo i wszystko sie sprzeda i zje ale mozna zrobic cos wiecej by ten turysta wrocil chociaz ja juz nie .",
+          "Lokal przyjemny chociaz siedzac przy stolikach na gorze mozna sie spocic. Jezeli chodzi o jedzenie. Zurek za 30zl klasycznie poprawny w smaku  jednak popelniono najwiekszy blad  tj podano go chlodnym . Jajka sporo wczesniej gotowane i zimne na dodatek. Po zwroceniu uwagi wrzucono zupke do mikrofali bo talerz byl goracy ale Zurek nadal ledwo cieply. Uwielbiam Zurek i zawsze sie na niego skusze ale tego juz nie\nSchabik wielki faktycznie i tyle bo w zasadzie slabo doprawiony wiec w mocno przecierny. Wiem ze we Wrocławiu turystow duzo i wszystko sie sprzeda i zje ale mozna zrobic cos wiecej by ten turysta wrocil chociaz ja juz nie .",
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-04T13:27:07",
         response_from_owner_text: null,
@@ -13112,7 +13112,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110360969182194946953?hl=pl",
         review_text:
-          "Bylismy przejazdem we Wroclawiu i tak po prostu zaszlismy cos zjesc. Porcje bardzo duze, jedzenie bardzo smaczne. Dlugo nie musielismy czekac na podanie. Obsluga tez bardzo mila. Polecam!",
+          "Bylismy przejazdem we Wrocławiu i tak po prostu zaszlismy cos zjesc. Porcje bardzo duze, jedzenie bardzo smaczne. Dlugo nie musielismy czekac na podanie. Obsluga tez bardzo mila. Polecam!",
         published_at: "4 miesiace temu",
         published_at_date: "2024-06-25T12:50:36",
         response_from_owner_text: null,
@@ -13142,7 +13142,7 @@ export const data = [
     main_category: "European",
     categories: ["Kuchnia czeska", "Restauracja"],
     rating: "4,5",
-    address: "Swidnicka 8A, 50-529 Wroclaw",
+    address: "Swidnicka 8A, 50-529 Wrocław",
     link: "https://www.google.com/maps/place/Restauracja+%C4%8Cesk%C3%A1/data=!4m7!3m6!1s0x470fc27422a4f113:0xbaf93a5a3a0c7a68!8m2!3d51.1078459!4d17.0327859!16s%2Fg%2F11bx8hmdn9!19sChIJE_GkInTCD0cRaHoMOlo6-bo?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 272,
@@ -13233,7 +13233,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112105754909504371891?hl=pl",
         review_text:
-          "Ceska to czeska restauracja we Wroclawiu, ktora niestety nie spelnila moich oczekiwan. Choc wnetrze jest przyjemne, a menu obiecuje autentyczne czeskie dania, brak czekadelka i rozchodniaka co w czeskich restauracjach jest norma od razu obnizyl moje wrazenia. Obsluga byla mila i zaangazowana, nie. Jedzenie bylo smaczne, ale bez uniesien nie wyroznialo sie niczym szczegolnym. Atmosfera byla mila, lecz brak tych malych, tradycyjnych akcentow sprawil, ze calosc wypada przecietnie. Oceniam Ceska na srednio - mozna sprobowac, ale nie oczekujcie wyjatkowych wrazen.",
+          "Ceska to czeska restauracja we Wrocławiu, ktora niestety nie spelnila moich oczekiwan. Choc wnetrze jest przyjemne, a menu obiecuje autentyczne czeskie dania, brak czekadelka i rozchodniaka co w czeskich restauracjach jest norma od razu obnizyl moje wrazenia. Obsluga byla mila i zaangazowana, nie. Jedzenie bylo smaczne, ale bez uniesien nie wyroznialo sie niczym szczegolnym. Atmosfera byla mila, lecz brak tych malych, tradycyjnych akcentow sprawil, ze calosc wypada przecietnie. Oceniam Ceska na srednio - mozna sprobowac, ale nie oczekujcie wyjatkowych wrazen.",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-28T17:05:53",
         response_from_owner_text: null,
@@ -13284,7 +13284,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/100393086368605900782?hl=pl",
         review_text:
-          "Bardzo mila i sprawna obsluga. (Brawo:))  Pomimo duzego ruchu zostalismy obsluzeni blyskawicznie. Golonka najlepsza jaka jadlem, ser i gulasz rowniez petarda.  O piwie nie bede wspominal bo juz wszystko zostalo napisane:)\nObiad z piwem dla 2 os 100-120zl -porcje na tyle duze, ze ciezko sie pozniej  uwlec:) -zwlaszcza golonka\nNa pewno wrocimy przy kolejnej wizycie we Wroclawiu.  Pozdro dla ekipy!!",
+          "Bardzo mila i sprawna obsluga. (Brawo:))  Pomimo duzego ruchu zostalismy obsluzeni blyskawicznie. Golonka najlepsza jaka jadlem, ser i gulasz rowniez petarda.  O piwie nie bede wspominal bo juz wszystko zostalo napisane:)\nObiad z piwem dla 2 os 100-120zl -porcje na tyle duze, ze ciezko sie pozniej  uwlec:) -zwlaszcza golonka\nNa pewno wrocimy przy kolejnej wizycie we Wrocławiu.  Pozdro dla ekipy!!",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-08T14:03:32",
         response_from_owner_text: null,
@@ -13409,7 +13409,7 @@ export const data = [
   },
   {
     place_id: "ChIJpTSU5W3CD0cROQERZXSAZaY",
-    name: "Restauracja Kuchnia Marche Swidnicka Wroclaw",
+    name: "Restauracja Kuchnia Marche Swidnicka Wrocław",
     description:
       "W Kuchni Marche odkryjesz tradycyjne dania kuchni polskiej z elementami kuchni swiata, smakowite wegetarianskie przekaski, niskokaloryczne dania fitness oraz mocno owocowe soki i orzezwiajace koktajle. A wszystko to - tylko ze swiezych skladnikow, codziennie przyrzadzane, miksowane, gotowane i pieczone na miejscu, przez pelnych pasji i polotu kucharzy!",
     reviews: 3466,
@@ -13427,7 +13427,7 @@ export const data = [
       "Atrakcja turystyczna",
     ],
     rating: "4,4",
-    address: "Swidnicka 53, 50-030 Wroclaw",
+    address: "Swidnicka 53, 50-030 Wrocław",
     link: "https://www.google.com/maps/place/Restauracja+Kuchnia+March%C3%A9+%C5%9Awidnicka+Wroc%C5%82aw/data=!4m7!3m6!1s0x470fc26de59434a5:0xa665807465110139!8m2!3d51.1010621!4d17.0287643!16s%2Fg%2F1vpfh88q!19sChIJpTSU5W3CD0cROQERZXSAZaY?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 121,
@@ -13708,7 +13708,7 @@ export const data = [
   },
   {
     place_id: "ChIJgzlMJqFz_UYRluLK0Hy7ctc",
-    name: "Chleb i Wino Stagiewna Gdansk Restauracja",
+    name: "Chleb i Wino Stagiewna Gdańsk Restauracja",
     description: null,
     reviews: 12699,
     featured_image:
@@ -13724,7 +13724,7 @@ export const data = [
       "Kuchnia polska",
     ],
     rating: "4,6",
-    address: "Stagiewna 17, 80-750 Gdansk",
+    address: "Stagiewna 17, 80-750 Gdańsk",
     link: "https://www.google.com/maps/place/Chleb+i+Wino+St%C4%85giewna+Gda%C5%84sk+Restauracja/data=!4m7!3m6!1s0x46fd73a1264c3983:0xd772bb7cd0cae296!8m2!3d54.3472985!4d18.6590499!16s%2Fg%2F11dxsbc8rm!19sChIJgzlMJqFz_UYRluLK0Hy7ctc?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 486,
@@ -14033,9 +14033,9 @@ export const data = [
   },
   {
     place_id: "ChIJuQPnbnZz_UYR20S7upz1-9Q",
-    name: "Chleb i Wino Chmielna Gdansk Restauracja",
+    name: "Chleb i Wino Chmielna Gdańsk Restauracja",
     description:
-      "Serdecznie zapraszamy do Restauracji Chleb i Wino Gdansk Chmielna na Wyspie Spichrzow, z ktorej podziwiac mozna piekny widok na Motlawe, Zurawia oraz Brame Mariacka.",
+      "Serdecznie zapraszamy do Restauracji Chleb i Wino Gdańsk Chmielna na Wyspie Spichrzow, z ktorej podziwiac mozna piekny widok na Motlawe, Zurawia oraz Brame Mariacka.",
     reviews: 8426,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipM2sx8c58yDPH0UP_jf8gK9cBEB4By4hHYXLoBn=s1024",
@@ -14049,7 +14049,7 @@ export const data = [
       "Pizza na wynos",
     ],
     rating: "4,6",
-    address: "Chmielna 3/7, 80-748 Gdansk",
+    address: "Chmielna 3/7, 80-748 Gdańsk",
     link: "https://www.google.com/maps/place/Chleb+i+Wino+Chmielna+Gda%C5%84sk+Restauracja/data=!4m7!3m6!1s0x46fd73766ee703b9:0xd4fbf59cbabb44db!8m2!3d54.349501!4d18.6579025!16s%2Fg%2F11ngzls9yv!19sChIJuQPnbnZz_UYR20S7upz1-9Q?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 286,
@@ -14358,7 +14358,7 @@ export const data = [
       "Winiarnia",
     ],
     rating: "4,6",
-    address: "Chlebnicka 48/51, 80-830 Gdansk",
+    address: "Chlebnicka 48/51, 80-830 Gdańsk",
     link: "https://www.google.com/maps/place/Restauracja+Gvara/data=!4m7!3m6!1s0x46fd73a028a72a79:0xf9ff90a99302e038!8m2!3d54.3493!4d18.6532424!16s%2Fg%2F11c71c7t93!19sChIJeSqnKKBz_UYROOACk6mQ__k?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 91,
@@ -14641,7 +14641,7 @@ export const data = [
   },
   {
     place_id: "ChIJhxejdXZz_UYR0HOnu0Z47iY",
-    name: "Pierogarnia Mandu Gdansk Srodmiescie",
+    name: "Pierogarnia Mandu Gdańsk Srodmiescie",
     description: null,
     reviews: 13800,
     featured_image:
@@ -14649,7 +14649,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Pierogarnia", "Kuchnia polska", "Restauracja"],
     rating: "4,8",
-    address: "Elzbietanska 4/8, 80-894 Gdansk",
+    address: "Elzbietanska 4/8, 80-894 Gdańsk",
     link: "https://www.google.com/maps/place/Pierogarnia+Mandu+Gda%C5%84sk+%C5%9Ar%C3%B3dmie%C5%9Bcie/data=!4m7!3m6!1s0x46fd737675a31787:0x26ee7846bba773d0!8m2!3d54.3537573!4d18.6467672!16s%2Fg%2F11clzv0wg5!19sChIJhxejdXZz_UYR0HOnu0Z47iY?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 158,
@@ -14955,9 +14955,9 @@ export const data = [
   },
   {
     place_id: "ChIJMcgrb98K_UYRejspdU2sZ-c",
-    name: "Restauracja Gdansk - Jelitkowo | Restauracja Nad Potokiem",
+    name: "Restauracja Gdańsk - Jelitkowo | Restauracja Nad Potokiem",
     description:
-      "Restauracja Gdansk - Jelitkowo | Restauracja Nad Potokiem\nWesele Gdansk, Sala Weselna Gdansk, Wesela Gdansk",
+      "Restauracja Gdańsk - Jelitkowo | Restauracja Nad Potokiem\nWesele Gdańsk, Sala Weselna Gdańsk, Wesela Gdańsk",
     reviews: 1817,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipOorEp1la6cnSt3QQSaw6wm2opsOgreUDO6e1qG=s1024",
@@ -14969,7 +14969,7 @@ export const data = [
       "Sala weselna",
     ],
     rating: "4,5",
-    address: "Morska 4, 80-341 Gdansk",
+    address: "Morska 4, 80-341 Gdańsk",
     link: "https://www.google.com/maps/place/Restauracja+Gda%C5%84sk+-+Jelitkowo+%7C+Restauracja+Nad+Potokiem/data=!4m7!3m6!1s0x46fd0adf6f2bc831:0xe767ac4d75293b7a!8m2!3d54.4244009!4d18.5978326!16s%2Fg%2F12m9k4y3x!19sChIJMcgrb98K_UYRejspdU2sZ-c?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 63,
@@ -15226,7 +15226,7 @@ export const data = [
   },
   {
     place_id: "ChIJrX7odm1z_UYRe_sBV39S-mE",
-    name: "Restauracja Geneza Jedzenia i Wina Gdansk",
+    name: "Restauracja Geneza Jedzenia i Wina Gdańsk",
     description:
       "Restauracja Geneza Jedzenia i Wina - wspaniale chwile z widokiem na Motlawe i Gdanskie Stare Miasto! \nSzef kuchni czerpiac inspiracje z calego swiata, tworzy idealnie dopracowane dania. Laczac je z szerokim wyborem win, w tym takze polskich, czas spedzony w naszej restauracji staje sie niezapomnianym doznaniem i kulinarna podroza! \nNasze drzwi sa otwarte dla Was codziennie, oferujac sniadania, lunche, obiady, desery i kolacje. Bez wzgledu na preferencje, znajdziesz u nas cos dla siebie - od angielskiego sniadania, poprzez swieze salatki, makarony z owocami morza, ryby, kurczaka, soczyste steki, az po wykwintna pizze truflowa, pyszny sernik i orzezwiajace koktajle ",
     reviews: 1201,
@@ -15246,7 +15246,7 @@ export const data = [
       "Winnica",
     ],
     rating: "4,5",
-    address: "Chmielna 10, 80-748 Gdansk",
+    address: "Chmielna 10, 80-748 Gdańsk",
     link: "https://www.google.com/maps/place/Restauracja+Geneza+Jedzenia+i+Wina+Gda%C5%84sk/data=!4m7!3m6!1s0x46fd736d76e87ead:0x61fa527f5701fb7b!8m2!3d54.3489514!4d18.6576535!16s%2Fg%2F11fpgg4s39!19sChIJrX7odm1z_UYRe_sBV39S-mE?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 74,
@@ -15545,7 +15545,7 @@ export const data = [
     main_category: "Italian",
     categories: ["Restauracja"],
     rating: "4,8",
-    address: "Chmielna 3/9, 80-748 Gdansk",
+    address: "Chmielna 3/9, 80-748 Gdańsk",
     link: "https://www.google.com/maps/place/Viceversa/data=!4m7!3m6!1s0x46fd7354691db3e1:0xda528339d7966974!8m2!3d54.3490607!4d18.657632!16s%2Fg%2F11s8y380l7!19sChIJ4bMdaVRz_UYRdGmW1zmDUto?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 36,
@@ -15840,7 +15840,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska", "Restauracja"],
     rating: "4,5",
-    address: "Jana Heweliusza 25/27, 80-861 Gdansk",
+    address: "Jana Heweliusza 25/27, 80-861 Gdańsk",
     link: "https://www.google.com/maps/place/Swojski+Smak/data=!4m7!3m6!1s0x46fd7374769a19c1:0x542327df1647666b!8m2!3d54.3569607!4d18.6524599!16s%2Fg%2F1vxcv2yv!19sChIJwRmadnRz_UYRa2ZHFt8nI1Q?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 181,
@@ -15969,7 +15969,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/117895462221989083380?hl=pl",
         review_text:
-          "Restauracja  zlokalizowana na przeciwko Hotelu Ibis Gdansk  Stare Miasto, tym samym w okolicy Dworca Glownego.\n\nBardzo dobra obsluga. Jedzenie smaczne, bylismy kilka razy i zawsze nam smakowalo. Ceny jak w wiekszosci restauracji w Gdansku.\n\nPolecam to miejsce",
+          "Restauracja  zlokalizowana na przeciwko Hotelu Ibis Gdańsk  Stare Miasto, tym samym w okolicy Dworca Glownego.\n\nBardzo dobra obsluga. Jedzenie smaczne, bylismy kilka razy i zawsze nam smakowalo. Ceny jak w wiekszosci restauracji w Gdansku.\n\nPolecam to miejsce",
         published_at: "miesiac temu",
         published_at_date: "2024-09-22T09:22:07",
         response_from_owner_text: null,
@@ -16139,14 +16139,14 @@ export const data = [
     place_id: "ChIJ1xVYb59z_UYRbETbF1h6V1w",
     name: "Canis",
     description:
-      "Restauracja Canis miesci sie w zabytkowej kamienicy na Starym Miescie w Gdansku przy ul. Ogarnej 27, gdzie bogata historia przeplata sie z nowoczesnoscia i doskonalym jedzeniem.\nZjesz u nas pyszny obiad, deser czy kolacje. Wypijesz aromatyczna kawe i wysmienite wino. Posluchasz muzyki na zywo, zorganizujesz spotkanie biznesowe, randke, wieczor z przyjaciolmi lub impreze rodzinna. Sprzyjamy zarowno spokojnym rozmowom, jak i hucznym uroczystosciom!\nStare Miasto\nGdansk\nRestauracja Gdansk\nRestauracja Gdansk Stare Miasto\nGdzie zjesc w Gdansku",
+      "Restauracja Canis miesci sie w zabytkowej kamienicy na Starym Miescie w Gdansku przy ul. Ogarnej 27, gdzie bogata historia przeplata sie z nowoczesnoscia i doskonalym jedzeniem.\nZjesz u nas pyszny obiad, deser czy kolacje. Wypijesz aromatyczna kawe i wysmienite wino. Posluchasz muzyki na zywo, zorganizujesz spotkanie biznesowe, randke, wieczor z przyjaciolmi lub impreze rodzinna. Sprzyjamy zarowno spokojnym rozmowom, jak i hucznym uroczystosciom!\nStare Miasto\nGdansk\nRestauracja Gdańsk\nRestauracja Gdańsk Stare Miasto\nGdzie zjesc w Gdansku",
     reviews: 1701,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipMb7lS2qRPoidquB8LndWt5LqfglfKWGu7Vz3tf=s1024",
     main_category: "European",
     categories: ["Restauracja", "Restauracja europejska (kuchnia nowoczesna)"],
     rating: "4,7",
-    address: "Ogarna 27/28, 80-826 Gdansk",
+    address: "Ogarna 27/28, 80-826 Gdańsk",
     link: "https://www.google.com/maps/place/Canis/data=!4m7!3m6!1s0x46fd739f6f5815d7:0x5c577a5817db446c!8m2!3d54.3478892!4d18.6508271!16s%2Fg%2F11gf8hvf2c!19sChIJ1xVYb59z_UYRbETbF1h6V1w?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 36,
@@ -16213,7 +16213,7 @@ export const data = [
         published_at: "2 tygodnie temu",
         published_at_date: "2024-10-14T11:19:56",
         response_from_owner_text:
-          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "2 tygodnie temu",
         response_from_owner_date: "2024-10-18T14:18:12",
         review_likes_count: 0,
@@ -16267,7 +16267,7 @@ export const data = [
         published_at: "3 tygodnie temu",
         published_at_date: "2024-10-14T07:59:49",
         response_from_owner_text:
-          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "2 tygodnie temu",
         response_from_owner_date: "2024-10-18T14:19:29",
         review_likes_count: 0,
@@ -16296,7 +16296,7 @@ export const data = [
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-02T16:28:36",
         response_from_owner_text:
-          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "miesiac temu",
         response_from_owner_date: "2024-09-23T11:11:44",
         review_likes_count: 1,
@@ -16323,7 +16323,7 @@ export const data = [
         published_at: "3 tygodnie temu",
         published_at_date: "2024-10-07T17:15:48",
         response_from_owner_text:
-          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za 5-gwiazdkowa opinie!\nZapraszamy ponownie do naszej restauracji!\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "2 tygodnie temu",
         response_from_owner_date: "2024-10-18T14:18:26",
         review_likes_count: 0,
@@ -16351,7 +16351,7 @@ export const data = [
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-25T07:08:21",
         response_from_owner_text:
-          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "2 miesiace temu",
         response_from_owner_date: "2024-08-19T12:20:07",
         review_likes_count: 0,
@@ -16409,7 +16409,7 @@ export const data = [
         published_at: "2 miesiace temu",
         published_at_date: "2024-08-06T06:23:05",
         response_from_owner_text:
-          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdansk",
+          "Dziekujemy za ocene i zapraszamy ponownie!\nPozdrawiamy,\nCanis Restaurant | Restauracja Stare Miasto Gdańsk",
         response_from_owner_ago: "2 miesiace temu",
         response_from_owner_date: "2024-08-19T12:19:51",
         review_likes_count: 0,
@@ -16430,7 +16430,7 @@ export const data = [
   },
   {
     place_id: "ChIJw2wfjp9z_UYRvMZx2SoF24c",
-    name: "Mono kitchen Gdansk",
+    name: "Mono kitchen Gdańsk",
     description:
       'Lokalizacja w samym sercu Starego Miasta Gdanska i w jego pieknej scenerii sprawia, ze MONO Kitchen to wyborne miejsce na spotkania biznesowe, lunch z przyjaciolmi czy rodzinne obiady i uroczystosci. Zawsze jestesmy elastyczni i otwarci na dodatkowe potrzeby naszych Gosci - weganie, ,,bezglutenowcy" oraz alergicy pokarmowi nigdy nie wyjda od nas glodni. Laczymy pasje i energie calego Zespolu i dokladamy wszelkich staran, aby Goscie od samego progu poczuli, ze trafili do wyjatkowego miejsca, ktore stanowi ogromna wartosc dodatnia na kulinarnej mapie Gdanska.',
     reviews: 3016,
@@ -16447,8 +16447,8 @@ export const data = [
       "Kuchnia wegetarianska",
     ],
     rating: "4,3",
-    address: "Piwna 28/31, 80-831 Gdansk",
-    link: "https://www.google.com/maps/place/Mono+kitchen+Gdansk/data=!4m7!3m6!1s0x46fd739f8e1f6cc3:0x87db052ad971c6bc!8m2!3d54.3494973!4d18.6523873!16s%2Fg%2F1tdc3xwv!19sChIJw2wfjp9z_UYRvMZx2SoF24c?authuser=0&hl=pl&rclk=1",
+    address: "Piwna 28/31, 80-831 Gdańsk",
+    link: "https://www.google.com/maps/place/Mono+kitchen+Gdańsk/data=!4m7!3m6!1s0x46fd739f8e1f6cc3:0x87db052ad971c6bc!8m2!3d54.3494973!4d18.6523873!16s%2Fg%2F1tdc3xwv!19sChIJw2wfjp9z_UYRvMZx2SoF24c?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 205,
       "2": 96,
@@ -16728,7 +16728,7 @@ export const data = [
     place_id: "ChIJDUCPKnJbBEcRSwtw9hMYhTI",
     name: "Restauracja Vis A Vis Koziolkow",
     description:
-      "1st place Tripadvisor Poznan / Restauracja zlokalizowana na Starym Rynku w Poznaniu, naprzeciwko ratusza, wyroznia sie nie tylko dogodna lokalizacja, ale i serwowanymi daniami. Vis a Vis Koziolkow specjalizuje sie w regionalnej, polskiej kuchni w eleganckiej, nowoczesnej odslonie. Goscie odwiedzajacy to miejsce maja okazje sprobowac wyjatkowych dan na przyklad : kaczka , burger z szarpana gesina, zurek, schabowy , pierogi itp. W menu nie brakuje takze dan kuchni amerykanskiej: burger wolowy , zeberka. W Restauracji serwujemy rowniez desery naszego wyrobu: szarlotka , sernik z mascarpone , creme brulee oraz rogal swietomarcinski.",
+      "1st place Tripadvisor Poznań / Restauracja zlokalizowana na Starym Rynku w Poznaniu, naprzeciwko ratusza, wyroznia sie nie tylko dogodna lokalizacja, ale i serwowanymi daniami. Vis a Vis Koziolkow specjalizuje sie w regionalnej, polskiej kuchni w eleganckiej, nowoczesnej odslonie. Goscie odwiedzajacy to miejsce maja okazje sprobowac wyjatkowych dan na przyklad : kaczka , burger z szarpana gesina, zurek, schabowy , pierogi itp. W menu nie brakuje takze dan kuchni amerykanskiej: burger wolowy , zeberka. W Restauracji serwujemy rowniez desery naszego wyrobu: szarlotka , sernik z mascarpone , creme brulee oraz rogal swietomarcinski.",
     reviews: 2822,
     featured_image:
       "https://lh3.ggpht.com/p/AF1QipMhIMJ9DQg-tvrGLgCcH8x32gk18ilYSs_CQ6Zj=s1024",
@@ -16740,7 +16740,7 @@ export const data = [
       "Kuchnia polska",
     ],
     rating: "4,8",
-    address: "Stary Rynek 40, 61-772 Poznan",
+    address: "Stary Rynek 40, 61-772 Poznań",
     link: "https://www.google.com/maps/place/Restauracja+Vis+A+Vis+Kozio%C5%82k%C3%B3w/data=!4m7!3m6!1s0x47045b722a8f400d:0x32851813f6700b4b!8m2!3d52.408446!4d16.9349!16s%2Fg%2F11hnc3z3sv!19sChIJDUCPKnJbBEcRSwtw9hMYhTI?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 57,
@@ -16899,7 +16899,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103704284934148816298?hl=pl",
         review_text:
-          "Pierwszy raz zawitalem do tej urokliwej restauracji polozonej na Starym Rynku w Poznaniu. Lokalizacja, jak sama nazwa wskazuje, wrecz idealna, gdyz na wprost Ratusza ze slynnymi Poznanskimi Koziolkami. \nCo do jedzenia, to zamowilem tutaj klasyczny kotlet schabowy, podawany z zapiekanymi ziemniakami. Do tego wybralem marchewke z groszkiem, zamiast zasmazanej kapusty, i byl to trafny wybor. Schabowy byl idealny! Naprawde smacznie przyprawiony, panierka idealnie zrobiona, super wysmazony. Dla mnie rewelacja!  Ziemniaczki pychota!  Marchewka takze nie odstawala. Reasumujac calosc naprawde pyszna, w rozsadnej cenie.\nDo tego bardzo mila, usmiechnieta obsluga, ktora bardzo dobrze radzi sobie z goscmi z zagranicy, bo akurat bylem z kolega z . Ja bardzo polecam to miejsce. ",
+          "Pierwszy raz zawitalem do tej urokliwej restauracji polozonej na Starym Rynku w Poznaniu. Lokalizacja, jak sama nazwa wskazuje, wrecz idealna, gdyz na wprost Ratusza ze slynnymi Poznańskimi Koziolkami. \nCo do jedzenia, to zamowilem tutaj klasyczny kotlet schabowy, podawany z zapiekanymi ziemniakami. Do tego wybralem marchewke z groszkiem, zamiast zasmazanej kapusty, i byl to trafny wybor. Schabowy byl idealny! Naprawde smacznie przyprawiony, panierka idealnie zrobiona, super wysmazony. Dla mnie rewelacja!  Ziemniaczki pychota!  Marchewka takze nie odstawala. Reasumujac calosc naprawde pyszna, w rozsadnej cenie.\nDo tego bardzo mila, usmiechnieta obsluga, ktora bardzo dobrze radzi sobie z goscmi z zagranicy, bo akurat bylem z kolega z . Ja bardzo polecam to miejsce. ",
         published_at: "4 miesiace temu",
         published_at_date: "2024-06-24T19:37:15",
         response_from_owner_text:
@@ -16991,7 +16991,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112873316963234648614?hl=pl",
         review_text:
-          "Jedzenie przepyszne, z widokiem na Koziolki Poznanskie. Bardzo wysoki poziom kulinarny! Wyjatkowy sposob i moim zdaniem najlepszy sposob podania tradycyjnego dania Pyra z gzikiem- mistrzostwo. Obslugiwala nas Pani Marta, uprzejma i pomocna. Polecam kazdemu!",
+          "Jedzenie przepyszne, z widokiem na Koziolki Poznańskie. Bardzo wysoki poziom kulinarny! Wyjatkowy sposob i moim zdaniem najlepszy sposob podania tradycyjnego dania Pyra z gzikiem- mistrzostwo. Obslugiwala nas Pani Marta, uprzejma i pomocna. Polecam kazdemu!",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-17T13:16:49",
         response_from_owner_text: null,
@@ -17038,7 +17038,7 @@ export const data = [
   },
   {
     place_id: "ChIJX5q8ItdFBEcR4kFHZrzEt2I",
-    name: "Restauracja Rosalie Poznan",
+    name: "Restauracja Rosalie Poznań",
     description:
       "Kuchnia francuska jest delikatna, lekka, fantazyjna, zroznicowana i przede wszystkim smaczna. Zapraszamy na pyszne sniadania, obiady, desery oraz wina do restauracji Rosalie w Poznaniu.\nNa sniadanie proponujemy naszym Gosciom miedzy innymi: doskonale tosty, omlety francuskie, nalesniki na slodko, bajgle lub owsianki. Wsrod zup oferujemy gesta i sycaca zupe cebulowa oraz niesamowity krem ziemniaczano-porowy. Francuska kuchnia slynie z owocow morza. Dlatego w naszym menu nie moglo zabraknac muli i krewetek. Polecamy takze gulasz wolowy po burgundzku, supreme z kurczaka kukurydzianego, stek z poledwicy wolowej, salate z karmelizowanym kozim serem, a takze wiele wiecej dan i przystawek, ktore znajda Panstwo w menu.",
     reviews: 463,
@@ -17051,7 +17051,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,5",
-    address: "Matejki 6, 60-766 Poznan",
+    address: "Matejki 6, 60-766 Poznań",
     link: "https://www.google.com/maps/place/Restauracja+Rosalie+Pozna%C5%84/data=!4m7!3m6!1s0x470445d722bc9a5f:0x62b7c4bc664741e2!8m2!3d52.4043801!4d16.9001756!16s%2Fg%2F11kzk2qv2q!19sChIJX5q8ItdFBEcR4kFHZrzEt2I?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 22,
@@ -17313,7 +17313,7 @@ export const data = [
     main_category: "European",
     categories: ["Restauracja", "Kuchnia czeska"],
     rating: "4,6",
-    address: "Swiety Marcin 11, 61-803 Poznan",
+    address: "Swiety Marcin 11, 61-803 Poznań",
     link: "https://www.google.com/maps/place/Drevny+Kocur/data=!4m7!3m6!1s0x47045b390338b3f3:0x1e0d1971c0517b46!8m2!3d52.4058177!4d16.9289434!16s%2Fg%2F11c10cd9w9!19sChIJ87M4AzlbBEcRRntRwHEZDR4?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 177,
@@ -17455,7 +17455,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110360730367564926740?hl=pl",
         review_text:
-          "Lubimy odwiedzac czeskie restauracje. Ta jest przyjemna. Zlokalizowana w poblizu naszego hotelu, blisko centrum Poznania. Obsluga mila i pomocna. Jedzenie - bardzo smaczne, porcje duze w przystepnych cenach. Piwo z tanka - przepyszne! Jedyny minus za dosc niewiele miejsca, przez co moze wydawac sie mniej przytulnie - stoliki sa dosc blisko siebie. Warto odwiedzic!",
+          "Lubimy odwiedzac czeskie restauracje. Ta jest przyjemna. Zlokalizowana w poblizu naszego hotelu, blisko centrum Poznańia. Obsluga mila i pomocna. Jedzenie - bardzo smaczne, porcje duze w przystepnych cenach. Piwo z tanka - przepyszne! Jedyny minus za dosc niewiele miejsca, przez co moze wydawac sie mniej przytulnie - stoliki sa dosc blisko siebie. Warto odwiedzic!",
         published_at: "miesiac temu",
         published_at_date: "2024-09-29T13:55:45",
         response_from_owner_text: null,
@@ -17479,7 +17479,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/116129986168611147434?hl=pl",
         review_text:
-          "Czeski klimat w centrum Poznania.tradycyjna kuchnia na dobrym poziomie. Piwo rezane podane jak nalezy, zeberka z kapusta bardzo smaczne, do tatara wypadaloby podac maslo i lepszej jakosci pieczywo. Obsluga perfecto !",
+          "Czeski klimat w centrum Poznańia.tradycyjna kuchnia na dobrym poziomie. Piwo rezane podane jak nalezy, zeberka z kapusta bardzo smaczne, do tatara wypadaloby podac maslo i lepszej jakosci pieczywo. Obsluga perfecto !",
         published_at: "4 tygodnie temu",
         published_at_date: "2024-10-05T21:20:42",
         response_from_owner_text: null,
@@ -17586,7 +17586,7 @@ export const data = [
     main_category: "European",
     categories: ["Restauracja"],
     rating: "4,5",
-    address: "Stary Rynek 95, 61-773 Poznan",
+    address: "Stary Rynek 95, 61-773 Poznań",
     link: "https://www.google.com/maps/place/Restauracja+Rynek+95/data=!4m7!3m6!1s0x47045b40b2b6a77b:0x955b7ce5f6f1474c!8m2!3d52.40889!4d16.9342179!16s%2Fg%2F11b76jmxyz!19sChIJe6e2skBbBEcRTEfx9uV8W5U?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 195,
@@ -17677,7 +17677,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110619922813190570639?hl=pl",
         review_text:
-          "Ladna restauracja na srodku rynku Poznania. Obsluga spisuje sie na medal, drinki dobre. Jezeli chodzi o jedzenie to Burger byl soczysty, pelen smaku i pyszny. Ale niestety o schabowym nie mozna tego powiedziec, byl suchy oraz niedoprawiony, jajko sadzone za bardzo sciete a 'mizeria' to 3 kawalki ogorka ze smietana i cukrem. Czlowiek spodziewal sie dania ktore bedzie na miare jednej z najlepszych restauracji w Poznaniu a okazalo sie, ze jest mocno przecietna.",
+          "Ladna restauracja na srodku rynku Poznańia. Obsluga spisuje sie na medal, drinki dobre. Jezeli chodzi o jedzenie to Burger byl soczysty, pelen smaku i pyszny. Ale niestety o schabowym nie mozna tego powiedziec, byl suchy oraz niedoprawiony, jajko sadzone za bardzo sciete a 'mizeria' to 3 kawalki ogorka ze smietana i cukrem. Czlowiek spodziewal sie dania ktore bedzie na miare jednej z najlepszych restauracji w Poznaniu a okazalo sie, ze jest mocno przecietna.",
         published_at: "2 miesiace temu",
         published_at_date: "2024-09-02T07:55:38",
         response_from_owner_text: null,
@@ -17893,7 +17893,7 @@ export const data = [
       "Kuchnia polska",
     ],
     rating: "4,5",
-    address: "Strzelecka 13, 61-845 Poznan",
+    address: "Strzelecka 13, 61-845 Poznań",
     link: "https://www.google.com/maps/place/Pyra+Bar/data=!4m7!3m6!1s0x47045b3eea0c1b35:0xa476630002e706c6!8m2!3d52.4043264!4d16.9334474!16s%2Fg%2F1tgd56l9!19sChIJNRsM6j5bBEcRxgbnAgBjdqQ?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 199,
@@ -18196,7 +18196,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska", "Restauracja", "Winiarnia"],
     rating: 4,
-    address: "Stary Rynek 37, 61-772 Poznan",
+    address: "Stary Rynek 37, 61-772 Poznań",
     link: "https://www.google.com/maps/place/Bulwar+%7C+Restauracja+Regionalna/data=!4m7!3m6!1s0x47045b40afeef091:0xee3372d8aba45d57!8m2!3d52.408654!4d16.934978!16s%2Fg%2F11c0pzwccn!19sChIJkfDur0BbBEcRV12kq9hyM-4?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 100,
@@ -18464,7 +18464,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska", "Restauracja"],
     rating: "4,6",
-    address: "rynek Srodecki 17, 61-126 Poznan",
+    address: "rynek Srodecki 17, 61-126 Poznań",
     link: "https://www.google.com/maps/place/Hy%C4%87ka+Restauracja/data=!4m7!3m6!1s0x47045b6e84a0f045:0xdb924f0b86a3b444!8m2!3d52.4110057!4d16.9547565!16s%2Fg%2F11b75jcsmz!19sChIJRfCghG5bBEcRRLSjhgtPkts?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 44,
@@ -18607,7 +18607,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/102632857976159966469?hl=pl",
         review_text:
-          "Restauracje odwiedzilismy podczas wycieczki do Poznania. Na przystawke zamowilismy pyre z gzikiem oraz pasztet z dzika w ciescie. Oba dania byly bardzo dobre i swietnie podane. Pyra z gzikiem byla super, tradycyjne polskie danie dla tego regionu ktore nie zawodzi swoim smakiem i swiezoscia. Pasztet z dzika byl bardzo dobry, nie byl za suchy, na przystawke jak znalazl. Pierwszym daniem glownym byly szare kluchy z kapusta. To danie bylo wysmienite. Kluchy byly super przygotowane, miekkie, bardzo smaczne. Kapusta kiszona idealnie sie komponowala z reszta. Bardzo duza porcja. Nastepnie zjedlismy poliki wolowe w sosie z ziemniakami i ogorkiem kiszonym. Te danie tez okazalo sie strzalem w dziesiatke. Bardzo kruche, delikatne mieso, super sos i bardzo dobre ziemniaki. Wszystko zagralo dosc spojnie. Porcje dan glownych bardzo duze. Jedzenie potrafi zaskoczyc smakiem i jakoscia wykonania. Obsluga lokalu bardzo mila. Lokal posiada ladne wnetrze, po wejsciu wydaje sie dosc maly, choc na dole znajduje sie duza sala. Jak najbardziej mozemy polecic to miejsce na kulinarnej mapie Poznania. Zdecydowanie warto tu wpasc by zasmakowac tradycyjnych dan w nowej postaci.",
+          "Restauracje odwiedzilismy podczas wycieczki do Poznańia. Na przystawke zamowilismy pyre z gzikiem oraz pasztet z dzika w ciescie. Oba dania byly bardzo dobre i swietnie podane. Pyra z gzikiem byla super, tradycyjne polskie danie dla tego regionu ktore nie zawodzi swoim smakiem i swiezoscia. Pasztet z dzika byl bardzo dobry, nie byl za suchy, na przystawke jak znalazl. Pierwszym daniem glownym byly szare kluchy z kapusta. To danie bylo wysmienite. Kluchy byly super przygotowane, miekkie, bardzo smaczne. Kapusta kiszona idealnie sie komponowala z reszta. Bardzo duza porcja. Nastepnie zjedlismy poliki wolowe w sosie z ziemniakami i ogorkiem kiszonym. Te danie tez okazalo sie strzalem w dziesiatke. Bardzo kruche, delikatne mieso, super sos i bardzo dobre ziemniaki. Wszystko zagralo dosc spojnie. Porcje dan glownych bardzo duze. Jedzenie potrafi zaskoczyc smakiem i jakoscia wykonania. Obsluga lokalu bardzo mila. Lokal posiada ladne wnetrze, po wejsciu wydaje sie dosc maly, choc na dole znajduje sie duza sala. Jak najbardziej mozemy polecic to miejsce na kulinarnej mapie Poznańia. Zdecydowanie warto tu wpasc by zasmakowac tradycyjnych dan w nowej postaci.",
         published_at: "5 miesiecy temu",
         published_at_date: "2024-05-12T08:58:59",
         response_from_owner_text: null,
@@ -18682,7 +18682,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/112508619579502880837?hl=pl",
         review_text:
-          "Super miejsce na kaczke z pyzami i modra  kapusta! Restauracja Hycka w Poznaniu oferuje kuchnie polska, ale jest to zdecydowanie najlepsza restauracja z takimi potrawami w miescie.\nNa lepsze trawienie polecam nalewke i wodke z hycki..a w zimne wieczory herbate z hycka.\nSporo propozycji dla kazdego wiec zdecydowanie miejsce warte polecenia na kulinarnej mapie Poznania a sama Srodka z Ostrowem Tumskim jest idealne na przyjemny spacer.",
+          "Super miejsce na kaczke z pyzami i modra  kapusta! Restauracja Hycka w Poznaniu oferuje kuchnie polska, ale jest to zdecydowanie najlepsza restauracja z takimi potrawami w miescie.\nNa lepsze trawienie polecam nalewke i wodke z hycki..a w zimne wieczory herbate z hycka.\nSporo propozycji dla kazdego wiec zdecydowanie miejsce warte polecenia na kulinarnej mapie Poznańia a sama Srodka z Ostrowem Tumskim jest idealne na przyjemny spacer.",
         published_at: "4 tygodnie temu",
         published_at_date: "2024-10-06T16:17:34",
         response_from_owner_text: null,
@@ -18705,7 +18705,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/113820248982752425589?hl=pl",
         review_text:
-          "Pyszne jedzenie, kuchnia polska w nowoczesnym wydaniu - z silnym akcentem Wielkopolski i Poznania (pyry z gzikiem). Dla odwaznych czernina, dla smakoszy policzki wolowe (rozplywajace sie w ustach!), dla wyjatkowo glodnych placki ziemniaczane. Menu sezonowe (bardzo smaczny sos borowikowy), ladnie podane potrawy. Obsluga niewymuszenie mila :) Subtelny wystroj. W sam raz na obiad z rodzina. Warto zarezerwowac stolik, bo bywa tloczno. Koniecznie trzeba sprobowac lemoniady z hycki lub wody z hycka - w smaku przypomina lato :))) Polecam!",
+          "Pyszne jedzenie, kuchnia polska w nowoczesnym wydaniu - z silnym akcentem Wielkopolski i Poznańia (pyry z gzikiem). Dla odwaznych czernina, dla smakoszy policzki wolowe (rozplywajace sie w ustach!), dla wyjatkowo glodnych placki ziemniaczane. Menu sezonowe (bardzo smaczny sos borowikowy), ladnie podane potrawy. Obsluga niewymuszenie mila :) Subtelny wystroj. W sam raz na obiad z rodzina. Warto zarezerwowac stolik, bo bywa tloczno. Koniecznie trzeba sprobowac lemoniady z hycki lub wody z hycka - w smaku przypomina lato :))) Polecam!",
         published_at: "8 miesiecy temu",
         published_at_date: "2024-02-08T10:28:40",
         response_from_owner_text: null,
@@ -18769,7 +18769,7 @@ export const data = [
     main_category: "European",
     categories: ["Restauracja"],
     rating: "4,7",
-    address: "Kosciuszki 84, 61-715 Poznan",
+    address: "Kosciuszki 84, 61-715 Poznań",
     link: "https://www.google.com/maps/place/Bo./data=!4m7!3m6!1s0x47045b364171b733:0x3932e7cf0686a623!8m2!3d52.4085846!4d16.9199303!16s%2Fg%2F11cktgtk8d!19sChIJM7dxQTZbBEcRI6aGBs_nMjk?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 51,
@@ -18832,7 +18832,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/107673534082948707720?hl=pl",
         review_text:
-          "Bylismy na zwiedzaniu Poznania, i poszlismy tam na sniadania. Jedzenie bylo przepyszne, duze porcje, mila obsluga i bardzo przyjemna atmosfera. Zamowienie bylo gotowe i podane za 10 minut . Bardzo sie ciesze ze trafilismy na ta restauracje. Bardzo polecam ",
+          "Bylismy na zwiedzaniu Poznańia, i poszlismy tam na sniadania. Jedzenie bylo przepyszne, duze porcje, mila obsluga i bardzo przyjemna atmosfera. Zamowienie bylo gotowe i podane za 10 minut . Bardzo sie ciesze ze trafilismy na ta restauracje. Bardzo polecam ",
         published_at: "miesiac temu",
         published_at_date: "2024-09-23T08:38:44",
         response_from_owner_text: null,
@@ -18857,7 +18857,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110382943200674155052?hl=pl",
         review_text:
-          "Kilka razy odwiedzalem Poznan i zdecydowanie Bo jest do tej pory najlepsza sniadaniownia! Wspaniale jedzenie - w dodatku bardzo ladnie podane. Calosc swietnie dopelniaja napary - tak dobrych nie udalo mi sie wypic nigdzie wczesniej! Zdecydowanie polecam!",
+          "Kilka razy odwiedzalem Poznań i zdecydowanie Bo jest do tej pory najlepsza sniadaniownia! Wspaniale jedzenie - w dodatku bardzo ladnie podane. Calosc swietnie dopelniaja napary - tak dobrych nie udalo mi sie wypic nigdzie wczesniej! Zdecydowanie polecam!",
         published_at: "3 tygodnie temu",
         published_at_date: "2024-10-12T21:27:00",
         response_from_owner_text: null,
@@ -18904,7 +18904,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/103976746248114693964?hl=pl",
         review_text:
-          "Przepyszne sniadanie w samym centrum Poznania, tuz obok zamku. Szybko podane, duze porcje, ceny adekwatne do jakosci skladnikow. W lokalu brak klimatyzacji, w upal lepiej mimo wszystko zajac miejsce w ogrodku w cieniu drzew i parasoli.",
+          "Przepyszne sniadanie w samym centrum Poznańia, tuz obok zamku. Szybko podane, duze porcje, ceny adekwatne do jakosci skladnikow. W lokalu brak klimatyzacji, w upal lepiej mimo wszystko zajac miejsce w ogrodku w cieniu drzew i parasoli.",
         published_at: "4 miesiace temu",
         published_at_date: "2024-07-01T11:49:04",
         response_from_owner_text: null,
@@ -19044,7 +19044,7 @@ export const data = [
       "Restauracja",
     ],
     rating: "4,5",
-    address: "Swietoslawska 12, 61-840 Poznan",
+    address: "Swietoslawska 12, 61-840 Poznań",
     link: "https://www.google.com/maps/place/Szarlotta+Restaurant/data=!4m7!3m6!1s0x47045b3f45660b81:0x700880e327fffc63!8m2!3d52.407303!4d16.9341269!16s%2Fg%2F11csrk25kj!19sChIJgQtmRT9bBEcRY_z_J-OACHA?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 107,
@@ -19263,7 +19263,7 @@ export const data = [
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-27T18:00:00",
         response_from_owner_text:
-          "dziekujemy  za tak mile slowa, a zarazem bardzo nam zalezy by podzielic sie ta opinia tutaj  :\nhttps://www.tripadvisor.com/Restaurant_Review-g274847-d11998462-Reviews-Szarlotta_Restaurant-Poznan_Greater_Poland_Province_Central_Poland.html",
+          "dziekujemy  za tak mile slowa, a zarazem bardzo nam zalezy by podzielic sie ta opinia tutaj  :\nhttps://www.tripadvisor.com/Restaurant_Review-g274847-d11998462-Reviews-Szarlotta_Restaurant-Poznań_Greater_Poland_Province_Central_Poland.html",
         response_from_owner_ago: "2 miesiace temu",
         response_from_owner_date: "2024-08-26T09:37:57",
         review_likes_count: 0,
@@ -19319,7 +19319,7 @@ export const data = [
     main_category: "Polish",
     categories: ["Kuchnia polska"],
     rating: "4,5",
-    address: "Stary Rynek 77 /wejscie od, Franciszkanska, 61-772 Poznan",
+    address: "Stary Rynek 77 /wejscie od, Franciszkanska, 61-772 Poznań",
     link: "https://www.google.com/maps/place/Wiejskie+Jad%C5%82o/data=!4m7!3m6!1s0x47045b38a0b49369:0xb7837150d19da439!8m2!3d52.4083586!4d16.9323236!16s%2Fg%2F1tf3y1_x!19sChIJaZO0oDhbBEcROaSd0VBxg7c?authuser=0&hl=pl&rclk=1",
     reviews_per_rating: {
       "1": 160,
@@ -19585,7 +19585,7 @@ export const data = [
         reviewer_profile:
           "https://www.google.com/maps/contrib/110874064382747177761?hl=pl",
         review_text:
-          "Nie mozna chciec wiecej, chyba... ze wiekszego zoladka. To swietnie spedzony czas, ciut z dala od zgielku starego miasta, a jakze blisko, przy bardzo dobrym jedzeniu, z przemila obsluga. Zupka bielucha zaskoczyla smakiem, bardzo prosta, jakze niepozorna, a pelna wyrazistosci, dobry boczek i kwasowosc mleka (na kefirze,  maslance?) z duza iloscia kopru. Swietna! O daniu meza napisze szybko i konkretnie - golonka wymiata, ze sliwka i kapusta wymiata podwojnie.  No i wreszcie sprobowalam w Wielkopolsce szarych kluchow i nie zawiodlam sie. To byl konkret, ciut tlusty, nie dla amatorow lekkiej kuchni, ale  danie tez nie bylo bardzo ciezkie. Chlonelam ze nie zdazylam mezowi dac sprobowac. Przeprosiny przyjete  No i slowo o kelnerce, ktora ze stoickim spokojem, bardzo profesjonalnie, z zaangazowaniem, z usmiechem nas obsluzyla. Stawiam na studentke psychologii  miejsce warte sprobowania  Poznania ",
+          "Nie mozna chciec wiecej, chyba... ze wiekszego zoladka. To swietnie spedzony czas, ciut z dala od zgielku starego miasta, a jakze blisko, przy bardzo dobrym jedzeniu, z przemila obsluga. Zupka bielucha zaskoczyla smakiem, bardzo prosta, jakze niepozorna, a pelna wyrazistosci, dobry boczek i kwasowosc mleka (na kefirze,  maslance?) z duza iloscia kopru. Swietna! O daniu meza napisze szybko i konkretnie - golonka wymiata, ze sliwka i kapusta wymiata podwojnie.  No i wreszcie sprobowalam w Wielkopolsce szarych kluchow i nie zawiodlam sie. To byl konkret, ciut tlusty, nie dla amatorow lekkiej kuchni, ale  danie tez nie bylo bardzo ciezkie. Chlonelam ze nie zdazylam mezowi dac sprobowac. Przeprosiny przyjete  No i slowo o kelnerce, ktora ze stoickim spokojem, bardzo profesjonalnie, z zaangazowaniem, z usmiechem nas obsluzyla. Stawiam na studentke psychologii  miejsce warte sprobowania  Poznańia ",
         published_at: "3 miesiace temu",
         published_at_date: "2024-07-29T18:42:39",
         response_from_owner_text: null,

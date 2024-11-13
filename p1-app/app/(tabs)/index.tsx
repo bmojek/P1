@@ -8,39 +8,28 @@ import {
   Alert,
   TextInput,
 } from "react-native";
-import { useState, useEffect } from "react";
 import * as Font from "expo-font";
+import { useState, useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
-import { Ionicons } from "@expo/vector-icons";
-import { Entypo } from "@expo/vector-icons";
+import { Ionicons, Entypo } from "@expo/vector-icons";
 import RestaurantCard from "@/components/RestaurantCard";
 import * as Location from "expo-location";
-import MapView, { Marker } from "react-native-maps";
 import { useApi } from "@/contexts/apiContext";
 import { Link } from "expo-router";
+import LocationPicker from "../LocationPicker";
+import { Region } from "react-native-maps";
 
 SplashScreen.preventAutoHideAsync();
-
-type Category = {
-  id: string;
-  name: string;
-};
 
 export default function Home() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [location, setLocation] = useState<string | null>(null);
-  const [showMap, setShowMap] = useState(false);
+  const [region, setRegion] = useState<Region | null>(null);
+  const [isLocationPickerVisible, setLocationPickerVisible] = useState(false);
   const [visibleItems, setVisibleItems] = useState(5);
   const [selectedType, setSelectedType] = useState("");
   const { place, fetchPlaces } = useApi();
   const [search, setSearch] = useState("");
-
-  const [mapRegion, setMapRegion] = useState({
-    latitude: 37.78825,
-    longitude: -122.4324,
-    latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421,
-  });
 
   const fetchFonts = () => {
     return Font.loadAsync({
@@ -51,40 +40,56 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetchFonts()
-      .then(() => setFontLoaded(true))
-      .catch((err) => console.log(err));
-    (async () => {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        Alert.alert("Permission to access location was denied");
-        return;
-      }
-      let location = await Location.getCurrentPositionAsync({});
-      setMapRegion({
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
-        latitudeDelta: 0.0922,
-        longitudeDelta: 0.0421,
-      });
-      setLocation("Cracow");
-    })();
-
-    fetchPlaces();
-  }, []);
-
-  useEffect(() => {
     if (fontLoaded) {
       SplashScreen.hideAsync();
     }
   }, [fontLoaded]);
 
-  if (!fontLoaded) {
-    return null;
-  }
+  useEffect(() => {
+    fetchFonts().then(() => setFontLoaded(true));
 
+    getCurrentLocation();
+    fetchPlaces();
+  }, []);
+
+  const getCurrentLocation = async () => {
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        Alert.alert("Permission denied", "Location access is required.");
+        return;
+      }
+
+      const location = await Location.getCurrentPositionAsync({});
+      setRegion({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+        latitudeDelta: 0.05,
+        longitudeDelta: 0.05,
+      });
+      const address = await Location.reverseGeocodeAsync({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+      });
+
+      if (address.length > 0) {
+        const { city } = address[0];
+        setLocation(`${city}`);
+      }
+    } catch (error) {
+      console.log("Error getting location:", error);
+    }
+  };
   const handleLocationPress = () => {
-    setShowMap(true);
+    setLocationPickerVisible(true);
+  };
+
+  const handleLocationSelect = (city: string) => {
+    setLocation(city);
+  };
+
+  const handleLocationPickerClose = () => {
+    setLocationPickerVisible(false);
   };
 
   const handleSelectType = (type: string) => {
@@ -95,7 +100,7 @@ export default function Home() {
     setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
   };
 
-  const categories: Category[] = [
+  const categories: { name: string; id: string }[] = [
     { id: "0", name: "Italian" },
     { id: "1", name: "Polish" },
     { id: "2", name: "Indian" },
@@ -113,6 +118,11 @@ export default function Home() {
           item.location.toLowerCase().includes(search.toLowerCase())
         : true
     )
+    .filter((item) =>
+      location
+        ? item.location.toLowerCase().includes(location.toLowerCase())
+        : true
+    )
     .slice(0, visibleItems);
 
   return (
@@ -123,12 +133,16 @@ export default function Home() {
           <Entypo name="menu" size={30} color="#000000" />
         </TouchableOpacity>
         <View style={styles.searchContainer}>
-          <TouchableOpacity
-            onPress={handleLocationPress}
-            style={styles.locationButton}
-          >
-            <Ionicons name="location-outline" size={20} color="#000000" />
-            <Text style={styles.locationText}>{location}</Text>
+          <View style={styles.locationButton}>
+            <TouchableOpacity
+              style={styles.locationButton}
+              onPress={handleLocationPress}
+            >
+              <Ionicons name="location-outline" size={20} color="#000000" />
+              <Text style={styles.locationText}>
+                {location ? location : "Polska"}
+              </Text>
+            </TouchableOpacity>
             <TextInput
               style={styles.searchText}
               placeholder={"Kuchnia u Doroty"}
@@ -137,9 +151,9 @@ export default function Home() {
               maxLength={20}
               placeholderTextColor={"#444"}
             />
-          </TouchableOpacity>
+          </View>
         </View>
-        <Link href={"/profile"}>
+        <Link href={"/modal"}>
           <Ionicons
             name="person-circle-outline"
             size={50}
@@ -171,30 +185,28 @@ export default function Home() {
           keyExtractor={(item) => item.id}
         />
       </View>
-      <FlatList
-        data={filteredItems
-          .filter((item) => !selectedType || item.type === selectedType)
-          .slice(0, visibleItems)}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => <RestaurantCard place={item} />}
-        onEndReached={loadMoreItems}
-        onEndReachedThreshold={0.5}
-        contentContainerStyle={styles.scrollView}
-        showsVerticalScrollIndicator={false}
-      />
-      {showMap && (
-        <View style={styles.mapContainer}>
-          <MapView style={styles.map} region={mapRegion}>
-            <Marker coordinate={mapRegion} />
-          </MapView>
-          <TouchableOpacity
-            style={styles.closeMapButton}
-            onPress={() => setShowMap(false)}
-          >
-            <Text style={styles.closeMapButtonText}>Close Map</Text>
-          </TouchableOpacity>
-        </View>
+      {filteredItems.length > 0 ? (
+        <FlatList
+          data={filteredItems
+            .filter((item) => !selectedType || item.type === selectedType)
+            .slice(0, visibleItems)}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item }) => <RestaurantCard place={item} />}
+          onEndReached={loadMoreItems}
+          onEndReachedThreshold={0.5}
+          contentContainerStyle={styles.scrollView}
+          showsVerticalScrollIndicator={false}
+        />
+      ) : (
+        <Text>Brak restauracji</Text>
       )}
+      <LocationPicker
+        lastRegion={region}
+        visible={isLocationPickerVisible}
+        onSelectLocation={handleLocationSelect}
+        onClose={handleLocationPickerClose}
+        place={place}
+      />
     </View>
   );
 }
@@ -276,6 +288,7 @@ const styles = StyleSheet.create({
     color: "#000000",
     fontFamily: "SpaceMono-Regular",
     marginLeft: 5,
+    maxWidth: 80,
   },
   heading: {
     fontSize: 22,
@@ -302,7 +315,7 @@ const styles = StyleSheet.create({
   locationButton: {
     flexDirection: "row",
     alignItems: "center",
-    paddingLeft: 10,
+    paddingLeft: 2,
   },
   mapContainer: {
     ...StyleSheet.absoluteFillObject,

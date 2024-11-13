@@ -69,6 +69,15 @@ function RootLayoutNav() {
               title: "",
             }}
           />
+          <Stack.Screen
+            name="LocationPicker"
+            options={{
+              presentation: "card",
+              headerBackTitleVisible: false,
+              headerTransparent: true,
+              title: "",
+            }}
+          />
         </Stack>
       </ThemeProvider>
     </ApiProvider>
