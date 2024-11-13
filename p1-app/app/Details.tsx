@@ -12,6 +12,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Link, useLocalSearchParams } from "expo-router";
 import { Place } from "@/types/global.types";
 import { SafeAreaView } from "react-native-safe-area-context";
+import MapView, { Marker } from "react-native-maps";
 const Details = () => {
   const { place } = useLocalSearchParams();
   const [expandText, setExpandText] = useState(false);
@@ -124,11 +125,29 @@ const Details = () => {
             </View>
             <TouchableOpacity style={styles.buttonContainer}>
               <Link
-                href={{ pathname: "ReviewAdd", params: { name: placeJ.name } }}
+                href={{ pathname: "/ReviewAdd", params: { name: placeJ.name } }}
               >
                 <Text style={styles.buttonText}>Add Review</Text>
               </Link>
             </TouchableOpacity>
+            <MapView
+              style={styles.map}
+              initialRegion={{
+                latitude: placeJ.locationCords.latitude,
+                longitude: placeJ.locationCords.longitude,
+                latitudeDelta: 0.01,
+                longitudeDelta: 0.01,
+              }}
+            >
+              <Marker
+                coordinate={{
+                  latitude: placeJ.locationCords.latitude,
+                  longitude: placeJ.locationCords.longitude,
+                }}
+                title={placeJ.name}
+                description={placeJ.location}
+              />
+            </MapView>
           </ScrollView>
         </SafeAreaView>
       </LinearGradient>
@@ -277,6 +296,12 @@ const styles = StyleSheet.create({
     color: "#0C0C0C",
     fontSize: 20,
     fontFamily: "SpaceMono-Regular",
+  },
+  map: {
+    width: "100%",
+    height: 200,
+    marginTop: 20,
+    borderRadius: 10,
   },
 });
 
