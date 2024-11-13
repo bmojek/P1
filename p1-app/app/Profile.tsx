@@ -91,6 +91,9 @@ export default function Profile() {
         ) : (
           <>
             <Text style={styles.welcomeText}>Welcome to our app!</Text>
+            <Text style={styles.descText}>
+              Login or Register to comment, share and many more!
+            </Text>
             <TouchableOpacity onPress={handleLogin} style={styles.styleButton}>
               <Text style={styles.logoutText}>Login</Text>
             </TouchableOpacity>
@@ -126,7 +129,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   profileName: {
-    fontSize: 24,
+    fontSize: 35,
+    paddingBottom: 10,
     color: "#FFFFFF",
     fontFamily: "AmaticSC-Regular",
   },
@@ -159,8 +163,16 @@ const styles = StyleSheet.create({
     fontFamily: "SpaceMono-Regular",
   },
   welcomeText: {
-    fontSize: 20,
+    fontSize: 40,
     color: "#FFFFFF",
+    fontFamily: "AmaticSC-Bold",
+    marginBottom: 20,
+  },
+  descText: {
+    fontSize: 25,
+    width: "70%",
+    textAlign: "center",
+    color: "#778899",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 20,
   },
