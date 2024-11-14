@@ -162,7 +162,6 @@ export default function Home() {
           />
         </Link>
       </View>
-      <View style={styles.locationContainer}></View>
       <Text style={styles.heading}>Popular Food</Text>
       <View style={styles.categoryContainer}>
         <FlatList
@@ -344,8 +343,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#F4C430",
   },
   searchText: {
-    marginLeft: 10,
-    marginTop: 2,
+    paddingLeft: 10,
+    paddingTop: 2,
     fontFamily: "SpaceMono-Regular",
     fontSize: 12.5,
   },

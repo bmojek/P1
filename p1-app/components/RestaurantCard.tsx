@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Link } from "expo-router";
 import { Place } from "@/types/global.types";
-
+import { useApi } from "@/contexts/apiContext";
 const screenWidth = Dimensions.get("window").width;
 
 type RestaurantCardProps = {
@@ -11,13 +11,14 @@ type RestaurantCardProps = {
 };
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ place }) => {
+  const { selectPlace } = useApi();
   return (
     <Link
+      onPress={() => {
+        selectPlace(place);
+      }}
       href={{
         pathname: "/Details",
-        params: {
-          place: JSON.stringify(place),
-        },
       }}
     >
       <View style={styles.card}>

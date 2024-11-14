@@ -6,14 +6,15 @@ import {
   updateDoc,
   doc,
   arrayUnion,
+  increment,
+  getDoc,
 } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
-  getAuth,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { Place, ApiContextType, User } from "@/types/global.types";
+import { Place, ApiContextType } from "@/types/global.types";
 import { app, auth } from "@/firebaseConfig";
 import { router } from "expo-router";
 
@@ -24,6 +25,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [place, setPlace] = useState<Place[]>([]);
+  const [selectedPlace, setSelectedPlace] = useState<Place>(place[0]);
 
   const register = async (
     username: string,
@@ -37,8 +39,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         password
       );
       updateProfile(userCredential.user, { displayName: username });
-
-      alert("Account created successfully!");
       router.back();
     } catch (error) {
       alert(`Error: ${error}`);
@@ -93,8 +93,15 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
       await updateDoc(placeRef, {
         reviews: arrayUnion(reviewData),
-        //reviewCount: (prev: number) => (prev ? prev + 1 : 1),
+        reviewCount: increment(1),
       });
+      const updatedPlaceSnapshot = await getDoc(placeRef);
+      if (updatedPlaceSnapshot.exists()) {
+        const updatedPlace = updatedPlaceSnapshot.data() as Place;
+        selectPlace(updatedPlace);
+      } else {
+        console.log("Place not found after update.");
+      }
       fetchPlaces();
     } catch (error) {
       console.error("Error adding review: ", error);
@@ -102,9 +109,21 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  const selectPlace = (place: Place) => {
+    setSelectedPlace(place);
+  };
+
   return (
     <ApiContext.Provider
-      value={{ place, register, login, fetchPlaces, addComment }}
+      value={{
+        place,
+        selectedPlace,
+        register,
+        login,
+        fetchPlaces,
+        addComment,
+        selectPlace,
+      }}
     >
       {children}
     </ApiContext.Provider>

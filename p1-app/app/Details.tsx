@@ -14,17 +14,16 @@ import { Place } from "@/types/global.types";
 import { SafeAreaView } from "react-native-safe-area-context";
 import MapView, { Marker } from "react-native-maps";
 import { getAuth } from "firebase/auth";
+import { useApi } from "@/contexts/apiContext";
 const Details = () => {
-  const { place } = useLocalSearchParams();
+  const { selectedPlace } = useApi();
   const [expandText, setExpandText] = useState(false);
   const auth = getAuth();
   const user = auth.currentUser;
-  let placeJ;
-  if (typeof place === "string") {
-    placeJ = JSON.parse(place) as Place;
-  } else {
-    return;
-  }
+  const placeJ = selectedPlace;
+
+  useEffect(() => {}, []);
+
   const getStarts = (rating: number) => {
     let stars = "";
     for (let i = 0; i < 5; i++) {
@@ -103,39 +102,45 @@ const Details = () => {
                 contentContainerStyle={styles.reviewContainer}
                 showsVerticalScrollIndicator={false}
               >
-                {placeJ.reviews?.reverse().map((review, index) => (
-                  <View key={index} style={styles.reviewItem}>
-                    <View style={styles.reviewHeader}>
-                      <Text style={styles.reviewName}>{review.name}</Text>
-                      <Text style={styles.reviewStars}>
-                        {getStarts(review.rating)}
-                      </Text>
+                {placeJ.reviews
+                  ?.slice()
+                  .sort(
+                    (a, b) =>
+                      new Date(b.published_at_date).getTime() -
+                      new Date(a.published_at_date).getTime()
+                  )
+                  .map((review, index) => (
+                    <View key={index} style={styles.reviewItem}>
+                      <View style={styles.reviewHeader}>
+                        <Text style={styles.reviewName}>{review.name}</Text>
+                        <Text style={styles.reviewStars}>
+                          {getStarts(review.rating)}
+                        </Text>
+                      </View>
+                      <Text style={styles.review}>{review.review_text}</Text>
+                      <View style={styles.reviewPhotosContainer}>
+                        {review.review_photos.map((photo, index) => (
+                          <Image
+                            key={index}
+                            source={{ uri: photo }}
+                            style={styles.reviewPhoto}
+                          />
+                        ))}
+                      </View>
+                      <Text>{review.published_at_date.replace("T", " ")}</Text>
                     </View>
-                    <Text style={styles.review}>{review.review_text}</Text>
-                    <View style={styles.reviewPhotosContainer}>
-                      {review.review_photos.map((photo, index) => (
-                        <Image
-                          key={index}
-                          source={{ uri: photo }}
-                          style={styles.reviewPhoto}
-                        />
-                      ))}
-                    </View>
-                    <Text>{review.published_at_date.replace("T", " ")}</Text>
-                  </View>
-                ))}
+                  ))}
               </ScrollView>
             </View>
-            <TouchableOpacity style={styles.buttonContainer}>
-              <Link
-                href={{
-                  pathname: user ? "/ReviewAdd" : "/Profile",
-                  params: { name: placeJ.name, id: placeJ.id },
-                }}
-              >
+            <Link
+              href={{
+                pathname: user ? "/ReviewAdd" : "/Profile",
+              }}
+            >
+              <View style={styles.buttonContainer}>
                 <Text style={styles.buttonText}>Add Review</Text>
-              </Link>
-            </TouchableOpacity>
+              </View>
+            </Link>
             <MapView
               style={styles.map}
               initialRegion={{
@@ -291,12 +296,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttonContainer: {
-    width: 234.29,
-    height: 40,
-    borderRadius: 16,
     backgroundColor: "#FAF0E6",
-    alignItems: "center",
-    justifyContent: "center",
+    textAlign: "center",
+    paddingVertical: 7,
+    paddingHorizontal: 40,
+    borderRadius: 18,
   },
   buttonText: {
     color: "#0C0C0C",

@@ -51,6 +51,7 @@ export interface Place {
 
 export interface ApiContextType {
   place: Place[];
+  selectedPlace: Place;
   register: (login: string, password: string, email: string) => Promise<void>;
   addComment: (
     id: string,
@@ -61,4 +62,5 @@ export interface ApiContextType {
   ) => Promise<void>;
   login: (email: string, password: string) => Promise<void>;
   fetchPlaces: () => Promise<void>;
+  selectPlace: (place: Place) => void;
 }

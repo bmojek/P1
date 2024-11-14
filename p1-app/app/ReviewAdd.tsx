@@ -13,21 +13,22 @@ import {
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as ImagePicker from "expo-image-picker";
-import { useLocalSearchParams, router } from "expo-router";
 import { useApi } from "@/contexts/apiContext";
 import { getAuth } from "firebase/auth";
+import { router } from "expo-router";
 
 const Reviewadd = () => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
-  const { name, id } = useLocalSearchParams();
+  const { selectedPlace, selectPlace } = useApi();
   const { addComment } = useApi();
   const handleRating = (newRating: number) => {
     setRating(newRating);
   };
 
   const user = getAuth().currentUser;
+  const placeJ = selectedPlace;
 
   const handleComment = () => {
     if (!comment || rating === 0 || user == null) {
@@ -35,7 +36,7 @@ const Reviewadd = () => {
       return;
     } else {
       addComment(
-        id.toString(),
+        placeJ.id.toString(),
         rating.toString(),
         user.displayName ?? "Anonymus",
         comment,
@@ -45,7 +46,6 @@ const Reviewadd = () => {
       setSelectedImages([]);
       setRating(0);
       router.back();
-      Alert.alert("Comment added");
     }
   };
 
@@ -67,7 +67,7 @@ const Reviewadd = () => {
     }
   };
 
-  if (!name) {
+  if (!placeJ.name) {
     return (
       <View style={styles.errorContainer}>
         <Text style={styles.errorText}>Failed to load restaurant data.</Text>
@@ -87,7 +87,7 @@ const Reviewadd = () => {
       >
         <SafeAreaView style={styles.overlay}>
           <Text style={styles.ratings}>Ratings & Reviews</Text>
-          <Text style={styles.name}>{name}</Text>
+          <Text style={styles.name}>{placeJ.name}</Text>
           <View style={styles.starsContainer}>
             {[1, 2, 3, 4, 5].map((star) => (
               <TouchableOpacity key={star} onPress={() => handleRating(star)}>

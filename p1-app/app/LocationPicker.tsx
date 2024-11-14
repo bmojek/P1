@@ -12,6 +12,7 @@ import MapView, { Marker, Region, LatLng } from "react-native-maps";
 import * as Location from "expo-location";
 import { Place } from "@/types/global.types";
 import { router } from "expo-router";
+import { useApi } from "@/contexts/apiContext";
 
 interface LocationPickerProps {
   place: Place[];
@@ -36,7 +37,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
   });
   const [selectedLocation, setSelectedLocation] = useState<LatLng | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
-
+  const { selectPlace } = useApi();
   const getCity = async (latitude: number, longitude: number) => {
     try {
       const address = await Location.reverseGeocodeAsync({
@@ -134,9 +135,9 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
           {place.map((mark, index) => (
             <Marker
               onCalloutPress={() => {
+                selectPlace(mark);
                 router.push({
                   pathname: "/Details",
-                  params: { place: JSON.stringify(mark) },
                 });
                 onClose();
               }}
