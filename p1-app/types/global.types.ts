@@ -63,4 +63,7 @@ export interface ApiContextType {
   login: (email: string, password: string) => Promise<void>;
   fetchPlaces: () => Promise<void>;
   selectPlace: (place: Place) => void;
+  likePlace: (placeId: string, userId: string) => void;
+  unLikePlace: (placeId: string, userId: string) => void;
+  isLikedPlace: (placeId: string, userId: string) => Promise<boolean>;
 }

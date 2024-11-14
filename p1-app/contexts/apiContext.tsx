@@ -8,13 +8,18 @@ import {
   arrayUnion,
   increment,
   getDoc,
+  addDoc,
+  query,
+  where,
+  setDoc,
+  arrayRemove,
 } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { Place, ApiContextType } from "@/types/global.types";
+import { Place, ApiContextType, User } from "@/types/global.types";
 import { app, auth } from "@/firebaseConfig";
 import { router } from "expo-router";
 
@@ -47,7 +52,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
   const login = async (email: string, password: string) => {
     try {
-      const user = await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);
       alert("Logged in successfully!");
       router.back();
     } catch (error) {
@@ -113,6 +118,61 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     setSelectedPlace(place);
   };
 
+  const likePlace = async (placeId: string, userId: string) => {
+    try {
+      const userLikeRef = doc(dbFirebase, "likePlaces", userId);
+      const userLikeSnapshot = await getDoc(userLikeRef);
+      if (userLikeSnapshot.exists()) {
+        await updateDoc(userLikeRef, {
+          likedPlaces: arrayUnion(placeId),
+        });
+      } else {
+        await setDoc(userLikeRef, {
+          likedPlaces: [placeId],
+          userId: userId,
+          likedAt: new Date().toISOString(),
+        });
+      }
+    } catch (error) {
+      console.error("Error liking place: ", error);
+    }
+  };
+  const unLikePlace = async (placeId: string, userId: string) => {
+    try {
+      const userLikeRef = doc(dbFirebase, "likePlaces", userId);
+      const userLikeSnapshot = await getDoc(userLikeRef);
+
+      if (userLikeSnapshot.exists()) {
+        await updateDoc(userLikeRef, {
+          likedPlaces: arrayRemove(placeId),
+        });
+      }
+    } catch (error) {
+      console.error("Error unliking place: ", error);
+    }
+  };
+
+  const isLikedPlace = async (
+    placeId: string,
+    userId: string
+  ): Promise<boolean> => {
+    try {
+      const userLikeRef = doc(dbFirebase, "likePlaces", userId);
+      const userLikeSnapshot = await getDoc(userLikeRef);
+
+      if (userLikeSnapshot.exists()) {
+        const likedPlaces =
+          (userLikeSnapshot.data().likedPlaces as string[]) || [];
+        return likedPlaces.includes(placeId);
+      } else {
+        return false;
+      }
+    } catch (error) {
+      console.error("Error checking if place is liked: ", error);
+      return false;
+    }
+  };
+
   return (
     <ApiContext.Provider
       value={{
@@ -123,6 +183,9 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         fetchPlaces,
         addComment,
         selectPlace,
+        likePlace,
+        isLikedPlace,
+        unLikePlace,
       }}
     >
       {children}

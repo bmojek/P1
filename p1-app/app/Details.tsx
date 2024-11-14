@@ -9,21 +9,29 @@ import {
   ImageBackground,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { Link, useLocalSearchParams } from "expo-router";
-import { Place } from "@/types/global.types";
+import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import MapView, { Marker } from "react-native-maps";
 import { getAuth } from "firebase/auth";
 import { useApi } from "@/contexts/apiContext";
+import AntDesign from "@expo/vector-icons/AntDesign";
 const Details = () => {
-  const { selectedPlace } = useApi();
+  const { selectedPlace, likePlace, isLikedPlace, unLikePlace } = useApi();
   const [expandText, setExpandText] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
   const auth = getAuth();
   const user = auth.currentUser;
   const placeJ = selectedPlace;
 
-  useEffect(() => {}, []);
-
+  useEffect(() => {
+    const checkIsLiked = async () => {
+      if (user && placeJ?.id) {
+        const liked = await isLikedPlace(placeJ.id, user.uid);
+        setIsLiked(liked);
+      }
+    };
+    checkIsLiked();
+  }, [placeJ, user]);
   const getStarts = (rating: number) => {
     let stars = "";
     for (let i = 0; i < 5; i++) {
@@ -40,6 +48,17 @@ const Details = () => {
       return placeJ.desc;
     } else {
       return words.slice(0, 20).join(" ") + "...";
+    }
+  };
+  const handleLike = () => {
+    if (user && placeJ?.id) {
+      if (!isLiked) {
+        likePlace(placeJ.id, user.uid);
+        setIsLiked(!isLiked);
+      } else {
+        unLikePlace(placeJ.id, user.uid);
+        setIsLiked(!isLiked);
+      }
     }
   };
   return (
@@ -63,10 +82,17 @@ const Details = () => {
                 style={styles.logo}
               />
             </View>
-            <TouchableOpacity
-              style={styles.profileContainer}
-            ></TouchableOpacity>
-
+            {user ? (
+              <TouchableOpacity onPress={handleLike} style={styles.likeButton}>
+                <AntDesign
+                  name={isLiked ? "heart" : "hearto"}
+                  size={35}
+                  color="darkred"
+                />
+              </TouchableOpacity>
+            ) : (
+              ""
+            )}
             <Text style={styles.restaurantName}>{placeJ.name}</Text>
             <Text style={styles.reviewStars}>
               {getStarts(parseInt(placeJ.rating))}
@@ -214,10 +240,10 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
-  profileContainer: {
+  likeButton: {
     position: "absolute",
-    top: 70,
-    right: 50,
+    top: 30,
+    right: 40,
     zIndex: 1,
   },
   profile: {
