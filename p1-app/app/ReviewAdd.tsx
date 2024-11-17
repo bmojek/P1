@@ -37,7 +37,7 @@ const Reviewadd = () => {
     } else {
       addComment(
         placeJ.id.toString(),
-        rating.toString(),
+        rating,
         user.displayName ?? "Anonymus",
         comment,
         selectedImages
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttonText: {
-    color: "black",
+    color: "white",
     fontFamily: "SpaceMono-Regular",
     fontWeight: "bold",
   },

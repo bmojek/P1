@@ -42,6 +42,7 @@ const Details = () => {
 
   const showMore = () => {
     if (!placeJ.desc) return "";
+
     const words = placeJ.desc.split(" ");
 
     if (expandText || words.length <= 20) {

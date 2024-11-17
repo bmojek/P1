@@ -122,8 +122,7 @@ export default function Home() {
       location
         ? item.location.toLowerCase().includes(location.toLowerCase())
         : true
-    )
-    .slice(0, visibleItems);
+    );
 
   return (
     <View style={styles.container}>

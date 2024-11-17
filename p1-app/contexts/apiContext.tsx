@@ -8,9 +8,6 @@ import {
   arrayUnion,
   increment,
   getDoc,
-  addDoc,
-  query,
-  where,
   setDoc,
   arrayRemove,
 } from "firebase/firestore";
@@ -79,7 +76,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
   const addComment = async (
     id: string,
-    rating: string,
+    rating: number,
     name: string,
     review_text: string,
     review_photos: string[]

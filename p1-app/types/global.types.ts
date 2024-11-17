@@ -55,7 +55,7 @@ export interface ApiContextType {
   register: (login: string, password: string, email: string) => Promise<void>;
   addComment: (
     id: string,
-    rating: string,
+    rating: number,
     name: string,
     review_text: string,
     review_photos: string[]
