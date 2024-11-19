@@ -13,18 +13,22 @@ type RestaurantCardProps = {
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ place }) => {
   const { selectPlace } = useApi();
   const calculateRating = () => {
-    const revRatCount = place.reviews ? place.reviews.length : 0;
-    const avgRev = place.reviews
-      ? place.reviews?.reduce((sum, rev) => rev.rating + sum, 0) /
-        place.reviews?.length
-      : 0;
+    try {
+      const revRatCount = place.reviews ? place.reviews.length : 0;
+      const avgRev = place.reviews
+        ? place.reviews?.reduce((sum, rev) => rev.rating + sum, 0) /
+          place.reviews?.length
+        : 0;
 
-    const ourRating =
-      (parseFloat(place.rating.replace(",", ".")) * place.reviewCount -
-        revRatCount +
-        avgRev * 10) /
-      (place.reviewCount + 10);
-    return ourRating.toFixed(1);
+      const ourRating =
+        (parseFloat(place.rating.replace(",", ".")) * place.reviewCount -
+          revRatCount +
+          avgRev * 10) /
+        (place.reviewCount + 10);
+      return ourRating.toFixed(1);
+    } catch (error) {
+      console.error(error, place.id);
+    }
   };
   return (
     <Link
