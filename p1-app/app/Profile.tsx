@@ -75,7 +75,10 @@ export default function Profile() {
             <TouchableOpacity style={styles.styleButton}>
               <Text style={styles.logoutText}>Account</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.styleButton}>
+            <TouchableOpacity
+              style={styles.styleButton}
+              onPress={() => router.push("/Preference")}
+            >
               <Text style={styles.logoutText}>Preferences</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.styleButton}>

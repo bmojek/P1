@@ -14,10 +14,6 @@ import { useColorScheme } from "@/components/useColorScheme";
 
 export { ErrorBoundary } from "expo-router";
 
-export const unstable_settings = {
-  initialRouteName: "(tabs)",
-};
-
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -49,45 +45,24 @@ function RootLayoutNav() {
   return (
     <ApiProvider>
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack
+          screenOptions={{
+            headerTransparent: true,
+            headerBackTitleVisible: false,
+            headerTitle: "",
+          }}
+        >
           <Stack.Screen
-            name="Details"
+            name="index"
             options={{
-              presentation: "card",
-              headerBackTitleVisible: false,
-              headerTransparent: true,
-              title: "",
+              headerShown: false,
             }}
           />
-          <Stack.Screen
-            name="ReviewAdd"
-            options={{
-              presentation: "card",
-              headerBackTitleVisible: false,
-              headerTransparent: true,
-              title: "",
-            }}
-          />
-          <Stack.Screen
-            name="LocationPicker"
-            options={{
-              presentation: "card",
-              headerBackTitleVisible: false,
-              headerTransparent: true,
-              title: "",
-            }}
-          />
-
-          <Stack.Screen
-            name="Profile"
-            options={{
-              presentation: "card",
-              headerBackTitleVisible: false,
-              headerTransparent: true,
-              title: "",
-            }}
-          />
+          <Stack.Screen name="Details" />
+          <Stack.Screen name="ReviewAdd" />
+          <Stack.Screen name="LocationPicker" />
+          <Stack.Screen name="Profile" />
+          <Stack.Screen name="Preference" />
         </Stack>
       </ThemeProvider>
     </ApiProvider>

@@ -41,7 +41,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         password
       );
       updateProfile(userCredential.user, { displayName: username });
-      router.back();
     } catch (error) {
       alert(`Error: ${error}`);
     }
@@ -51,7 +50,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Logged in successfully!");
-      router.back();
     } catch (error) {
       alert(`Error: ${error}`);
     }
@@ -170,6 +168,32 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  const addPreferences = async (userId: string, preferences: string[]) => {
+    try {
+      const userPreferencesRef = doc(dbFirebase, "userPreferences", userId);
+      await setDoc(userPreferencesRef, { preferences });
+    } catch (error) {
+      console.error("Error setting preferences:", error);
+      alert("Failed to set preferences, please try again.");
+    }
+  };
+  const fetchPreferences = async (userId: string): Promise<string[]> => {
+    try {
+      const userPreferencesRef = doc(dbFirebase, "userPreferences", userId);
+      const userPreferencesSnapshot = await getDoc(userPreferencesRef);
+
+      if (userPreferencesSnapshot.exists()) {
+        const data = userPreferencesSnapshot.data();
+        return data.preferences || [];
+      } else {
+        return [];
+      }
+    } catch (error) {
+      console.error("Error fetching preferences:", error);
+      return [];
+    }
+  };
+
   return (
     <ApiContext.Provider
       value={{
@@ -183,6 +207,8 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         likePlace,
         isLikedPlace,
         unLikePlace,
+        addPreferences,
+        fetchPreferences,
       }}
     >
       {children}

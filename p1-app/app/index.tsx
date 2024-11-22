@@ -3,6 +3,8 @@ import {
   TouchableOpacity,
   StatusBar,
   Text,
+  SafeAreaView,
+  Image,
   View,
   FlatList,
   Alert,
@@ -11,13 +13,14 @@ import {
 import * as Font from "expo-font";
 import { useState, useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
-import { Ionicons, Entypo } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import RestaurantCard from "@/components/RestaurantCard";
 import * as Location from "expo-location";
 import { useApi } from "@/contexts/apiContext";
 import { Link } from "expo-router";
-import LocationPicker from "../LocationPicker";
+import LocationPicker from "./LocationPicker";
 import { Region } from "react-native-maps";
+import { getAuth } from "firebase/auth";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -30,12 +33,12 @@ export default function Home() {
   const [selectedType, setSelectedType] = useState("");
   const { place, fetchPlaces } = useApi();
   const [search, setSearch] = useState("");
-
+  const user = getAuth();
   const fetchFonts = () => {
     return Font.loadAsync({
-      "AmaticSC-Regular": require("../../assets/fonts/AmaticSC-Regular.ttf"),
-      "AmaticSC-Bold": require("../../assets/fonts/AmaticSC-Bold.ttf"),
-      "SpaceMono-Regular": require("../../assets/fonts/SpaceMono-Regular.ttf"),
+      "AmaticSC-Regular": require("../assets/fonts/AmaticSC-Regular.ttf"),
+      "AmaticSC-Bold": require("../assets/fonts/AmaticSC-Bold.ttf"),
+      "SpaceMono-Regular": require("../assets/fonts/SpaceMono-Regular.ttf"),
     });
   };
 
@@ -47,7 +50,6 @@ export default function Home() {
 
   useEffect(() => {
     fetchFonts().then(() => setFontLoaded(true));
-
     getCurrentLocation();
     fetchPlaces();
   }, []);
@@ -104,10 +106,11 @@ export default function Home() {
     { id: "0", name: "Italian" },
     { id: "1", name: "Polish" },
     { id: "2", name: "Indian" },
-    { id: "3", name: "Burger" },
-    { id: "4", name: "Pizza" },
+    { id: "3", name: "American" },
+    { id: "4", name: "European" },
     { id: "5", name: "Chinese" },
     { id: "6", name: "Mexican" },
+    { id: "7", name: "Ukrainan" },
   ];
   const filteredItems = place
     .filter((item) => (selectedType ? item.type === selectedType : true))
@@ -125,11 +128,14 @@ export default function Home() {
     );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
       <View style={styles.topContainer}>
         <TouchableOpacity>
-          <Entypo name="menu" size={30} color="#4C3BCF" />
+          <Image
+            style={styles.logo}
+            source={require("@/assets/images/Logo4.png")}
+          />
         </TouchableOpacity>
         <View style={styles.searchContainer}>
           <View style={styles.locationButton}>
@@ -144,7 +150,7 @@ export default function Home() {
             </TouchableOpacity>
             <TextInput
               style={styles.searchText}
-              placeholder={"Search"}
+              placeholder={filteredItems.at(2)?.name || "Search"}
               value={search}
               onChangeText={setSearch}
               maxLength={20}
@@ -206,7 +212,7 @@ export default function Home() {
         onClose={handleLocationPickerClose}
         place={place}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -216,7 +222,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-start",
     backgroundColor: "#352F44",
-    paddingTop: 50,
   },
   topContainer: {
     flexDirection: "row",
@@ -224,11 +229,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: "100%",
     marginBottom: 20,
-    marginTop: 10,
   },
   logo: {
-    width: 85,
-    height: 75,
+    width: 45,
+    height: 45,
   },
   input: {
     flex: 1,
@@ -346,5 +350,6 @@ const styles = StyleSheet.create({
     paddingTop: 2,
     fontFamily: "SpaceMono-Regular",
     fontSize: 12.5,
+    width: 160,
   },
 });
