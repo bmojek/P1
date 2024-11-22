@@ -104,8 +104,8 @@ export default function Home() {
     { id: "0", name: "Italian" },
     { id: "1", name: "Polish" },
     { id: "2", name: "Indian" },
-    { id: "3", name: "American" },
-    { id: "4", name: "European" },
+    { id: "3", name: "Burger" },
+    { id: "4", name: "Pizza" },
     { id: "5", name: "Chinese" },
     { id: "6", name: "Mexican" },
   ];
@@ -129,7 +129,7 @@ export default function Home() {
       <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
       <View style={styles.topContainer}>
         <TouchableOpacity>
-          <Entypo name="menu" size={30} color="#000000" />
+          <Entypo name="menu" size={30} color="#4C3BCF" />
         </TouchableOpacity>
         <View style={styles.searchContainer}>
           <View style={styles.locationButton}>
@@ -144,7 +144,7 @@ export default function Home() {
             </TouchableOpacity>
             <TextInput
               style={styles.searchText}
-              placeholder={"Kuchnia u Doroty"}
+              placeholder={"Search"}
               value={search}
               onChangeText={setSearch}
               maxLength={20}
@@ -156,7 +156,7 @@ export default function Home() {
           <Ionicons
             name="person-circle-outline"
             size={50}
-            color="#0C0C0C"
+            color="#4C3BCF"
             style={styles.icon}
           />
         </Link>
@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     borderRadius: 16,
     alignItems: "center",
-    backgroundColor: "#F4C430",
+    backgroundColor: "#4C3BCF",
   },
   searchText: {
     paddingLeft: 10,

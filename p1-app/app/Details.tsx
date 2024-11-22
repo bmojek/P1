@@ -88,7 +88,7 @@ const Details = () => {
                 <AntDesign
                   name={isLiked ? "heart" : "hearto"}
                   size={35}
-                  color="darkred"
+                  color="#4C3BCF"
                 />
               </TouchableOpacity>
             ) : (
