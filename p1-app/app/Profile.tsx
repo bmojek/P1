@@ -72,7 +72,10 @@ export default function Profile() {
                 {user?.email || "No email found"}
               </Text>
             </View>
-            <TouchableOpacity style={styles.styleButton}>
+            <TouchableOpacity
+              style={styles.styleButton}
+              onPress={() => router.push("/Account")}
+            >
               <Text style={styles.logoutText}>Account</Text>
             </TouchableOpacity>
             <TouchableOpacity

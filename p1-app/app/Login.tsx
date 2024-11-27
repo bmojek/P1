@@ -125,8 +125,9 @@ export default function TabThreeScreen() {
       </TouchableOpacity>
       <View style={styles.forgotPasswordContainer}>
         <Text style={styles.label}>Forgot Password?</Text>
-
-        <Text style={styles.labelBold}>Recover</Text>
+        <Link href={"/ResetPass"}>
+          <Text style={styles.labelBold}>Recover</Text>
+        </Link>
       </View>
       <View style={styles.newAccountContainer}>
         <Text style={styles.newAccountText}>New to GastroSpace?</Text>
