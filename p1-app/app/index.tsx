@@ -9,6 +9,7 @@ import {
   FlatList,
   Alert,
   TextInput,
+  RefreshControl,
 } from "react-native";
 import * as Font from "expo-font";
 import { useState, useEffect } from "react";
@@ -20,7 +21,6 @@ import { useApi } from "@/contexts/apiContext";
 import { Link } from "expo-router";
 import LocationPicker from "./LocationPicker";
 import { Region } from "react-native-maps";
-import { getAuth } from "firebase/auth";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -29,11 +29,35 @@ export default function Home() {
   const [location, setLocation] = useState<string | null>(null);
   const [region, setRegion] = useState<Region | null>(null);
   const [isLocationPickerVisible, setLocationPickerVisible] = useState(false);
-  const [visibleItems, setVisibleItems] = useState(5);
   const [selectedType, setSelectedType] = useState("");
   const { place, fetchPlaces } = useApi();
   const [search, setSearch] = useState("");
-  const user = getAuth();
+  const [refreshing, setRefreshing] = useState(false);
+  const categories: { name: string; id: string }[] = [
+    { id: "0", name: "Italian" },
+    { id: "1", name: "Polish" },
+    { id: "2", name: "Indian" },
+    { id: "3", name: "American" },
+    { id: "4", name: "European" },
+    { id: "5", name: "Chinese" },
+    { id: "6", name: "Mexican" },
+    { id: "7", name: "Ukrainan" },
+  ];
+  const filteredItems = place
+    .filter((item) => (selectedType ? item.type === selectedType : true))
+    .filter((item) =>
+      search
+        ? item.name.toLowerCase().includes(search.toLowerCase()) ||
+          item.type.toLowerCase().includes(search.toLowerCase()) ||
+          item.location.toLowerCase().includes(search.toLowerCase())
+        : true
+    )
+    .filter((item) =>
+      location
+        ? item.location.toLowerCase().includes(location.toLowerCase())
+        : true
+    );
+
   const fetchFonts = () => {
     return Font.loadAsync({
       "AmaticSC-Regular": require("../assets/fonts/AmaticSC-Regular.ttf"),
@@ -98,34 +122,16 @@ export default function Home() {
     type === selectedType ? setSelectedType("") : setSelectedType(type);
   };
 
-  const loadMoreItems = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
+  const onRefresh = async () => {
+    setRefreshing(true);
+    try {
+      await fetchPlaces();
+    } catch (error) {
+      console.error("Error refreshing data:", error);
+    } finally {
+      setRefreshing(false);
+    }
   };
-
-  const categories: { name: string; id: string }[] = [
-    { id: "0", name: "Italian" },
-    { id: "1", name: "Polish" },
-    { id: "2", name: "Indian" },
-    { id: "3", name: "American" },
-    { id: "4", name: "European" },
-    { id: "5", name: "Chinese" },
-    { id: "6", name: "Mexican" },
-    { id: "7", name: "Ukrainan" },
-  ];
-  const filteredItems = place
-    .filter((item) => (selectedType ? item.type === selectedType : true))
-    .filter((item) =>
-      search
-        ? item.name.toLowerCase().includes(search.toLowerCase()) ||
-          item.type.toLowerCase().includes(search.toLowerCase()) ||
-          item.location.toLowerCase().includes(search.toLowerCase())
-        : true
-    )
-    .filter((item) =>
-      location
-        ? item.location.toLowerCase().includes(location.toLowerCase())
-        : true
-    );
 
   return (
     <SafeAreaView style={styles.container}>
@@ -193,14 +199,18 @@ export default function Home() {
         <FlatList
           data={filteredItems
             .reverse()
-            .filter((item) => !selectedType || item.type === selectedType)
-            .slice(0, visibleItems)}
+            .filter((item) => !selectedType || item.type === selectedType)}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => <RestaurantCard place={item} />}
-          onEndReached={loadMoreItems}
-          onEndReachedThreshold={0.5}
           contentContainerStyle={styles.scrollView}
           showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl
+              onRefresh={onRefresh}
+              tintColor={"#FAF0E6"}
+              refreshing={refreshing}
+            />
+          }
         />
       ) : (
         <Text>Brak restauracji</Text>

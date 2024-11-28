@@ -18,7 +18,6 @@ import {
 } from "firebase/auth";
 import { Place, ApiContextType, User } from "@/types/global.types";
 import { app, auth } from "@/firebaseConfig";
-import { router } from "expo-router";
 
 const dbFirebase = getFirestore(app);
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
@@ -193,6 +192,54 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
       return [];
     }
   };
+  const fetchLikedPlaces = async (userId: string): Promise<Place[]> => {
+    try {
+      const userLikeRef = doc(dbFirebase, "likePlaces", userId);
+      const userLikeSnapshot = await getDoc(userLikeRef);
+
+      if (userLikeSnapshot.exists()) {
+        const likedPlacesIds = userLikeSnapshot.data().likedPlaces as string[];
+        const likedPlaces: Place[] = [];
+
+        for (const placeId of likedPlacesIds) {
+          const placeRef = doc(dbFirebase, "places", placeId);
+          const placeSnapshot = await getDoc(placeRef);
+
+          if (placeSnapshot.exists()) {
+            likedPlaces.push(placeSnapshot.data() as Place);
+          }
+        }
+        return likedPlaces;
+      } else {
+        return [];
+      }
+    } catch (error) {
+      console.error("Error fetching liked places: ", error);
+      return [];
+    }
+  };
+  const fetchCommentedPlaces = async (userName: string): Promise<Place[]> => {
+    try {
+      const placesCollection = collection(dbFirebase, "places");
+      const placesSnapshot = await getDocs(placesCollection);
+
+      const commentedPlaces: Place[] = [];
+      placesSnapshot.forEach((doc) => {
+        const place = doc.data() as Place;
+        const hasUserCommented = place.reviews?.some(
+          (review) => review.name === userName
+        );
+        if (hasUserCommented) {
+          commentedPlaces.push({ ...place });
+        }
+      });
+
+      return commentedPlaces;
+    } catch (error) {
+      console.error("Error fetching commented places:", error);
+      return [];
+    }
+  };
 
   return (
     <ApiContext.Provider
@@ -209,6 +256,8 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         unLikePlace,
         addPreferences,
         fetchPreferences,
+        fetchLikedPlaces,
+        fetchCommentedPlaces,
       }}
     >
       {children}
