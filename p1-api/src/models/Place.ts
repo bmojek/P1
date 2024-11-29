@@ -1,4 +1,4 @@
-interface reviews {
+export interface reviews {
   review_id: string;
   rating: number;
   name: string;
@@ -29,7 +29,7 @@ export interface Place {
   location: string;
   locationCords: { latitude: number; longitude: number };
   reviewCount: number;
-  rating: string | number;
+  rating: string;
   type: string;
   tags: string[];
   desc: string | null;

@@ -1,127 +1,167 @@
-import express from "express";
-import cors from "cors";
-import { User } from "./src/models/User";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  QuerySnapshot,
+  doc,
+  DocumentSnapshot,
+  DocumentData,
+  getDoc,
+  query,
+  where,
+  setDoc,
+} from "firebase/firestore";
 import { Place } from "./src/models/Place";
-import { data } from "./feedData";
+const { app } = require("./firebaseConfig");
 
-const db = {
-  users: [] as User[],
-  places: [] as Place[],
-};
+const db = getFirestore(app);
 
-const app = express();
-const port = 3000;
-
-db.users.push({
-  id: "1",
-  username: "admin",
-  password: "admin",
-  email: "admin@admin.com",
-});
-
-data.map((data) => {
-  db.places.push({
-    id: data.place_id,
-    name: data.name,
-    image: data.featured_image,
-    location: data.address,
-    rating: data.rating,
-    reviewCount: data.reviews,
-    type: data.main_category,
-    tags: data.categories,
-    desc: data.description,
-    reviews: data.featured_reviews,
-    images: data.images,
-    locationCords: data.coordinates,
-  });
-});
-
-app.use(cors());
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send(
-    "Hello World " +
-      "<ul>" +
-      db.users
-        .map(
-          (user) =>
-            "<li>" +
-            user.id +
-            " " +
-            user.username +
-            " " +
-            user.password +
-            "</li>"
-        )
-        .join("") +
-      "</ul>"
-  );
-});
-app.get("/places", (req, res) => {
+const getAllUserIds = async (): Promise<string[]> => {
   try {
-    if (db.places.length > 0) {
-      res.status(200).json(db.places);
+    const userPreferencesRef = collection(db, "userPreferences");
+    const snapshot: QuerySnapshot = await getDocs(userPreferencesRef);
+    const userIds: string[] = [];
+    snapshot.forEach((doc) => {
+      userIds.push(doc.id);
+    });
+    return userIds;
+  } catch (error) {
+    console.error("Error fetching user IDs:", error);
+    return [];
+  }
+};
+const getUserPreferences = async (userId: string): Promise<string[] | null> => {
+  try {
+    const userPreferencesRef = doc(db, "userPreferences", userId);
+    const snapshot: DocumentSnapshot<DocumentData> = await getDoc(
+      userPreferencesRef
+    );
+
+    if (snapshot.exists()) {
+      const data = snapshot.data();
+      return data?.preferences || [];
     } else {
-      const fallbackPlaces = [
-        {
-          id: "1",
-          name: "Fallback Pizza Place",
-          image: "../../assets/images/fallback-pizza.png",
-          location: "Unknown Ave",
-          rating: 4.0,
-          reviewCount: 1000,
-          type: "pizza",
-          tags: ["pizza", "fallback"],
-        },
-      ];
-      res.status(200).json(fallbackPlaces);
+      console.log(`No preferences found for user: ${userId}`);
+      return null;
     }
   } catch (error) {
-    console.error("Error fetching places:", error);
-    res.status(500).send({ message: "Failed to retrieve places" });
+    console.error("Error fetching user preferences:", error);
+    return null;
   }
-});
-app.post("/register", (req, res) => {
-  const login: string = req.body.login;
-  const password: string = req.body.password;
-  const email: string = req.body.email;
-  const userId: string = new Date().toISOString();
+};
+const getUserLikedPlaces = async (
+  userId: string
+): Promise<DocumentData[] | null> => {
+  try {
+    const likePlacesRef = collection(db, "likePlaces");
+    const q = query(likePlacesRef, where("userId", "==", userId));
+    const snapshot = await getDocs(q);
 
-  const existingUser = db.users.find((user) => user.username === login);
-  if (existingUser) {
-    return res.status(409).send({ message: "Username is already taken" });
+    const likedPlaces: DocumentData[] = [];
+
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      if (data?.likedPlaces && Array.isArray(data.likedPlaces)) {
+        for (const placeId of data.likedPlaces) {
+          const placeDetails = await getPlaceDetails(placeId);
+          if (placeDetails) {
+            likedPlaces.push(placeDetails);
+          }
+        }
+      }
+    }
+
+    return likedPlaces.length > 0 ? likedPlaces : null;
+  } catch (error) {
+    console.error("Error fetching liked places:", error);
+    return null;
   }
-  const newUser: User = {
-    id: userId,
-    username: login,
-    password: password,
-    email: email,
-  };
-  db.users.push(newUser);
+};
+const getPlaceDetails = async (
+  placeId: string
+): Promise<DocumentData | null> => {
+  try {
+    const placeRef = doc(db, "places", placeId);
+    const snapshot: DocumentSnapshot<DocumentData> = await getDoc(placeRef);
 
-  res.status(200).send({ user: newUser });
-});
-
-app.post("/login", (req, res) => {
-  const login: string = req.body.login;
-  const password: string = req.body.password;
-
-  const user: User | undefined = db.users.find(
-    (u) => u.username === login && u.password === password
-  );
-
-  if (user) {
-    res.status(200).send({ user: user });
-  } else {
-    res.status(401).send({ message: "Invalid credentials" });
+    if (snapshot.exists()) {
+      return snapshot.data();
+    } else {
+      console.log(`Place not found for ID: ${placeId}`);
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching place details:", error);
+    return null;
   }
-});
+};
+const getPlaces = async () => {
+  try {
+    const placesCollection = collection(db, "places");
+    const placesSnapshot = await getDocs(placesCollection);
+    const placesData = placesSnapshot.docs.map((doc) => doc.data() as Place);
 
-app.post("/userlist", (req, res) => {
-  res.status(200).send(db.users);
-});
+    if (placesData.length > 0) {
+      return placesData;
+    } else {
+      console.warn("No places data found in Firestore.");
+    }
+  } catch (error) {
+    console.error("Error fetching places from Firestore:", error);
+  }
+};
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+const uploadRecommendedPlaces = async (
+  userId: string,
+  recommendedPlaceIds: string[]
+): Promise<void> => {
+  try {
+    const recommendationRef = collection(db, "recommendationSystem");
+    const userDocRef = doc(recommendationRef, userId);
+
+    await setDoc(userDocRef, {
+      recommendedPlaces: recommendedPlaceIds,
+    });
+
+    console.log(
+      `Created recommendation document for user ${userId} with recommended places.`
+    );
+  } catch (error) {
+    console.error("Error creating recommendation document:", error);
+  }
+};
+const recomendationSystem = async () => {
+  const users = await getAllUserIds();
+
+  for (const userId of users) {
+    const preferences = await getUserPreferences(userId);
+    const likedPlaces = (await getUserLikedPlaces(userId)) as Place[];
+    const likedCities = [
+      ...new Set(likedPlaces?.map((place) => place.location.split(" ").pop())),
+    ];
+    if (likedCities.length < 1)
+      likedCities.push("Kraków", "Tarnów", "Warszawa", "Gdańsk", "Wrocław");
+    const places = await getPlaces();
+
+    const filteredPlaces = places
+      ?.filter((place) =>
+        likedCities.some((city) => place.location?.includes(city ?? ""))
+      )
+      .filter(
+        (place) =>
+          preferences?.includes(place.type) ||
+          place.tags?.some((tag) => preferences?.includes(tag))
+      );
+
+    const filteredPlaceIds = filteredPlaces?.map((place) => place.id);
+
+    const recommendedPlacesIds = filteredPlaceIds?.filter(
+      (placeId) => !likedPlaces.some((likedPlace) => likedPlace.id === placeId)
+    );
+
+    if (recommendedPlacesIds)
+      uploadRecommendedPlaces(userId, recommendedPlacesIds);
+  }
+};
+
+recomendationSystem();
