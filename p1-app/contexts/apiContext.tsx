@@ -241,6 +241,43 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
+  const recommendedPlaces = async (userId: string): Promise<Place[]> => {
+    try {
+      const recommendationsRef = doc(
+        dbFirebase,
+        "recommendationSystem",
+        userId
+      );
+      const recommendationsSnapshot = await getDoc(recommendationsRef);
+
+      if (recommendationsSnapshot.exists()) {
+        const recommendedPlaceIds = recommendationsSnapshot.data()
+          .recommendedPlaces as string[];
+
+        const placePromises = recommendedPlaceIds.map((placeId) => {
+          const placeRef = doc(dbFirebase, "places", placeId);
+          return getDoc(placeRef).then((placeSnapshot) => {
+            if (placeSnapshot.exists()) {
+              return placeSnapshot.data() as Place;
+            }
+          });
+        });
+
+        const recommendedPlaces = (await Promise.all(placePromises)).filter(
+          (place) => place !== null
+        ) as Place[];
+
+        return recommendedPlaces;
+      } else {
+        console.warn("No recommendations found for this user.");
+        return [];
+      }
+    } catch (error) {
+      console.error("Error fetching recommended places:", error);
+      return [];
+    }
+  };
+
   return (
     <ApiContext.Provider
       value={{
@@ -258,6 +295,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         fetchPreferences,
         fetchLikedPlaces,
         fetchCommentedPlaces,
+        recommendedPlaces,
       }}
     >
       {children}

@@ -70,4 +70,5 @@ export interface ApiContextType {
   fetchPreferences: (userId: string) => Promise<string[]>;
   fetchLikedPlaces: (userId: string) => Promise<Place[]>;
   fetchCommentedPlaces: (userName: string) => Promise<Place[]>;
+  recommendedPlaces: (userId: string) => Promise<Place[]>;
 }

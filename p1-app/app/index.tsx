@@ -21,6 +21,9 @@ import { useApi } from "@/contexts/apiContext";
 import { Link } from "expo-router";
 import LocationPicker from "./LocationPicker";
 import { Region } from "react-native-maps";
+import { getAuth } from "firebase/auth";
+import { Place } from "@/types/global.types";
+import RestaurantCardPlaceholder from "@/components/RestaurantCardPlaceholder";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -30,9 +33,13 @@ export default function Home() {
   const [region, setRegion] = useState<Region | null>(null);
   const [isLocationPickerVisible, setLocationPickerVisible] = useState(false);
   const [selectedType, setSelectedType] = useState("");
-  const { place, fetchPlaces } = useApi();
+  const { place, fetchPlaces, recommendedPlaces } = useApi();
   const [search, setSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
+  const [isRecommended, setIsRecommended] = useState(false);
+  const [recommended, setRecommended] = useState<Place[]>([]);
+  const [loading, setLoading] = useState(false);
+  const user = getAuth();
   const categories: { name: string; id: string }[] = [
     { id: "0", name: "Italian" },
     { id: "1", name: "Polish" },
@@ -43,7 +50,8 @@ export default function Home() {
     { id: "6", name: "Mexican" },
     { id: "7", name: "Ukrainan" },
   ];
-  const filteredItems = place
+  const selectedPlaces = isRecommended ? recommended : place;
+  const filteredItems = selectedPlaces
     .filter((item) => (selectedType ? item.type === selectedType : true))
     .filter((item) =>
       search
@@ -77,6 +85,20 @@ export default function Home() {
     getCurrentLocation();
     fetchPlaces();
   }, []);
+
+  const handleSelect = async (isSelected: boolean) => {
+    if (isSelected) {
+      setIsRecommended(true);
+      if (recommended.length == 0) {
+        setLoading(true);
+        const recom = await recommendedPlaces(user.currentUser?.uid || "");
+        setLoading(false);
+        setRecommended(recom);
+      }
+    } else {
+      setIsRecommended(false);
+    }
+  };
 
   const getCurrentLocation = async () => {
     try {
@@ -173,7 +195,23 @@ export default function Home() {
           />
         </Link>
       </View>
-      <Text style={styles.heading}>Popular Food</Text>
+      <View style={styles.recommendation}>
+        <TouchableOpacity onPress={() => handleSelect(false)}>
+          <Text style={[styles.heading, !isRecommended && styles.heading2]}>
+            Popular Food
+          </Text>
+        </TouchableOpacity>
+        {user.currentUser?.uid != undefined ? (
+          <TouchableOpacity onPress={() => handleSelect(true)}>
+            <Text style={[styles.heading, isRecommended && styles.heading2]}>
+              Recommended
+            </Text>
+          </TouchableOpacity>
+        ) : (
+          ""
+        )}
+      </View>
+
       <View style={styles.categoryContainer}>
         <FlatList
           data={categories}
@@ -195,7 +233,13 @@ export default function Home() {
           keyExtractor={(item) => item.id}
         />
       </View>
-      {filteredItems.length > 0 ? (
+      {loading ? (
+        <>
+          <RestaurantCardPlaceholder />
+          <RestaurantCardPlaceholder />
+          <RestaurantCardPlaceholder />
+        </>
+      ) : filteredItems.length > 0 ? (
         <FlatList
           data={filteredItems
             .reverse()
@@ -307,9 +351,12 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: "white",
     fontFamily: "SpaceMono-Regular",
-    alignSelf: "flex-start",
     paddingHorizontal: 10,
     marginBottom: 10,
+    opacity: 0.3,
+  },
+  heading2: {
+    opacity: 1,
   },
   scrollView: {
     alignItems: "center",
@@ -361,5 +408,10 @@ const styles = StyleSheet.create({
     fontFamily: "SpaceMono-Regular",
     fontSize: 12.5,
     width: 160,
+  },
+  recommendation: {
+    flexDirection: "row",
+    width: "95%",
+    justifyContent: "space-between",
   },
 });
