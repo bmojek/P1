@@ -1,3 +1,6 @@
+import { Dispatch, SetStateAction } from "react";
+import { Region } from "react-native-maps";
+
 export interface User {
   id: string;
   username: string;
@@ -48,10 +51,22 @@ export interface Place {
   reviews?: reviews[];
   images?: images[];
 }
-
+export const categories: { name: string; id: string }[] = [
+  { id: "0", name: "Italian" },
+  { id: "1", name: "Polish" },
+  { id: "2", name: "Indian" },
+  { id: "3", name: "American" },
+  { id: "4", name: "European" },
+  { id: "5", name: "Chinese" },
+  { id: "6", name: "Mexican" },
+  { id: "7", name: "Ukrainan" },
+];
 export interface ApiContextType {
   place: Place[];
+  location: string;
+  region: Region | null;
   selectedPlace: Place;
+  setLocation: Dispatch<SetStateAction<string>>;
   register: (login: string, password: string, email: string) => Promise<void>;
   addComment: (
     id: string,
@@ -71,4 +86,5 @@ export interface ApiContextType {
   fetchLikedPlaces: (userId: string) => Promise<Place[]>;
   fetchCommentedPlaces: (userName: string) => Promise<Place[]>;
   recommendedPlaces: (userId: string) => Promise<Place[]>;
+  getCurrentLocation: () => Promise<void>;
 }

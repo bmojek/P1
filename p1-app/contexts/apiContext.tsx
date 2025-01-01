@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useRef,
+  useEffect,
+} from "react";
 import {
   getFirestore,
   collection,
@@ -10,6 +17,12 @@ import {
   getDoc,
   setDoc,
   arrayRemove,
+  query,
+  orderBy,
+  limit,
+  where,
+  startAfter,
+  DocumentSnapshot,
 } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
@@ -18,7 +31,9 @@ import {
 } from "firebase/auth";
 import { Place, ApiContextType, User } from "@/types/global.types";
 import { app, auth } from "@/firebaseConfig";
-
+import { Region } from "react-native-maps";
+import * as Location from "expo-location";
+import { Alert } from "react-native";
 const dbFirebase = getFirestore(app);
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
 
@@ -27,6 +42,13 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [place, setPlace] = useState<Place[]>([]);
   const [selectedPlace, setSelectedPlace] = useState<Place>(place[0]);
+  const [location, setLocation] = useState<string>("");
+  const [region, setRegion] = useState<Region | null>(null);
+  const lastVisibleRef = useRef<DocumentSnapshot | null>(null);
+
+  useEffect(() => {
+    getCurrentLocation();
+  }, []);
 
   const register = async (
     username: string,
@@ -57,13 +79,28 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   const fetchPlaces = async () => {
     try {
       const placesCollection = collection(dbFirebase, "places");
-      const placesSnapshot = await getDocs(placesCollection);
+      console.log(location);
+      let placesQuery = query(
+        placesCollection,
+        where("location", "==", location),
+        orderBy("name"),
+        limit(5)
+      );
+
+      if (lastVisibleRef.current) {
+        placesQuery = query(placesQuery, startAfter(lastVisibleRef.current));
+      }
+
+      const placesSnapshot = await getDocs(placesQuery);
       const placesData = placesSnapshot.docs.map((doc) => doc.data() as Place);
 
       if (placesData.length > 0) {
-        setPlace(placesData);
+        setPlace((prevPlaces) => [...prevPlaces, ...placesData]);
+
+        lastVisibleRef.current =
+          placesSnapshot.docs[placesSnapshot.docs.length - 1];
       } else {
-        console.warn("No places data found in Firestore.");
+        console.warn("No more places found for the location.");
       }
     } catch (error) {
       console.error("Error fetching places from Firestore:", error);
@@ -277,12 +314,42 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
       return [];
     }
   };
+  const getCurrentLocation = async () => {
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        Alert.alert("Permission denied", "Location access is required.");
+        return;
+      }
 
+      const location = await Location.getCurrentPositionAsync({});
+      setRegion({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+        latitudeDelta: 0.05,
+        longitudeDelta: 0.05,
+      });
+      const address = await Location.reverseGeocodeAsync({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+      });
+
+      if (address.length > 0) {
+        const { city } = address[0];
+        setLocation(`${city}`);
+      }
+    } catch (error) {
+      console.log("Error getting location:", error);
+    }
+  };
   return (
     <ApiContext.Provider
       value={{
         place,
         selectedPlace,
+        location,
+        region,
+        setLocation,
         register,
         login,
         fetchPlaces,
@@ -296,6 +363,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         fetchLikedPlaces,
         fetchCommentedPlaces,
         recommendedPlaces,
+        getCurrentLocation,
       }}
     >
       {children}

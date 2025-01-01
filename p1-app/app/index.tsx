@@ -7,7 +7,6 @@ import {
   Image,
   View,
   FlatList,
-  Alert,
   TextInput,
   RefreshControl,
 } from "react-native";
@@ -16,40 +15,35 @@ import { useState, useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import { Ionicons } from "@expo/vector-icons";
 import RestaurantCard from "@/components/RestaurantCard";
-import * as Location from "expo-location";
 import { useApi } from "@/contexts/apiContext";
 import { Link } from "expo-router";
 import LocationPicker from "./LocationPicker";
-import { Region } from "react-native-maps";
 import { getAuth } from "firebase/auth";
-import { Place } from "@/types/global.types";
+import { Place, categories } from "@/types/global.types";
 import RestaurantCardPlaceholder from "@/components/RestaurantCardPlaceholder";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function Home() {
   const [fontLoaded, setFontLoaded] = useState(false);
-  const [location, setLocation] = useState<string | null>(null);
-  const [region, setRegion] = useState<Region | null>(null);
   const [isLocationPickerVisible, setLocationPickerVisible] = useState(false);
   const [selectedType, setSelectedType] = useState("");
-  const { place, fetchPlaces, recommendedPlaces } = useApi();
+  const {
+    place,
+    fetchPlaces,
+    recommendedPlaces,
+    location,
+    region,
+    setLocation,
+    getCurrentLocation,
+  } = useApi();
   const [search, setSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
   const [isRecommended, setIsRecommended] = useState(false);
   const [recommended, setRecommended] = useState<Place[]>([]);
   const [loading, setLoading] = useState(false);
   const user = getAuth();
-  const categories: { name: string; id: string }[] = [
-    { id: "0", name: "Italian" },
-    { id: "1", name: "Polish" },
-    { id: "2", name: "Indian" },
-    { id: "3", name: "American" },
-    { id: "4", name: "European" },
-    { id: "5", name: "Chinese" },
-    { id: "6", name: "Mexican" },
-    { id: "7", name: "Ukrainan" },
-  ];
+
   const selectedPlaces = isRecommended ? recommended : place;
   const filteredItems = selectedPlaces
     .filter((item) => (selectedType ? item.type === selectedType : true))
@@ -58,11 +52,6 @@ export default function Home() {
         ? item.name.toLowerCase().includes(search.toLowerCase()) ||
           item.type.toLowerCase().includes(search.toLowerCase()) ||
           item.location.toLowerCase().includes(search.toLowerCase())
-        : true
-    )
-    .filter((item) =>
-      location
-        ? item.location.toLowerCase().includes(location.toLowerCase())
         : true
     );
 
@@ -81,10 +70,10 @@ export default function Home() {
   }, [fontLoaded]);
 
   useEffect(() => {
-    fetchFonts().then(() => setFontLoaded(true));
-    getCurrentLocation();
-    fetchPlaces();
-  }, []);
+    if (location) {
+      fetchPlaces();
+    }
+  }, [location]);
 
   const handleSelect = async (isSelected: boolean) => {
     if (isSelected) {
@@ -100,34 +89,6 @@ export default function Home() {
     }
   };
 
-  const getCurrentLocation = async () => {
-    try {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        Alert.alert("Permission denied", "Location access is required.");
-        return;
-      }
-
-      const location = await Location.getCurrentPositionAsync({});
-      setRegion({
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
-        latitudeDelta: 0.05,
-        longitudeDelta: 0.05,
-      });
-      const address = await Location.reverseGeocodeAsync({
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
-      });
-
-      if (address.length > 0) {
-        const { city } = address[0];
-        setLocation(`${city}`);
-      }
-    } catch (error) {
-      console.log("Error getting location:", error);
-    }
-  };
   const handleLocationPress = () => {
     setLocationPickerVisible(true);
   };
@@ -146,13 +107,8 @@ export default function Home() {
 
   const onRefresh = async () => {
     setRefreshing(true);
-    try {
-      await fetchPlaces();
-    } catch (error) {
-      console.error("Error refreshing data:", error);
-    } finally {
-      setRefreshing(false);
-    }
+    await fetchPlaces();
+    setRefreshing(false);
   };
 
   return (
@@ -241,9 +197,9 @@ export default function Home() {
         </>
       ) : filteredItems.length > 0 ? (
         <FlatList
-          data={filteredItems
-            .reverse()
-            .filter((item) => !selectedType || item.type === selectedType)}
+          data={filteredItems.filter(
+            (item) => !selectedType || item.type === selectedType
+          )}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => <RestaurantCard place={item} />}
           contentContainerStyle={styles.scrollView}
@@ -255,6 +211,8 @@ export default function Home() {
               refreshing={refreshing}
             />
           }
+          onEndReached={fetchPlaces} // Trigger next page of data when end is reached
+          onEndReachedThreshold={0.5} // Trigger fetch when the user is 50% from the end
         />
       ) : (
         <Text>Brak restauracji</Text>
