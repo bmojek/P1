@@ -7,6 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
   ImageBackground,
+  Modal,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Link } from "expo-router";
@@ -19,6 +20,9 @@ const Details = () => {
   const { selectedPlace, likePlace, isLikedPlace, unLikePlace } = useApi();
   const [expandText, setExpandText] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  const [modalImg, setModalImg] = useState("");
+
   const auth = getAuth();
   const user = auth.currentUser;
   const placeJ = selectedPlace;
@@ -62,6 +66,7 @@ const Details = () => {
       }
     }
   };
+
   return (
     <ImageBackground
       source={{ uri: placeJ.image }}
@@ -116,11 +121,19 @@ const Details = () => {
               showsHorizontalScrollIndicator={false}
             >
               {placeJ.images?.map((image, index) => (
-                <Image
-                  style={styles.photo}
+                <TouchableOpacity
                   key={index}
-                  source={{ uri: image.link }}
-                />
+                  onPress={() => {
+                    setModalImg(image.link);
+                    setOpenModal(true);
+                  }}
+                >
+                  <Image
+                    style={styles.photo}
+                    key={index}
+                    source={{ uri: image.link }}
+                  />
+                </TouchableOpacity>
               ))}
             </ScrollView>
             <View style={styles.latestContainer}>
@@ -147,11 +160,19 @@ const Details = () => {
                       <Text style={styles.review}>{review.review_text}</Text>
                       <View style={styles.reviewPhotosContainer}>
                         {review.review_photos.map((photo, index) => (
-                          <Image
+                          <TouchableOpacity
                             key={index}
-                            source={{ uri: photo }}
-                            style={styles.reviewPhoto}
-                          />
+                            onPress={() => {
+                              setModalImg(photo);
+                              setOpenModal(true);
+                            }}
+                          >
+                            <Image
+                              key={index}
+                              source={{ uri: photo }}
+                              style={styles.reviewPhoto}
+                            />
+                          </TouchableOpacity>
                         ))}
                       </View>
                       <Text>{review.published_at_date.replace("T", " ")}</Text>
@@ -187,6 +208,22 @@ const Details = () => {
               />
             </MapView>
           </ScrollView>
+          <Modal
+            visible={openModal}
+            animationType="fade"
+            transparent={true}
+            onRequestClose={() => setOpenModal(false)}
+          >
+            <View style={styles.modals}>
+              <Image source={{ uri: modalImg }} style={styles.modalPhoto} />
+              <TouchableOpacity
+                style={styles.buttonContainer}
+                onPress={() => setOpenModal(false)}
+              >
+                <Text style={styles.buttonText}>Close</Text>
+              </TouchableOpacity>
+            </View>
+          </Modal>
         </SafeAreaView>
       </LinearGradient>
     </ImageBackground>
@@ -194,6 +231,17 @@ const Details = () => {
 };
 
 const styles = StyleSheet.create({
+  modals: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  modalPhoto: {
+    width: 380,
+    height: 400,
+    borderRadius: 24,
+    margin: 10,
+  },
   background: {
     flex: 1,
     justifyContent: "center",
