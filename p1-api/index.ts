@@ -81,7 +81,7 @@ const getPlaceDetails = async (
   placeId: string
 ): Promise<DocumentData | null> => {
   try {
-    const placeRef = doc(db, "places", placeId);
+    const placeRef = doc(db, "allPlaces", placeId);
     const snapshot: DocumentSnapshot<DocumentData> = await getDoc(placeRef);
 
     if (snapshot.exists()) {
@@ -97,7 +97,7 @@ const getPlaceDetails = async (
 };
 const getPlaces = async () => {
   try {
-    const placesCollection = collection(db, "places");
+    const placesCollection = collection(db, "allPlaces");
     const placesSnapshot = await getDocs(placesCollection);
     const placesData = placesSnapshot.docs.map((doc) => doc.data() as Place);
 
