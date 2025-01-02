@@ -233,6 +233,7 @@ const Details = () => {
 const styles = StyleSheet.create({
   modals: {
     flex: 1,
+    position: "relative",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -371,17 +372,18 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttonContainer: {
-    backgroundColor: "#FAF0E6",
+    backgroundColor: "#352F44",
     textAlign: "center",
     paddingVertical: 7,
     paddingHorizontal: 40,
     borderRadius: 18,
   },
   buttonText: {
-    color: "#0C0C0C",
+    color: "white",
     fontSize: 20,
     fontFamily: "SpaceMono-Regular",
   },
+
   map: {
     width: "100%",
     height: 200,

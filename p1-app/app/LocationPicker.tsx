@@ -37,7 +37,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
   });
   const [selectedLocation, setSelectedLocation] = useState<LatLng | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const { selectPlace } = useApi();
+  const { selectPlace, fetchPlaces } = useApi();
   const getCity = async (latitude: number, longitude: number) => {
     try {
       const address = await Location.reverseGeocodeAsync({
@@ -97,10 +97,10 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
   };
 
   useEffect(() => {
-    if (visible && lastRegion != null) {
+    if (lastRegion != null) {
       setRegion(lastRegion);
     }
-  }, [visible]);
+  }, [lastRegion]);
 
   return (
     <Modal
@@ -158,6 +158,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
           onPress={() => {
             setSearchQuery("");
             onClose();
+            fetchPlaces();
           }}
         >
           <Text style={styles.confirmText}>Confirm Location</Text>

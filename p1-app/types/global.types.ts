@@ -66,7 +66,7 @@ export interface ApiContextType {
   location: string;
   region: Region | null;
   selectedPlace: Place;
-  setLocation: Dispatch<SetStateAction<string>>;
+  setSearchLocation: (location: string) => void;
   register: (login: string, password: string, email: string) => Promise<void>;
   addComment: (
     id: string,
@@ -87,4 +87,5 @@ export interface ApiContextType {
   fetchCommentedPlaces: (userName: string) => Promise<Place[]>;
   recommendedPlaces: (userId: string) => Promise<Place[]>;
   getCurrentLocation: () => Promise<void>;
+  clearPlaces: () => void;
 }

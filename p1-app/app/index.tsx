@@ -10,7 +10,7 @@ import {
   TextInput,
   RefreshControl,
 } from "react-native";
-import * as Font from "expo-font";
+
 import { useState, useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import { Ionicons } from "@expo/vector-icons";
@@ -25,7 +25,6 @@ import RestaurantCardPlaceholder from "@/components/RestaurantCardPlaceholder";
 SplashScreen.preventAutoHideAsync();
 
 export default function Home() {
-  const [fontLoaded, setFontLoaded] = useState(false);
   const [isLocationPickerVisible, setLocationPickerVisible] = useState(false);
   const [selectedType, setSelectedType] = useState("");
   const {
@@ -34,8 +33,8 @@ export default function Home() {
     recommendedPlaces,
     location,
     region,
-    setLocation,
-    getCurrentLocation,
+    setSearchLocation,
+    clearPlaces,
   } = useApi();
   const [search, setSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
@@ -53,27 +52,12 @@ export default function Home() {
           item.type.toLowerCase().includes(search.toLowerCase()) ||
           item.location.toLowerCase().includes(search.toLowerCase())
         : true
+    )
+    .filter((item) =>
+      location
+        ? item.location.toLowerCase().includes(location.toLowerCase())
+        : true
     );
-
-  const fetchFonts = () => {
-    return Font.loadAsync({
-      "AmaticSC-Regular": require("../assets/fonts/AmaticSC-Regular.ttf"),
-      "AmaticSC-Bold": require("../assets/fonts/AmaticSC-Bold.ttf"),
-      "SpaceMono-Regular": require("../assets/fonts/SpaceMono-Regular.ttf"),
-    });
-  };
-
-  useEffect(() => {
-    if (fontLoaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [fontLoaded]);
-
-  useEffect(() => {
-    if (location) {
-      fetchPlaces();
-    }
-  }, [location]);
 
   const handleSelect = async (isSelected: boolean) => {
     if (isSelected) {
@@ -94,7 +78,7 @@ export default function Home() {
   };
 
   const handleLocationSelect = (city: string) => {
-    setLocation(city);
+    setSearchLocation(city);
   };
 
   const handleLocationPickerClose = () => {
@@ -107,6 +91,7 @@ export default function Home() {
 
   const onRefresh = async () => {
     setRefreshing(true);
+    clearPlaces();
     await fetchPlaces();
     setRefreshing(false);
   };
@@ -190,11 +175,11 @@ export default function Home() {
         />
       </View>
       {loading ? (
-        <>
+        <View>
           <RestaurantCardPlaceholder />
           <RestaurantCardPlaceholder />
           <RestaurantCardPlaceholder />
-        </>
+        </View>
       ) : filteredItems.length > 0 ? (
         <FlatList
           data={filteredItems.filter(
@@ -211,8 +196,8 @@ export default function Home() {
               refreshing={refreshing}
             />
           }
-          onEndReached={fetchPlaces} // Trigger next page of data when end is reached
-          onEndReachedThreshold={0.5} // Trigger fetch when the user is 50% from the end
+          onEndReached={fetchPlaces}
+          onEndReachedThreshold={0.5}
         />
       ) : (
         <Text>Brak restauracji</Text>

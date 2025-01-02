@@ -34,22 +34,42 @@ import { app, auth } from "@/firebaseConfig";
 import { Region } from "react-native-maps";
 import * as Location from "expo-location";
 import { Alert } from "react-native";
+import * as Font from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
 const dbFirebase = getFirestore(app);
 const ApiContext = createContext<ApiContextType | undefined>(undefined);
 
 export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const [fontLoaded, setFontLoaded] = useState(false);
   const [place, setPlace] = useState<Place[]>([]);
   const [selectedPlace, setSelectedPlace] = useState<Place>(place[0]);
   const [location, setLocation] = useState<string>("");
   const [region, setRegion] = useState<Region | null>(null);
   const lastVisibleRef = useRef<DocumentSnapshot | null>(null);
 
+  const fetchFonts = () => {
+    return Font.loadAsync({
+      "AmaticSC-Regular": require("../assets/fonts/AmaticSC-Regular.ttf"),
+      "AmaticSC-Bold": require("../assets/fonts/AmaticSC-Bold.ttf"),
+      "SpaceMono-Regular": require("../assets/fonts/SpaceMono-Regular.ttf"),
+    });
+  };
+
   useEffect(() => {
+    if (fontLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontLoaded]);
+  useEffect(() => {
+    fetchFonts().then(() => setFontLoaded(true));
     getCurrentLocation();
   }, []);
 
+  useEffect(() => {
+    fetchPlaces();
+  }, [location]);
   const register = async (
     username: string,
     password: string,
@@ -78,13 +98,12 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
   const fetchPlaces = async () => {
     try {
-      const placesCollection = collection(dbFirebase, "places");
-      console.log(location);
+      const placesCollection = collection(dbFirebase, "allPlaces");
       let placesQuery = query(
         placesCollection,
-        where("location", "==", location),
+        where("city", "==", location),
         orderBy("name"),
-        limit(5)
+        limit(10)
       );
 
       if (lastVisibleRef.current) {
@@ -99,8 +118,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
         lastVisibleRef.current =
           placesSnapshot.docs[placesSnapshot.docs.length - 1];
-      } else {
-        console.warn("No more places found for the location.");
       }
     } catch (error) {
       console.error("Error fetching places from Firestore:", error);
@@ -125,7 +142,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         review_photos: review_photos,
       };
 
-      const placeRef = doc(dbFirebase, "places", id);
+      const placeRef = doc(dbFirebase, "allPlaces", id);
 
       await updateDoc(placeRef, {
         reviews: arrayUnion(reviewData),
@@ -134,11 +151,11 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
       const updatedPlaceSnapshot = await getDoc(placeRef);
       if (updatedPlaceSnapshot.exists()) {
         const updatedPlace = updatedPlaceSnapshot.data() as Place;
+
         selectPlace(updatedPlace);
       } else {
         console.log("Place not found after update.");
       }
-      fetchPlaces();
     } catch (error) {
       console.error("Error adding review: ", error);
       alert("Failed to add review, please try again.");
@@ -239,7 +256,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         const likedPlaces: Place[] = [];
 
         for (const placeId of likedPlacesIds) {
-          const placeRef = doc(dbFirebase, "places", placeId);
+          const placeRef = doc(dbFirebase, "allPlaces", placeId);
           const placeSnapshot = await getDoc(placeRef);
 
           if (placeSnapshot.exists()) {
@@ -257,7 +274,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   };
   const fetchCommentedPlaces = async (userName: string): Promise<Place[]> => {
     try {
-      const placesCollection = collection(dbFirebase, "places");
+      const placesCollection = collection(dbFirebase, "allPlaces");
       const placesSnapshot = await getDocs(placesCollection);
 
       const commentedPlaces: Place[] = [];
@@ -292,7 +309,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
           .recommendedPlaces as string[];
 
         const placePromises = recommendedPlaceIds.map((placeId) => {
-          const placeRef = doc(dbFirebase, "places", placeId);
+          const placeRef = doc(dbFirebase, "allPlaces", placeId);
           return getDoc(placeRef).then((placeSnapshot) => {
             if (placeSnapshot.exists()) {
               return placeSnapshot.data() as Place;
@@ -306,8 +323,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
 
         return recommendedPlaces;
       } else {
-        console.warn("No recommendations found for this user.");
-        return [];
+        return place.slice(4, 10);
       }
     } catch (error) {
       console.error("Error fetching recommended places:", error);
@@ -342,6 +358,16 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
       console.log("Error getting location:", error);
     }
   };
+
+  const setSearchLocation = (location: string) => {
+    lastVisibleRef.current = null;
+    setPlace([]);
+    setLocation(location);
+  };
+  const clearPlaces = () => {
+    setPlace([]);
+    lastVisibleRef.current = null;
+  };
   return (
     <ApiContext.Provider
       value={{
@@ -349,7 +375,8 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         selectedPlace,
         location,
         region,
-        setLocation,
+        setSearchLocation,
+        clearPlaces,
         register,
         login,
         fetchPlaces,
