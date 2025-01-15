@@ -59,7 +59,6 @@ export const categories: { name: string; id: string }[] = [
   { id: "4", name: "European" },
   { id: "5", name: "Chinese" },
   { id: "6", name: "Mexican" },
-  { id: "7", name: "Ukrainan" },
 ];
 export interface ApiContextType {
   place: Place[];

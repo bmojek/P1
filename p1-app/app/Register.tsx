@@ -15,6 +15,10 @@ import { router } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
+// const handleGoogleLogin = () => {};
+
+// const handleFacebookLogin = () => {}
+
 export default function TabTwoScreen() {
   const [isChecked, setChecked] = useState(false);
   const { register } = useApi();
@@ -168,6 +172,12 @@ export default function TabTwoScreen() {
       <Text style={styles.otherlogin}>
         <Text> Or Sign up with </Text>
       </Text>
+      {/* <TouchableOpacity style={styles.socialButton} onPress={handleGoogleLogin}>
+        <Text style={styles.socialButtonText}>Sign up with Google</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.socialButton} onPress={handleFacebookLogin}>
+        <Text style={styles.socialButtonText}>Sign up with Facebook</Text>
+      </TouchableOpacity> */}
     </View>
   );
 }
@@ -273,4 +283,20 @@ const styles = StyleSheet.create({
   },
   signline: {},
   signotherline: {},
+
+  // socialButton: {
+  //   backgroundColor: '#4285F4', // Google blue color
+  //   padding: 10,
+  //   marginTop: 10,
+  //   width: '80%',
+  //   alignItems: 'center',
+  //   borderRadius: 5,
+  // },
+  // socialButtonText: {
+  //   color: '#fff',
+  //   fontSize: 16,
+  // },
+  // facebookButton: {
+  //   backgroundColor: '#3b5998', // Facebook blue color
+  // },
 });

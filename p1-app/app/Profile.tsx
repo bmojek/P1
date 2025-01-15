@@ -57,12 +57,12 @@ export default function Profile() {
     <SafeAreaView style={styles.container}>
       <View style={styles.profileContainer}>
         {user ? (
-          <>
+          <View>
             <View style={styles.profileInfoContainer}>
               <Ionicons
                 name="person-circle-outline"
                 size={100}
-                color="#000000"
+                color="#4C3BCF"
                 style={styles.profileIcon}
               />
               <Text style={styles.profileName}>
@@ -96,9 +96,9 @@ export default function Profile() {
             >
               <Text style={styles.logoutText}>Logout</Text>
             </TouchableOpacity>
-          </>
+          </View>
         ) : (
-          <>
+          <View>
             <Text style={styles.welcomeText}>Welcome to our app!</Text>
             <Text style={styles.descText}>
               Login or Register to comment, share and many more!
@@ -112,7 +112,7 @@ export default function Profile() {
             >
               <Text style={styles.logoutText}>Register</Text>
             </TouchableOpacity>
-          </>
+          </View>
         )}
       </View>
     </SafeAreaView>
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   profileName: {
     fontSize: 35,
     paddingBottom: 10,
-    color: "#FFFFFF",
+    color: "#FAF0E6",
     fontFamily: "AmaticSC-Regular",
   },
   profileEmail: {
@@ -151,11 +151,12 @@ const styles = StyleSheet.create({
   logoutButton: {
     width: "60%",
     marginTop: 30,
-    backgroundColor: "#F4C430",
+    backgroundColor: "#4C3BCF",
     paddingVertical: 12,
     paddingHorizontal: 40,
     borderRadius: 16,
     alignItems: "center",
+    alignSelf: "center",
   },
   styleButton: {
     width: "60%",
@@ -165,6 +166,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     borderRadius: 16,
     alignItems: "center",
+    alignSelf: "center",
   },
   logoutText: {
     fontSize: 18,
@@ -172,16 +174,17 @@ const styles = StyleSheet.create({
     fontFamily: "SpaceMono-Regular",
   },
   welcomeText: {
-    fontSize: 40,
-    color: "#FFFFFF",
+    fontSize: 50,
+    color: "#FAF0E6",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 20,
+    textAlign: "center",
   },
   descText: {
     fontSize: 25,
     width: "70%",
     textAlign: "center",
-    color: "#778899",
+    color: "#FAF0E6",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 20,
   },

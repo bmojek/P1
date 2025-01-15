@@ -297,8 +297,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 40,
-    color: "#FFFFFF",
+    fontSize: 50,
+    color: "#FAF0E6",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 30,
   },
@@ -308,14 +308,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   fieldLabel: {
-    fontSize: 18,
+    fontSize: 38,
     color: "#FAF0E6",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 5,
   },
   fieldValue: {
     fontSize: 16,
-    color: "#FFFFFF",
+    color: "#FAF0E6",
     fontFamily: "SpaceMono-Regular",
     marginBottom: 5,
   },
@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
   },
   editButton: {
     alignSelf: "flex-start",
-    backgroundColor: "#F4C430",
+    backgroundColor: "#4C3BCF",
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 5,
