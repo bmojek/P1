@@ -31,10 +31,10 @@ export default function Profile() {
     fetchFonts();
   }, []);
 
-  const handleLogout = () => {
-    signOut(auth)
+  const handleLogout = async () => {
+    await signOut(auth)
       .then(() => {
-        router.back();
+        router.navigate("/");
       })
       .catch((error) => {
         console.error("Logout failed", error);

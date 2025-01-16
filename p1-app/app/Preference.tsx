@@ -5,6 +5,7 @@ import {
   View,
   TouchableOpacity,
   ImageBackground,
+  Switch,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { getAuth } from "firebase/auth";
@@ -23,15 +24,14 @@ const Preference = () => {
     { name: "Sandwich", image: require("../assets/images/sandwich.jpg") },
     { name: "Mexican", image: require("../assets/images/mexican.jpg") },
     { name: "Sea Food", image: require("../assets/images/seafood.jpg") },
-    { name: "Greek", image: require("../assets/images/greek.jpg") },
     { name: "Spanish", image: require("../assets/images/spanish.jpg") },
     { name: "Kebab", image: require("../assets/images/kebab.jpg") },
-    { name: "Georgian", image: require("../assets/images/georgian.jpg") },
     { name: "Pancakes", image: require("../assets/images/pancakes.jpg") },
     { name: "Coffee", image: require("../assets/images/coffee.jpg") },
     { name: "Vegan", image: require("../assets/images/vegan.jpg") },
   ];
-
+  const [dataProcessingConsent, setDataProcessingConsent] =
+    useState<boolean>(true);
   const [selectedItems, setSelectedItems] = useState<number[]>([]);
   const { addPreferences, fetchPreferences } = useApi();
   const user = getAuth();
@@ -67,7 +67,11 @@ const Preference = () => {
     const preferences = items
       .filter((item, index) => selectedItems.includes(index))
       .map((item) => item.name);
-    addPreferences(user.currentUser?.uid || "anonymous", preferences);
+    addPreferences(
+      user.currentUser?.uid || "anonymous",
+      preferences,
+      dataProcessingConsent
+    );
     router.back();
   };
 
@@ -112,6 +116,17 @@ const Preference = () => {
               )}
             </TouchableOpacity>
           ))}
+        </View>
+        <View style={styles.switchContainer}>
+          <Text style={styles.switchText}>
+            I agree to the processing and analysis of my data.
+          </Text>
+          <Switch
+            value={dataProcessingConsent}
+            onValueChange={(value) => setDataProcessingConsent(value)}
+            trackColor={{ false: "#767577", true: "#4C3BCF" }}
+            thumbColor={"#FAF0E6"}
+          />
         </View>
         <View style={styles.complitedContainer}>
           <TouchableOpacity
@@ -191,7 +206,19 @@ const styles = StyleSheet.create({
   complitedButtonClicked: {
     backgroundColor: "#4C3BCF",
   },
+  switchContainer: {
+    marginTop: 8,
+    marginBottom: 3,
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "80%",
+  },
+  switchText: {
+    color: "#FAF0E6",
+    fontSize: 16,
+    fontFamily: "SpaceMono-Regular",
+    marginRight: 10,
+    width: "85%",
+  },
 });
-
-//background jedzenia ma byc jako jedzenie zdjecia jak zaznaczysz
-//godzina otwarcia

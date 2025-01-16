@@ -11,7 +11,6 @@ import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useApi } from "@/contexts/apiContext";
-import { router } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -82,19 +81,17 @@ export default function TabTwoScreen() {
     return true;
   };
 
-  const handleCreateAccount = () => {
+  const handleCreateAccount = async () => {
     const isUsernameValid = validateUsername();
     const isPasswordValid = validatePassword();
     const isEmailValid = validateEmail();
 
     if (isUsernameValid && isPasswordValid && isEmailValid && isChecked) {
-      register(username, password, email);
+      await register(username, password, email);
       setEmail("");
       setPassword("");
       setChecked(false);
       setUsername("");
-      router.navigate("/");
-      router.navigate("/Preference");
     } else {
       if (!isChecked) {
         alert("You must agree to the terms and conditions");
@@ -169,10 +166,10 @@ export default function TabTwoScreen() {
         <Text style={styles.buttonText}>Create</Text>
       </TouchableOpacity>
       <View style={styles.signotherline}></View>
-      <Text style={styles.otherlogin}>
+      {/* <Text style={styles.otherlogin}>
         <Text> Or Sign up with </Text>
       </Text>
-      {/* <TouchableOpacity style={styles.socialButton} onPress={handleGoogleLogin}>
+      <TouchableOpacity style={styles.socialButton} onPress={handleGoogleLogin}>
         <Text style={styles.socialButtonText}>Sign up with Google</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.socialButton} onPress={handleFacebookLogin}>

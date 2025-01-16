@@ -12,7 +12,7 @@ import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import React from "react";
 import { useApi } from "@/contexts/apiContext";
-import { Link, router } from "expo-router";
+import { Link } from "expo-router";
 SplashScreen.preventAutoHideAsync();
 
 export default function TabThreeScreen() {
@@ -71,10 +71,9 @@ export default function TabThreeScreen() {
 
     if (isEmailValid && isPasswordValid) {
       try {
-        login(email, password);
+        await login(email, password);
         setEmail("");
         setPassword("");
-        router.navigate("/");
       } catch (error) {
         alert("Error logging in");
       }

@@ -79,7 +79,11 @@ export interface ApiContextType {
   selectPlace: (place: Place) => void;
   likePlace: (placeId: string, userId: string) => void;
   unLikePlace: (placeId: string, userId: string) => void;
-  addPreferences: (userId: string, preferences: string[]) => void;
+  addPreferences: (
+    userId: string,
+    preferences: string[],
+    dataProcessing: boolean
+  ) => void;
   isLikedPlace: (placeId: string, userId: string) => Promise<boolean>;
   fetchPreferences: (userId: string) => Promise<string[]>;
   fetchLikedPlaces: (userId: string) => Promise<Place[]>;
@@ -87,4 +91,5 @@ export interface ApiContextType {
   recommendedPlaces: (userId: string) => Promise<Place[]>;
   getCurrentLocation: () => Promise<void>;
   clearPlaces: () => void;
+  clearUserData: (userId: string) => void;
 }

@@ -18,6 +18,7 @@ import {
   deleteUser,
 } from "firebase/auth";
 import { router } from "expo-router";
+import { useApi } from "@/contexts/apiContext";
 
 const Settings: React.FC = () => {
   const auth = getAuth();
@@ -31,7 +32,7 @@ const Settings: React.FC = () => {
   const [newValue, setNewValue] = useState<string>("");
   const [currentPassword, setCurrentPassword] = useState<string>("");
   const [newPassword, setNewPassword] = useState<string>("");
-
+  const { clearUserData } = useApi();
   const handleEdit = (field: "username" | "email" | "password") => {
     setEditingField(field);
     if (field === "username") setNewValue(username);
@@ -82,18 +83,32 @@ const Settings: React.FC = () => {
 
       handleCancel();
     } catch (error: any) {
-      Alert.alert(
-        "Wrong password",
-        "Please enter your current password to confirm changes"
-      );
+      const errorCode = error.code;
+
+      if (errorCode === "auth/email-already-in-use") {
+        Alert.alert(
+          "Email Already In Use",
+          "The email address you entered is already associated with an account. Please use a different email address."
+        );
+      } else if (errorCode === "auth/wrong-password") {
+        Alert.alert(
+          "Wrong Password",
+          "Please enter your current password to confirm changes"
+        );
+      } else {
+        Alert.alert("Error", "An unexpected error occurred. Please try again.");
+      }
     }
+    router.navigate("/Profile");
+    router.navigate("/Settings");
   };
 
   const handleDelAcc = () => {
     if (!user) return;
+
     Alert.alert(
       "Confirm Deletion",
-      "Are you sure you want to delete your account? This action cannot be undone.",
+      "Are you sure you want to delete your account and all user data? This action cannot be undone.",
       [
         {
           text: "Cancel",
@@ -101,20 +116,47 @@ const Settings: React.FC = () => {
         },
         {
           text: "Delete",
-          onPress: async () => {
-            try {
-              await deleteUser(user);
-              Alert.alert(
-                "Account Deleted",
-                "Your account has been successfully deleted."
-              );
-              router.navigate("/");
-            } catch (error: any) {
-              Alert.alert(
-                "Error",
-                "Failed to delete account. Please try again later."
-              );
-            }
+          onPress: () => {
+            Alert.prompt(
+              "Reauthentication Required",
+              "Enter your password to confirm account deletion:",
+              [
+                {
+                  text: "Cancel",
+                  style: "cancel",
+                },
+                {
+                  text: "Reauthenticate",
+                  onPress: async (password) => {
+                    if (!password) {
+                      Alert.alert("Error", "Password cannot be empty.");
+                      return;
+                    }
+
+                    try {
+                      const credential = EmailAuthProvider.credential(
+                        user.email as string,
+                        password
+                      );
+                      await reauthenticateWithCredential(user, credential);
+                      await deleteUser(user);
+                      clearUserData(user.uid);
+                      Alert.alert(
+                        "Account Deleted",
+                        "Your account has been successfully deleted."
+                      );
+                      router.navigate("/");
+                    } catch (error: any) {
+                      Alert.alert(
+                        "Error",
+                        "Reauthentication failed. Please check your password and try again."
+                      );
+                    }
+                  },
+                },
+              ],
+              "secure-text"
+            );
           },
           style: "destructive",
         },
@@ -127,7 +169,6 @@ const Settings: React.FC = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.accountContainer}>
         <Text style={styles.title}>Account Settings</Text>
-
         <View style={styles.fieldContainer}>
           <Text style={styles.fieldLabel}>Username:</Text>
           {editingField === "username" ? (

@@ -23,13 +23,15 @@ import {
   where,
   startAfter,
   DocumentSnapshot,
+  deleteDoc,
 } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { Place, ApiContextType, User } from "@/types/global.types";
+import { router } from "expo-router";
+import { Place, ApiContextType } from "@/types/global.types";
 import { app, auth } from "@/firebaseConfig";
 import { Region } from "react-native-maps";
 import * as Location from "expo-location";
@@ -48,7 +50,6 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
   const [location, setLocation] = useState<string>("");
   const [region, setRegion] = useState<Region | null>(null);
   const lastVisibleRef = useRef<DocumentSnapshot | null>(null);
-
   const fetchFonts = () => {
     return Font.loadAsync({
       "AmaticSC-Regular": require("../assets/fonts/AmaticSC-Regular.ttf"),
@@ -66,10 +67,10 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     fetchFonts().then(() => setFontLoaded(true));
     getCurrentLocation();
   }, []);
-
   useEffect(() => {
     fetchPlaces();
   }, [location]);
+
   const register = async (
     username: string,
     password: string,
@@ -82,6 +83,8 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         password
       );
       updateProfile(userCredential.user, { displayName: username });
+      router.navigate("/");
+      router.navigate("/Preference");
     } catch (error) {
       alert(`Error: ${error}`);
     }
@@ -91,6 +94,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Logged in successfully!");
+      router.navigate("/");
     } catch (error) {
       alert(`Error: ${error}`);
     }
@@ -221,10 +225,18 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     }
   };
 
-  const addPreferences = async (userId: string, preferences: string[]) => {
+  const addPreferences = async (
+    userId: string,
+    preferences: string[],
+    dataProcessing: boolean
+  ) => {
     try {
       const userPreferencesRef = doc(dbFirebase, "userPreferences", userId);
-      await setDoc(userPreferencesRef, { preferences });
+      if (dataProcessing) {
+        await setDoc(userPreferencesRef, { preferences });
+      } else {
+        await deleteDoc(userPreferencesRef);
+      }
     } catch (error) {
       console.error("Error setting preferences:", error);
       alert("Failed to set preferences, please try again.");
@@ -368,6 +380,23 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
     setPlace([]);
     lastVisibleRef.current = null;
   };
+  const clearUserData = async (userId: string) => {
+    try {
+      const userPreferencesRef = doc(dbFirebase, "userPreferences", userId);
+      await deleteDoc(userPreferencesRef);
+      const userLikeRef = doc(dbFirebase, "likePlaces", userId);
+      await deleteDoc(userLikeRef);
+      const userRecommendationRef = doc(
+        dbFirebase,
+        "recommendationSystem",
+        userId
+      );
+      await deleteDoc(userRecommendationRef);
+    } catch (error) {
+      console.error("Error deleting user data:", error);
+      alert("Failed delete user data, please try again.");
+    }
+  };
   return (
     <ApiContext.Provider
       value={{
@@ -391,6 +420,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         fetchCommentedPlaces,
         recommendedPlaces,
         getCurrentLocation,
+        clearUserData,
       }}
     >
       {children}
