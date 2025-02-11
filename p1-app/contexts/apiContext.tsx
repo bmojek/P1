@@ -107,7 +107,7 @@ export const ApiProvider: React.FC<{ children: ReactNode }> = ({
         placesCollection,
         where("city", "==", location),
         orderBy("name"),
-        limit(10)
+        limit(50)
       );
 
       if (lastVisibleRef.current) {

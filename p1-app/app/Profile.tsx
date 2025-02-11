@@ -5,11 +5,16 @@ import {
   Text,
   View,
   SafeAreaView,
+  Modal,
+  Dimensions,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { getAuth, signOut } from "firebase/auth";
 import { router } from "expo-router";
 import { useState, useEffect } from "react";
+import { WebView } from "react-native-webview";
+import * as FileSystem from "expo-file-system";
+import * as Asset from "expo-asset";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
@@ -19,6 +24,21 @@ export default function Profile() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const auth = getAuth();
   const user = auth.currentUser;
+  const [modalVisible, setModalVisible] = useState<boolean>(false);
+  const [localUri, setLocalUri] = useState<string | null>(null);
+
+  const loadLocalPDF = async () => {
+    try {
+      const asset = Asset.Asset.fromModule(
+        require("../assets/user-support.pdf")
+      );
+      await asset.downloadAsync();
+      setLocalUri(asset.localUri || null);
+      setModalVisible(true);
+    } catch (error) {
+      console.error("Failed to load PDF:", error);
+    }
+  };
 
   useEffect(() => {
     const fetchFonts = async () => {
@@ -91,11 +111,43 @@ export default function Profile() {
               <Text style={styles.logoutText}>Settings</Text>
             </TouchableOpacity>
             <TouchableOpacity
+              onPress={() => loadLocalPDF()}
+              style={styles.styleButton}
+            >
+              <Text style={styles.logoutText}>Support</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
               onPress={handleLogout}
               style={styles.logoutButton}
             >
               <Text style={styles.logoutText}>Logout</Text>
             </TouchableOpacity>
+            <Modal
+              animationType="slide"
+              transparent={true}
+              visible={modalVisible}
+              onRequestClose={() => setModalVisible(false)}
+            >
+              <View style={styles.modalContainer}>
+                <View style={styles.modalContent}>
+                  <TouchableOpacity
+                    onPress={() => setModalVisible(false)}
+                    style={styles.closeButton}
+                  >
+                    <Text style={styles.closeButtonText}>Close</Text>
+                  </TouchableOpacity>
+
+                  {localUri && (
+                    <WebView
+                      source={{ uri: localUri }}
+                      style={styles.webview}
+                      useWebKit={true}
+                      originWhitelist={["*"]}
+                    />
+                  )}
+                </View>
+              </View>
+            </Modal>
           </View>
         ) : (
           <View>
@@ -187,5 +239,32 @@ const styles = StyleSheet.create({
     color: "#FAF0E6",
     fontFamily: "AmaticSC-Bold",
     marginBottom: 20,
+  },
+  modalContainer: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+  },
+  modalContent: {
+    width: "100%",
+    height: "90%",
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    overflow: "hidden",
+  },
+  closeButton: {
+    backgroundColor: "#352F44",
+    padding: 10,
+    alignItems: "center",
+  },
+  closeButtonText: {
+    color: "#fff",
+    fontSize: 16,
+  },
+  webview: {
+    flex: 1,
+    width: Dimensions.get("window").width * 1,
+    height: Dimensions.get("window").height * 1,
   },
 });

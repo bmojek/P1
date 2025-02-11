@@ -38,6 +38,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ place }) => {
       href={{
         pathname: "/Details",
       }}
+      style={{ marginVertical: 10, marginHorizontal: 5 }}
     >
       <View style={styles.card}>
         <Image source={{ uri: place.image }} style={styles.image} />
@@ -64,8 +65,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     overflow: "hidden",
     backgroundColor: "#fff",
-    marginVertical: 10,
-    marginHorizontal: 10,
   },
   image: {
     width: "100%",

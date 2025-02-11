@@ -48,7 +48,6 @@ function RootLayoutNav() {
         <Stack
           screenOptions={{
             headerTransparent: true,
-            headerBackTitleVisible: false,
             headerTitle: "",
           }}
         >
